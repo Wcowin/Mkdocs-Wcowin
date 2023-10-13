@@ -10,11 +10,13 @@
         <meta name="author" content="Wcowin">
       
       
-        <link rel="canonical" href="http://wcowin.work/Mkdocs-Wcowin/blog/Mkdocs/mkdocs1/">
+        <link rel="canonical" href="http://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/mkcomments/">
       
       
+        <link rel="prev" href="../../Mkdocs/mkdocsblog/">
       
-        <link rel="next" href="../mkdocs2/">
+      
+        <link rel="next" href="../webtalknow/">
       
       
       <link rel="icon" href="../../../img/apple-line.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>利用Mkdocs部署静态网页至GitHubpages - Mkdocs-Wcowin中文主题</title>
+        <title>为网站添加评论系统 - Mkdocs-Wcowin中文主题</title>
       
     
     
@@ -99,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#一准备工作" class="md-skip">
+        <a href="#第一步" class="md-skip">
           跳转至
         </a>
       
@@ -133,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              利用Mkdocs部署静态网页至GitHubpages
+              为网站添加评论系统
             
           </span>
         </div>
@@ -256,7 +258,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../Mkdocs/mkdocs1/" class="md-tabs__link">
           
   
     
@@ -454,8 +456,6 @@
                 
   
   
-    
-  
   
     
     
@@ -475,12 +475,14 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_1" >
         
           
           <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="">
@@ -494,7 +496,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_1">
             <span class="md-nav__icon md-icon"></span>
             MKdocs教程
@@ -505,27 +507,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    利用mkdocs部署静态网页至GitHub pages
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/mkdocs1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,45 +518,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#一准备工作" class="md-nav__link">
-    一、准备工作
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#二creating-your-site" class="md-nav__link">
-    二、Creating your site
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#三配置完善" class="md-nav__link">
-    三、配置完善
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -584,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs2/" class="md-nav__link">
+      <a href="../../Mkdocs/mkdocs2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs3/" class="md-nav__link">
+      <a href="../../Mkdocs/mkdocs3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocsblog/" class="md-nav__link">
+      <a href="../../Mkdocs/mkdocsblog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,6 +595,8 @@
                 
   
   
+    
+  
   
     
     
@@ -671,14 +618,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="">
@@ -692,7 +637,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Mkdocs美化
@@ -703,9 +648,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../websitebeauty/mkcomments/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    添加评论系统(giscus为例)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -714,6 +677,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#第一步" class="md-nav__link">
+    第一步
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第二步" class="md-nav__link">
+    第二步
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#最后" class="md-nav__link">
+    最后
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#效果" class="md-nav__link">
+    效果
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#其他评论系统" class="md-nav__link">
+    其他评论系统
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -725,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/webtalknow/" class="md-nav__link">
+      <a href="../webtalknow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -745,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/mkdocsfont/" class="md-nav__link">
+      <a href="../mkdocsfont/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -765,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/shubiao/" class="md-nav__link">
+      <a href="../shubiao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websitebeauty/backgroud/" class="md-nav__link">
+      <a href="../backgroud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1476,22 +1492,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#一准备工作" class="md-nav__link">
-    一、准备工作
+  <a href="#第一步" class="md-nav__link">
+    第一步
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#二creating-your-site" class="md-nav__link">
-    二、Creating your site
+  <a href="#第二步" class="md-nav__link">
+    第二步
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#三配置完善" class="md-nav__link">
-    三、配置完善
+  <a href="#最后" class="md-nav__link">
+    最后
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#效果" class="md-nav__link">
+    效果
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#其他评论系统" class="md-nav__link">
+    其他评论系统
   </a>
   
 </li>
@@ -1522,7 +1552,7 @@
 
 
   
-    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/edit/main/docs/blog/Mkdocs/mkdocs1.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/edit/main/docs/blog/websitebeauty/mkcomments.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1531,55 +1561,153 @@
     
       
     
-    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/raw/main/docs/blog/Mkdocs/mkdocs1.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/raw/main/docs/blog/websitebeauty/mkcomments.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>利用mkdocs部署静态网页至GitHub pages</h1>
+  <h1>添加评论系统(giscus为例)</h1>
 
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>官方网站：<a href="https://www.mkdocs.org/" target="“_blank”">MkDocs</a></p>
-<p>我的个人网站成果：<a href="http://wcowin.work/" target="“_blank”">http://wcowin.work/</a></p>
-</div>
-<h2 id="一准备工作">一、准备工作<a class="headerlink" href="#一准备工作" title="Permanent link"></a></h2>
-<p>1.下载<a href="https://github.com/desktop/desktop" target="“_blank”">Github Desktop</a></p>
-<p>2.有一个GitHub账号​​​​​​​</p>
-<hr />
-<h2 id="二creating-your-site">二、Creating your site<a class="headerlink" href="#二creating-your-site" title="Permanent link"></a></h2>
-<p>参考教程： </p>
-<p><a href="https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501" target="“_blank”">利用mkdocs部署静态网页至GitHubpages（更新版）</a></p>
-<p>与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
-<img alt="img" src="https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/7f19bb393e39fb9add953ee19f9e2d91.png" />  </p>
-<p>然后打开github Desktop 克隆到本地
-<img alt="img" src="https://cn.mcecy.com/image/20230324/ff3682428cc987cad79625951ef6d7bc.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/e896de95bd6fa737e7c6c3fa21c079fb.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/791834a5ac01c95ef174ab77d47c0f3a.png" /> 
-<img alt="img" src="https://cn.mcecy.com/image/20230324/80430d0f8be7ea09368c3e63fe5a91ff.png" />
-打开Wcowin.github.io目录进入终端运行:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>mkdocs new mkdocs-site
+<p>官方文档：<a href="https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/">Adding a comment system</a>  </p>
+<p>这里我同样推荐<a href="https://giscus.app/zh-CN">giscus</a></p>
+<p>利用 GitHub Discussions 实现的评论系统，让访客借助 GitHub 在你的网站上留下评论和反应吧！本项目深受 utterances 的启发。</p>
+<ul>
+<li>开源。🌏</li>
+<li>无跟踪，无广告，永久免费。📡 🚫</li>
+<li>无需数据库。所有数据均储存在 GitHub Discussions 中。:octocat:</li>
+<li>支持自定义主题！🌗</li>
+<li>支持多种语言。🌐</li>
+<li>高可配置性。🔧</li>
+<li>自动从 GitHub 拉取新评论与编辑。🔃</li>
+<li>可自建服务！🤳</li>
+</ul>
+<p>言归正传</p>
+<h2 id="第一步">第一步<a class="headerlink" href="#第一步" title="Permanent link"></a></h2>
+<p>mkdocs.yml中添加
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>theme:
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>  name: material
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>  custom_dir: overrides  #主要是这一行
 </code></pre></div></td></tr></table></div>
-出现下图的几个文件 
-<img alt="img" src="https://cn.mcecy.com/image/20230324/2f3f28cb5ee726ac154102de2ffb43da.png" /></p>
-<p>docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题，目录，插件等）</p>
-<p>你在这个目录下写的任何东西都可以通过github Desktop 上传到github上</p>
-<p>以VScode为例我们打开具体看看里面的东西</p>
-<p>(建议先执行下面的代码添加一个GitHub Workflow)</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>mkdir .github
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>cd .github
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>mkdir workflows
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>cd workflows
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>vim PublishMySite.yml
+参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件
+树状结构如下
+<img alt="" src="https://cn.mcecy.com/image/20231013/c9e5930308a1e0369c43499cf8f73e27.png" /></p>
+<p>我们评论只针对comments.html</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span>
+<span class="normal"><a href="#__codelineno-1-29">29</a></span>
+<span class="normal"><a href="#__codelineno-1-30">30</a></span>
+<span class="normal"><a href="#__codelineno-1-31">31</a></span>
+<span class="normal"><a href="#__codelineno-1-32">32</a></span>
+<span class="normal"><a href="#__codelineno-1-33">33</a></span>
+<span class="normal"><a href="#__codelineno-1-34">34</a></span>
+<span class="normal"><a href="#__codelineno-1-35">35</a></span>
+<span class="normal"><a href="#__codelineno-1-36">36</a></span>
+<span class="normal"><a href="#__codelineno-1-37">37</a></span>
+<span class="normal"><a href="#__codelineno-1-38">38</a></span>
+<span class="normal"><a href="#__codelineno-1-39">39</a></span>
+<span class="normal"><a href="#__codelineno-1-40">40</a></span>
+<span class="normal"><a href="#__codelineno-1-41">41</a></span>
+<span class="normal"><a href="#__codelineno-1-42">42</a></span>
+<span class="normal"><a href="#__codelineno-1-43">43</a></span>
+<span class="normal"><a href="#__codelineno-1-44">44</a></span>
+<span class="normal"><a href="#__codelineno-1-45">45</a></span>
+<span class="normal"><a href="#__codelineno-1-46">46</a></span>
+<span class="normal"><a href="#__codelineno-1-47">47</a></span>
+<span class="normal"><a href="#__codelineno-1-48">48</a></span>
+<span class="normal"><a href="#__codelineno-1-49">49</a></span>
+<span class="normal"><a href="#__codelineno-1-50">50</a></span>
+<span class="normal"><a href="#__codelineno-1-51">51</a></span>
+<span class="normal"><a href="#__codelineno-1-52">52</a></span>
+<span class="normal"><a href="#__codelineno-1-53">53</a></span>
+<span class="normal"><a href="#__codelineno-1-54">54</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>{% if page.meta.comments %}
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>  <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;__comments&quot;</span><span class="p">&gt;</span>{{ lang.t(&quot;meta.comments&quot;) }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>  <span class="cm">&lt;!-- Insert generated snippet here --&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://giscus.app/client.js&quot;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>  <span class="na">data-repo</span><span class="o">=</span><span class="s">&quot;你的仓库名称（如Wcowin/hexo-site-comments）&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>  <span class="na">data-repo-id</span><span class="o">=</span><span class="s">&quot; &quot;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>  <span class="na">data-category</span><span class="o">=</span><span class="s">&quot; &quot;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>  <span class="na">data-category-id</span><span class="o">=</span><span class="s">&quot; &quot;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>  <span class="na">data-mapping</span><span class="o">=</span><span class="s">&quot;pathname&quot;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>  <span class="na">data-strict</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>  <span class="na">data-reactions-enabled</span><span class="o">=</span><span class="s">&quot;1&quot;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a>  <span class="na">data-emit-metadata</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>  <span class="na">data-input-position</span><span class="o">=</span><span class="s">&quot;bottom&quot;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a>  <span class="na">data-theme</span><span class="o">=</span><span class="s">&quot;preferred_color_scheme&quot;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a>  <span class="na">data-lang</span><span class="o">=</span><span class="s">&quot;zh-CN&quot;</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a>  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a>  <span class="na">async</span><span class="p">&gt;</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a>  <span class="cm">&lt;!-- Synchronize Giscus theme with palette --&gt;</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">giscus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;script[src*=giscus]&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="c1">// Set palette on initial load</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">__md_get</span><span class="p">(</span><span class="s2">&quot;__palette&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">palette</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="p">.</span><span class="nx">scheme</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;slate&quot;</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">        </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;transparent_dark&quot;</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;light&quot;</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29"></a>
+<a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">      </span><span class="c1">// Instruct Giscus to set theme</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">      </span><span class="nx">giscus</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;data-theme&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">theme</span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33"></a>
+<a id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="w">    </span><span class="c1">// Register event handlers after documented loaded</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">ref</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;[data-md-component=palette]&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">      </span><span class="nx">ref</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;change&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">__md_get</span><span class="p">(</span><span class="s2">&quot;__palette&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">palette</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40"></a><span class="w">          </span><span class="kd">var</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">palette</span><span class="p">.</span><span class="nx">color</span><span class="p">.</span><span class="nx">scheme</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;slate&quot;</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="w">            </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;transparent_dark&quot;</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;light&quot;</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43"></a>
+<a id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="w">          </span><span class="c1">// Instruct Giscus to change theme</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="w">          </span><span class="kd">var</span><span class="w"> </span><span class="nx">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;.giscus-frame&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-46" name="__codelineno-1-46"></a><span class="w">          </span><span class="nx">frame</span><span class="p">.</span><span class="nx">contentWindow</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47"></a><span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">giscus</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">setConfig</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="w">            </span><span class="s2">&quot;https://giscus.app&quot;</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="w">          </span><span class="p">)</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51"></a><span class="w">      </span><span class="p">})</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="w">    </span><span class="p">})</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54"></a>{% endif %}
 </code></pre></div></td></tr></table></div>
-<p>在PublishMySite.yml里面输入以下内容</p>
+<h2 id="第二步">第二步<a class="headerlink" href="#第二步" title="Permanent link"></a></h2>
+<p>打开<a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a>  走完这个页面的流程就会得到(这会在你的Github创建新的仓库，建议自己先去新建个 Discussions)
+<img alt="" src="https://cn.mcecy.com/image/20231013/b63f252c79d15a4047baad2ec5d6af46.png" />  </p>
+<p><img alt="" src="https://cn.mcecy.com/image/20231013/25051f8530af2da792e3d32b802a9014.png" />  </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -1594,29 +1722,26 @@
 <span class="normal"><a href="#__codelineno-2-12">12</a></span>
 <span class="normal"><a href="#__codelineno-2-13">13</a></span>
 <span class="normal"><a href="#__codelineno-2-14">14</a></span>
-<span class="normal"><a href="#__codelineno-2-15">15</a></span>
-<span class="normal"><a href="#__codelineno-2-16">16</a></span>
-<span class="normal"><a href="#__codelineno-2-17">17</a></span>
-<span class="normal"><a href="#__codelineno-2-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>name: publish site
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>on: # 在什么时候触发工作流
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>  push: # 在从本地main分支被push到GitHub仓库时
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    branches:
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>      - main
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a>  pull_request: # 在main分支合并别人提的pr时
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    branches:
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a>      - main
-<a id="__codelineno-2-9" name="__codelineno-2-9"></a>jobs: # 工作流的具体内容
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a>  deploy:
-<a id="__codelineno-2-11" name="__codelineno-2-11"></a>    runs-on: ubuntu-latest # 创建一个新的云端虚拟机 使用最新Ubuntu系统
-<a id="__codelineno-2-12" name="__codelineno-2-12"></a>    steps:
-<a id="__codelineno-2-13" name="__codelineno-2-13"></a>      - uses: actions/checkout@v2 # 先checkout到main分支
-<a id="__codelineno-2-14" name="__codelineno-2-14"></a>      - uses: actions/setup-python@v2 # 再安装Python3和相关环境
-<a id="__codelineno-2-15" name="__codelineno-2-15"></a>        with:
-<a id="__codelineno-2-16" name="__codelineno-2-16"></a>          python-version: 3.x
-<a id="__codelineno-2-17" name="__codelineno-2-17"></a>      - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
-<a id="__codelineno-2-18" name="__codelineno-2-18"></a>      - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+<span class="normal"><a href="#__codelineno-2-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://giscus.app/client.js&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>        <span class="na">data-repo</span><span class="o">=</span><span class="s">&quot;[在此输入仓库]&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>        <span class="na">data-repo-id</span><span class="o">=</span><span class="s">&quot;[在此输入仓库 ID]&quot;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>        <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;[在此输入分类名]&quot;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>        <span class="na">data-category-id</span><span class="o">=</span><span class="s">&quot;[在此输入分类 ID]&quot;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>        <span class="na">data-mapping</span><span class="o">=</span><span class="s">&quot;pathname&quot;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>        <span class="na">data-strict</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>        <span class="na">data-reactions-enabled</span><span class="o">=</span><span class="s">&quot;1&quot;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>        <span class="na">data-emit-metadata</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>        <span class="na">data-input-position</span><span class="o">=</span><span class="s">&quot;bottom&quot;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>        <span class="na">data-theme</span><span class="o">=</span><span class="s">&quot;preferred_color_scheme&quot;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>        <span class="na">data-lang</span><span class="o">=</span><span class="s">&quot;zh-CN&quot;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>        <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>        <span class="na">async</span><span class="p">&gt;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>目录树状图:
+<p>复制将此代码，替换comments.html中41~55的代码</p>
+<p><code>mkdocs server</code>一下</p>
+<h2 id="最后">最后<a class="headerlink" href="#最后" title="Permanent link"></a></h2>
+<p>在你想插入评论的地方的元数据：<code>comments: true</code></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
@@ -1625,55 +1750,89 @@
 <span class="normal"><a href="#__codelineno-3-6">6</a></span>
 <span class="normal"><a href="#__codelineno-3-7">7</a></span>
 <span class="normal"><a href="#__codelineno-3-8">8</a></span>
-<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>$ tree -a
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>.
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>├── .github
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>│   ├── .DS_Store
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>│   └── workflows
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>│       └── PublishMySite.yml
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a>├── docs
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a>│   └── index.md
-<a id="__codelineno-3-9" name="__codelineno-3-9"></a>└── mkdocs.yml
-</code></pre></div></td></tr></table></div></p>
-<h2 id="三配置完善">三、配置完善<a class="headerlink" href="#三配置完善" title="Permanent link"></a></h2>
-<p>打开终端运行  </p>
-<p><code>pip install mkdocs-material</code></p>
-<p>打开<strong>mkdocs.yml</strong> </p>
-<p>把以下的内容输入进去（最简单配置）  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>site_name: 网站名字
+<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>---
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>title: 留言板
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>hide:
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>  #  - navigation # 显示右
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  #  - toc #显示左
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>  #  - footer
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>  #  - feedback  
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>comments: true  #默认不开启评论
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>---
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>site_url: 网站链接
+<h2 id="效果">效果<a class="headerlink" href="#效果" title="Permanent link"></a></h2>
+<p>完美!快速相应
+<img alt="" src="https://cn.mcecy.com/image/20231013/87a3050ece2cbb4bd275c4698118471f.png" /></p>
+<h2 id="其他评论系统">其他评论系统<a class="headerlink" href="#其他评论系统" title="Permanent link"></a></h2>
+<p>把想要内嵌的评论代码放在相应页面即可
+比如<a href="https://twikoo.js.org/">twikoo</a>
+去看它的官方配置文档很简单就配置好了</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span> 
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span> <span class="p">/&gt;</span> 
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a> <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;tcomment&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="nx">twikoo</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">  </span><span class="nx">envId</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">  </span><span class="nx">el</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#tcomment&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 容器元素</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">   </span><span class="c1">//region: &#39;ap-guangzhou&#39;, // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">  </span><span class="c1">// path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">   </span><span class="c1">//lang: &#39;zh-CN&#39;, // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">   </span><span class="nx">onCommentLoaded</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;评论加载完成&#39;</span><span class="p">);</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="p">})</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>site_author: 你的名字
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>theme:
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>  name: material #主题
-</code></pre></div></td></tr></table></div>
-<p>详细mkdocs.yml配置见<a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/">Changing the colors - Material for MkDocs</a></p>
-<p><a href="https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5502">下次</a>我会具体谈谈这个问题</p>
-<hr />
-<p>在下方终端运行可以在浏览器看到实时网站
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>mkdocs serve
-</code></pre></div></td></tr></table></div>
-<img alt="img" src="https://cn.mcecy.com/image/20230324/f11af9fb64a8418181bc3655a88d8635.png" />
-<img alt="img" src="https://cn.mcecy.com/image/20230324/c745b71840c17d639e1ea144bc8c5732.png" /></p>
-<p>这个网站就算是初步建好了</p>
-<p>最后去github Desktop上传到github
-<img alt="img" src="https://cn.mcecy.com/image/20230324/53ad3fdbe7d05668b99a46780930845a.png" /></p>
-<p>你的网站网址就是：​</p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>https://你github的名字.github.io/
-</code></pre></div></td></tr></table></div>
-<img alt="img" src="https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png" /></p>
-<p>下次谈谈网站的<a href="../mkdocs2/">mkdocs.yml具体配置</a></p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:注">
-<p>于2023.3.24重写此文&#160;<a class="footnote-backref" href="#fnref:注" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<p><head> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" /> 
+<br />
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script></p>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+
+<p></head></p>
+<body>
+  <div id="tcomment"></div> 
+  <script src="https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js"></script> 
+  <script>
+twikoo.init({
+  envId: 'https://superb-salamander-e730b6.netlify.app/.netlify/functions/twikoo', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+   //region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+   //lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+   onCommentLoaded: function () {
+    console.log('评论加载完成');
+  }
+})
+</script> 
+
+我屮艸芔茻，感觉twikoo也好看也好用啊！
 
 
   
@@ -1744,15 +1903,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
+          
+          <a href="../../Mkdocs/mkdocsblog/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 网站添加Mkdocs博客">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                网站添加Mkdocs博客
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="../mkdocs2/" class="md-footer__link md-footer__link--next" aria-label="下一页: Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)">
+          <a href="../webtalknow/" class="md-footer__link md-footer__link--next" aria-label="下一页: 添加在线聊天">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)
+                添加在线聊天
               </div>
             </div>
             <div class="md-footer__button md-icon">
