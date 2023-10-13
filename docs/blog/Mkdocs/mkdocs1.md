@@ -9,11 +9,14 @@ tags:
 
     我的个人网站成果：<http://wcowin.work/>{target=“_blank”}
 
-## 一、准备工作
+## 一、准备工作(重要)
 
-1.下载[Github Desktop](https://github.com/desktop/desktop){target=“_blank”}
+1.下载[Github Desktop](https://github.com/desktop/desktop){target=“_blank”}  
 
- 2.有一个GitHub账号​​​​​​​
+2.有一个GitHub账号​​​​​​​  
+
+3.打开电脑终端安装mkdocs:  `pip install mkdocs-material`
+
 ***
 ## 二、Creating your site
 
@@ -21,7 +24,7 @@ tags:
 
 [利用mkdocs部署静态网页至GitHubpages（更新版）](https://blog.csdn.net/m0_63203517/article/details/129755527?spm=1001.2014.3001.5501){target=“_blank”}
 
-与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库
+与其他教程不同，我首先建议先在Github创建一个名为你的名字+github.io的仓库(不是这个名字的仓库也可以，你需要类比一下)
 ![img](https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png)
 ![img](https://cn.mcecy.com/image/20230324/7f19bb393e39fb9add953ee19f9e2d91.png)  
 
@@ -43,7 +46,7 @@ docs文件下是以后网站的内容，mkdocs.yml是配置文件（配置主题
 
 以VScode为例我们打开具体看看里面的东西
 
-(建议先执行下面的代码添加一个GitHub Workflow)
+(必须先执行下面的代码添加一个GitHub Workflow)
 
 ``` 
 mkdir .github
@@ -77,6 +80,9 @@ jobs: # 工作流的具体内容
 
 ```
 
+!!!重点来了
+仓库setings/Actions/General  勾选这两项
+![](https://cn.mcecy.com/image/20231014/60f48ab66eea11b52f572b8fd489ea92.png)
 
 目录树状图:
 ```
@@ -133,12 +139,28 @@ mkdocs serve
 最后去github Desktop上传到github
 ![img](https://cn.mcecy.com/image/20230324/53ad3fdbe7d05668b99a46780930845a.png)
 
+!!!重点来了
+去setings/pages  选择下图示意的路径
+![](https://cn.mcecy.com/image/20231014/ac6d1bc1a236737a18d9dd6bd2bd97dc.png)
+
 你的网站网址就是：​
 
 ```
-https://你github的名字.github.io/
+https://你github的名字.github.io/  （根据仓库名改变）
 ```
 ![img](https://cn.mcecy.com/image/20230324/51a12510e3b332b6ceea6827f40c1f2f.png)
+
+## 快速开始
+打开终端安装mkdocs: `pip install mkdocs-material`，在你第二步克隆到本地的文件夹下(比如我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版,把Mkdocs-Wcowin文件里的文件复制出来到Wcowin.github.io文件里，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
+
+为了测试随手建的名为1的文件夹
+![](https://cn.mcecy.com/image/20231014/f94d765bd86d56d35f7d558270d21bd5.png)  
+
+完美运行！  
+
+![](https://cn.mcecy.com/image/20231014/af910d370c91e06b8a6fc2e11ae3c6c9.png) 
+
+**浏览器进入<http://127.0.0.1:8000/>{target=“_blank”}即可看到端口网页效果**
 
 下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
 

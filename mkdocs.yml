@@ -5,7 +5,7 @@ site_author: Wcowin # your name
 #[UI]
 theme:
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides  #覆写路径
   # font: #谷歌字体，自行搜索
   #   text: Bitter  #文本字体
   #   code: Roboto Mono  #代码字体
@@ -74,6 +74,8 @@ nav:
     - Mkdocs美化:
         - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
         - 添加在线聊天: blog/websitebeauty/webtalknow.md
+        - 添加友链: blog/websitebeauty/linktech.md
+        - 添加顶部公告栏: blog/websitebeauty/header.md
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
         - 背景特效: blog/websitebeauty/backgroud.md      
@@ -89,11 +91,14 @@ nav:
         - 我对设计的一些观点: develop/designbeauty/my-to-desihn.md        
 
   - 标签: tag.md
+  - 留言板: liuyanban.md
   - Blogger:
     - index: blog/index.md
-
+  - 友链: 
+    - 友链: about/link.md
   - 关于:
     - 作者个人简介: about/geren.md
+    - 功能测试: about/test.md
 
   
   
@@ -206,7 +211,7 @@ extra_javascript:
   - javascripts/mathjax.js  #Latex支持
   - https://polyfill.io/v3/polyfill.min.js?features=es6   #Latex支持
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js   #Latex支持
-
+  - ckplayer/js/ckplayer.js #播放器配置
   - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
 

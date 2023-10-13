@@ -6,7 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://wcowin.work/Mkdocs-Wcowin/messageboard/</loc>
+         <loc>http://wcowin.work/Mkdocs-Wcowin/liuyanban/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -16,12 +16,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://wcowin.work/Mkdocs-Wcowin/waline/</loc>
+         <loc>http://wcowin.work/Mkdocs-Wcowin/about/geren/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://wcowin.work/Mkdocs-Wcowin/about/geren/</loc>
+         <loc>http://wcowin.work/Mkdocs-Wcowin/about/link/</loc>
+         <lastmod>2023-10-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/Mkdocs-Wcowin/about/test/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -67,6 +72,11 @@
     </url>
     <url>
          <loc>http://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/backgroud/</loc>
+         <lastmod>2023-10-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/linktech/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>

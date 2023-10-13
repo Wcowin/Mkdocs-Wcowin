@@ -4,7 +4,7 @@ tags:
   - Mkdocs
 ---
 
-
+不建议更改，因为默认就是最简洁
 
 <head>
 <link rel="stylesheet" type="text/css" href="/stylesheets/shubiao.css">
