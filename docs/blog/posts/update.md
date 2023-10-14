@@ -7,7 +7,7 @@ categories:
 ---
 ## </p><h1 id="01" name="01"><strong>2023-10-14</strong></h1><p>
 
-* 建立Mkdocs-Wcowin主题
+* 正式建立[Mkdocs-Wcowin主题](https://github.com/Wcowin/Mkdocs-Wcowin)
 
 ## </p><h1 id="01" name="01"><strong>2023-10-12</strong></h1><p>
 
