@@ -29,8 +29,9 @@ theme:
   name: material
   custom_dir: overrides  #主要是这一行
 ```
-参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件
-树状结构如下
+参考下图新建overrides文件，在此文件下参考下图新建覆盖html文件  
+
+树状结构如下  
 ![](https://cn.mcecy.com/image/20231013/c9e5930308a1e0369c43499cf8f73e27.png)
 
 我们评论只针对comments.html

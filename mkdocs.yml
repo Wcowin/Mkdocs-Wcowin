@@ -9,7 +9,7 @@ theme:
   # font: #谷歌字体，自行搜索
   #   text: Bitter  #文本字体
   #   code: Roboto Mono  #代码字体
-  logo:  #左上角logo，可插入图片链接
+  logo: assets/favicon.png #左上角logo，可插入图片链接
 
   favicon: img/apple-line.png   # 网页icon
 
@@ -70,7 +70,7 @@ nav:
         - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
         - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
         - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
-        - 网站添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
+        - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
     - Mkdocs美化:
         - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
         - 添加在线聊天: blog/websitebeauty/webtalknow.md
@@ -164,7 +164,7 @@ plugins:
 
   
 
-markdown_extensions:
+markdown_extensions:   #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
   - attr_list
   - admonition

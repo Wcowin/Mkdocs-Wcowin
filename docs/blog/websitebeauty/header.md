@@ -7,12 +7,13 @@ hide:
   #  - footer #隐藏翻页
   #  - feedback  #隐藏反馈
 tags:
-  - MKdocs
+  - Mkdocs
 comments: false  #评论，默认不开启
 ---
 ![](https://cn.mcecy.com/image/20231014/28f7a934aed2790c02785638c06580c8.png)
 
-overrides下新建main.html ，针对main.html文件
+overrides下新建main.html ，针对main.html文件  
+
 树状结构如下
 ![](https://cn.mcecy.com/image/20231013/c9e5930308a1e0369c43499cf8f73e27.png)
 

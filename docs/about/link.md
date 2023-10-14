@@ -74,7 +74,7 @@ hide:
      <img class="ava" src="https://gravatar.cdn.iszy.xyz/avatar/5012e410377c7a93d14f7bf31aeeb7fd?d=mm" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>随遇而安</a> 
+       <a href="https://www.iszy.cc/" target=“_blank”>随遇而安</a> 
       </div> 
       <div class="info">
        生活吐槽＆学习记录
@@ -84,27 +84,6 @@ hide:
 
    </div> 
   </div>
-
-
-
-
-   <!-- <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
-      </div> 
-      <div class="info">
-       专注于分享Mac资源的频道
-      </div> 
-     </div> 
-    </div> -->
-
-
-<!-- <div class="markdown-content">
-    <h2>欢迎加入友链</h2>
-</div>
-详见：[如何给MKdocs添加友链](../blog/Mkdocs/linktech.md) -->
 
 <!-- <div class="card">
    <img class="ava" src="{avatarurl}" />
