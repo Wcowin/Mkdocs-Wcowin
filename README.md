@@ -37,6 +37,9 @@
 ## Connect with me
 
 <center>
+
+**MuseLink**
+
 <p>
   
   <a href="https://muselink.cc/Wcowin" target="_blank">
@@ -44,7 +47,7 @@
   </a>
 </p>  
 
-**MuseLink**
+
 </center>
 
 
@@ -57,3 +60,4 @@
 
 ## 感谢各位朋友
 
+![](https://cn.mcecy.com/image/20231014/e07e117eece8d2afbda2702a27166e26.png)
