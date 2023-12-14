@@ -78,7 +78,8 @@ nav:
         - 添加顶部公告栏: blog/websitebeauty/header.md
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
-        - 背景特效: blog/websitebeauty/backgroud.md      
+        - 背景特效: blog/websitebeauty/backgroud.md 
+        - 添加404页面: blog/websitebeauty/404.md     
   - 建设MKdocs技能指北: 
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
@@ -196,8 +197,8 @@ markdown_extensions:   #详见https://squidfunk.github.io/mkdocs-material/setup/
       linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
