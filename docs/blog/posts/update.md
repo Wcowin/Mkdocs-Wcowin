@@ -4,7 +4,31 @@ authors: [Wcowin]
 date: 2023-10-05
 categories:
   - 网站更新记录
----
+---  
+
+## </p><h1 id="01" name="01"><strong>2024-01-05</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 引入[git-revision-date-localized-plugin](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)插件，以便记录文档创建和最后一次修改时间
+* 看了更多的猫咪  
+
+## </p><h1 id="01" name="01"><strong>2023-12-14</strong></h1><p>
+* 优化个别网页标签的显示问题
+* 优化网站图片加载流畅度（玄学）
+* 看了更多的猫咪 
+
+## </p><h1 id="01" name="01"><strong>2023-12-09</strong></h1><p>
+* 首次引入人工智能问答机器人,地址:<https://wcowin.work/about/geren/>，缺点是每月25条消息限制，优点是可以智能回复本站所有信息，包括但不限于：个人信息，技术分享，博客，留言板，友链等等
+* 优化网站流畅度
+* 撸了更多的猫咪
+
+## </p><h1 id="01" name="01"><strong>2023-11-22</strong></h1><p>
+* 修复翻译问题
+* 优化移动端效果
+* 提升网站流畅度（玄学）
+
+## </p><h1 id="01" name="01"><strong>2023-11-11</strong></h1><p>
+* 新增多语言支持，特别新增中国台湾语言支持
+
 ## </p><h1 id="01" name="01"><strong>2023-10-14</strong></h1><p>
 
 * 正式建立[Mkdocs-Wcowin主题](https://github.com/Wcowin/Mkdocs-Wcowin)

@@ -5,7 +5,7 @@ site_author: Wcowin # your name
 #[UI]
 theme:
   name: material
-  custom_dir: overrides  #覆写路径
+  custom_dir: docs/overrides  #覆写路径
   # font: #谷歌字体，自行搜索
   #   text: Bitter  #文本字体
   #   code: Roboto Mono  #代码字体
@@ -79,7 +79,8 @@ nav:
         - 修改网站字体: blog/websitebeauty/mkdocsfont.md
         - JS实现鼠标样式: blog/websitebeauty/shubiao.md
         - 背景特效: blog/websitebeauty/backgroud.md 
-        - 添加404页面: blog/websitebeauty/404.md     
+        - 添加404页面: blog/websitebeauty/404.md
+        - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md    
   - 建设MKdocs技能指北: 
     - Markdown: 
         - Markdown指南: develop/Markdown/markdown.md
@@ -148,6 +149,11 @@ extra:
 
 plugins:
   - search   #搜索配置
+  - git-revision-date-localized:
+      type: iso_date
+      enable_creation_date: false
+      exclude:
+        - index.md   
   - blog:   #博客配置
       post_date_format: full #时间
       draft: true

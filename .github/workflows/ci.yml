@@ -17,9 +17,13 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
-          key: mkdocs-material-${{ env.cache_id }}
+          key: mkdocs-material-${ env.cache_id }
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-git-authors-plugin
+      # - run: pip install mkdocs-rss-plugin           
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
+
