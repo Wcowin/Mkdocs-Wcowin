@@ -11,22 +11,22 @@
 <center>
 
 **主页**
-![](https://cn.mcecy.com/image/20231014/cda59880832afc0431a15b5c1ccc2203.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/357ba91e8e68c554ce015fd0c95a08d8.png)   
 
 **文章页**
-![](https://cn.mcecy.com/image/20231014/589c5daf1c07116225ea93131b7a1a36.png)    
+![](https://s1.imagehub.cc/images/2024/02/02/c15305494c69f311a721c0878b648b22.png)  
 
 **博客页**
-![](https://cn.mcecy.com/image/20231014/404bafe5eb3d7259638e442b2c31729b.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/cee8d935a920668b738593850c7eb7f8.png)   
 
 **标签页**
-![](https://cn.mcecy.com/image/20231014/425bf7fef96dd23e80b0c32da0819c5e.png)  
+![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)  
 
 **简洁的友链页面**
-![](https://cn.mcecy.com/image/20231014/a6272231f79b3ebd1c91add55be5ec5e.png)  
+![](https://s1.imagehub.cc/images/2024/02/02/068cf12de3d9c44dbbd00f4f121e908e.png)
 
 **页面底部**
-![](https://cn.mcecy.com/image/20231014/4631396ede3295cdba9176fbb6b9e02c.png)
+![](https://s1.imagehub.cc/images/2024/02/02/f1ad87eba264c26344b24dc48336b538.png)
 </center>
 
 ## 如何快速使用
@@ -42,12 +42,10 @@
 **MuseLink**
 
 <p>
-  
   <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20230822/24afe45d85f111894db6db75d74d1f1d.png" alt="个人名片">
+    <img src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg" alt="个人名片">
   </a>
-</p>  
-
+</p>
 
 </center>
 

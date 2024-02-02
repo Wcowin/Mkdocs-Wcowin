@@ -161,9 +161,9 @@ plugins:
       post_readtime: true
       post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
       post_url_format: "{date}/{slug}"
-      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml"  #作者信息
   - tags:
@@ -189,6 +189,7 @@ markdown_extensions:   #详见https://squidfunk.github.io/mkdocs-material/setup/
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
+  
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -209,9 +210,9 @@ markdown_extensions:   #详见https://squidfunk.github.io/mkdocs-material/setup/
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - markdown.extensions.toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      permalink: "\ue157"
+  # - markdown.extensions.toc:
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  #     permalink: "\ue157"
   
 extra_javascript:
   - javascripts/extra.js  #自定义javascript
