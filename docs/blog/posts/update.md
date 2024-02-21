@@ -1,11 +1,15 @@
 ---
-title: 网站更新记录
+title: 更新记录
 authors: [Wcowin]
 date: 2023-10-05
 categories:
   - 网站更新记录
 ---  
-
+## </p><h1 id="01" name="01"><strong>2024-02-21</strong></h1><p>
+* 修复底部导航栏的显示问题
+* 更换教程图片，配保证置方法和官网最新方法同步
+* 优化网站流畅度（玄学）
+ 
 ## </p><h1 id="01" name="01"><strong>2024-01-05</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 引入[git-revision-date-localized-plugin](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/)插件，以便记录文档创建和最后一次修改时间

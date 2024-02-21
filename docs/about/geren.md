@@ -16,16 +16,11 @@ comments: true
 </center>   
 
 
-<img class="img1" src="https://cn.mcecy.com/image/20230220/f10604560a2119667fb3aca1da299e1a.jpeg">
+<img class="img1" src="https://s2.loli.net/2024/02/01/AgiGpYk38C6ctJV.jpg">
 
-<!-- <div>
-  <img src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png" class="img1" width="170" height="200" alt="个人头像" align="left" style="margin-right: 10px;" />
-  <p style="font-size: 2.4em"><strong>Wcowin</strong></p>
-  <p style="font-size: 1.2em">Free and diffuse</p>
-  <p style="font-size: 1.2em">A college student</p>
-</div> -->
+## 关于我
 <div id="rcorners3" >
-  <img class="img1" src="https://cn.mcecy.com/image/20231115/f19515b3725bfd34bac61de44cbc794d.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
+  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg"  width="170" height="200" alt="个人头像" align="left" style="margin-right: 20px; "/>
     <!-- <img class="img1" src="https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png"  width="170" height="170" alt="个人头像" align="right"/> -->
   <div>
     <p style="font-size: 40px">Wcowin</p>
@@ -59,28 +54,21 @@ comments: true
 ## 我的名片
 
 <a href="https://muselink.cc/Wcowin" target="_blank">
-  <img src="https://pbxt.replicate.delivery/hlNUcSkvwvYyOVrVC1E4bSWtX5gLQDzd1dAehfgiRAdtzxdRA/out..jpg"  >
+  <img class="img1" src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg"  >
   <center>
     <div style="color:orange; 
     color: #999;
     padding: 2px;">我的名片</div>
   </center>  
 </a>
-<!-- <img class="img1" src="https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg"> -->
+
 
 ## Touch me
-
-<div class="image-container">
-  <a href="https://twitter.com/wcowin_" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/bf81886879255799f477a8989d314833.png" alt="Image 1" style="border-radius: 10px; width: 25%;">
-  </a>
-  <a href="https://www.instagram.com/wcowin_/" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/892950af21d09c98d403ebc378a21899.png" alt="Image 2" style="border-radius: 10px; width: 25%;">
-  </a>
-  <a href="https://github.com/wcowin" target="_blank">
-    <img src="https://cn.mcecy.com/image/20231006/6cc108417b5f9ab5ae53c2376d6036d8.png" alt="Image 3" style="border-radius: 10px; width: 25%;">
-  </a>
-</div>
+<p align="center">
+&nbsp; <a href="https://twitter.com/Wcowin_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="70" /></a>  
+&nbsp; <a href="https://www.instagram.com/wcowin_/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="70" /></a>  
+&nbsp; <a href="mailto:wangkewen821@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="70" /></a>
+</p>
 
 <figure markdown >
   ![Image title](https://cn.mcecy.com/image/20230617/4e9361ee7d2d03ecb9de8aef7531db03.jpg){.img1}

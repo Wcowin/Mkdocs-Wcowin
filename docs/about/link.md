@@ -8,7 +8,7 @@ hide:
   - feedback
 ---
 <div class="markdown-content">
-    <h2>欢迎加入友链</h2>
+    <h2>欢迎加入友链(不分先后)</h2>
 </div>
 
 
@@ -27,7 +27,7 @@ hide:
      </div> 
     </div>
    <div class="card"> 
-     <img class="ava" src="https://s2.loli.net/2024/02/01/o9YHsqfG7NjwMiT.jpg" /> 
+     <img class="ava" src="https://s2.loli.net/2024/02/07/S8GYheTZmCU96HK.png" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://wcowin.work/WH-WKW/" target="_blank">小王和王老师的小站</a> 
@@ -159,6 +159,17 @@ hide:
      </div> 
     </div>
    <div class="card"> 
+     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+      </div> 
+      <div class="info">
+       慈善义工在行动
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
      <img class="ava" src="https://www.luckyzh.cn/avatar.jpg" /> 
      <div class="card-header"> 
       <div> 
@@ -182,40 +193,99 @@ hide:
      </div> 
     </div>    
    <div class="card"> 
-     <img class="ava" src="https://www.styg.org.cn/zb_users/upload/2024/01/202401261706277157705448.png" /> 
+     <img class="ava" src="https://www.zair.top/img/logo.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://www.styg.org.cn/" target="_blank">温岭慈善义工石塘服务队</a> 
+       <a href="https://www.zair.top/" target="_blank">以太工坊</a> 
       </div> 
       <div class="info">
-       慈善义工在行动
+       分享我的学习笔记、经验与有趣的小玩意.
+      </div> 
+     </div> 
+    </div>      
+   <div class="card"> 
+     <img class="ava" src="https://ymh0000123.github.io/picture/picture/6.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://xiaofeishu-boke.netlify.app/" target="_blank">没用的小废鼠的Blog</a> 
+      </div> 
+      <div class="info">
+       做学问可不是赶潮流、没有冷门热门之说。
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="http://liis.cc/hy.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="http://liis.cc" target="_blank">郝宇博客</a> 
+      </div> 
+      <div class="info">
+       记录我的成长和青春
+      </div> 
+     </div> 
+    </div>    
+   <div class="card"> 
+     <img class="ava" src="https://ejsoon.win/wp-content/uploads/2022/08/alogobg.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://ejsoon.win" target="_blank">天蒼人頡</a> 
+      </div> 
+      <div class="info">
+       發掘好玩事物
+      </div> 
+     </div> 
+    </div>    
+   <div class="card"> 
+     <img class="ava" src="https://npm.onmicrosoft.cn/hrn-img@1.0.0/img/avatar.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://blog.lvhrn.cn" target="_blank">JayHrn</a> 
+      </div> 
+      <div class="info">
+       發掘好玩事物
       </div> 
      </div> 
     </div> 
+   <div class="card"> 
+     <img class="ava" src="https://www.langhai.net/assets/images/langhai-logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://www.langhai.net/" target="_blank">浪海导航</a> 
+      </div> 
+      <div class="info">
+       浪海导航 ~ 收录各种类型的博客
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://blog.moraxyc.com/avatar.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://moraxyc.com" target="_blank">Moraxyc’s Rhapsody</a> 
+      </div> 
+      <div class="info">
+       永远热爱！
+      </div> 
+     </div> 
+    </div> 
+   <div class="card"> 
+     <img class="ava" src="https://pic.vimin.cc/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://vimin.cc/" target="_blank">XIAOMING'S BLOG</a> 
+      </div> 
+      <div class="info">
+  记录生活点滴，谱写精彩生活！
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
 
 
-
-   <!-- <div class="card"> 
-     <img class="ava" src="https://cn.mcecy.com/image/20231012/d96b912437fb0bec0d282dfe734b1d9b.jpeg" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://macapp.org.cn/" target=“_blank”>Macapp</a> 
-      </div> 
-      <div class="info">
-       专注于分享Mac资源的频道
-      </div> 
-     </div> 
-    </div> -->
-
-
-<!-- <div class="markdown-content">
-    <h2>欢迎加入友链</h2>
-</div>
-详见：[如何给MKdocs添加友链](../blog/Mkdocs/linktech.md) -->
 
 <!-- <div class="card">
    <img class="ava" src="{avatarurl}" />
@@ -235,17 +305,18 @@ hide:
 
 
 * 独立博客(不要求独立域名)，https，访问流畅
-* 原创内容为主，原创内容10篇以上
+* 原创内容为主，原创内容3篇以上
 * 处于活跃状态，有一定的更新频率
 * 建站一个月以上
 * 未添加友链或申请未通过，评论留言会被隐藏。
+
+本站已经加入[十年之约](https://www.foreverblog.cn/)：
+<a href="https://www.foreverblog.cn/" target="_blank" > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> </a>请放心添加本站友链
 
 友链格式示例:
 
 >名称: Wcowin's Web  
 >链接: https://wcowin.work/  
->头像: 头像图片链接地址  
+>头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
 >简介: 循此苦旅，以达星辰
-
-
 
