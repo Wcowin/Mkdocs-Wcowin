@@ -138,7 +138,9 @@ comments: false
 <strong>推荐文章:material-book:</strong>
 
   - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
-  - [如何给MKdocs添加友链](blog/Mkdocs/linktech.md)
+  - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
+  - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)
+  - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
   - [Blogger](blog/index.md)
   
 

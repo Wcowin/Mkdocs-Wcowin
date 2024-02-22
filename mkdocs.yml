@@ -153,7 +153,12 @@ plugins:
       type: iso_date
       enable_creation_date: false
       exclude:
-        - index.md   
+        - index.md 
+        - tag.md
+        - liuyanban.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md 
   - blog:   #博客配置
       post_date_format: full #时间
       draft: true
