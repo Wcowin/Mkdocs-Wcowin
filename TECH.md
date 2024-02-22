@@ -191,6 +191,6 @@ https://你github的名字.github.io/
 ```
 ![img](https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png)
 
-下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
+下次谈谈网站的[mkdocs.yml具体配置](docs/blog/Mkdocs/mkdocs2.md)
 
 [^注]:于2023.3.24重写此文
