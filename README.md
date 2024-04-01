@@ -50,7 +50,9 @@
 
 </center>
 
+## 案例成果
 
+[Lenny's Web](https://lennychen.top)
 
 
 ## Star History
@@ -58,6 +60,8 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
 
-## 感谢各位朋友
+## 感谢各位朋友  
+## 贡献者
+@LennyChenLaw
 
 ![](https://cn.mcecy.com/image/20231014/e07e117eece8d2afbda2702a27166e26.png)
