@@ -149,6 +149,10 @@ extra:
 
 plugins:
   - search   #搜索配置
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: Wcowin/Mkdocs-Wcowin
+      branch: main
   - git-revision-date-localized:
       type: iso_date
       enable_creation_date: false
