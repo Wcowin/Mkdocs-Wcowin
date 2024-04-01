@@ -62,6 +62,7 @@
 
 ## 感谢各位朋友  
 ## 贡献者
-@LennyChenLaw
+
+[@LennyChenLaw](https://github.com/LennyChenLaw/LennyChenLaw.github.io)
 
 ![](https://cn.mcecy.com/image/20231014/e07e117eece8d2afbda2702a27166e26.png)
