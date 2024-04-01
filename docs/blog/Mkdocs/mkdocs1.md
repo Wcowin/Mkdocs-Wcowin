@@ -15,6 +15,7 @@ tags:
 
  2.有一个GitHub账号​​​​​​​(有手就行)
 ***
+
 ## 二、Creating your site
 
 参考教程： 
@@ -193,4 +194,4 @@ https://你github的名字.github.io/
 
 下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
 
-[^注]:于2023.3.24重写此文
+[^注]:于2024.4.2重写此文
