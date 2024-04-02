@@ -104,7 +104,7 @@ nav:
 
   
   
-copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
   
 
 extra:
@@ -153,6 +153,13 @@ plugins:
       enabled: !ENV [CI, false]
       repository: Wcowin/Mkdocs-Wcowin
       branch: main
+      exclude:
+        - index.md 
+        - tag.md
+        - waline.md
+        - blog/posts/update.md
+        - blog/posts/wkw.md
+        - about/link.md
   - git-revision-date-localized:
       type: iso_date
       enable_creation_date: false
