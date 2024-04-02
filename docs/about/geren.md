@@ -3,7 +3,6 @@ hide:
 #   - navigation
   # - toc
   - feedback
-comments: true
 ---
 # 但行好事 莫问前程
 
