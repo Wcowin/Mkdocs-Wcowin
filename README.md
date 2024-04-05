@@ -63,7 +63,8 @@
 
 ## 感谢各位朋友  
 ## 贡献者
+<a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
+</a>
 
 [@LennyChenLaw](https://github.com/LennyChenLaw/LennyChenLaw.github.io)
-
-![](https://cn.mcecy.com/image/20231014/e07e117eece8d2afbda2702a27166e26.png)
