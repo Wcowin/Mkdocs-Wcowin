@@ -332,10 +332,10 @@ hide:
        <a href="https://blog.whispery.cn/" target="_blank">Whisper</a> 
       </div> 
       <div class="info">
-      我们的忧愁将会崩解，灵魂将会穿梭如风
       </div> 
      </div> 
     </div>
+
    <div class="card"> 
      <img class="ava" src="https://note.isshikih.top/_assets/iro/IroPatch_Brown.png" /> 
      <div class="card-header"> 
@@ -347,11 +347,44 @@ hide:
       </div> 
      </div> 
     </div>
-
+   <div class="card"> 
+     <img class="ava" src="https://bu.dusays.com/2023/12/23/65867c3357bb6.jpg" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://kegongteng.cn/" target="_blank">Kegongteng</a> 
+      </div> 
+      <div class="info">
+      Blogger / Technophile / Student
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://lennychen.top/" target="_blank">Lenny's Web</a> 
+      </div> 
+      <div class="info">
+      天地不仁，以万物为刍狗
+      </div> 
+     </div> 
+    </div>
+   <div class="card"> 
+     <img class="ava" src="https://i.postimg.cc/MGCXBFxn/logo.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://tkqtang.github.io" target="_blank">tkqtang’s Web</a> 
+      </div> 
+      <div class="info">
+      所谓自由，不是随心所欲，而是自我主宰
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
   </div>
+
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
