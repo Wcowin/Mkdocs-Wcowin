@@ -4,8 +4,6 @@ tags:
   - Mkdocs
 ---
 
-> 下面全部内容把】改成}，把【改成{
-
 !!! info
     官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
 
