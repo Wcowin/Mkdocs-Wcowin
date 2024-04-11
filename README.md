@@ -61,14 +61,10 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
 
-## 感谢各位朋友  
-## 贡献者
+## 感谢贡献者
 <a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
 </a>
-
-[@LennyChenLaw](https://github.com/LennyChenLaw/LennyChenLaw.github.io)  
-
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
