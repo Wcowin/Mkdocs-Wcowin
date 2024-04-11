@@ -1,0 +1,21 @@
+# 友链列表
+friends:
+  - name: Wcowin's Web
+    link: https://wcowin.work/
+    avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png
+    description: 循此苦旅，以达星辰
+  - name: W1ndysの小屋
+    link: https://blog.w1ndys.top/
+    avatar: https://blog.w1ndys.top/img/about/avatar.png
+    description: 欲戴皇冠，必承其重
+
+# 失联列表
+gone:
+  - name: 失联的友链1
+    link: https://wcowin.com/
+    avatar: /img/wcowin.png
+    description: 失联的友链1
+  - name: 失联的友链2
+    link: https://wcowin.com/
+    avatar: /img/wcowin.png
+    description: 失联的友链2

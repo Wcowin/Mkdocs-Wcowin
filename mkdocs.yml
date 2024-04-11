@@ -186,6 +186,11 @@ plugins:
   - tags:
       tags_file: tag.md  #分类标签
 
+  # 外部引用插件，一个 MkDocs 插件，它将 mkdocs.yml 额外变量注入到 markdown 模板中
+  # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
+  - markdownextradata:
+      data: ./docs/_data/ # 额外数据文件
+
   
 
 markdown_extensions:   #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
