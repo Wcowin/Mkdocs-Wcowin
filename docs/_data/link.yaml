@@ -8,14 +8,14 @@ friends:
     link: https://blog.w1ndys.top/
     avatar: https://blog.w1ndys.top/img/about/avatar.png
     description: 欲戴皇冠，必承其重
+  - name: Lenny's Web
+    link: https://lennychen.top/
+    avatar: https://s2.loli.net/2024/03/31/Ht3QBqhgLYNAuwj.png
+    description: 天地不仁，以万物为刍狗
 
 # 失联列表
 gone:
   - name: 失联的友链1
     link: https://wcowin.com/
-    avatar: /img/wcowin.png
+    avatar: https://agentestudio.com/uploads/post/image/69/main_how_to_design_404_page.png
     description: 失联的友链1
-  - name: 失联的友链2
-    link: https://wcowin.com/
-    avatar: /img/wcowin.png
-    description: 失联的友链2
