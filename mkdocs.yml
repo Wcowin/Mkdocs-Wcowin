@@ -149,6 +149,7 @@ extra:
 
 plugins:
   - search   #搜索配置
+  - markdownextradata: {}
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Mkdocs-Wcowin
