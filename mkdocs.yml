@@ -149,7 +149,6 @@ extra:
 
 plugins:
   - search   #搜索配置
-  - markdownextradata: {}
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Mkdocs-Wcowin
@@ -261,4 +260,3 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
-
