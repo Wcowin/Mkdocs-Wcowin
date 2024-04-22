@@ -1,39 +1,68 @@
 !!!info
     测试中的小组件，可看源代码自行取用
 
+<center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-![LY1r2.png](https://i.imgs.ovh/2023/10/09/LY1r2.png)
-## Search
 
-<div class="mdx-iconsearch" data-mdx-component="iconsearch">
-  <input
-    class="md-input md-input--stretch mdx-iconsearch__input"
-    placeholder="Search the icon and emoji database"
-    data-mdx-component="iconsearch-query"
-  />
-  <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result">
-    <div class="mdx-iconsearch-result__meta"></div>
-    <ol class="mdx-iconsearch-result__list"></ol>
-  </div>
+
+
+<div class="grid" style="display: grid;grid-template-columns: 30% 69%" markdown>
+<div class="grid cards" markdown>
+
+-   :material-tooltip-edit:{ .lg .middle } __关于__
+
+    ---    
+    - [效率][Software]
+    [Software]: javascript:document.getElementById('software').scrollIntoView()
+
 </div>
-<small>
-  :octicons-light-bulb-16:
-  **Tip:** Enter some keywords to find icons and emojis and click on the
-  shortcode to copy it to your clipboard.
-</small>
 
-![截屏2022-06-24 21.22.34](https://i2.100024.xyz/2023/10/09/ncsp35.webp)
+<div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
+
+-   :material-star-shooting:{ .lg .middle } __推荐__
+
+    ---
+
+    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wcowin/Wcowin.github.io) - 技术博客
+
+<div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 
 
-<div class="spinner">
+-   :material-file-link:{ .lg .middle } __Release__
+
+    ---
+
+    更新中...
+
+    [→ 所有版本](https://github.com/Wcowin/Wcowin.github.io)
+
+
+-   :material-flag-variant-minus:{ .lg .middle } __Wcowin__
+
+    ---
+
+    更新中...
+
+    [→ 了解更多](https://github.com/Wcowin/Wcowin.github.io)
+
+</div>
+
+</div>
+
+</div>
+
+<!-- <font  color= #518FC1 size=6 class="fontalicious">“循此苦旅，以达星辰”</font> -->
+
+<!-- <div class="spinner">
   <div class="rect1"></div>
   <div class="rect2"></div>
   <div class="rect3"></div>
   <div class="rect4"></div>
   <div class="rect5"></div>
-</div>
+</div> -->
 
-![Image title](https://dummyimage.com/600x400/){ loading=lazy }
+<!-- ![Image title](https://dummyimage.com/600x400/){ loading=lazy } -->
 <figure markdown>
   ![Image title](https://dummyimage.com/600x400/){ width="300" }
   <figcaption>Image caption</figcaption>
@@ -52,6 +81,43 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 
 [![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+          />
+  </head>
+  <body>
+    <div>
+      <a
+         data-fancybox="gallery"
+         data-src="https://lipsum.app/id/2/1024x768"
+         data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+         >
+        <img src="https://lipsum.app/id/2/200x150" />
+      </a>
+      <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1024x768">
+        <img src="https://lipsum.app/id/3/200x150" />
+      </a>
+      <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1024x768">
+        <img src="https://lipsum.app/id/4/200x150" />
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script>
+  </body>
+</html>
+
 <!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Wcowin)](https://github.com/anuraghazra/github-readme-stats) -->
 
 </p><h1 id="01" name="01"><strong>01</strong></h1><p>
@@ -65,9 +131,6 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
 
 </div>
 
-<div id="ww_a25897805c222" v='1.3' loc='auto' a='{"t":"responsive","lang":"zh","sl_lpl":1,"ids":[],"font":"Times","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"5"}'><a href="https://weatherwidget.org/zh/" id="ww_a25897805c222_u" target="_blank">天气插件</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_a25897805c222"></script>
-
-***
 <div class="grid cards" markdown>
 
 -   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
@@ -104,6 +167,10 @@ $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
     [:octicons-arrow-right-24: License](#)
 
 </div>
+
+<p>这是测试<span class="mask">并且被掩盖的</span>文字！</p>
+
+<div id="ww_a25897805c222" v='1.3' loc='auto' a='{"t":"responsive","lang":"zh","sl_lpl":1,"ids":[],"font":"Times","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"5"}'><a href="https://weatherwidget.org/zh/" id="ww_a25897805c222_u" target="_blank">天气插件</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_a25897805c222"></script>
 
 ***
 
@@ -194,17 +261,21 @@ $$
 
 <!-- ![Madeira, Portugal](media/binggo.jpg){ data-title="Madeira, Portugal." data-description="Madeira, an autonomous region of Portugal, is an archipelago comprising 4 islands off the northwest coast of Africa. - Google" } -->
 
+左对齐，右对齐  
+![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ align=left }
+
+
 
 <figure markdown>
-  ![Image title](https://cn.mcecy.com/image/20231013/79fcedff6e2bcb3e948e274a80e6dd8b.png){ width="300" }
+  ![img](https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png){ width="300" }
   <figcaption>图片说明</figcaption>
 </figure>
 
 **明暗**
 
-![](https://user-assets.sxlcdn.com/images/951476/Ftmzj__CFg8LDIkzyQsF3OLKWeRX.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png#only-light)
+![](https://s2.loli.net/2024/02/01/ps8UM6xu2OL3Dyr.jpg#only-light)
 
-![](https://user-assets.sxlcdn.com/images/951476/FsX9lVAmvPiFVnoBgz7l6AQq5i10.png?imageMogr2/strip/auto-orient/thumbnail/1920x9000%3E/quality/90!/format/png#only-dark)
+![](https://s2.loli.net/2024/02/01/cxrEKTLp5CiQeBw.jpg#only-dark)
 
 ``` mermaid
 graph LR
@@ -236,12 +307,6 @@ sequenceDiagram
 
 ++ctrl+alt+del++  
 
-
-<div class="progress progress-60plus">
-    <div class="progress-bar" style="width:50.00%">
-        <p class="progress-label">50%</p>
-    </div>
-</div>
 
 :octicons-arrow-right-24: [点我回到顶部](#) 
 
@@ -320,11 +385,6 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
 
 ***  
 
-
-![img](https://cn.mcecy.com/image/20230615/749725b48e5972165d0bce10b364695e.png)
-
-
-
 <div id="grad1"></div>
 
 <button class="buttoncss">按钮</button>
@@ -361,11 +421,6 @@ $$\displaystyle\lim_{x \rightarrow + \infty}(1 + \frac{1}{x})^x = e$$
   <td>600</td>
 </tr>
 </table>
-  
-<ol>
-<li>Coffee</li>
-<li>Milk</li>
-</ol>
 
 <table border="1" width="100%">
     <tbody><tr>

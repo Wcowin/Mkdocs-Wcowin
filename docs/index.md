@@ -6,13 +6,44 @@ hide:
   - feedback
 comments: false
 ---
+<!--
+██╗    ██╗ ██████╗ ██████╗ ██╗    ██╗██╗███╗   ██╗
+██║    ██║██╔════╝██╔═══██╗██║    ██║██║████╗  ██║
+██║ █╗ ██║██║     ██║   ██║██║ █╗ ██║██║██╔██╗ ██║
+██║███╗██║██║     ██║   ██║██║███╗██║██║██║╚██╗██║
+╚███╔███╔╝╚██████╗╚██████╔╝╚███╔███╔╝██║██║ ╚████║
+ ╚══╝╚══╝  ╚═════╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝
+                                                  
 
+
+____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
+\   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
+ \   \/    \/   / |  ,----'|  |  |  |  \   \/    \/   /  |  | |   \|  | 
+  \            /  |  |     |  |  |  |   \            /   |  | |  . `  | 
+   \    /\    /   |  `----.|  `--'  |    \    /\    /    |  | |  |\   | 
+    \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
+
+ __        __                _       
+ \ \      / /__ _____      _(_)_ __  
+  \ \ /\ / / __/ _ \ \ /\ / / | '_ \ 
+   \ V  V / (_| (_) \ V  V /| | | | |
+    \_/\_/ \___\___/ \_/\_/ |_|_| |_|
+                                     
+ ___       ___     ____     ____     ___       ___    _____      __      _  
+(  (       )  )   / ___)   / __ \   (  (       )  )  (_   _)    /  \    / ) 
+ \  \  _  /  /   / /      / /  \ \   \  \  _  /  /     | |     / /\ \  / /  
+  \  \/ \/  /   ( (      ( ()  () )   \  \/ \/  /      | |     ) ) ) ) ) )  
+   )   _   (    ( (      ( ()  () )    )   _   (       | |    ( ( ( ( ( (   
+   \  ( )  /     \ \___   \ \__/ /     \  ( )  /      _| |__  / /  \ \/ /   
+    \_/ \_/       \____)   \____/       \_/ \_/      /_____( (_/    \__/    
+                                                                            
+
+
+-->
+                                   
 
 <center><font  color= #518FC1 size=6 class="ml3">Mkdocs-Wcowin博客主题</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-
-
 
 
 
@@ -135,14 +166,38 @@ comments: false
 2. 18939533255
 ***  
 
-<strong>推荐文章:material-book:</strong>
+<!-- <strong>推荐文章:material-book:</strong>
 
   - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
   - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
   - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)
   - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
-  - [Blogger](blog/index.md)
-  
+  - [Blogger](blog/index.md) -->
+
+
+
+<div class="grid cards" markdown>
+
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
+
+    ---
+
+    - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+    - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
+    - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)
+    - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
+    - [Blogger](blog/index.md)
+
+
+-   :simple-aboutdotme:{ .lg .middle } __关于__
+
+    ---
+    - [Mkdocs-Wcowin博客主题社区](https://support.qq.com/products/646913/){target=“_blank”}
+    - [留言板](liuyanban.md)
+    - [Blogger](blog/index.md)   
+    [:octicons-arrow-right-24: 了解我](about/geren.md)
+
+</div>
 
 
 
@@ -180,3 +235,5 @@ comments: false
 
 
 <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script>
+
+

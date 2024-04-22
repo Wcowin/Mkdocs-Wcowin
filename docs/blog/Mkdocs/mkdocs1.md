@@ -5,9 +5,18 @@ tags:
 ---
 
 !!! info
-    官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
+    Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
 
-    我的个人网站成果：<http://wcowin.work/>{target=“_blank”}
+---
+推荐看下这个视频：  
+:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
+__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
+15m – Learn how to create and host a documentation site using Material for
+MkDocs on GitHub Pages in a step-by-step guide.
+
+  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+
+---
 
 ## 一、准备工作
 
@@ -15,7 +24,6 @@ tags:
 
  2.有一个GitHub账号​​​​​​​(有手就行)
 ***
-
 ## 二、Creating your site
 
 参考教程： 
@@ -118,7 +126,7 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
-          key: mkdocs-material-$【【 env.cache_id 】】  # 此处把【【】】改成`{``{``}``}`（只有英文大括号）
+          key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
@@ -194,4 +202,4 @@ https://你github的名字.github.io/
 
 下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
 
-[^注]:于2024.4.24重写此文
+[^注]:于2023.3.24重写此文
