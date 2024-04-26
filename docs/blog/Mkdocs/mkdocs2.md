@@ -14,46 +14,46 @@ tags:
 ??? note "点击展开"
     ```yaml
     #[Info]
-    site_name: Wcowin's Web
-    site_url: http://wcowin.work/
-    site_author: 王科文(Wcowin)
+    site_name: Mkdocs-Wcowin中文主题 #your site name 显示在左上角
+    site_url: http://wcowin.work/Mkdocs-Wcowin
+    site_author: Wcowin # your name
     #[UI]
     theme:
       name: material
-      custom_dir: docs/overrides
-      # custom_dir: material/.overrides
-      # font:
-      #   text: Bitter
-      #   code: Roboto Mono
-      logo: https://cn.mcecy.com/image/20231006/a05f708fb7b0426e7a5786669d5b1386.png
-        # material/library
-        # admonition:
-        #   <type>: material/file-alert-outline
+      custom_dir: docs/overrides #覆写路径
+      # font: #谷歌字体，自行搜索
+      #   text: Bitter  #文本字体
+      #   code: Roboto Mono  #代码字体
+      # logo: assets/favicon.png #左上角logo，可插入图片链接
 
-      favicon: img/wkw2.png
-      # img/11.ico
+      favicon: https://s2.loli.net/2024/04/26/PmRdM9iGnvOJHgu.png # 网页icon
+
       palette:
+        - media: "(prefers-color-scheme)"
+          toggle:
+            icon: material/link
+            name: 关闭自动模式
         #primary: blue grey
-        
         - media: "(prefers-color-scheme: light)"
           scheme: default # 日间模式
           primary: blue grey # 上方的
-          accent: indigo # 链接等可交互元件的高亮色
-          # teal 
+          accent: blue # 链接等可交互元件的高亮色
+          # teal
           toggle:
             icon: material/toggle-switch # 图标
             name: 切换至夜间模式 # 鼠标悬浮提示
         - media: "(prefers-color-scheme: dark)"
           scheme: slate # 夜间模式
-          primary: black 
+          primary: black
           accent: indigo
           # teal
           toggle:
             icon: material/toggle-switch-off-outline
             name: 切换至日间模式
-      features: 
+
+      features:
         - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-        # - navigation.instant 
+        # - navigation.instant
         #- header.autohide  #自动隐藏
         - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
         - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
@@ -68,55 +68,55 @@ tags:
         - navigation.indexes #启用节索引页后，可以将文档直接附加到节
         - content.tabs.link
         - content.tooltips
-        - content.code.copy
+        - content.code.copy #代码复制
         - content.action.edit
         - content.action.view
-        - content.code.annotate 
+        - content.code.annotate
       language: zh # 一些提示性的文字会变成中文
-      
 
       icon:
         repo: fontawesome/brands/github #右上角图标
-    edit_uri: edit/main/docs # 编辑按钮跳转的链接 
-    repo_url: https://github.com/Wcowin/Wcowin.github.io # 右上角点击跳转的链接
-    repo_name: Wcowin.github.io # 右上角的名字
+        logo: logo
+    edit_uri: edit/main/docs # 编辑按钮跳转的链接
+    repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
+    repo_name: Mkdocs-Wcowin # 右上角的名字
 
     # [Navigtion]
-    nav: #目录
-      
-    copyright: Copyright &copy; 2022~2023 Wcowin/All Rights Reserved. # 左下角的版权声明
-      
+    nav:   #目录
+
+      - 标签: tag.md
+      - 留言板: liuyanban.md
+      - Blogger:
+          - index: blog/index.md
+      - 友链:
+          - 友链: about/link.md
+      - 关于:
+          - 作者个人简介: about/geren.md
+          - 功能测试: about/test.md
+
+    copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
     extra:
-      # tags:
-      #   HTML5: html
-      #   JavaScript: js
-      #   CSS: css
-      alternate:
-        - name: English
-          link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp 
-          lang: en
-        - name: 中国(台湾)
-          link: https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
-          lang: zh-TW
-      generator: true  #删除页脚显示“使用 MkDocs 材料制造”
+      generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
       social:
-        - icon: fontawesome/brands/x-twitter 
+        - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
           link: https://twitter.com/wcowin_
         - icon: fontawesome/brands/github
           link: https://github.com/Wcowin
-        
-        - icon: fontawesome/regular/envelope
-          link: mailto:<wangkewen821@gmail.com> #联系方式
+
+        - icon: fontawesome/regular/envelope #联系方式图标
+          link: mailto:<wangkewen821@gmail.com> #邮件联系方式
         - icon: fontawesome/brands/bilibili
           link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
-      analytics: 
-        provider: google
-        property: G-29HZMNR0KG
+      analytics:
+        provider: google #谷歌分析
+        property:
+
+        # 网页底部反馈
         feedback:
           title: 此页面有帮助吗？
           ratings:
-            - icon: material/thumb-up-outline
+            - icon: material/thumb-up-outline #图标可自定义
               name: This page was helpful
               data: 1
               note: >-
@@ -124,55 +124,64 @@ tags:
             - icon: material/thumb-down-outline
               name: This page could be improved
               data: 0
-              note: >- 
+              note: >-
                 Thanks for your feedback! Help us improve this page by
                 using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
-      
+      # cookies设置（可选）
       # consent:
       #   title: Cookie consent
-      #   description: >- 
+      #   description: >-
       #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
       #     如果你同意,你可以帮助我们让我们的网站更好
 
-        
-
     plugins:
-      # - glightbox
-      - search
+      - search #搜索配置
+      - git-committers:
+          enabled: !ENV [CI, false]
+          repository: Wcowin/Mkdocs-Wcowin
+          branch: main
+          exclude:
+            - index.md
+            - tag.md
+            - waline.md
+            - blog/posts/update.md
+            - blog/posts/wkw.md
+            - about/link.md
       - git-revision-date-localized:
+          enabled: !ENV [CI, false]
           type: iso_date
           enable_creation_date: false
           exclude:
-            - index.md 
-            - waline.md
-      # - git-authors:
-      #     exclude:
-      #       - index.md
-      - blog:
+            - index.md
+            - tag.md
+            - liuyanban.md
+            - blog/posts/update.md
+            - blog/posts/wkw.md
+            - about/link.md
+            - websitebeauty/linktech.md
+      - blog: #博客配置
           post_date_format: full #时间
           draft: true
           draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
           post_readtime: true
-          post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
+          post_readtime_words_per_minute: 265 #计算帖子的阅读时间时读者每分钟预计阅读的字数
           post_url_format: "{date}/{slug}"
-          categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-            kwds:
-              case: lower
-          # categories_toc: true
-          # pagination_per_page: 5
+          # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+          #   kwds:
+          #     case: lower
           pagination_url_format: "page/{page}"
-          authors_file: "{blog}/.authors.yml"  #作者信息
+          authors_file: "{blog}/.authors.yml" #作者信息
       - tags:
-          tags_file: tag.md  #分类标签
+          tags_file: tag.md #分类标签
 
-    markdown_extensions:
+    markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
       - abbr
       - attr_list
       - admonition
       - def_list
       - footnotes
       - md_in_html
-      - meta # 支持Markdown文件上方自定义标题标签等
+      # - meta # 支持Markdown文件上方自定义标题标签等
       - pymdownx.caret
       - pymdownx.betterem
       - pymdownx.critic
@@ -183,12 +192,15 @@ tags:
       - pymdownx.snippets
       - pymdownx.smartsymbols
       - pymdownx.tilde
+
       - pymdownx.superfences:
           custom_fences:
             - name: mermaid
               class: mermaid
-              format: !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
-      - pymdownx.arithmatex:  # latex支持
+              format:
+                !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
+      - pymdownx.arithmatex: # latex支持
           generic: true
       - toc:
           permalink: true # 固定标题位置为当前位置
@@ -203,39 +215,35 @@ tags:
           alternate_style: true
       - pymdownx.tasklist:
           custom_checkbox: true
-      - markdown.extensions.toc:
-          slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-          permalink: "\ue157"
-      
-    extra_javascript:
-      - javascripts/extra.js 
-      # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
-      - javascripts/mathjax.js
-      - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-      # - javascripts/mathjax-config.js
-      # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
+      # - markdown.extensions.toc:
+      #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      #     permalink: "\ue157"
 
-      - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-      - ckplayer/js/ckplayer.js
-      # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js
-      # - javascripts/backbound1.js
-      # - javascripts/rellax.min.js
-      - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js
-      # - https://res.zvo.cn/translate/translate.js  # Translate
+    extra_javascript:
+      - javascripts/extra.js #自定义javascript
+      - javascripts/mathjax.js #Latex支持
+      - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
+      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
+      # - ckplayer/js/ckplayer.js #播放器配置
+      # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
+      - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
 
     extra_css:
-      - stylesheets/extra.css
-      - stylesheets/link.css
-      # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
-      # - stylesheets/extra1.css
-      # - stylesheets/video.css
-      # - https://unpkg.com/@waline/client@v2/dist/waline.css
-      - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #评论
-      - ckplayer/css/ckplayer.css
-      - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
-      # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
-      - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
+      - stylesheets/extra.css # 自定义CSS
+      - stylesheets/link.css #友链配置
+      - stylesheets/customize.css # 搜索圆角优化
+
+      # - stylesheets/video.css #播放器可选配置
+      # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
+      # - ckplayer/css/ckplayer.css   #播放器配置
+      - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
+      # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
+
+      - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
+      # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
+      # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
+      # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
+
     ```
 ***
 从头开始分析 

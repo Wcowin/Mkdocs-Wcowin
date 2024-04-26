@@ -6,6 +6,20 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-04-22</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 看了更多的猫咪
+* 优化布局
+* 新增圆角化设计教程
+
+## </p><h1 id="01" name="01"><strong>2024-04-22</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 网站全面贴合圆角设计，非常好看
+
+## </p><h1 id="01" name="01"><strong>2024-04-13</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 重写主页index.md,更加美观，贴合圆角设计
+
 ## </p><h1 id="01" name="01"><strong>2024-04-12</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 感谢W1ndys提出的[使用软编码配置友链界面](https://github.com/Wcowin/Mkdocs-Wcowin/pull/9)，使得友链添加更加规范化

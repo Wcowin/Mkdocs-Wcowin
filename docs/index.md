@@ -149,7 +149,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     </ul>
     <li>简单易上手，小白配置</li>
     <li>
-      如遇到网页卡顿/打开文章后无法显示图片的情况，请使用<strong>科学上网</strong>以打破信息壁垒
+      如遇到网页卡顿的情况，请使用<strong><a href="https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》" target="_blank">Mkdocs-Wcowin中文教程(语雀)</a></strong>
     </li>
   </ul>
 </div> 
