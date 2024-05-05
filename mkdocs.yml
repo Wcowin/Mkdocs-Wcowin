@@ -106,6 +106,7 @@ nav:
   - 关于:
       - 作者个人简介: about/geren.md
       - 功能测试: about/test.md
+  - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
