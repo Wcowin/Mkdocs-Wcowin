@@ -34,6 +34,8 @@
 
 把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
 
+> 另一种运行方法：根目录有一个`Mkdocs-serve.bat`批处理文件，直接双击即可
+
 详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](TECH.md)
 
 ## Connect with me
