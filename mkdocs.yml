@@ -70,12 +70,12 @@ repo_name: Mkdocs-Wcowin # 右上角的名字
 nav:
   # - 主页: index.md
   - MKdocs中文教程:
-      - MKdocs教程:
-          - 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
-          - Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
-          - 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
-          - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
+      - MKdocs教程(三部曲):
+          - 1. 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
+          - 2. Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+          - 3. 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
       - Mkdocs美化:
+          - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
           - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
           - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
           - 添加在线聊天: blog/websitebeauty/webtalknow.md
@@ -111,6 +111,19 @@ nav:
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
 
 extra:
+  alternate:
+    - name: 简体中文
+      link: /
+      # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: zh   
+    - name: English
+      link: /Mkdocs-Wcowin/en/
+      # https://wcowin-work.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: en
+    - name: China(TW)
+      link: /Mkdocs-Wcowin/ZH-TW/
+      # https://wcowin-work.translate.goog/?_x_tr_sl=zh-CN&_x_tr_tl=zh-TW&_x_tr_hl=zh-CN&_x_tr_pto=wapp
+      lang: zh-TW
   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
@@ -206,14 +219,12 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
-
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format:
             !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
-
   - pymdownx.arithmatex: # latex支持
       generic: true
   - toc:
@@ -234,7 +245,8 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
   #     permalink: "\ue157"
 
 extra_javascript:
-  - javascripts/extra.js #自定义javascript
+  # - javascripts/extra.js #自定义javascript
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js #Latex支持
   - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持

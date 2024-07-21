@@ -6,6 +6,97 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-07-21</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 优化了网站的UI和访问速度，启用 CDN 加速
+* 学业繁重
+
+## </p><h1 id="01" name="01"><strong>2024-06-27</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 美化了Blog页面, 使更加简洁美观,如你所见
+* 内心丰盈者，独行也独众，心有山海，静而不争
+
+
+## </p><h1 id="01" name="01"><strong>2024-06-20</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 优化多处UI
+* 删减了部分拖慢网站速度的JS/CSS代码
+* 更新了[MKdocs补充系列教程](https://blog.csdn.net/m0_63203517/article/details/139814216?spm=1001.2014.3001.5501)
+* 近期略有时间，所以更文变得高产
+
+
+## </p><h1 id="01" name="01"><strong>2024-06-19</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 期末结束
+* 删减了冗余代码
+
+## </p><h1 id="01" name="01"><strong>2024-06-2</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 近期学业繁重
+
+## </p><h1 id="01" name="01"><strong>2024-06-2</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 过了六一
+
+## </p><h1 id="01" name="01"><strong>2024-05-15</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 全站引入自动在新标签页打开，仓库地址：[mkdocs-open-in-new-tab](https://newtab.kubaandrysek.cz/)
+<details><summary>Show source code</summary>
+<p>
+
+Look at this source <a href="https://github.com/JakubAndrysek/mkdocs-open-in-new-tab/blob/main/open_in_new_tab/js/open_in_new_tab.js">open_in_new_tab.js</a>:
+
+```js
+// Description: Open external links in a new tab and PDF links in a new tab
+// Source: https://jekyllcodex.org/without-plugin/new-window-fix/
+
+//open external links in a new window
+function external_new_window() {
+    for(let c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        let b = c[a];
+        if(b.getAttribute("href") && b.hostname !== location.hostname) {
+            b.target = "_blank";
+            b.rel = "noopener";
+        }
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) {
+      return false;
+    }
+    let links = document.getElementsByTagName("a");
+    for (let eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+}
+
+function apply_rules() {
+    external_new_window();
+    pdf_new_window();
+}
+
+if (typeof document$ !== "undefined") {
+    // compatibility with mkdocs-material's instant loading feature
+    // based on code from https://github.com/timvink/mkdocs-charts-plugin
+    // Copyright (c) 2021 Tim Vink - MIT License
+    // fixes [Issue #2](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab/issues/2)
+    document$.subscribe(function() {
+        apply_rules();
+        console.log("Applying rules");
+    })
+}
+```
+</p>
+</details>
+
 ## </p><h1 id="01" name="01"><strong>2024-05-05</strong></h1><p>
 * 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
 * 优化网站流畅度（玄学）

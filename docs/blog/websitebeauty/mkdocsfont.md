@@ -7,7 +7,8 @@ tags:
 我目前在用的字体：[霞鹜文楷](https://github.com/lxgw/LxgwWenKai){target=_blank}  
 想必你可以直观从我的网站感受到，[这款字体](https://chawyehsu.github.io/lxgw-wenkai-webfont/)的美观程度。  
 
-[快速教程](#基于mkdocs的网站字体美化用法)
+[快速教程]
+[快速教程]: #mkdocs
 ***  
 
 **以下是摘录的部分字体官方介绍文档**
@@ -155,7 +156,7 @@ body {
 
 四选一，mkdocs.yml和extra.css相互对应  
 
-不懂extra_css的用法的可以看一下我写的[extra_css部分](https://wcowin.work/blog/Mkdocs/mkdocs2/#extra_javascript-和extra_css){target=_blank}教程
+不懂extra_css的用法的可以看一下我写的[extra_css部分](../Mkdocs/mkdocs2.md#extra_javascript-extra_css)教程
 
 !!!tip
     切换字体后可能返回顶部按钮会在个别浏览器显示异常

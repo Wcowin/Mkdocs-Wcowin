@@ -193,16 +193,16 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
     ---
     - [Mkdocs-Wcowin博客主题社区](https://support.qq.com/products/646913/){target=“_blank”}
-    - [留言板](liuyanban.md)
+    - [留言板](liuyanban.md)[^Knowing-that-loving-you-has-no-ending] 
     - [Blogger](blog/index.md)   
-    [:octicons-arrow-right-24: 了解我](about/geren.md)
+    [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
 
 </div>
 
 
 
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
-[^see-how-much-I-love-you]:All problems in computer science can be solved by another level of indirection
+[^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
    <body>
         <font color="#B9B9B9">
