@@ -60,7 +60,6 @@
 ## 案例成果
 
 [Lenny's Web](https://lennychen.top)
-[tkqtang's Web](https://tkqtang.site/)
 
 
 ## Star History
