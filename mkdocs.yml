@@ -1,5 +1,5 @@
 #[Info]
-site_name: Mkdocs-Wcowin中文主题 #your site name 显示在左上角
+site_name: Mkdocs-Wcowin中文教程(自建) #your site name 显示在左上角
 site_url: http://wcowin.work/Mkdocs-Wcowin
 site_author: Wcowin # your name
 #[UI]
@@ -71,6 +71,7 @@ nav:
   # - 主页: index.md
   - MKdocs中文教程:
       - MKdocs教程(三部曲):
+          - 0. Mkdocs教程前言: blog/Mkdocs/mkfirst.md
           - 1. 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
           - 2. Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
           - 3. 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md

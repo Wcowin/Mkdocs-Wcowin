@@ -59,9 +59,10 @@
 
 ## 案例成果
 
-[Lenny's Web](https://lennychen.top)
-[苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)
-
+[Lenny's Web](https://lennychen.top)  
+[苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)  
+[世界天光的笔记本](https://lastwish.icu/)  
+[Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
 
 ## Star History
 

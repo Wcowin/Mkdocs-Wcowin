@@ -89,7 +89,7 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
        <div class="card"> 
-     <img class="ava" src="https://mungeryang.github.io/images/avatar.png?v=1696728951294" /> 
+     <img class="ava" src="https://mungeryang.github.io/img/bg/person1.jpeg" /> 
      <div class="card-header"> 
       <div> 
        <a href="https://mungeryang.github.io/" target="_blank">Munger yang's Blog</a> 
@@ -606,17 +606,6 @@ t.parentNode.insertBefore(e,t)}})();
      </div> 
     </div>
     <div class="card"> 
-     <img class="ava" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">RyanJoy's Web</a> 
-      </div> 
-      <div class="info">
-       🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
-      </div> 
-     </div> 
-    </div>
-    <div class="card"> 
     <img class="ava" src="https://s2.loli.net/2024/07/02/uKs2Jqo9THROipr.jpg" /> 
     <div class="card-header"> 
       <div> 
@@ -627,7 +616,39 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
     </div> 
     </div>
-
+    <div class="card"> 
+    <img class="ava" src="https://tendcode.com/static/blog/img/friend.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://tendcode.com" target="_blank">TendCode</a> 
+      </div> 
+      <div class="info">
+      Django自建博客，热爱Python
+      </div> 
+    </div> 
+    </div>
+    <div class="card"> 
+    <img class="ava" src="https://www.chujiaweicode.top/static/favicons/icon32.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://www.chujiaweicode.top/" target="_blank">Jiawei’s Blog</a> 
+      </div> 
+      <div class="info">
+    和光同尘
+      </div> 
+    </div> 
+    </div>
+    <div class="card"> 
+    <img class="ava" src="https://magren.cc/avatar.png" /> 
+    <div class="card-header"> 
+      <div> 
+      <a href="https://magren.cc" target="_blank">Magren's Blog</a> 
+      </div> 
+      <div class="info">
+    不为繁华易匠心
+      </div> 
+    </div> 
+    </div>
 
 
    </div> 
