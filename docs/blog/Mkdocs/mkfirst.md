@@ -12,7 +12,7 @@ mkdocs materials 教程:
 [Mkdocs Materials](https://squidfunk.github.io/mkdocs-material/){target=“_blank”}
 
 我写的教程：
-[Mkdocs中文教程](https://wcowin.work/Mkdocs-Wcowin/){target=“_blank”} (更全面/观感更纯净)
+[Mkdocs中文教程](mkdocs1.md) (更全面/观感更纯净)
 
 ## 视频教程
 

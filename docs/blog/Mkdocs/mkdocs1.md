@@ -8,7 +8,7 @@ tags:
     Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
 
 ---
-推荐看下这个视频：  
+有条件的话，推荐看下这个视频：  
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
 __[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
 15m – Learn how to create and host a documentation site using Material for
@@ -22,7 +22,9 @@ MkDocs on GitHub Pages in a step-by-step guide.
 
 1.下载[Github Desktop](https://github.com/desktop/desktop){target=“_blank”}
 
- 2.有一个GitHub账号​​​​​​​(有手就行)
+2.一个GitHub账号   
+
+
 ***
 ## 二、Creating your site
 

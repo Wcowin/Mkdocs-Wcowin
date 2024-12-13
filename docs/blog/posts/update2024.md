@@ -6,6 +6,10 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2024-12-10</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 启用 CDN 加速
+
 ## </p><h1 id="01" name="01"><strong>2024-07-21</strong></h1><p>
 * 优化网站流畅度（玄学）
 
