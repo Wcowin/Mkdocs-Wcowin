@@ -138,7 +138,7 @@ extra:
       link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
   analytics:
     provider: google #谷歌分析
-    property:
+    property: ##如果你 clone 了my模板，请将这个修改为你的
 
     # 网页底部反馈
     feedback:
