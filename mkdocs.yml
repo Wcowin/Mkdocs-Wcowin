@@ -1,5 +1,5 @@
 #[Info]
-site_name: Mkdocs-Wcowin中文教程(自建) #your site name 显示在左上角
+site_name: Mkdocs教程 #your site name 显示在左上角
 site_url: http://wcowin.work/Mkdocs-Wcowin
 site_author: Wcowin # your name
 #[UI]

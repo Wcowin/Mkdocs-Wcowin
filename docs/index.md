@@ -42,7 +42,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 -->
                                    
 
-<center><font  color= #518FC1 size=6 class="ml3">Mkdocs-Wcowin博客主题</font></center>
+<center><font  color= #518FC1 size=6 class="ml3">Mkdocs博客主题</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
@@ -145,9 +145,9 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     <li>通过主题和目录以打开文章</li>
     <ul>
       <li>基于Material for MkDocs美化</li>
-      <li>简洁美观，功能多元化</li>
+      <li>简洁美观，功能多元化，小白配置</li>
     </ul>
-    <li>简单易上手，小白配置</li>
+    <li>建议使用科学上网方式打开本站</li>
     <li>
       如遇到网页卡顿的情况，请使用<strong><a href="https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》" target="_blank">Mkdocs-Wcowin中文教程(语雀)</a></strong>
     </li>
@@ -183,7 +183,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
     ---
 
-    - [利用Mkdocs部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
+    - [部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)
     - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
