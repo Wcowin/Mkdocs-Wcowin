@@ -32,27 +32,38 @@
 **页面底部**
 <img width="1363" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
 
+**Lighthouse测试结果**
+<img width="1363" alt="image" src="https://s2.loli.net/2025/01/02/VHeITXxJgwOKSsu.jpg">
+
 </center>
 
 ## 如何快速使用
 打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
 
-把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
+把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
+![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png)
 
 > 另一种运行方法：根目录有一个`Mkdocs-serve.bat`批处理文件，直接双击即可
 
 详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](TECH.md)
 
-## Connect with me
+# Connect with me
 
 <center>
 
 **MuseLink**
 
-<p>
-  <a href="https://muselink.cc/Wcowin" target="_blank">
-    <img src="https://s1.imagehub.cc/images/2024/02/02/3d5a68d9ca0da9137d927bda1a0b41e7.jpeg" alt="个人名片">
+<p align="center">
+  <a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">
+    <img src="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" alt="个人名片" style="border-radius: 10px;" width="50%">
   </a>
+</p>
+
+
+**Wechat**  
+<!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
+<p align="center">
+<img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;" width="50%">
 </p>
 
 </center>
@@ -69,7 +80,7 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
 
-## 感谢贡献者
+## 贡献者
 <a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
 </a>
