@@ -17,7 +17,7 @@ comments: true
   </div>
 
 
-<div id="rcorners5" >
+<!-- <div id="rcorners5" >
 <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="655cf3bc-734a-4d88-8317-be350621334c"
@@ -27,4 +27,4 @@ comments: true
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 <script defer src="https://cusdis.com/js/widget/lang/zh-cn.js"></script>
-</div>
+</div> -->

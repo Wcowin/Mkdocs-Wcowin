@@ -5,10 +5,10 @@ tags:
 ---
 
 !!! info
-    Material for MkDocs官方网站：[MkDocs](https://www.mkdocs.org/){target=“_blank”}
-
+    Material for MkDocs官方网站: [Material for MkDocs](https://www.mkdocs.org/)  
+    MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 ---
-有条件的话，推荐看下这个视频：  
+推荐看下这个视频：  
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
 __[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
 15m – Learn how to create and host a documentation site using Material for
@@ -22,9 +22,7 @@ MkDocs on GitHub Pages in a step-by-step guide.
 
 1.下载[Github Desktop](https://github.com/desktop/desktop){target=“_blank”}
 
-2.一个GitHub账号   
-
-
+ 2.有一个GitHub账号​​​​​​​(有手就行)
 ***
 ## 二、Creating your site
 
@@ -193,7 +191,7 @@ mkdocs serve
 **去仓库的setings/pages选择下图示意的路径**
 ![](https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png)  
 
-等待一会网址就出来了  
+等待一会网址就出来了[^注]  
 
 你的网站网址就是：​
 
@@ -203,6 +201,14 @@ https://你github的名字.github.io/
 ```
 ![img](https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png)
 
-下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)[^注]
+下次谈谈网站的[mkdocs.yml具体配置](mkdocs2.md)
 
 [^注]:于2023.3.24重写此文
+
+## 四、参考资料
+
+1. [MkDocs官网](https://www.mkdocs.org/)
+2. [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
+3. [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+4. [Mkdocs 配置和使用](https://zhuanlan.zhihu.com/p/383582472)
+5. [Deploy MkDocs](https://github.com/marketplace/actions/deploy-mkdocs)

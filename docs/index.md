@@ -76,71 +76,45 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 
 <div id="rcorners2" >
-  <div id="rcorners1">
-    <!-- <i class="fa fa-calendar" style="font-size:100"></i> -->
-    <body>
-      <font color="#4351AF">
-        <p class="p1"></p>
+
+<div id="rcorners1" class="date-display">
+    <p class="p1"></p>
+</div>
+
+<style>
+    .date-display {
+        color: #4351AF;
+    } 
+</style>
+
 <script defer>
-    //格式：2020年04月12日 10:20:00 星期二
     function format(newDate) {
-        var day = newDate.getDay();
-        var y = newDate.getFullYear();
-        var m =
-            newDate.getMonth() + 1 < 10
-                ? "0" + (newDate.getMonth() + 1)
-                : newDate.getMonth() + 1;
-        var d =
-            newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
-        var h =
-            newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
-        var min =
-            newDate.getMinutes() < 10
-                ? "0" + newDate.getMinutes()
-                : newDate.getMinutes();
-        var s =
-            newDate.getSeconds() < 10
-                ? "0" + newDate.getSeconds()
-                : newDate.getSeconds();
-        var dict = {
-            1: "一",
-            2: "二",
-            3: "三",
-            4: "四",
-            5: "五",
-            6: "六",
-            0: "天",
+        const options = {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            weekday: 'long',
+            hour12: false
         };
-        //var week=["日","一","二","三","四","五","六"]
-        return (
-            y +
-            "年" +
-            m +
-            "月" +
-            d +
-            "日" +
-            " " +
-            h +
-            ":" +
-            min +
-            ":" +
-            s +
-            " 星期" +
-            dict[day]
-        );
+        return new Intl.DateTimeFormat('zh-CN', options).format(newDate);
     }
-    var timerId = setInterval(function () {
-        var newDate = new Date();
-        var p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const p1 = document.querySelector(".p1");
+        function updateTime() {
+            const newDate = new Date();
+            if (p1) {
+                p1.textContent = format(newDate);
+            }
+            requestAnimationFrame(updateTime);
         }
-    }, 1000);
+        updateTime();
+    });
 </script>
-      </font>
-    </body>
-    <!-- <b><span id="time"></span></b> -->
-  </div>
+  
   <ul>
     <li>通过主题和目录以打开文章</li>
     <ul>
@@ -153,7 +127,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     </li>
   </ul>
 </div> 
-
 <!-- - 基于Material for MkDocs美化
 - 简洁美观，功能多元化
 - 简单易上手，小白配置
