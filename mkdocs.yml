@@ -72,7 +72,7 @@ nav:
   - MKdocs中文教程:
       - MKdocs教程(三部曲):
           - 0. Mkdocs教程前言: blog/Mkdocs/mkfirst.md
-          - 1. 利用mkdocs部署静态网页至GitHub pages: blog/Mkdocs/mkdocs1.md
+          - 1. 利用mkdocs部署个人静态博客网页至GitHub pages: blog/Mkdocs/mkdocs1.md
           - 2. Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
           - 3. 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
       - Mkdocs美化:
@@ -164,6 +164,7 @@ extra:
 
 plugins:
   - search #搜索配置
+  - glightbox
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Mkdocs-Wcowin

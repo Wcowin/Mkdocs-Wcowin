@@ -1,5 +1,5 @@
 ---
-title: 利用Mkdocs部署静态网页至GitHubpages
+title: 利用Mkdocs部署个人静态博客网页至GitHubpages
 tags:
   - Mkdocs
 ---
