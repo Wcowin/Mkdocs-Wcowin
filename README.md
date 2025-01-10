@@ -74,6 +74,11 @@
 [苍镜月's docs](https://pale-illusions.github.io/my-mkdocs/)  
 [世界天光的笔记本](https://lastwish.icu/)  
 [Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
+[BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)  
+[0X10CC的代码空间](https://tang-jiapeng.github.io/)
+[GENG Wei's Homepage](https://wgeng.site/index.html)
+
+谢谢你们~
 
 ## Star History
 
