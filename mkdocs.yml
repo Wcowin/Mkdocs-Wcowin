@@ -164,7 +164,23 @@ extra:
 
 plugins:
   - search #搜索配置
-  - glightbox
+  - glightbox:
+      enabled: !ENV [CI, false]
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
   - git-committers:
       enabled: !ENV [CI, false]
       repository: Wcowin/Mkdocs-Wcowin
