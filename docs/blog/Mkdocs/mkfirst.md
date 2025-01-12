@@ -16,4 +16,5 @@ mkdocs materials 教程:
 
 ## 视频教程
 
-暂定于2024年12月31日发布
+已经发布  
+[Mkdocs中文教程视频](https://www.bilibili.com/list/1407028951/?sid=4566631&oid=113813663784497&bvid=BV1yWcgecEdg){target=“_blank”}
