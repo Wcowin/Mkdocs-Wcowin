@@ -107,6 +107,7 @@ nav:
   - 关于:
       - 作者个人简介: about/geren.md
       - 功能测试: about/test.md
+  - 个人博客: https://wcowin.work
   - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
 copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
@@ -127,6 +128,12 @@ extra:
       lang: zh-TW
   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
   social:
+    - icon: fontawesome/brands/weixin
+      link: https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg
+      name: Wechat
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/wecowin
+      name: telegram
     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
       link: https://twitter.com/wcowin_
     - icon: fontawesome/brands/github
@@ -135,7 +142,7 @@ extra:
     - icon: fontawesome/regular/envelope #联系方式图标
       link: mailto:<wangkewen821@gmail.com> #邮件联系方式
     - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+      link: https://space.bilibili.com/1407028951/lists/4566631?type=series
   analytics:
     provider: google #谷歌分析
     property: ##如果你 clone 了my模板，请将这个修改为你的
