@@ -76,7 +76,7 @@ comments: false
   data-repo-id="R_kgDOIl9OJA"
   data-category="Announcements"
   data-category-id="DIC_kwDOIl9OJM4CTHDe"
-  data-mapping="url"
+  data-mapping="pathname"
   data-strict="0"
   data-reactions-enabled="1"
   data-emit-metadata="1"
