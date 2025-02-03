@@ -146,7 +146,7 @@ extra:
       link: https://space.bilibili.com/1407028951/lists/4566631?type=series
   analytics:
     provider: google #谷歌分析
-    property: ##如果你 clone 了my模板，请将这个修改为你的
+    property: G-29HZMNR0KG ##如果你 clone 了my模板，请将这个修改为你的
 
     # 网页底部反馈
     feedback:
