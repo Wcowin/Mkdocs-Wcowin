@@ -6,6 +6,10 @@ categories:
   - 网站更新记录
 readtime: 2
 ---
+## </p><h1 id="01" name="01"><strong>2025-02-04</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 更新了部分教程，适应官方最新版本
+
 ## </p><h1 id="01" name="01"><strong>2025-01-11</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 优化留言板，支持按钮切换，布局更简洁
@@ -14,7 +18,7 @@ readtime: 2
 
 ## </p><h1 id="01" name="01"><strong>2025-01-09</strong></h1><p>
 * 优化网站流畅度（玄学）
-* 引入[glightbox插件](https://github.com/blueswen/mkdocs-glightbox){target=“_blank”}，图片查看更方便
+* 引入[glightbox插件(已取消)](https://github.com/blueswen/mkdocs-glightbox){target=“_blank”}，图片查看更方便
 
 ## </p><h1 id="01" name="01"><strong>2025-01-07</strong></h1><p>
 * 优化网站流畅度（玄学）

@@ -173,7 +173,7 @@ extra:
 plugins:
   - search #搜索配置
   - glightbox:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [glightbox, false]
       touchNavigation: true
       loop: false
       effect: fade
@@ -190,18 +190,18 @@ plugins:
       shadow: true
       manual: false
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [git-committers, false]
       repository: Wcowin/Mkdocs-Wcowin
       branch: main
       exclude:
         - index.md
         - tag.md
-        - waline.md
+        - liuyanban.md
         - blog/posts/update.md
         - blog/posts/wkw.md
         - about/link.md
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [git-revision-date-localized, false]
       type: iso_date
       enable_creation_date: false
       exclude:
@@ -224,8 +224,7 @@ plugins:
       #     case: lower
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml" #作者信息
-  - tags:
-      tags_file: tag.md #分类标签
+  - tags
 
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
@@ -295,3 +294,7 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
+
+
+hooks:
+  - docs/overrides/hooks/socialmedia.py
