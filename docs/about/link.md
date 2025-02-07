@@ -34,13 +34,24 @@ t.parentNode.insertBefore(e,t)}})();
   <div class="links-content"> 
    <div class="link-navigation"> 
     <div class="card"> 
-     <img class="ava" src="https://s1.imagehub.cc/images/2025/01/05/64eafdf8c27f482c7ecb83003d460d6a.webp" /> 
+     <img class="ava" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/ " target="_blank">Wcowin's Web</a> 
+       <a href="https://wcowin.work/ " target="_blank">Wcowin's Blog</a> 
       </div> 
       <div class="info">
        “循此苦旅，以达星辰”
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://raw.githubusercontent.com/VictorWang712/Note/refs/heads/main/docs/assets/images/avatars/Walker_V.png" /> 
+     <div class="card-header"> 
+      <div> 
+      <a href="https://victorwang712.github.io/Note/" target="_blank">Walker_V's Notebook</a> 
+      </div> 
+      <div class="info">
+      要在温室和暴风之中取舍，我忘记了退缩。
       </div> 
      </div> 
     </div>
@@ -127,9 +138,9 @@ t.parentNode.insertBefore(e,t)}})();
 
 === "Txt"
 
-    >名称: Wcowin's Web  
+    >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
-    >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
+    >头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp  
     >简介: 循此苦旅，以达星辰
 
 === "HTML(推荐)"
@@ -152,9 +163,9 @@ t.parentNode.insertBefore(e,t)}})();
 === "Butterfly"
 
     ```yaml
-    - name: Wcowin's Web
+    - name: Wcowin's Blog
       link: https://wcowin.work/
-      avatar: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png 
+      avatar: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
       descr: 循此苦旅，以达星辰
     ```
 === "通用"

@@ -9,12 +9,11 @@ tags:
     MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 ---
 推荐看下这个视频：  
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
-__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-15m – Learn how to create and host a documentation site using Material for
-MkDocs on GitHub Pages in a step-by-step guide.
+:fontawesome-brands-bilibili:{ style="color: #EE98A7" }
+__[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
+10m – 用MKdocs构建一个博客网站.
 
-  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+  [How to set up Material for MkDocs]: https://space.bilibili.com/1407028951/lists/4566631?type=series
 
 ---
 

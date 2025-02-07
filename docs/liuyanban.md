@@ -35,61 +35,86 @@ comments: false
     <title>评论系统切换</title>
     <style>
         .comment-system {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            height: 0;
+            overflow: hidden;
         }
         .comment-system.active {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            height: auto;
         }
         .button-container {
             text-align: center;
             margin: 20px 0;
         }
-        .switch-button {
-            background-color: #608DBD;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 25px;
-            cursor: pointer;
+        .buttonxuan {
+            background-color: white;
+            width: 40%;
+            color: black;
+            border-radius: 18px;
+            border: 2px solid rgba(189, 224, 245);
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            margin: 4px 2px;
+            transition: 0.4s;
+            cursor: pointer;
         }
-        .switch-button:hover {
-            background-color: #4a6e8c;
+        .buttonxuan:hover {
+            background-color: rgba(238,242,249);
+            color: rgb(4, 0, 0);
         }
-        .switch-button.active {
-            background-color: #4a6e8c;
+        .buttonxuan.active {
+            background-color: rgba(189, 224, 245);
+            color: rgb(4, 0, 0);
+        }
+        @media (max-width: 768px) {
+            .buttonxuan {
+                padding: 10px 20px;
+                font-size: 14px;
+                margin: 5px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .button-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                gap: 5px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="button-container">
-      <!-- <center><p>点击以切换评论系统</p></center> -->
-        <button id="giscus-btn" class="switch-button active">Giscus 评论</button>
-        <button id="cusdis-btn" class="switch-button">Cusdis 评论</button>
+        <button id="giscus-btn" class="buttonxuan active">Giscus</button>
+        <button id="cusdis-btn" class="buttonxuan">Cusdis</button>
     </div>
     <div id="giscus" class="comment-system active">
-        <!-- Giscus 评论系统代码 -->
-  <script src="https://giscus.app/client.js"
-  data-repo="Wcowin/hexo-site-comments"
-  data-repo-id="R_kgDOIl9OJA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOIl9OJM4CTHDe"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="1"
-  data-input-position="bottom"
-  data-theme="preferred_color_scheme"
-  data-lang="zh-CN"
-  data-loading="lazy"  
-  crossorigin="anonymous"
-  async>
-</script>
+        <script src="https://giscus.app/client.js"
+            data-repo="Wcowin/hexo-site-comments"
+            data-repo-id="R_kgDOIl9OJA"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOIl9OJM4CTHDe"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"  
+            crossorigin="anonymous"
+            async>
+        </script>
     </div>
     <div id="cusdis" class="comment-system">
-        <!-- Cusdis 评论系统代码 -->
         <center><p>评论审核后才会显示</p></center>
         <div id="cusdis_thread"
             data-host="https://cusdis.com"
@@ -101,17 +126,13 @@ comments: false
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
     <script>
-        document.getElementById('giscus-btn').addEventListener('click', function() {
-            document.getElementById('giscus').classList.add('active');
-            document.getElementById('cusdis').classList.remove('active');
-            this.classList.add('active');
-            document.getElementById('cusdis-btn').classList.remove('active');
-        });
-        document.getElementById('cusdis-btn').addEventListener('click', function() {
-            document.getElementById('giscus').classList.remove('active');
-            document.getElementById('cusdis').classList.add('active');
-            this.classList.add('active');
-            document.getElementById('giscus-btn').classList.remove('active');
+        document.querySelectorAll('.buttonxuan').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.buttonxuan').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelectorAll('.comment-system').forEach(system => system.classList.remove('active'));
+                document.getElementById(this.id.replace('-btn', '')).classList.add('active');
+            });
         });
     </script>
 </body>

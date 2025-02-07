@@ -63,6 +63,9 @@ theme:
   icon:
     repo: fontawesome/brands/github #右上角图标
     logo: logo
+    previous: fontawesome/solid/angle-left
+    # top: fontawesome/solid/angles-up
+    alternate: fontawesome/solid/language
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
 repo_name: Mkdocs-Wcowin # 右上角的名字
@@ -71,10 +74,11 @@ repo_name: Mkdocs-Wcowin # 右上角的名字
 nav:
   # - 主页: index.md
   - MKdocs中文教程:
+      - 许可声明: blog/MIT.md
       - MKdocs教程(三部曲):
           - 0. Mkdocs教程前言: blog/Mkdocs/mkfirst.md
-          - 1. 利用mkdocs部署个人静态博客网页至GitHub pages: blog/Mkdocs/mkdocs1.md
-          - 2. Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+          - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
+          - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
           - 3. 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
       - Mkdocs美化:
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
@@ -107,6 +111,7 @@ nav:
       - 友链: about/link.md
   - 关于:
       - 作者个人简介: about/geren.md
+      - 个人简历: about/resume.md
       - 功能测试: about/test.md
   - 个人博客: https://wcowin.work
   - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
