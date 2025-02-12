@@ -33,7 +33,7 @@
 <img width="1363" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
 
 **Lighthouse测试结果**
-<img width="1363" alt="image" src="https://s2.loli.net/2025/01/02/VHeITXxJgwOKSsu.jpg">
+<img width="1363" alt="image" src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp">
 
 </center>
 
@@ -75,7 +75,7 @@
 [世界天光的笔记本](https://lastwish.icu/)  
 [Wen-Chieh Lee的生活](https://wenchiehlee.github.io/mkdocs-life/)
 [BruceJin's Notebook](https://brucejqs.github.io/MyNotebook/)  
-[0X10CC的代码空间](https://tang-jiapeng.github.io/)
+[0X10CC的代码空间](https://tang-jiapeng.github.io/)  
 [GENG Wei's Homepage](https://wgeng.site/index.html)
 
 谢谢你们~
