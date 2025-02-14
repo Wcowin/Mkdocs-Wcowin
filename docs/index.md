@@ -16,38 +16,11 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
 -->
 
-<center><font  color= #518FC1 size=6 class="ml3">Wcowin for MkDocs博客主题</font></center>
+<center><font  color= #757575 size=6 class="ml3">Wcowin for MkDocs博客主题</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<!-- <center>
-<font  color= #608DBD size=3>
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</font>
-</center> -->
 
-
-<!-- 可选一言 -->
-<!-- <center>
-<font  color= #608DBD size=3>
-<p id="hitokoto">
-  <a href="#" id="hitokoto_text" target="_blank"></a>
-</p>
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.querySelector('#hitokoto_text')
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
-</font>
-</center> -->
-
-
-<div id="rcorners2" >
+<!-- <div id="rcorners2" >
 <div id="rcorners1" class="date-display">
     <p class="p1"></p>
 </div>
@@ -93,11 +66,38 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
       如遇到网页卡顿的情况，请使用<strong><a href="https://www.yuque.com/wcowin/mkdocs-wcowin?# 《Mkdocs-Wcowin中文教程》" target="_blank">Mkdocs-Wcowin中文教程(语雀)</a></strong>
     </li>
   </ul>
-</div> 
+</div>  -->
 
 
 
+<div class="grid cards" markdown>
 
+-   :material-notebook-edit-outline:{ .lg .middle } __导航栏__
+
+    ---
+    ![image](https://pic3.zhimg.com/80/v2-0786a6086793ccca444226e9ab3561ec_1440w.webp){ class="responsive-image" align=right width="230" height="300" style="border-radius: 25px;" }
+
+    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
+    - [x] 基于{~~~>Material for MkDocs~~}美化
+    - [x] 简洁美观，功能多元化，小白配置
+    - [x] 如遇页面卡顿，请使用{--科学上网--}
+    === "Mac/PC端"
+
+        请在上方标签选择分类/左侧目录选择文章
+
+    === "移动端"
+
+        请点击左上角图标选择分类和文章
+    
+
+</div>
+<style>
+    @media only screen and (max-width: 768px) {
+        .responsive-image {
+            display: none;
+        }
+    }
+</style>
 
 
 <!-- - 基于Material for MkDocs美化

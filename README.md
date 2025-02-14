@@ -35,6 +35,9 @@
 **Lighthouse测试结果**
 <img width="1363" alt="image" src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp">
 
+<img width="1363" alt="image" src="https://s2.loli.net/2025/02/13/M7dgcDiGOI28PQs.png">
+
+
 </center>
 
 ## 如何快速使用
