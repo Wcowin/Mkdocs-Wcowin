@@ -77,10 +77,11 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     ---
     ![image](https://pic3.zhimg.com/80/v2-0786a6086793ccca444226e9ab3561ec_1440w.webp){ class="responsive-image" align=right width="230" height="300" style="border-radius: 25px;" }
 
-    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
+    
+    - [x] {==简洁美观==} ，功能多元化，小白配置
     - [x] 基于{~~~>Material for MkDocs~~}美化
-    - [x] 简洁美观，功能多元化，小白配置
     - [x] 如遇页面卡顿，请使用{--科学上网--}
+    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !  
     === "Mac/PC端"
 
         请在上方标签选择分类/左侧目录选择文章

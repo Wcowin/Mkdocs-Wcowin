@@ -2,7 +2,9 @@
 title: 网站添加Mkdocs博客
 tags:
   - Mkdocs
----
+---  
+
+博客效果展示：[博客](../index.md)  
 
 官方文档：[Built-in blog plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
 

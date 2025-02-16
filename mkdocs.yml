@@ -105,7 +105,7 @@ nav:
 
   - 标签: tag.md
   - 留言板: liuyanban.md
-  - Blogger:
+  - 博客:
       - index: blog/index.md
   - 友链:
       - 友链: about/link.md
@@ -116,7 +116,7 @@ nav:
   - 个人博客: https://wcowin.work
   - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
-copyright: Copyright &copy; 2022~2024 Wcowin/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 
 extra:
   alternate:

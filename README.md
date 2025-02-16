@@ -60,20 +60,20 @@
 
 <center>
 
+**Wechat**  
+  <a href="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" target="_blank">
+   <center>
+    <img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="width: 450px; height: auto;">
+    </center>  
+  </a>  
+
 **Telegram**
 
-<p align="center">
-  <a href="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" target="_blank">
-    <img src="https://s2.loli.net/2025/01/04/oUqPCHxTVRZJ41w.jpg" alt="个人名片" style="border-radius: 10px;" width="50%">
+  <a href="https://t.me/wecowin" target="_blank" >
+   <center>
+    <img src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" style="width: 450px; height: auto;">
+    </center>  
   </a>
-</p>
-
-
-**Wechat**  
-<!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
-<p align="center">
-<img src="https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg" style="border-radius: 10px;" width="50%">
-</p>
 
 </center>
 
