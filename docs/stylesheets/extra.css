@@ -1,13 +1,15 @@
 :root > * {
-  --md-primary-fg-color:        #518FC1;
-  --md-primary-fg-color--light:#518FC1;
-  --md-primary-fg-color--dark:  #518FC1;
+  --md-primary-fg-color:        #4c94cb;
+  --md-primary-fg-color--light:#4c94cb;
+  --md-primary-fg-color--dark:  #4c94cb;
     
 }
 /* 给所有元素加上边框 */
 /* * {
   outline: 1px solid #518FC1;
 }  */
+
+
 
 button.md-top {
   font-family: LXGW WenKai; /* 修改字体 */
