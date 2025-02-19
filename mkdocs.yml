@@ -1,5 +1,5 @@
 #[Info]
-site_name: Mkdocs教程 #your site name 显示在左上角
+site_name: Mkdocs中文教程 #your site name 显示在左上角
 site_url: http://wcowin.work/Mkdocs-Wcowin
 site_description: Content and ambitious, gentle yet firm.
 site_author: 王科文(Wcowin) # your name
@@ -18,8 +18,8 @@ theme:
         name: 关闭自动模式
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
-      primary: indigo # 上方的
-      accent: blue # 链接等可交互元件的高亮色
+      primary: bule # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
       toggle:
         icon: material/toggle-switch # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
@@ -70,10 +70,10 @@ nav:
   - MKdocs中文教程:
       - 许可声明: blog/MIT.md
       - MKdocs教程(三部曲):
-          - 0. Mkdocs教程前言: blog/Mkdocs/mkfirst.md
+          - 0.Mkdocs教程前言: blog/Mkdocs/mkfirst.md
           - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
           - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
-          - 3. 解决 mkdocs部署 Github Pages 自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+          - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
       - Mkdocs美化:
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
           - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md

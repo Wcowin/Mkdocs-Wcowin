@@ -93,6 +93,7 @@
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
+![Alt](https://repobeats.axiom.co/api/embed/b824e1bf28f31c9fa190eb5079cc1d035e562e0b.svg "Repobeats analytics image")
 
 ## 贡献者
 <a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">

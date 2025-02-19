@@ -16,8 +16,20 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     \__/  \__/     \______| \______/      \__/  \__/     |__| |__| \__| 
 -->
 
-<center><font  color= #757575 size=6 class="ml3">Wcowin for MkDocs博客主题</font></center>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<center><font class="custom-font ml3">Wcowin for MkDocs博客教程</font></center>
+<script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+    .custom-font {
+    font-size: 31px; /* 默认字体大小为8px */
+    color: #757575;
+}
+@media (max-width: 768px) { /* 假设768px及以下为移动端 */
+    .custom-font {
+        font-size: 25px; /* 移动端字体大小为6px */
+    }
+}
+</style>
 
 
 <!-- <div id="rcorners2" >
