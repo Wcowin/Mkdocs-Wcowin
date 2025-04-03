@@ -116,7 +116,7 @@ status: new
                             <span class="qualification__subtitle">网络空间安全硕士研究生</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
-                                2024 - 2027</font>
+                                2026 - 2029</font>
                             </div>
                         </div>
                         <div>
