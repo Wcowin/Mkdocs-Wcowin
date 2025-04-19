@@ -138,7 +138,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 <div class="grid cards" markdown>
 
--   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程__
+-   :simple-materialformkdocs:{ .lg .middle } __Mkdocs教程(必看)__
 
     ---
 
@@ -156,7 +156,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     - [Mkdocs-Wcowin博客主题社区](https://support.qq.com/products/646913/){target=“_blank”}
     - [留言板](liuyanban.md)[^Knowing-that-loving-you-has-no-ending] 
     - [Blogger](blog/index.md)   
-    [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]
+    - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]  
+    - [请作者喝杯咖啡](about/zcw.md)
 
 </div>
 

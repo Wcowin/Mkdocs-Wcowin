@@ -106,6 +106,7 @@ nav:
   - 关于:
       - 作者个人简介: about/geren.md
       - 个人简历: about/resume.md
+      - 支持作者: about/zcw.md
       - 功能测试: about/test.md
   - 个人博客: https://wcowin.work
   - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin

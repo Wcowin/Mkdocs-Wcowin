@@ -10,7 +10,7 @@ tags:
 
 与所有内置插件一样，博客插件的入门非常简单。只需将以下行添加到mkdocs.yml
 
-```
+``` hl_lines="2"
 plugins:
   - blog
 ```
@@ -34,9 +34,10 @@ draft: true   # 是否为草稿
 categories:  #分类
   - Hello
 ---
-```
-作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  
+```  
 
+
+作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  
 
 ```yml
 authors:
@@ -45,7 +46,5 @@ authors:
     description: Free and casual # Author description
     avatar: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png          # Author avatar
 
-```
-
-```
+```  
 结束

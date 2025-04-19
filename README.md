@@ -6,7 +6,18 @@
 **- 简单易上手，小白配置**  
 **- 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !**
 
-
+## 目录
+- [Wcowin for MkDocs主题](#wcowin-for-mkdocs主题)
+  - [目录](#目录)
+  - [展示](#展示)
+  - [如何快速使用](#如何快速使用)
+  - [视频教程](#视频教程)
+- [Connect with me](#connect-with-me)
+  - [案例成果](#案例成果)
+  - [Star History](#star-history)
+  - [贡献者](#贡献者)
+  - [请作者喝杯咖啡](#请作者喝杯咖啡)
+  - [License](#license)
 
 ## 展示  
 
@@ -43,18 +54,28 @@
 
 ## 如何快速使用  
 
-打开终端安装mkdocs: `pip install mkdocs-material`，在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
+首先，建议在虚拟环境下安装 mkdocs-material：
 
-把Mkdocs-Wcowin文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可
+```bash
+pip install mkdocs-material
+```
+
+**方法一：**
+直接下载[releases](https://github.com/Wcowin/Mkdocs-Wcowin/releases)里的`Wcowin-for-MkDocs.zip`文件，解压到你本地的文件夹下，随后在文件目录终端里`mkdocs serve`即可
+
+**方法二：**
+在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
+
+把克隆下来文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可运行，另一种运行方法：根目录有一个`Mkdocs-serve.bat`批处理文件，直接双击即可(仅在Windows系统下有效)
 ![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png)
 
-> 另一种运行方法：根目录有一个`Mkdocs-serve.bat`批处理文件，直接双击即可
+!注意：如果提示未安装git-committers等插件，在终端执行`pip install git-committers`即可，缺少什么就安装什么，直接执行`pip install -r requirements.txt`也可以安装所有插件  
 
-详细的初步教程见：[利用Mkdocs部署静态网页至GitHubpages](TECH.md)
+初步教程见：[利用Mkdocs部署静态网页至GitHubpages](快速开始.md)
 
 ## 视频教程
 
-[Mkdocs中文教程视频](https://space.bilibili.com/1407028951/lists/4566631?type=series)
+[Mkdocs中文教程视频](https://space.bilibili.com/1407028951/lists/4566631?type=series)（手把手教学，首次使用MKdocs建议观看）
 
 # Connect with me
 
@@ -76,6 +97,7 @@
   </a>
 
 </center>
+
 
 ## 案例成果
 
@@ -105,6 +127,14 @@
 <!-- ## 版权声明
 
 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)进行许可。 -->
+## 请作者喝杯咖啡
+
+  <a href="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" target="_blank">
+   <center>
+    <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" style="width: 450px; height: auto;">
+    </center>  
+  </a> 
+
 
 ## License
 

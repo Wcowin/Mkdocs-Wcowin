@@ -71,6 +71,27 @@ t.parentNode.insertBefore(e,t)}})();
 
 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 获取友链容器
+    const friendLinksContainer = document.querySelector(".links-content");
+    if (friendLinksContainer) {
+      // 获取所有友链卡片
+      const friendLinks = friendLinksContainer.querySelectorAll(".card");
+      const totalLinks = friendLinks.length;
+
+      // 创建统计信息的元素
+      const statsElement = document.createElement("div");
+      statsElement.style.textAlign = "center";
+      statsElement.style.margin = "20px 0";
+      statsElement.style.color = "#999";
+      statsElement.textContent = `当前共有友链 ${totalLinks} 个，欢迎交换友链！`;
+
+      // 将统计信息插入到友链容器的上方
+      friendLinksContainer.parentNode.insertBefore(statsElement, friendLinksContainer);
+    }
+  });
+</script>
 
 </div>
 
