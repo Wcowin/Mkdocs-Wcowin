@@ -74,7 +74,7 @@ nav:
           - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
           - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
           - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
-      - Mkdocs美化:
+      - Mkdocs美化/补充:
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
           - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
           - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
@@ -84,6 +84,8 @@ nav:
           - 修改网站字体: blog/websitebeauty/mkdocsfont.md
           - JS实现鼠标样式: blog/websitebeauty/shubiao.md
           - 背景特效: blog/websitebeauty/backgroud.md
+          - 嵌入PDF文件: blog/websitebeauty/mkpdf.md
+          - 相对地址的一些问题: blog/websitebeauty/Relativeaddress.md
           - 添加404页面: blog/websitebeauty/404.md
           - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md
   - 建设MKdocs技能指北:
