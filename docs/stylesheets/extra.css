@@ -146,7 +146,7 @@ img {
 /* 滚动条 */
 
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 width: 8px;
 height: 8px;
 }
@@ -183,7 +183,7 @@ background-color: #49b1f5;
 ::-webkit-scrollbar:hover {
 width: 7px;
 height: 7px;
-}
+} */
 
 /*bilbili*/
 /*哔哩哔哩视频适配*/

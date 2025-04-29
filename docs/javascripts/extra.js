@@ -19,15 +19,15 @@ anime.timeline({loop: true})
 
 
 //全屏视频
-var video = document.getElementById("video1");
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// var video = document.getElementById("video1");
+// var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-if (isMobile) {
-  video.style.display = "none";
-  video.muted = true;
-} else {
-  video.volume = 0.5; // 或者根据需要设置适当的音量值，例如 0.5 表示 50% 的音量
-}
+// if (isMobile) {
+//   video.style.display = "none";
+//   video.muted = true;
+// } else {
+//   video.volume = 0.5; // 或者根据需要设置适当的音量值，例如 0.5 表示 50% 的音量
+// }
 
 // 优化
 // const container = document.querySelector('.container');
