@@ -286,7 +286,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
 
 extra_css:
-  - stylesheets/extra.css # 自定义CSS
+  # - stylesheets/extra.css # 自定义CSS
+  - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/extra.css
   # - stylesheets/link.css #友链配置
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链CDN
   # - stylesheets/customize.css # 搜索圆角优化
