@@ -19,6 +19,7 @@ status: new
        style="width: 270px; border-radius: 50%; display: block; margin: 0 auto;">
 </center>
 
+
 <!-- <center>  
 
 ![](https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}  
@@ -30,8 +31,8 @@ status: new
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
 
 <center><font size=6 color= #757575>
-观史知今，当思进退，读书明志可识春秋
-
+观史知今，当思进退，读书明志可识春秋  
+<br>
 ——Wcowin </font></center>  
 
 ---
@@ -158,7 +159,7 @@ status: new
                         </div>
                         <div>
                             <h3 class="qualification__title">未完待续</h3>
-                            <span class="qualification__subtitle">在路上，永远热泪盈眶</span>
+                            <span class="qualification__subtitle">于道各努力，千里自同风</span>
                             <div class="qualification__calendar">
                                 <font color= #757575><iconify-icon icon="tabler:calendar"></iconify-icon>
                                 Before - After</font>

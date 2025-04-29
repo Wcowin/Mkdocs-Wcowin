@@ -88,6 +88,8 @@ nav:
           - 相对地址的一些问题: blog/websitebeauty/Relativeaddress.md
           - 添加404页面: blog/websitebeauty/404.md
           - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md
+          - 页脚设置: blog/websitebeauty/footer.md
+          - 加速网站访问的一些心得: blog/websitebeauty/accelerate.md
   - 建设MKdocs技能指北:
       - Markdown:
           - Markdown指南: develop/Markdown/markdown.md
