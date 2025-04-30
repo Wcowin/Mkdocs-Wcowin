@@ -44,17 +44,7 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-    <div class="card"> 
-     <img class="ava" src="https://raw.githubusercontent.com/VictorWang712/Note/refs/heads/main/docs/assets/images/avatars/Walker_V.png" /> 
-     <div class="card-header"> 
-      <div> 
-      <a href="https://victorwang712.github.io/Note/" target="_blank">Walker_V's Notebook</a> 
-      </div> 
-      <div class="info">
-      要在温室和暴风之中取舍，我忘记了退缩。
-      </div> 
-     </div> 
-    </div>
+
 
 
 
