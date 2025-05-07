@@ -17,7 +17,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 -->
 
 
-<center><font class="custom-font ml3">Wcowin for MkDocs博客教程</font></center>
+<center><font class="custom-font ml3">最好的MkDocs博客教程</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
@@ -30,6 +30,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     }
 }
 </style>
+
+
 
 
 <!-- <div id="rcorners2" >
@@ -113,6 +115,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 </style>
 
 
+>不同于市面上过时的MkDocs教程，本站提供了最详细最便捷最前沿的MkDocs中文文字/视频教程，与[官方发布](https://squidfunk.github.io/mkdocs-material/changelog/)的教程版本同步。包含了MkDocs的安装、配置、主题美化、插件使用等内容。无论你是初学者还是有经验的用户，都能在这里找到你需要的帮助。我们还提供了示例和实用的技巧，帮助你更好地使用MkDocs。𝓳𝓾𝓼𝓽 𝓮𝓷𝓳𝓸𝔂 𝓲𝓽～
+
 <!-- - 基于Material for MkDocs美化
 - 简洁美观，功能多元化
 - 简单易上手，小白配置
@@ -142,7 +146,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
     ---
 
-    - [Mkdocs视频教程](https://space.bilibili.com/1407028951/lists/4566631?type=series){target=“_blank”}
+    - [Mkdocs视频教程](https://space.bilibili.com/1407028951/lists/4566631?type=series){target=“_blank”}(Bilibili)
     - [部署静态网页至GitHub pages](blog/Mkdocs/mkdocs1.md)
     - [Mkdocs部署配置说明(mkdocs.yml)](blog/Mkdocs/mkdocs2.md)
     - [如何给MKdocs添加友链](blog/websitebeauty/linktech.md)

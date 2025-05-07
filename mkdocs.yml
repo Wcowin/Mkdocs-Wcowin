@@ -209,7 +209,7 @@ plugins:
       type: iso_date
       enable_creation_date: false
       exclude:
-        - index.md
+        # - index.md
         - tag.md
         - liuyanban.md
         - blog/posts/update.md

@@ -83,7 +83,7 @@ Mkdocs Materials 教程:
 
 ## 一点请求
 
-<font  color= #518FC1 size=6 class="ml3">如果您参考了本教程，如果可以的话，烦请在您的网站注明教程来源！感谢！</font>
+<font  color= #518FC1 size=6 class="ml3">创作不易。如果您参考了本教程/借鉴了网页设计，如果可以的话，烦请在您的网站注明教程来源！感谢！</font>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 示例：
