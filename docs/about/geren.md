@@ -134,7 +134,7 @@ status: new
 </center> -->
 
 <center>
-<a href="../个人简历2.pdf" target="_blank" class="md-button">下载简历</a>
+<a href="../个人简历.pdf" target="_blank" class="md-button">下载简历</a>
 </center>
 
 <!-- <div class="card2 file-block" markdown="1">
