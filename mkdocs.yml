@@ -106,13 +106,14 @@ nav:
   - 博客:
       - index: blog/index.md
   - 友链:
-      - 友链: about/link.md
+      - 友链: link.md
   - 关于:
       - 作者个人简介: about/geren.md
       - 个人简历: about/resume.md
       - 支持作者: about/zcw.md
       - 功能测试: about/test.md
   - 个人博客: https://wcowin.work
+  - 个人简介: https://wcowin.work/Personal-Profile/#
   - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
 copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
@@ -277,8 +278,9 @@ extra_javascript:
   # - javascripts/extra.js #自定义javascript
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js #Latex支持
-  - https://github.com/Wcowin/Wcowin.github.io/blob/main/docs/javascripts/mathjax.js #Latex支持的CDN
-  - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
+  - javascripts/mathjax.js #Latex支持的CDN
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
   # - ckplayer/js/ckplayer.js #播放器配置
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
@@ -286,7 +288,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
 
 extra_css:
-  # - stylesheets/extra.css # 自定义CSS
+  - stylesheets/extra.css # 自定义CSS
   - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/extra.css
   # - stylesheets/link.css #友链配置
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链CDN
