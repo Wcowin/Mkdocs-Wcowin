@@ -1,6 +1,6 @@
 {
-  "summary": "本文详细介绍了使用MkDocs框架部署静态网站到GitHub Pages的完整流程。重点包括：通过GitHub Desktop管理仓库，配置mkdocs.yml基础设置，添加GitHub Workflow实现自动化部署，以及最终发布到自定义域名。教程特别强调了目录结构管理和关键配置步骤，适合快速搭建个人博客或文档网站。配套视频和中文文档降低了技术门槛，使静态网站部署更加高效便捷。",
+  "summary": "本文介绍了使用MkDocs构建静态网站并部署到GitHub Pages的完整流程。重点讲解了通过GitHub Desktop管理仓库、配置mkdocs.yml文件、设置GitHub Actions自动化部署等关键步骤，并提供了Material主题的配置建议。该方法适合快速搭建技术文档或博客网站，具有版本控制友好、部署简单的特点，最后还提供了实时预览和自定义域名的实现方式。",
   "service": "deepseek",
   "page_title": "1.利用Mkdocs部署静态网页",
-  "timestamp": "2025-06-03T15:01:32.540524"
+  "timestamp": "2025-06-03T16:15:07.175758"
 }

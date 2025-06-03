@@ -24,6 +24,7 @@ class AISummaryGenerator:
         self.enabled_folders = [
             'blog/',      # blog文件夹
             'develop/',   # develop文件夹
+            # 'about/',    # about文件夹
             # 在这里添加您想要启用AI摘要的文件夹
         ]
         
