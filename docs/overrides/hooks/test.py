@@ -1,3 +1,4 @@
+# 备份智能摘要代码
 import re
 import json
 import hashlib
@@ -42,27 +43,6 @@ class AISummaryGenerator:
             'docs/index.md',
             'develop/index.md',
         ]
-        
-        # 初始化阅读统计相关的正则表达式
-        self.chinese_chars_pattern = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]')
-        self.code_block_pattern = re.compile(r'```.*?```', re.DOTALL)
-        self.inline_code_pattern = re.compile(r'`[^`]+`')
-        self.yaml_front_pattern = re.compile(r'^---.*?---\s*', re.DOTALL)
-        self.html_tag_pattern = re.compile(r'<[^>]+>')
-        self.image_pattern = re.compile(r'!\[.*?\]\([^)]+\)')
-        self.link_pattern = re.compile(r'\[([^\]]+)\]\([^)]+\)')
-        
-        # 支持的编程语言
-        self.programming_languages = frozenset({
-            'python', 'py', 'javascript', 'js', 'typescript', 'ts', 'java', 'cpp', 'c', 
-            'go', 'rust', 'php', 'ruby', 'swift', 'kotlin', 'csharp', 'cs',
-            'bash', 'sh', 'powershell', 'ps1', 'zsh', 'fish', 'bat', 'cmd',
-            'html', 'css', 'scss', 'sass', 'less', 'yaml', 'yml', 'json', 'xml',
-            'toml', 'ini', 'conf', 'dockerfile', 'makefile',
-            'sql', 'mysql', 'postgresql', 'sqlite', 'mongodb',
-            'r', 'matlab', 'scala', 'perl', 'lua', 'dart', 'tex', 'latex',
-            'csv', 'properties', ''
-        })
     
     def configure_folders(self, folders=None, exclude_patterns=None, exclude_files=None):
         """
@@ -285,71 +265,49 @@ class AISummaryGenerator:
                 return '本文深入探讨了相关技术内容，提供了实用的方法和解决方案。'
     
     def process_page(self, markdown, page, config):
-        """处理页面，生成AI摘要和阅读统计"""
-        # 检查是否需要显示阅读信息
-        show_reading_info = self.should_show_reading_info(page, markdown)
-        
-        # 检查是否需要生成AI摘要
-        should_generate_ai_summary = self.should_generate_summary(page, markdown)
-        
-        # 如果两者都不需要，直接返回原内容
-        if not show_reading_info and not should_generate_ai_summary:
+        """处理页面，生成AI摘要"""
+        if not self.should_generate_summary(page, markdown):
             return markdown
         
-        # 计算阅读统计
-        reading_time, chinese_chars, code_lines = self.calculate_reading_stats(markdown)
+        clean_content = self.clean_content_for_ai(markdown)
         
-        result_blocks = []
+        # 内容长度检查
+        if len(clean_content) < 200:
+            print(f"📄 内容太短，跳过摘要生成: {page.file.src_path}")
+            return markdown
         
-        # 处理AI摘要
-        if should_generate_ai_summary:
-            clean_content = self.clean_content_for_ai(markdown)
-            
-            # 内容长度检查
-            if len(clean_content) >= 200:
-                content_hash = self.get_content_hash(clean_content)
-                page_title = getattr(page, 'title', '')
-                
-                # 检查缓存
-                cached_summary = self.get_cached_summary(content_hash)
-                if cached_summary:
-                    summary = cached_summary.get('summary', '')
-                    ai_service = 'cached'
-                    print(f"✅ 使用缓存摘要: {page.file.src_path}")
-                else:
-                    # 生成新摘要
-                    print(f"🤖 正在生成AI摘要: {page.file.src_path}")
-                    summary = self.generate_ai_summary(clean_content, page_title)
-                    
-                    if not summary:
-                        summary = self.generate_fallback_summary(clean_content, page_title)
-                        ai_service = 'fallback'
-                        print(f"📝 使用备用摘要: {page.file.src_path}")
-                    else:
-                        ai_service = 'deepseek'
-                        print(f"✅ AI摘要生成成功: {page.file.src_path}")
-                    
-                    # 保存到缓存
-                    self.save_summary_cache(content_hash, {
-                        'summary': summary,
-                        'service': ai_service,
-                        'page_title': page_title
-                    })
-                
-                # 添加AI摘要块
-                ai_summary_block = self.format_ai_summary(summary, ai_service)
-                result_blocks.append(ai_summary_block)
+        content_hash = self.get_content_hash(clean_content)
+        page_title = getattr(page, 'title', '')
         
-        # 添加阅读信息块
-        if show_reading_info:
-            reading_info_block = self.format_reading_info(reading_time, chinese_chars, code_lines)
-            result_blocks.append(reading_info_block)
-        
-        # 合并所有块并返回
-        if result_blocks:
-            return '\n'.join(result_blocks) + '\n\n' + markdown
+        # 检查缓存
+        cached_summary = self.get_cached_summary(content_hash)
+        if cached_summary:
+            summary = cached_summary.get('summary', '')
+            ai_service = 'cached'
+            print(f"✅ 使用缓存摘要: {page.file.src_path}")
         else:
-            return markdown
+            # 生成新摘要
+            print(f"🤖 正在生成AI摘要: {page.file.src_path}")
+            summary = self.generate_ai_summary(clean_content, page_title)
+            
+            if not summary:
+                summary = self.generate_fallback_summary(clean_content, page_title)
+                ai_service = 'fallback'
+                print(f"📝 使用备用摘要: {page.file.src_path}")
+            else:
+                ai_service = 'deepseek'
+                print(f"✅ AI摘要生成成功: {page.file.src_path}")
+            
+            # 保存到缓存
+            self.save_summary_cache(content_hash, {
+                'summary': summary,
+                'service': ai_service,
+                'page_title': page_title
+            })
+        
+        # 添加摘要到页面最上面
+        summary_html = self.format_summary(summary, ai_service)
+        return summary_html + '\n\n' + markdown
     
     def should_generate_summary(self, page, markdown):
         """判断是否应该生成摘要 - 可自定义文件夹"""
@@ -384,139 +342,8 @@ class AISummaryGenerator:
         # 默认不生成摘要
         return False
     
-    def calculate_reading_stats(self, markdown):
-        """计算中文字符数和代码行数"""
-        # 清理内容用于中文字符统计
-        content = markdown
-        content = self.yaml_front_pattern.sub('', content)
-        content = self.html_tag_pattern.sub('', content)
-        content = self.image_pattern.sub('', content)
-        content = self.link_pattern.sub(r'\1', content)
-        content = self.code_block_pattern.sub('', content)
-        content = self.inline_code_pattern.sub('', content)
-        
-        chinese_chars = len(self.chinese_chars_pattern.findall(content))
-        
-        # 统计代码行数
-        code_lines = self.count_code_lines(markdown)
-        
-        # 计算阅读时间（中文：400字/分钟）
-        reading_time = max(1, round(chinese_chars / 400))
-        
-        return reading_time, chinese_chars, code_lines
-    
-    def count_code_lines(self, markdown):
-        """统计代码行数"""
-        code_blocks = self.code_block_pattern.findall(markdown)
-        total_code_lines = 0
-        
-        for block in code_blocks:
-            # 提取语言标识
-            lang_match = re.match(r'^```(\w*)', block)
-            language = lang_match.group(1).lower() if lang_match else ''
-            
-            # 移除开头的语言标识和结尾的```
-            code_content = re.sub(r'^```\w*\n?', '', block)
-            code_content = re.sub(r'\n?```$', '', code_content)
-            
-            # 过滤空代码块
-            if not code_content.strip():
-                continue
-            
-            # 计算有效行数
-            lines = [line for line in code_content.split('\n') if line.strip()]
-            line_count = len(lines)
-            
-            # 如果有明确的编程语言标识，直接统计
-            if language and language in self.programming_languages:
-                total_code_lines += line_count
-                continue
-            
-            # 检测是否为代码内容
-            is_code = self.is_code_content(code_content)
-            
-            if is_code:
-                total_code_lines += line_count
-        
-        return total_code_lines
-    
-    def is_code_content(self, content):
-        """判断内容是否为代码"""
-        # 命令行检测
-        command_indicators = [
-            'sudo ', 'npm ', 'pip ', 'git ', 'cd ', 'ls ', 'mkdir ', 'rm ', 'cp ', 'mv ',
-            'chmod ', 'chown ', 'grep ', 'find ', 'ps ', 'kill ', 'top ', 'cat ', 'echo ',
-            'wget ', 'curl ', 'tar ', 'zip ', 'unzip ', 'ssh ', 'scp ', 'rsync ',
-            '$ ', '# ', '% ', '> ', 'C:\\>', 'PS>', '#!/',
-            '/Applications/', '/usr/', '/etc/', '/var/', '/home/', '~/',
-        ]
-        
-        if any(indicator in content for indicator in command_indicators):
-            return True
-        
-        # 编程语法检测
-        programming_indicators = [
-            'def ', 'class ', 'import ', 'from ', 'return ', 'function', 'var ', 'let ', 'const ',
-            'public ', 'private ', 'protected ', 'static ', 'void ', 'int ', 'string ',
-            '==', '!=', '<=', '>=', '&&', '||', '++', '--', '+=', '-=',
-            'while ', 'for ', 'if ', 'else:', 'switch ', 'case ',
-            '<!DOCTYPE', '<html', '<div', '<span', 'display:', 'color:', 'background:',
-        ]
-        
-        if any(indicator in content for indicator in programming_indicators):
-            return True
-        
-        # 结构化检测
-        lines = content.split('\n')
-        if len(lines) > 1 and any(line.startswith('  ') or line.startswith('\t') for line in lines):
-            return True
-        
-        if '<' in content and '>' in content:
-            return True
-        
-        if any(char in content for char in ['{', '}', '(', ')', '[', ']']) and ('=' in content or ':' in content):
-            return True
-        
-        return False
-    
-    def should_show_reading_info(self, page, markdown):
-        """判断是否应该显示阅读信息"""
-        # 检查页面元数据
-        if page.meta.get('hide_reading_time', False):
-            return False
-        
-        # 获取文件路径
-        src_path = page.file.src_path.replace('\\', '/')
-        
-        # 使用现有的排除模式检查
-        exclude_patterns = [
-            r'^index\.md$', r'^about/', r'^trip/index\.md$', r'^relax/index\.md$',
-            r'^blog/indexblog\.md$', r'^blog/posts\.md$', r'^develop/index\.md$',
-            r'waline\.md$', r'link\.md$', r'404\.md$'
-        ]
-        
-        for pattern in exclude_patterns:
-            if re.match(pattern, src_path):
-                return False
-        
-        # 检查页面类型
-        page_type = page.meta.get('type', '')
-        if page_type in {'landing', 'special', 'widget'}:
-            return False
-        
-        # 内容长度检查
-        if len(markdown) < 300:
-            return False
-        
-        # 计算中文字符数
-        _, chinese_chars, _ = self.calculate_reading_stats(markdown)
-        if chinese_chars < 50:
-            return False
-        
-        return True
-    
-    def format_ai_summary(self, summary, ai_service):
-        """格式化AI摘要显示"""
+    def format_summary(self, summary, ai_service):
+        """格式化摘要显示"""
         service_config = {
             'deepseek': {
                 'icon': '🤖',
@@ -529,7 +356,7 @@ class AISummaryGenerator:
                 'color': 'tip'
             },
             'cached': {
-                'icon': '🤖',
+                'icon': '💾',
                 'name': 'AI智能摘要',
                 'color': 'info'
             }
@@ -538,20 +365,9 @@ class AISummaryGenerator:
         config = service_config.get(ai_service, service_config['deepseek'])
         
         return f'''??? {config['color']} "{config['icon']} {config['name']}"
-    {summary}'''
-    
-    def format_reading_info(self, reading_time, chinese_chars, code_lines):
-        """格式化阅读信息显示"""
-        if code_lines > 0:
-            return f'''!!! info "📖 阅读信息"
-    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}** | 有效代码行数：**{code_lines}**'''
-        else:
-            return f'''!!! info "📖 阅读信息"
-    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}**'''
-    
-    def format_summary(self, summary, ai_service):
-        """保持向后兼容的格式化方法"""
-        return self.format_ai_summary(summary, ai_service)
+    {summary}
+
+'''
 
 # 创建全局实例
 ai_summary_generator = AISummaryGenerator()
@@ -576,5 +392,6 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
     ai_summary_generator.configure_folders(enabled_folders, exclude_patterns, exclude_files)
 
 def on_page_markdown(markdown, page, config, files):
-    """MkDocs hook入口点 - 统一处理AI摘要和阅读统计"""
+    """MkDocs hook入口点"""
     return ai_summary_generator.process_page(markdown, page, config)
+
