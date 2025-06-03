@@ -35,5 +35,15 @@ jobs:
       # - run: pip install mkdocs-rss-plugin           
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
+      - run: pip install requests
       - run: mkdocs gh-deploy --force
+        env:
+          # AI摘要配置
+          AI_SUMMARY_CI_ENABLED: true          # CI环境启用AI摘要
+          AI_SUMMARY_LOCAL_ENABLED: false      # 本地环境禁用AI摘要
+          AI_SUMMARY_CI_ONLY_CACHE: false      # CI环境允许生成新摘要
+          AI_SUMMARY_CI_FALLBACK: true         # CI环境启用备用摘要
+          # API密钥（如果需要的话）
+          # DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 

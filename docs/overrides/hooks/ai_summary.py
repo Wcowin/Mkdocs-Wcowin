@@ -81,7 +81,28 @@ class AISummaryGenerator:
         ]
         
         # 🌍 语言配置/Language Configuration
-        self.summary_language = 'en'  # 默认中文，可选 'zh'、'en'、'both'
+        self.summary_language = 'zh'  # 默认中文，可选 'zh'、'en'、'both'
+        
+        # 初始化阅读统计相关的正则表达式
+        self.chinese_chars_pattern = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]')
+        self.code_block_pattern = re.compile(r'```.*?```', re.DOTALL)
+        self.inline_code_pattern = re.compile(r'`[^`]+`')
+        self.yaml_front_pattern = re.compile(r'^---.*?---\s*', re.DOTALL)
+        self.html_tag_pattern = re.compile(r'<[^>]+>')
+        self.image_pattern = re.compile(r'!\[.*?\]\([^)]+\)')
+        self.link_pattern = re.compile(r'\[([^\]]+)\]\([^)]+\)')
+        
+        # 支持的编程语言
+        self.programming_languages = frozenset({
+            'python', 'py', 'javascript', 'js', 'typescript', 'ts', 'java', 'cpp', 'c', 
+            'go', 'rust', 'php', 'ruby', 'swift', 'kotlin', 'csharp', 'cs',
+            'bash', 'sh', 'powershell', 'ps1', 'zsh', 'fish', 'bat', 'cmd',
+            'html', 'css', 'scss', 'sass', 'less', 'yaml', 'yml', 'json', 'xml',
+            'toml', 'ini', 'conf', 'dockerfile', 'makefile',
+            'sql', 'mysql', 'postgresql', 'sqlite', 'mongodb',
+            'r', 'matlab', 'scala', 'perl', 'lua', 'dart', 'tex', 'latex',
+            'csv', 'properties', ''
+        })
         
         # 在初始化时就进行环境检查
         self._check_environment()
@@ -649,154 +670,157 @@ Please generate bilingual summary:"""
             else:
                 return self._generate_chinese_fallback(page_title)
     
-    def is_ci_environment(self):
-        """检测是否在 CI 环境中运行"""
-        # 常见的 CI 环境变量
-        ci_indicators = [
-            'CI', 'CONTINUOUS_INTEGRATION',           # 通用 CI 标识
-            'GITHUB_ACTIONS',                         # GitHub Actions
-            'GITLAB_CI',                              # GitLab CI
-            'JENKINS_URL',                            # Jenkins
-            'TRAVIS',                                 # Travis CI
-            'CIRCLECI',                               # CircleCI
-            'AZURE_HTTP_USER_AGENT',                  # Azure DevOps
-            'TEAMCITY_VERSION',                       # TeamCity
-            'BUILDKITE',                              # Buildkite
-            'CODEBUILD_BUILD_ID',                     # AWS CodeBuild
-            'NETLIFY',                                # Netlify
-            'VERCEL',                                 # Vercel
-            'CF_PAGES',                               # Cloudflare Pages
+    def _generate_chinese_fallback(self, page_title=""):
+        """生成中文备用摘要"""
+        if any(keyword in page_title for keyword in ['教程', '指南', 'Tutorial']):
+            return '本文提供了详细的教程指南，通过实例演示帮助读者掌握相关技术要点。'
+        elif any(keyword in page_title for keyword in ['配置', '设置', '安装', 'Config']):
+            return '本文介绍了系统配置的方法和步骤，提供实用的设置建议和最佳实践。'
+        elif any(keyword in page_title for keyword in ['开发', '编程', 'Development']):
+            return '本文分享了开发经验和技术实践，提供了实用的代码示例和解决方案。'
+        else:
+            return '本文深入探讨了相关技术内容，提供了实用的方法和解决方案。'
+    
+    def _generate_english_fallback(self, page_title=""):
+        """生成英文备用摘要"""
+        if any(keyword in page_title.lower() for keyword in ['tutorial', 'guide', '教程', '指南']):
+            return 'This article provides a detailed tutorial guide with practical examples to help readers master relevant technical points.'
+        elif any(keyword in page_title.lower() for keyword in ['config', 'setup', 'install', '配置', '设置', '安装']):
+            return 'This article introduces system configuration methods and procedures, providing practical setup suggestions and best practices.'
+        elif any(keyword in page_title.lower() for keyword in ['develop', 'programming', 'code', '开发', '编程']):
+            return 'This article shares development experience and technical practices, providing practical code examples and solutions.'
+        else:
+            return 'This article explores relevant technical content in depth, providing practical methods and solutions.'
+    
+    def calculate_reading_stats(self, markdown):
+        """计算中文字符数和代码行数"""
+        # 清理内容用于中文字符统计
+        content = markdown
+        content = self.yaml_front_pattern.sub('', content)
+        content = self.html_tag_pattern.sub('', content)
+        content = self.image_pattern.sub('', content)
+        content = self.link_pattern.sub(r'\1', content)
+        content = self.code_block_pattern.sub('', content)
+        content = self.inline_code_pattern.sub('', content)
+        
+        chinese_chars = len(self.chinese_chars_pattern.findall(content))
+        
+        # 统计代码行数
+        code_lines = self.count_code_lines(markdown)
+        
+        # 计算阅读时间（中文：400字/分钟）
+        reading_time = max(1, round(chinese_chars / 400))
+        
+        return reading_time, chinese_chars, code_lines
+    
+    def count_code_lines(self, markdown):
+        """统计代码行数"""
+        code_blocks = self.code_block_pattern.findall(markdown)
+        total_code_lines = 0
+        
+        for block in code_blocks:
+            # 提取语言标识
+            lang_match = re.match(r'^```(\w*)', block)
+            language = lang_match.group(1).lower() if lang_match else ''
+            
+            # 移除开头的语言标识和结尾的```
+            code_content = re.sub(r'^```\w*\n?', '', block)
+            code_content = re.sub(r'\n?```$', '', code_content)
+            
+            # 过滤空代码块
+            if not code_content.strip():
+                continue
+            
+            # 计算有效行数
+            lines = [line for line in code_content.split('\n') if line.strip()]
+            line_count = len(lines)
+            
+            # 如果有明确的编程语言标识，直接统计
+            if language and language in self.programming_languages:
+                total_code_lines += line_count
+                continue
+            
+            # 检测是否为代码内容
+            if self.is_code_content(code_content):
+                total_code_lines += line_count
+        
+        return total_code_lines
+    
+    def is_code_content(self, content):
+        """判断内容是否为代码"""
+        # 命令行检测
+        command_indicators = [
+            'sudo ', 'npm ', 'pip ', 'git ', 'cd ', 'ls ', 'mkdir ', 'rm ', 'cp ', 'mv ',
+            'chmod ', 'chown ', 'grep ', 'find ', 'ps ', 'kill ', 'top ', 'cat ', 'echo ',
+            'wget ', 'curl ', 'tar ', 'zip ', 'unzip ', 'ssh ', 'scp ', 'rsync ',
+            '$ ', '# ', '% ', '> ', 'C:\\>', 'PS>', '#!/',
+            '/Applications/', '/usr/', '/etc/', '/var/', '/home/', '~/',
         ]
         
-        for indicator in ci_indicators:
-            if os.getenv(indicator):
-                return True
+        if any(indicator in content for indicator in command_indicators):
+            return True
+        
+        # 编程语法检测
+        programming_indicators = [
+            'def ', 'class ', 'import ', 'from ', 'return ', 'function', 'var ', 'let ', 'const ',
+            'public ', 'private ', 'protected ', 'static ', 'void ', 'int ', 'string ',
+            '==', '!=', '<=', '>=', '&&', '||', '++', '--', '+=', '-=',
+            'while ', 'for ', 'if ', 'else:', 'switch ', 'case ',
+            '<!DOCTYPE', '<html', '<div', '<span', 'display:', 'color:', 'background:',
+        ]
+        
+        if any(indicator in content for indicator in programming_indicators):
+            return True
+        
+        # 结构化检测
+        lines = content.split('\n')
+        if len(lines) > 1 and any(line.startswith('  ') or line.startswith('\t') for line in lines):
+            return True
+        
+        if '<' in content and '>' in content:
+            return True
+        
+        if any(char in content for char in ['{', '}', '(', ')', '[', ']']) and ('=' in content or ':' in content):
+            return True
         
         return False
     
-    def should_run_in_current_environment(self):
-        """判断是否应该在当前环境中运行 AI 摘要"""
-        return self._should_run
-    
-    def _get_ci_name(self):
-        """获取 CI 环境名称"""
-        if os.getenv('GITHUB_ACTIONS'):
-            return 'GitHub Actions'
-        elif os.getenv('GITLAB_CI'):
-            return 'GitLab CI'
-        elif os.getenv('JENKINS_URL'):
-            return 'Jenkins'
-        elif os.getenv('TRAVIS'):
-            return 'Travis CI'
-        elif os.getenv('CIRCLECI'):
-            return 'CircleCI'
-        elif os.getenv('AZURE_HTTP_USER_AGENT'):
-            return 'Azure DevOps'
-        elif os.getenv('NETLIFY'):
-            return 'Netlify'
-        elif os.getenv('VERCEL'):
-            return 'Vercel'
-        elif os.getenv('CF_PAGES'):
-            return 'Cloudflare Pages'
-        elif os.getenv('CODEBUILD_BUILD_ID'):
-            return 'AWS CodeBuild'
-        else:
-            return 'Unknown CI'
-    
-    def process_page(self, markdown, page, config):
-        """处理页面，生成AI摘要（支持CI环境检测）"""
-        # 检查是否应该在当前环境运行
-        if not self.should_run_in_current_environment():
-            return markdown
-        
-        if not self.should_generate_summary(page, markdown):
-            return markdown
-        
-        clean_content = self.clean_content_for_ai(markdown)
-        
-        # 内容长度检查
-        if len(clean_content) < 100:
-            print(f"📄 内容太短，跳过摘要生成: {page.file.src_path}")
-            return markdown
-        
-        content_hash = self.get_content_hash(clean_content)
-        page_title = getattr(page, 'title', '')
-        is_ci = self.is_ci_environment()
-        
-        # 检查缓存
-        cached_summary = self.get_cached_summary(content_hash)
-        if cached_summary:
-            summary = cached_summary.get('summary', '')
-            ai_service = cached_summary.get('service', 'cached')
-            env_desc = '(CI)' if is_ci else '(本地)'
-            print(f"✅ 使用缓存摘要 {env_desc}: {page.file.src_path}")
-        else:
-            # 生成新摘要
-            lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
-            env_desc = '(CI)' if is_ci else '(本地)'
-            print(f"🤖 正在生成{lang_desc.get(self.summary_language, '中文')}AI摘要 {env_desc}: {page.file.src_path}")
-            summary, ai_service = self.generate_ai_summary(clean_content, page_title)
-            
-            if not summary:
-                # 尝试生成备用摘要
-                summary = self.generate_fallback_summary(clean_content, page_title)
-                if summary:
-                    ai_service = 'fallback'
-                    print(f"📝 使用备用摘要 {env_desc}: {page.file.src_path}")
-                else:
-                    print(f"❌ 无法生成摘要 {env_desc}: {page.file.src_path}")
-                    return markdown
-            else:
-                print(f"✅ AI摘要生成成功 ({ai_service}) {env_desc}: {page.file.src_path}")
-            
-            # 保存到缓存
-            if summary:
-                self.save_summary_cache(content_hash, {
-                    'summary': summary,
-                    'service': ai_service,
-                    'page_title': page_title
-                })
-        
-        # 添加摘要到页面最上面
-        if summary:
-            summary_html = self.format_summary(summary, ai_service)
-            return summary_html + '\n\n' + markdown
-        else:
-            return markdown
-    
-    def should_generate_summary(self, page, markdown):
-        """判断是否应该生成摘要"""
+    def should_show_reading_info(self, page, markdown):
+        """判断是否应该显示阅读信息"""
         # 检查页面元数据
-        if hasattr(page, 'meta'):
-            # 明确禁用
-            if page.meta.get('ai_summary') == False:
-                return False
-            
-            # 强制启用
-            if page.meta.get('ai_summary') == True:
-                return True
+        if hasattr(page, 'meta') and page.meta.get('hide_reading_time', False):
+            return False
         
         # 获取文件路径
-        src_path = page.file.src_path.replace('\\', '/')  # 统一路径分隔符
+        src_path = page.file.src_path.replace('\\', '/')
         
-        # 检查排除模式
-        if any(pattern in src_path for pattern in self.exclude_patterns):
+        # 使用现有的排除模式检查
+        exclude_patterns = [
+            r'^index\.md$', r'^about/', r'^trip/index\.md$', r'^relax/index\.md$',
+            r'^blog/indexblog\.md$', r'^blog/posts\.md$', r'^develop/index\.md$',
+            r'waline\.md$', r'link\.md$', r'404\.md$'
+        ]
+        
+        for pattern in exclude_patterns:
+            if re.match(pattern, src_path):
+                return False
+        
+        # 检查页面类型
+        if hasattr(page, 'meta'):
+            page_type = page.meta.get('type', '')
+            if page_type in {'landing', 'special', 'widget'}:
+                return False
+        
+        # 内容长度检查
+        if len(markdown) < 300:
             return False
         
-        # 检查排除的特定文件
-        if src_path in self.exclude_files:
+        # 计算中文字符数
+        _, chinese_chars, _ = self.calculate_reading_stats(markdown)
+        if chinese_chars < 50:
             return False
         
-        # 检查是否在启用的文件夹中
-        for folder in self.enabled_folders:
-            if src_path.startswith(folder) or f'/{folder}' in src_path:
-                folder_name = folder.rstrip('/')
-                lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
-                print(f"🎯 {folder_name}文件夹文章检测到，启用{lang_desc.get(self.summary_language, '中文')}AI摘要: {src_path}")
-                return True
-        
-        # 默认不生成摘要
-        return False
+        return True
     
     def format_summary(self, summary, ai_service):
         """格式化摘要显示（包含CI环境标识）"""
