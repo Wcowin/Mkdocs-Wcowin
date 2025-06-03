@@ -785,42 +785,182 @@ Please generate bilingual summary:"""
         
         return False
     
-    def should_show_reading_info(self, page, markdown):
-        """判断是否应该显示阅读信息"""
-        # 检查页面元数据
-        if hasattr(page, 'meta') and page.meta.get('hide_reading_time', False):
-            return False
-        
-        # 获取文件路径
-        src_path = page.file.src_path.replace('\\', '/')
-        
-        # 使用现有的排除模式检查
-        exclude_patterns = [
-            r'^index\.md$', r'^about/', r'^trip/index\.md$', r'^relax/index\.md$',
-            r'^blog/indexblog\.md$', r'^blog/posts\.md$', r'^develop/index\.md$',
-            r'waline\.md$', r'link\.md$', r'404\.md$'
+    def is_ci_environment(self):
+        """检测是否在 CI 环境中运行"""
+        # 常见的 CI 环境变量
+        ci_indicators = [
+            'CI', 'CONTINUOUS_INTEGRATION',           # 通用 CI 标识
+            'GITHUB_ACTIONS',                         # GitHub Actions
+            'GITLAB_CI',                              # GitLab CI
+            'JENKINS_URL',                            # Jenkins
+            'TRAVIS',                                 # Travis CI
+            'CIRCLECI',                               # CircleCI
+            'AZURE_HTTP_USER_AGENT',                  # Azure DevOps
+            'TEAMCITY_VERSION',                       # TeamCity
+            'BUILDKITE',                              # Buildkite
+            'CODEBUILD_BUILD_ID',                     # AWS CodeBuild
+            'NETLIFY',                                # Netlify
+            'VERCEL',                                 # Vercel
+            'CF_PAGES',                               # Cloudflare Pages
         ]
         
-        for pattern in exclude_patterns:
-            if re.match(pattern, src_path):
-                return False
+        for indicator in ci_indicators:
+            if os.getenv(indicator):
+                return True
         
-        # 检查页面类型
+        return False
+    
+    def should_run_in_current_environment(self):
+        """判断是否应该在当前环境中运行 AI 摘要"""
+        return self._should_run
+    
+    def _get_ci_name(self):
+        """获取 CI 环境名称"""
+        if os.getenv('GITHUB_ACTIONS'):
+            return 'GitHub Actions'
+        elif os.getenv('GITLAB_CI'):
+            return 'GitLab CI'
+        elif os.getenv('JENKINS_URL'):
+            return 'Jenkins'
+        elif os.getenv('TRAVIS'):
+            return 'Travis CI'
+        elif os.getenv('CIRCLECI'):
+            return 'CircleCI'
+        elif os.getenv('AZURE_HTTP_USER_AGENT'):
+            return 'Azure DevOps'
+        elif os.getenv('NETLIFY'):
+            return 'Netlify'
+        elif os.getenv('VERCEL'):
+            return 'Vercel'
+        elif os.getenv('CF_PAGES'):
+            return 'Cloudflare Pages'
+        elif os.getenv('CODEBUILD_BUILD_ID'):
+            return 'AWS CodeBuild'
+        else:
+            return 'Unknown CI'
+    
+    def process_page(self, markdown, page, config):
+        """处理页面，生成AI摘要和阅读统计（支持CI环境检测）"""
+        # 检查是否应该在当前环境运行
+        if not self.should_run_in_current_environment():
+            return markdown
+        
+        # 检查是否需要显示阅读信息
+        show_reading_info = self.should_show_reading_info(page, markdown)
+        
+        # 检查是否需要生成AI摘要
+        should_generate_ai_summary = self.should_generate_summary(page, markdown)
+        
+        # 如果两者都不需要，直接返回原内容
+        if not show_reading_info and not should_generate_ai_summary:
+            return markdown
+        
+        # 计算阅读统计
+        reading_time, chinese_chars, code_lines = self.calculate_reading_stats(markdown)
+        
+        result_blocks = []
+        
+        # 处理AI摘要
+        if should_generate_ai_summary:
+            clean_content = self.clean_content_for_ai(markdown)
+            
+            # 内容长度检查
+            if len(clean_content) >= 100:
+                content_hash = self.get_content_hash(clean_content)
+                page_title = getattr(page, 'title', '')
+                is_ci = self.is_ci_environment()
+                
+                # 检查缓存
+                cached_summary = self.get_cached_summary(content_hash)
+                if cached_summary:
+                    summary = cached_summary.get('summary', '')
+                    ai_service = cached_summary.get('service', 'cached')
+                    env_desc = '(CI)' if is_ci else '(本地)'
+                    print(f"✅ 使用缓存摘要 {env_desc}: {page.file.src_path}")
+                else:
+                    # 生成新摘要
+                    lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
+                    env_desc = '(CI)' if is_ci else '(本地)'
+                    print(f"🤖 正在生成{lang_desc.get(self.summary_language, '中文')}AI摘要 {env_desc}: {page.file.src_path}")
+                    summary, ai_service = self.generate_ai_summary(clean_content, page_title)
+                    
+                    if not summary:
+                        # 尝试生成备用摘要
+                        summary = self.generate_fallback_summary(clean_content, page_title)
+                        if summary:
+                            ai_service = 'fallback'
+                            print(f"📝 使用备用摘要 {env_desc}: {page.file.src_path}")
+                        else:
+                            print(f"❌ 无法生成摘要 {env_desc}: {page.file.src_path}")
+                    else:
+                        print(f"✅ AI摘要生成成功 ({ai_service}) {env_desc}: {page.file.src_path}")
+                    
+                    # 保存到缓存
+                    if summary:
+                        self.save_summary_cache(content_hash, {
+                            'summary': summary,
+                            'service': ai_service,
+                            'page_title': page_title
+                        })
+                
+                # 添加AI摘要块
+                if summary:
+                    ai_summary_block = self.format_summary(summary, ai_service)
+                    result_blocks.append(ai_summary_block)
+        
+        # 添加阅读信息块
+        if show_reading_info:
+            reading_info_block = self.format_reading_info(reading_time, chinese_chars, code_lines)
+            result_blocks.append(reading_info_block)
+        
+        # 合并所有块并返回
+        if result_blocks:
+            return '\n'.join(result_blocks) + '\n\n' + markdown
+        else:
+            return markdown
+    
+    def should_generate_summary(self, page, markdown):
+        """判断是否应该生成摘要"""
+        # 检查页面元数据
         if hasattr(page, 'meta'):
-            page_type = page.meta.get('type', '')
-            if page_type in {'landing', 'special', 'widget'}:
+            # 明确禁用
+            if page.meta.get('ai_summary') == False:
                 return False
+            
+            # 强制启用
+            if page.meta.get('ai_summary') == True:
+                return True
         
-        # 内容长度检查
-        if len(markdown) < 300:
+        # 获取文件路径
+        src_path = page.file.src_path.replace('\\', '/')  # 统一路径分隔符
+        
+        # 检查排除模式
+        if any(pattern in src_path for pattern in self.exclude_patterns):
             return False
         
-        # 计算中文字符数
-        _, chinese_chars, _ = self.calculate_reading_stats(markdown)
-        if chinese_chars < 50:
+        # 检查排除的特定文件
+        if src_path in self.exclude_files:
             return False
         
-        return True
+        # 检查是否在启用的文件夹中
+        for folder in self.enabled_folders:
+            if src_path.startswith(folder) or f'/{folder}' in src_path:
+                folder_name = folder.rstrip('/')
+                lang_desc = {'zh': '中文', 'en': '英文', 'both': '双语'}
+                print(f"🎯 {folder_name}文件夹文章检测到，启用{lang_desc.get(self.summary_language, '中文')}AI摘要: {src_path}")
+                return True
+        
+        # 默认不生成摘要
+        return False
+    
+    def format_reading_info(self, reading_time, chinese_chars, code_lines):
+        """格式化阅读信息显示"""
+        if code_lines > 0:
+            return f'''!!! info "📖 阅读信息"
+    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}** | 有效代码行数：**{code_lines}**'''
+        else:
+            return f'''!!! info "📖 阅读信息"
+    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}**'''
     
     def format_summary(self, summary, ai_service):
         """格式化摘要显示（包含CI环境标识）"""
