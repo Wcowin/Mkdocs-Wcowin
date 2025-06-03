@@ -43,7 +43,7 @@ jobs:
           AI_SUMMARY_LOCAL_ENABLED: false      # 本地环境禁用AI摘要
           AI_SUMMARY_CI_ONLY_CACHE: false      # CI环境允许生成新摘要
           AI_SUMMARY_CI_FALLBACK: true         # CI环境启用备用摘要
-          # API密钥（如果需要的话）
-          # DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # API密钥（取消注释以启用真实AI服务）
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
