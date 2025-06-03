@@ -953,6 +953,43 @@ Please generate bilingual summary:"""
         # 默认不生成摘要
         return False
     
+    def should_show_reading_info(self, page, markdown):
+        """判断是否应该显示阅读信息"""
+        # 检查页面元数据
+        if hasattr(page, 'meta') and page.meta.get('hide_reading_time', False):
+            return False
+        
+        # 获取文件路径
+        src_path = page.file.src_path.replace('\\', '/')
+        
+        # 使用现有的排除模式检查
+        exclude_patterns = [
+            r'^index\.md$', r'^about/', r'^trip/index\.md$', r'^relax/index\.md$',
+            r'^blog/indexblog\.md$', r'^blog/posts\.md$', r'^develop/index\.md$',
+            r'waline\.md$', r'link\.md$', r'404\.md$'
+        ]
+        
+        for pattern in exclude_patterns:
+            if re.match(pattern, src_path):
+                return False
+        
+        # 检查页面类型
+        if hasattr(page, 'meta'):
+            page_type = page.meta.get('type', '')
+            if page_type in {'landing', 'special', 'widget'}:
+                return False
+        
+        # 内容长度检查
+        if len(markdown) < 300:
+            return False
+        
+        # 计算中文字符数
+        _, chinese_chars, _ = self.calculate_reading_stats(markdown)
+        if chinese_chars < 50:
+            return False
+        
+        return True
+    
     def format_reading_info(self, reading_time, chinese_chars, code_lines):
         """格式化阅读信息显示"""
         if code_lines > 0:
