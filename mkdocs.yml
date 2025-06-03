@@ -312,3 +312,5 @@ extra_css:
 
 hooks:
   - docs/overrides/hooks/socialmedia.py
+  - docs/overrides/hooks/reading_time.py
+  - docs/overrides/hooks/ai_summary.py
