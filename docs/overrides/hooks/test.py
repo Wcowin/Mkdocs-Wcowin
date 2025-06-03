@@ -18,7 +18,7 @@ class AISummaryGenerator:
             'model': 'deepseek-chat',
             'headers': {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer sk-7dbcd6e21fb3417299b50aecff76c7bf'
+                'Authorization': 'Bearer sk-'
             }
         }
         
