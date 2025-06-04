@@ -7,7 +7,9 @@ status: new
 
 # MkDocs AI Hooks
 
-仓库地址：https://github.com/Wcowin/mkdocs-ai-hooks
+仓库地址：https://github.com/Wcowin/mkdocs-ai-hooks   
+在线预览：https://wcowin.work/mkdocs-ai-hooks/   
+
 
 <p align="center">
     <img src="https://img.shields.io/badge/MkDocs-Hooks-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white" alt="MkDocs Hooks">

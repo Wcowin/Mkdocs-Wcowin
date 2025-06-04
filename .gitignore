@@ -1,0 +1,11 @@
+# 环境变量文件（敏感信息）
+.env
+.env.local
+.env.*.local
+*.key
+
+# MkDocs 构建输出目录
+site/
+
+# AI 摘要缓存目录（项目根目录）- 需要被提交
+!.ai_cache/
