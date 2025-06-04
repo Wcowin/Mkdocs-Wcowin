@@ -21,13 +21,13 @@ class AISummaryGenerator:
         # AI摘要环境配置
         self.ci_config = {
             # CI部署环境开关 (true=CI中启用AI摘要生成)
-            # 'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
+            'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
             # 本地部署环境开关 (true=本地开发时启用AI摘要)
             'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',
             
             # CI部署仅缓存模式 (true=仅使用缓存不调用API, false=允许生成新摘要)
-            # 'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
+            'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
             
             # 本地部署缓存功能开关 (true=启用缓存避免重复生成, false=总是生成新摘要)
             'cache_enabled': os.getenv('AI_SUMMARY_CACHE_ENABLED', 'true').lower() == 'true',
