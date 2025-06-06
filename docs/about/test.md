@@ -1,5 +1,14 @@
+---
+title: 测试小组件
+# status: new
+---
+
+# 测试小组件   
+
 !!!info
     测试中的小组件，可看源代码自行取用
+
+
 
 <center><font  color= #518FC1 size=6 class="ml3">“循此苦旅 以达星辰”</font></center>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>

@@ -237,7 +237,7 @@ def on_page_markdown(markdown, **kwargs):
     reading_time, chinese_chars, code_lines = calculate_reading_stats(markdown)
     
     # 过滤太短的内容
-    if chinese_chars < 50:
+    if chinese_chars < 30:
         return markdown
     
     # 生成阅读信息
