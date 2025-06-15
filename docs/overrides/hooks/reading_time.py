@@ -13,6 +13,7 @@ EXCLUDE_PATTERNS = [
     re.compile(r'waline\.md$'),
     re.compile(r'link\.md$'),
     re.compile(r'404\.md$'),
+    re.compile(r'liuyanban\.md$'),
 ]
 
 # 优化的字符统计正则表达式

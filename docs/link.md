@@ -37,7 +37,7 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/ " target="_blank">Wcowin's Blog</a> 
+       <a href="https://wcowin.work/ ">Wcowin's Blog</a> 
       </div> 
       <div class="info">
        “循此苦旅，以达星辰”

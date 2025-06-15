@@ -234,7 +234,7 @@ status: new
 
 ## 个人简介
 
-<p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
+<!-- <p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p> -->
 <!-- https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg -->
 
 
@@ -246,12 +246,15 @@ status: new
     - [x] 清醒，知趣，明得失，知进退 
 
 
-<img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp">
+## 人生态度
+
+<p style="text-align: center; font-size: 25px; margin: 0px;"><strong>𝘿𝙤𝙣'𝙩 𝙘𝙖𝙧𝙚 𝙖𝙗𝙤𝙪𝙩 𝙬𝙤𝙧𝙡𝙙𝙡𝙮 𝙚𝙮𝙚𝙨 𝙩𝙤 𝙥𝙪𝙧𝙨𝙪𝙚 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙡𝙞𝙜𝙝𝙩</strong></p>
+
+<!-- <img class="img1" src="https://pic2.zhimg.com/80/v2-6cf497fc08da090bd53e4a5dc962d9d9_1440w.webp"> -->
+<img class="img1" src="https://pic1.zhimg.com/80/v2-8030915c744322fb1e3a6ec0b8fed24c_1440w.webp">
 
 
-## 联系我
-
-<head>
+<!-- <head>
   <style>
     @media (min-width: 768px) {
       .mobile-only {
@@ -333,15 +336,118 @@ status: new
 
 </div>
 </div>
-</div>
+</div> -->
 
 
+## 联系我
 
-??? tip "公众号"
-    <figure markdown >
-    ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
-    <figcaption>公众号</figcaption>
-    </figure>
+=== "💬 微信"
+    <div style="text-align: center; padding: 0px;">
+        <div style="display: inline-block; padding: 20px; border-radius: 20px; background: linear-gradient(135deg,rgba(68,138,255,.1));transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp"
+                style="width: 280px; height: auto; border-radius: 12px; border: 3px solid white;">
+        </div>
+        <br><br>
+        <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-top: 15px;">
+            📱 扫一扫上面的二维码，加我为好友
+        </p>
+    </div>
+
+=== "📧 邮箱"
+    <div style="text-align: center; padding: 0px 0px;">
+        <div style="margin-bottom: 15px;">
+            <h3 style="color: var(--md-primary-fg-color); margin-bottom: 10px;">
+                ✉️ 邮件联系
+            </h3>
+        </div>
+        <a href="mailto:wangkewen821@gmail.com" class="md-button md-button--primary" 
+        style="font-size: 16px; padding: 12px 30px; border-radius: 25px;">
+            :fontawesome-solid-paper-plane: &nbsp; 发送电子邮件
+        </a>
+        <div style="margin-top: 20px;">
+            <p style="font-size: 14px; color: var(--md-default-fg-color--lighter);">
+                📬 邮箱地址：<code>wangkewen821@gmail.com</code>
+            </p>
+            <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+                有项目合作或技术问题？随时发邮件给我！
+            </p>
+            <p style="font-size: 13px; color: var(--md-default-fg-color--lighter); margin-top: 5px;">
+                💡 一般在 24 小时内 回复，请耐心等待
+            </p>
+        </div>
+    </div>
+
+=== "🌐 社交"
+    <div style="text-align: center; padding: 0px 0px;">
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: var(--md-primary-fg-color); margin-bottom: 20px;">
+                🤝🏻社交媒体
+            </h3>
+            <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+                关注我的社交媒体，获取最新动态
+            </p>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="https://t.me/Wcowin" class="md-button md-button--primary"
+            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(135deg, #0088cc, #0066aa); color: white; transition: all 0.3s;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" target="_blank">
+                :fontawesome-brands-telegram: Telegram
+            </a>
+            <a href="https://twitter.com/wcowin_" class="md-button md-button--primary"
+            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(135deg, #1da1f2, #0d8bd9); color: white; transition: all 0.3s;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" target="_blank">
+                :fontawesome-brands-twitter: Twitter
+            </a>
+        </div>
+        <figure markdown >
+        ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
+    </div>
+
+=== "📍 其他"
+    <div style="text-align: center; padding: 0px 0px;">
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: var(--md-primary-fg-color); margin-bottom: 10px; font-weight: 600;">
+        📍 其他平台联系
+        </h3>
+        <p style="font-size: 15px; color: var(--md-default-fg-color--light);">
+        欢迎通过下列平台了解我的更多工作和项目经历
+        </p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 700px; margin: 0 auto;">
+        <!-- GitHub -->
+        <div style="padding: 20px; border-radius: 16px; background: var(--md-code-bg-color); border: 1px solid var(--md-default-fg-color--lightest); box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s;"
+            onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.05)'">
+        <div style="font-size: 26px; margin-bottom: 12px;">🌟</div>
+        <h4 style="margin: 0 0 10px 0; color: var(--md-primary-fg-color); font-size: 17px;">GitHub</h4>
+        <a href="https://github.com/Wcowin" class="md-button" style="font-size: 14px;" target="_blank">
+            :fontawesome-brands-github: 查看 GitHub
+        </a>
+        </div>
+        <!-- LinkedIn -->
+        <div style="padding: 20px; border-radius: 16px; background: var(--md-code-bg-color); border: 1px solid var(--md-default-fg-color--lightest); box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s;"
+            onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.05)'">
+        <div style="font-size: 26px; margin-bottom: 12px;">💼</div>
+        <h4 style="margin: 0 0 10px 0; color: var(--md-primary-fg-color); font-size: 17px;">LinkedIn</h4>
+        <a href="https://www.linkedin.com/in/wcowin/" class="md-button" style="font-size: 14px;" target="_blank">
+            :fontawesome-brands-linkedin: 查看档案
+        </a>
+        </div>
+    </div>
+    <!-- 底部强调卡片 -->
+    <div style="margin-top: 40px; padding: 20px; border-radius: 12px; background: linear-gradient(135deg, var(--md-primary-fg-color--light), var(--md-primary-fg-color)); color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
+        <p style="margin: 0; font-size: 16px; font-weight: 600;">
+        🚀 随时欢迎联系我，开启合作或交流！
+        </p>
+        <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">
+        无论是技术探讨、学习交流还是职业机会，我都乐意听见你的声音 😄
+        </p>
+    </div>
+    </div>
+
+
 
 ---  
 
