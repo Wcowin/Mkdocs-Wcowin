@@ -219,7 +219,7 @@ status: new
     </center>
 
 === "📧 邮箱"
-    <div style="text-align: center; padding: 0px 0px;">
+    <div style="text-align: center; padding: 5px 0px;">
         <div style="margin-bottom: 15px;">
         </div>
         <a href="mailto:wangkewen821@gmail.com" class="md-button md-button--primary" 
@@ -234,23 +234,29 @@ status: new
     </div>
 
 === "🌐 社交"
-    <div style="text-align: center; padding: 0px 0px;">
-        <div style="margin-bottom: 30px;">
+    <div class="contact-tab-container">
+        <div class="contact-tab-content" style="text-align: center; padding: 0px 0;">
+            <div style="margin-bottom: 25px;">
+                <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+                    关注我的社交媒体，获取最新动态
+                </p>
+            </div>
+            <!-- 修改按钮布局 - 移动端也保持左右排列 -->
+            <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 25px; min-height: 50px; align-items: center;">
+                <a href="https://t.me/Wcowin" class="md-button md-button--primary"
+                   style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 25px; background: linear-gradient(135deg, #0088cc, #0066aa); color: white; text-decoration: none; font-size: 14px; min-width: 120px; justify-content: center;" target="_blank">
+                    :fontawesome-brands-telegram: Telegram
+                </a>
+                <a href="https://twitter.com/wcowin_" class="md-button md-button--primary"
+                   style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 25px; background: linear-gradient(135deg, #1da1f2, #0d8bd9); color: white; text-decoration: none; font-size: 14px; min-width: 120px; justify-content: center;" target="_blank">
+                    :fontawesome-brands-twitter: Twitter
+                </a>
+            </div>
+            <div style="max-width: 500px; margin: 0 auto;">
+                <img src="https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png" 
+                     style="width: 100%; height: auto; border-radius: 10px;">
+            </div>
         </div>
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <a href="https://t.me/Wcowin" class="md-button md-button--primary"
-            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(#5E92C6); color: white; transition: all 0.3s;"
-            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" target="_blank">
-                :fontawesome-brands-telegram: Telegram
-            </a>
-            <a href="https://twitter.com/wcowin_" class="md-button md-button--primary"
-            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(#5E92C6); color: white; transition: all 0.3s;"
-            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" target="_blank">
-                :fontawesome-brands-twitter: Twitter
-            </a>
-        </div>
-        <figure markdown >
-        ![Image title](https://s1.imagehub.cc/images/2025/01/04/ac7fda1814bb1e18714f9dd9f5d87636.png){.img1 }
     </div>
 
 === "📍 其他"
