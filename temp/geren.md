@@ -30,8 +30,8 @@ status: new
 <style>
     .flip-container {
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
     margin: 10px auto;
     display: flex;
     align-items: flex-start;
@@ -78,7 +78,6 @@ status: new
 </style>
 
 
-
 <!-- <center>  
 
 ![](https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg#only-light){style="width: 270px; border-radius: 50%;"}  
@@ -88,18 +87,150 @@ status: new
 </center> -->
 
   <!-- <p style="text-align: center; font-size: 35px; "><strong>A college student in Chongqing</strong></p>  -->
-<br>
-<center><font size=6rem color= #757575>
-观史知今，当思进退，读书明志，可识春秋  
+
+<center><font size=6 color= #757575>
+观史知今，当思进退，读书明志可识春秋  
 <br>
 
 ——Wcowin </font></center>  
 
 ---
 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <link rel="stylesheet" href="../sty/portfolio.css">
+    </head>
+    <body>
+        <main class="main">
+            <section class="about section" id="about">
+                <div class="about__container container">
+                    <div class="about__data">
+                        <p style="text-align: center;"></p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">1年+</span>
+                                <span class="about__info-name">工作经验</span>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Wcowin" target="_blank">
+                                    <span class="about__info-title">3项+</span>
+                                    <span class="about__info-name">完成的项目</span>
+                                </a>
+                            </div>
+                            <div>
+                                <span class="about__info-title">2个+</span>
+                                <span class="about__info-name">贡献的开源</span>
+                            </div>
+                        </div>
+                    </div> <!-- 闭合 about__data -->
+                </div> <!-- 闭合 about__container -->
+            </section>
+        </main> <!-- 闭合 main -->
+    </body>
+</html>
+
+
+<!-- <center>
+  [下载简历 :fontawesome-solid-download:](个人简历2.pdf){.md-button target="_blank"}
+</center> -->
+
 <center>
 <a href="../个人简历.pdf" target="_blank" class="md-button">下载简历</a>
-</center>  
+</center>
+
+<!-- <div class="card2 file-block" markdown="1">
+<div class="file-icon"><img src="https://pic4.zhimg.com/80/v2-98f918276ecbc6d549fa6a5d1238e713_1440w.webp" style="height: 3em;"></div>
+<div class="file-body">
+<div class="file-title">个人简历</div>
+<div class="file-meta">2025-02-14</div>
+</div>
+<a class="down-button" target="_blank" href="../个人简历.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
+</div> -->
+
+---
+## 我的履历
+
+<section class="qualification section">
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                <iconify-icon icon="fluent:hat-graduation-12-regular" class="qualification__icon"></iconify-icon>
+                来时路
+            </div>
+        </div>       
+        <div class="qualification__sections">
+            <!-- 教育经历时间线 -->
+            <div class="qualification__content qualification__active" data-content id="education">
+                <!-- 时间线项目 -->
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">漯河高中</h3>
+                        <span class="qualification__subtitle">平凡的三年</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">2018 - 2021</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">CTBU</h3>
+                        <span class="qualification__subtitle">电子信息工程专业学士</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">2021 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">家里蹲大学</h3>
+                        <span class="qualification__subtitle">密码学硕士研究生</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">2026 - 2029</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">未完待续</h3>
+                        <span class="qualification__subtitle">于道各努力，千里自同风</span>
+                        <div class="qualification__calendar">
+                            <iconify-icon icon="tabler:calendar" aria-hidden="true"></iconify-icon>
+                            <span class="qualification__date">Before - After</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+
+
 
 ## 个人简介
 
@@ -110,9 +241,9 @@ status: new
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/数学，目前的研究领域是[密码学](https://wcowin.work/blog/Cryptography/)
-    - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
-    - [x] 清醒知趣，明得失，知进退 
+    - [x] 热爱(xiā)折腾技术/Math，目前的研究领域是[密码学](https://wcowin.work/blog/Cryptography/)
+    - [x] 读书明志可识春秋;诗词爱好者;喜欢村上春树;擅长羽毛球
+    - [x] 清醒，知趣，明得失，知进退 
 
 
 ## 人生态度
@@ -211,24 +342,38 @@ status: new
 ## 联系我
 
 === "💬 微信"
-    <center>
-    <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp" style="width: 280px; height: auto; border-radius: 12px; border: 3px solid white;">
-    <br>
-    扫一扫上面的二维码图案<br>
-    加我为朋友
-    </center>
+    <div style="text-align: center; padding: 0px;">
+        <div style="display: inline-block; padding: 20px; border-radius: 20px; background: linear-gradient(135deg,rgba(68,138,255,.1));transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="https://picx.zhimg.com/80/v2-540df18f16032fbe114dd960da21b467_1440w.webp"
+                style="width: 280px; height: auto; border-radius: 12px; border: 3px solid white;">
+        </div>
+        <br><br>
+        <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-top: 15px;">
+            📱 扫一扫上面的二维码，加我为好友
+        </p>
+    </div>
 
 === "📧 邮箱"
     <div style="text-align: center; padding: 0px 0px;">
         <div style="margin-bottom: 15px;">
+            <h3 style="color: var(--md-primary-fg-color); margin-bottom: 10px;">
+                ✉️ 邮件联系
+            </h3>
         </div>
         <a href="mailto:wangkewen821@gmail.com" class="md-button md-button--primary" 
         style="font-size: 16px; padding: 12px 30px; border-radius: 25px;">
             :fontawesome-solid-paper-plane: &nbsp; 发送电子邮件
         </a>
         <div style="margin-top: 20px;">
-            <p style="font-size: 20px; color: #757575; margin-top: 5px;">
-                💡24小时内回复，请耐心等待
+            <p style="font-size: 14px; color: var(--md-default-fg-color--lighter);">
+                📬 邮箱地址：<code>wangkewen821@gmail.com</code>
+            </p>
+            <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+                有项目合作或技术问题？随时发邮件给我！
+            </p>
+            <p style="font-size: 13px; color: var(--md-default-fg-color--lighter); margin-top: 5px;">
+                💡 一般在 24 小时内 回复，请耐心等待
             </p>
         </div>
     </div>
@@ -236,15 +381,21 @@ status: new
 === "🌐 社交"
     <div style="text-align: center; padding: 0px 0px;">
         <div style="margin-bottom: 30px;">
+            <h3 style="color: var(--md-primary-fg-color); margin-bottom: 20px;">
+                🤝🏻社交媒体
+            </h3>
+            <p style="font-size: 16px; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+                关注我的社交媒体，获取最新动态
+            </p>
         </div>
         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
             <a href="https://t.me/Wcowin" class="md-button md-button--primary"
-            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(#5E92C6); color: white; transition: all 0.3s;"
+            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(135deg, #0088cc, #0066aa); color: white; transition: all 0.3s;"
             onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" target="_blank">
                 :fontawesome-brands-telegram: Telegram
             </a>
             <a href="https://twitter.com/wcowin_" class="md-button md-button--primary"
-            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(#5E92C6); color: white; transition: all 0.3s;"
+            style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 25px; background: linear-gradient(135deg, #1da1f2, #0d8bd9); color: white; transition: all 0.3s;"
             onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" target="_blank">
                 :fontawesome-brands-twitter: Twitter
             </a>
@@ -256,8 +407,11 @@ status: new
 === "📍 其他"
     <div style="text-align: center; padding: 0px 0px;">
     <div style="margin-bottom: 30px;">
+        <h3 style="color: var(--md-primary-fg-color); margin-bottom: 10px; font-weight: 600;">
+        📍 其他平台联系
+        </h3>
         <p style="font-size: 15px; color: var(--md-default-fg-color--light);">
-        通过下列平台了解我的更多工作和项目经历
+        欢迎通过下列平台了解我的更多工作和项目经历
         </p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 700px; margin: 0 auto;">
@@ -285,7 +439,7 @@ status: new
     <!-- 底部强调卡片 -->
     <div style="margin-top: 40px; padding: 20px; border-radius: 12px; background: linear-gradient(135deg, var(--md-primary-fg-color--light), var(--md-primary-fg-color)); color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
         <p style="margin: 0; font-size: 16px; font-weight: 600;">
-        随时欢迎联系我合作或交流！
+        🚀 随时欢迎联系我，开启合作或交流！
         </p>
         <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">
         无论是技术探讨、学习交流还是职业机会，我都乐意听见你的声音 😄
@@ -307,7 +461,14 @@ status: new
     如果给我发[邮件](mailto:<wangkewen821@gmail.com>)，或者通过右下角微信添加好友，请写上您的**真名实姓**。对于那些不知来路、上来就问问题的微信和邮件，我通常会**直接忽略**，谢谢。 
 
     ---  
-    <center>
-    [发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}
-    </center>
+    <center>[发送电子邮件 :fontawesome-solid-paper-plane:](mailto:<wcowin@qq.com>){.md-button}</center>
+
+
+
+<!-- 我的电话号码`SHA256`码：DEF633030D31F7ABE6213EE5B5EFDF0E4ADDFDA121695325660D82F15ED22946 -->
+
+
+<!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
+
+<!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->
 
