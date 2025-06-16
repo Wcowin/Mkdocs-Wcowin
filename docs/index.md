@@ -229,6 +229,7 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+  
 
 @media (max-width: 768px) {
   body::before {
