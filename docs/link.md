@@ -44,8 +44,28 @@ t.parentNode.insertBefore(e,t)}})();
       </div> 
      </div> 
     </div>
-
-
+    <div class="card"> 
+     <img class="ava" src="https://s1.imagehub.cc/images/2025/06/03/526b59b6a2e478f2ffa1629320e3e2ce.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/Mkdocs-AI-Summary/MkDocs-AI-Summary/">MkDocs AI Summary</a> 
+      </div> 
+      <div class="info">
+       AI驱动的摘要生成
+      </div> 
+     </div> 
+    </div>
+    <div class="card"> 
+     <img class="ava" src="https://s1.imagehub.cc/images/2025/06/06/a4584dbad4da3f87eb5c2f1e7ed14a74.png" /> 
+     <div class="card-header"> 
+      <div> 
+       <a href="https://wcowin.work/mkdocs-reading-time/">MkDocs Reading Time</a> 
+      </div> 
+      <div class="info">
+       为MkDocs文档添加准确阅读时间统计功能
+      </div> 
+     </div> 
+    </div>
 
 
    </div> 
@@ -59,7 +79,7 @@ t.parentNode.insertBefore(e,t)}})();
     <h2>失联人员</h2>
 </div> -->
 
-<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#EEF3FE),direction:145,strength:15)" width="100%" color=#EEF3FE SIZE=1>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -107,7 +127,7 @@ t.parentNode.insertBefore(e,t)}})();
     </div>
    </div> 
   </div>
-  <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#608DBD,direction:145,strength:15)" width="100%" color=#608DBD SIZE=1>
+  <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#EEF3FE,direction:145,strength:15)" width="100%" color= #EEF3FE SIZE=1>
 </div>
 
 

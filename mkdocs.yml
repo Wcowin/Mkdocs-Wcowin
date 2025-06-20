@@ -1,5 +1,5 @@
 #[Info]
-site_name: Mkdocs教程 #your site name 显示在左上角
+site_name: Mkdocs中文教程 #your site name 显示在左上角
 site_url: http://wcowin.work/Mkdocs-Wcowin
 site_description: Content and ambitious, gentle yet firm.
 site_author: 王科文(Wcowin) # your name
@@ -78,6 +78,7 @@ nav:
           - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
           - 添加阅读信息统计: blog/websitebeauty/reading_time.md
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
+          - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
           - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
           - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
           - 添加在线聊天: blog/websitebeauty/webtalknow.md
@@ -291,6 +292,7 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css # 自定义CSS
+  - stylesheets/extra2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/extra.css
   # - stylesheets/link.css #友链配置
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链CDN

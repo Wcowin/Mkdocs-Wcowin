@@ -1,5 +1,5 @@
 ---
-title: 分类
+title: 标签🏷
 hide:
   #- navigation # 显示右
   #- toc #显示左
@@ -7,13 +7,10 @@ hide:
   - feedback
 ---
 <!-- # Tags -->
-# Tags
 
-
-    
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __tips__
+-   :material-clock-fast:{ .lg .middle } __Tips__
 
     ---
 
@@ -22,5 +19,3 @@ hide:
 </div>
 
 <!-- material/tags -->
-
-
