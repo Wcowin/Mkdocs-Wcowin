@@ -238,9 +238,8 @@ body::before {
 }
 </style>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
-<!-- AD1 -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-2327435979273742"
@@ -249,4 +248,4 @@ body::before {
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> -->
