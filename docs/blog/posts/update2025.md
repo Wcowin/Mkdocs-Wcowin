@@ -7,6 +7,16 @@ categories:
 readtime: 2
 hide_reading_time: true
 ---
+## </p><h1 id="01" name="01"><strong>2025-07-08</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 修复[友链教程](../Mkdocs/linktech.md)的一些显示问题（感谢[Arron](https://github.com/jaywhj)）
+* 重新设计了页脚样式
+
+## </p><h1 id="01" name="01"><strong>2025-06-15</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 优化CDN配置
+* 引入全局圆角化设计，参考[Material Design](https://material.io/design)设计规范
+
 ## </p><h1 id="01" name="01"><strong>2025-04-30</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 修复[关于](../../about/geren.md)页面的显示问题
