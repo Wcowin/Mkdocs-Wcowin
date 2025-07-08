@@ -170,7 +170,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 [^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
 [^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
-   <body>
+   <!-- <body>
         <font color="#B9B9B9">
         <p style="text-align: center; ">
                 <span>本站已经运行</span>
@@ -197,7 +197,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
         },1000)
       </script>
       </font>
-    </body>
+    </body> -->
 
 
 <!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->

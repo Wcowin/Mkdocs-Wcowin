@@ -1,7 +1,7 @@
 {
-  "summary": "在GitHub Pages部署mkdocs时，自定义域名失效的原因是项目未拉取到本地，导致每次推送后CNAME文件被清除。解决方法是在/docs目录下创建无后缀的CNAME文件并填入域名，确保配置持久化。该方案适用于使用mkdocs构建文档并需绑定自定义域名的场景。",
+  "summary": "在Github Pages部署mkdocs时，自定义域名失效的原因是项目未拉取到本地，导致每次推送后CNAME文件被清除。解决方法是在/docs目录下创建无后缀的CNAME文件并填入域名，确保配置持久化。该方案适用于使用mkdocs构建文档并需绑定自定义域名的场景。",
   "service": "deepseek",
   "page_title": "3.解决Github Pages部署mkdocs自定义域名失效的问题",
-  "timestamp": "2025-06-26T23:01:19.434705",
+  "timestamp": "2025-07-08T11:18:50.244415",
   "language": "zh"
 }
