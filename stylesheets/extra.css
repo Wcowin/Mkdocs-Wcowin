@@ -1,7 +1,7 @@
 :root > * {
-  --md-primary-fg-color:        #4c94cb;
-  --md-primary-fg-color--light:#4c94cb;
-  --md-primary-fg-color--dark:  #4c94cb;
+  --md-primary-fg-color:        #1D2636;
+  --md-primary-fg-color--light:#1D2636;
+  --md-primary-fg-color--dark:  #1D2636;
     
 }
 /* 给所有元素加上边框 */
@@ -15,7 +15,7 @@ button.md-top {
   font-family: LXGW WenKai; /* 修改字体 */
   font-size: 16px; /* 修改字体大小 */
   font-weight: lighter;/* 修改字体粗细 */
-  color: #518FC1; /* 修改字体颜色 */
+  color: #1D2636; /* 修改字体颜色 */
 }
 
 :root {
