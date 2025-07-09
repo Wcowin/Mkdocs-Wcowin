@@ -471,25 +471,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://wcowin.work/Personal-Profile/#" class="md-tabs__link">
-        
-  
-  
-    
-  
-  个人简介
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin" class="md-tabs__link">
         
   
@@ -2367,28 +2348,6 @@
   
   
     <li class="md-nav__item">
-      <a href="https://wcowin.work/Personal-Profile/#" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    个人简介
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin" class="md-nav__link">
         
   
@@ -2465,8 +2424,8 @@
   <h1>3.解决Github Pages部署mkdocs自定义域名失效的问题</h1>
 
 <div class="admonition info">
-<p class="admonition-title">💾 AI智能摘要 (DeepSeek)</p>
-<p>在Github Pages部署mkdocs时，自定义域名失效的原因是项目未拉取到本地，导致每次推送后CNAME文件被清除。解决方法是在/docs目录下创建无后缀的CNAME文件并填入域名，确保配置持久化。该方案适用于使用mkdocs构建文档并需绑定自定义域名的场景。</p>
+<p class="admonition-title">💾 AI智能摘要 (智谱清言)</p>
+<p>在Github Pages部署mkdocs时，通过在/docs目录下创建无后缀的CNAME文件并填写域名，可解决自定义域名失效问题。原因在于每次添加自定义域名后，系统会生成新的CNAME文件，但未同步到本地，导致push后CNAME信息丢失。</p>
 </div>
 <p>在/docs目录下创建一个 CNAME 的 无后缀 文件，然后在里面填入你的域名<br />
 <img alt="" src="https://s1.imagehub.cc/images/2024/02/02/d23082e5d3ebb839dba8b589a1cb5b7c.png" /></p>
@@ -2806,7 +2765,7 @@
 
         <!-- 移动端简洁布局 (仿 footercopy.html) -->
         <div class="footer-visit-count-mobile">
-          <span>本站访问量：</span>
+          <span>本站访问量:</span>
           <span id="finicount_views_mobile" class="footer-highlight"></span>
           |
           <a

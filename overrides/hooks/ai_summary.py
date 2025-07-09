@@ -44,11 +44,11 @@ class AISummaryGenerator:
         
         # 🤖 多AI服务配置
         self.ai_services = {
-            'deepseek': {
-                'url': 'https://api.deepseek.com/v1/chat/completions',
-                'model': 'deepseek-chat',
-                'api_key': os.getenv('DEEPSEEK_API_KEY', ),
-                'max_tokens': 150,
+            'glm': {
+                'url': 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
+                'model': 'glm-4-flash',  # 或 'glm-4-plus', 'glm-4-air'
+                'api_key': os.getenv('GLM_API_KEY', ),
+                'max_tokens': 300,
                 'temperature': 0.3
             },
             'openai': {
@@ -75,10 +75,10 @@ class AISummaryGenerator:
         }
         
         # 默认使用的AI服务
-        self.default_service = 'deepseek'
-        
+        self.default_service = 'glm'
+
         # 服务优先级（按顺序尝试）
-        self.service_fallback_order = ['openai', 'deepseek', 'claude', 'gemini']
+        self.service_fallback_order = ['glm', 'openai', 'claude', 'gemini']
         
         # 📂 可自定义的文件夹配置
         self.enabled_folders = [
@@ -212,7 +212,7 @@ class AISummaryGenerator:
         配置AI服务
         
         Args:
-            service_name: 服务名称 ('deepseek', 'openai', 'azure_openai', 'claude', 'gemini')
+            service_name: 服务名称 ('glm', 'openai', 'azure_openai', 'claude', 'gemini')
             config: 服务配置字典
         """
         old_service = self.default_service
@@ -382,7 +382,7 @@ class AISummaryGenerator:
             # Google API使用URL参数
             pass
         else:
-            # OpenAI和DeepSeek使用Bearer token
+            # OpenAI和GLM使用Bearer token
             headers['Authorization'] = f"Bearer {service_config['api_key']}"
         
         # 添加额外的头部
@@ -491,7 +491,7 @@ Please generate bilingual summary:"""
                 }
             }
         else:
-            # OpenAI格式 (OpenAI, DeepSeek, Azure OpenAI)
+            # OpenAI格式 (OpenAI, GLM, Azure OpenAI)
             system_content = {
                 'zh': "你是一个专业的技术文档摘要专家，擅长提取文章核心要点并生成简洁准确的中文摘要。",
                 'en': "You are a professional technical documentation summary expert, skilled at extracting core points from articles and generating concise and accurate English summaries.",
@@ -920,7 +920,7 @@ Please generate bilingual summary:"""
         # 根据语言设置显示不同的标题
         service_names = {
             'zh': {
-                'deepseek': 'AI智能摘要 (DeepSeek)',
+                'glm': 'AI智能摘要 (智谱清言)',
                 'openai': 'AI智能摘要 (ChatGPT)',
                 'azure_openai': 'AI智能摘要 (Azure OpenAI)',
                 'claude': 'AI智能摘要 (Claude)',
@@ -930,7 +930,7 @@ Please generate bilingual summary:"""
                 'ci_cache_only': 'AI智能摘要 (缓存)'
             },
             'en': {
-                'deepseek': 'AI Summary (DeepSeek)',
+                'glm': 'AI Summary (GLM)',
                 'openai': 'AI Summary (ChatGPT)',
                 'azure_openai': 'AI Summary (Azure OpenAI)',
                 'claude': 'AI Summary (Claude)',
@@ -940,7 +940,7 @@ Please generate bilingual summary:"""
                 'ci_cache_only': 'AI Summary (Cached)'
             },
             'both': {
-                'deepseek': 'AI智能摘要 / AI Summary (DeepSeek)',
+                'glm': 'AI智能摘要 / AI Summary (GLM)',
                 'openai': 'AI智能摘要 / AI Summary (ChatGPT)',
                 'azure_openai': 'AI智能摘要 / AI Summary (Azure OpenAI)',
                 'claude': 'AI智能摘要 / AI Summary (Claude)',
@@ -977,7 +977,7 @@ def configure_ai_summary(enabled_folders=None, exclude_patterns=None, exclude_fi
         enabled_folders: 启用AI摘要的文件夹列表
         exclude_patterns: 排除的模式列表
         exclude_files: 排除的特定文件列表
-        ai_service: 使用的AI服务 ('deepseek', 'openai', 'claude', 'gemini')
+        ai_service: 使用的AI服务 ('glm', 'openai', 'claude', 'gemini')
         service_config: AI服务配置
         language: 摘要语言 ('zh': 中文, 'en': 英文, 'both': 双语)
         ci_enabled: 是否在 CI 环境中启用
