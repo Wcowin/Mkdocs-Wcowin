@@ -1,3 +1,4 @@
 {
-    "bitoAI.codeCompletion.enableAutoCompletion": false
+    "bitoAI.codeCompletion.enableAutoCompletion": false,
+    "Codegeex.RepoIndex": true
 }

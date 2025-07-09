@@ -59,7 +59,7 @@ comments: false
             width: 180px;
             color: #999;
             border-radius: 25px;
-            border: 2px solid #608DBD;
+            border: 2px solid #1F2635;
             padding: 12px 24px;
             text-align: center;
             text-decoration: none;
@@ -77,9 +77,9 @@ comments: false
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         .buttonxuan.active {
-            background-color: #608DBD;
+            background-color: #1F2635;
             color: white;
-            border-color: #3498db;
+            border-color: #1F2635;
         }
         @media (max-width: 768px) {
             .button-container {

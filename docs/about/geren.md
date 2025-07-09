@@ -23,8 +23,8 @@ status: new
 
 <div class="flip-container">
 <div class="image-container">
-    <img src="https://free.wmhua.cn/2025/05/09/681d7016db8dc.png" alt="Back Image">
-    <img src="https://free.wmhua.cn/2025/05/09/681d7015ed864.jpeg" alt="Front Image">
+    <img src="https://pic4.zhimg.com/v2-a0456a5f527c1923f096759f2926012f_1440w.jpg" alt="Back Image">
+    <img src="https://picx.zhimg.com/v2-fb22186d2490043435a72876950492f5_1440w.jpg" alt="Front Image">
 </div>
 </div>
 <style>
@@ -42,8 +42,8 @@ status: new
     .image-container {
         position: relative;
         position: relative;
-        width: 290px;
-        height: 290px;
+        width: 280px;
+        height: 280px;
     }
     .image-container img {
         position: absolute;

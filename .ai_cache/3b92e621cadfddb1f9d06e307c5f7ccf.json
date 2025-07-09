@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了使用MkDocs框架部署静态网页到GitHub Pages的完整流程。详细说明了从创建GitHub仓库、本地环境配置、MkDocs初始化到最终部署的关键步骤，包括目录结构调整、workflow配置和yml文件基础设置。重点强调了GitHub Actions的权限设置和Pages服务的发布路径选择，为技术人员提供了快速搭建文档网站的实践指南。",
-  "service": "deepseek",
+  "summary": "本文介绍了使用MkDocs和GitHub Pages部署静态网页的详细步骤，包括准备工作、创建网站、配置完善和参考资料，帮助读者快速搭建个人博客或网站。",
+  "service": "glm",
   "page_title": "1.利用Mkdocs部署静态网页",
-  "timestamp": "2025-07-08T11:18:33.935381",
+  "timestamp": "2025-07-09T19:59:41.333874",
   "language": "zh"
 }

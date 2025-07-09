@@ -1,7 +1,7 @@
 {
-  "summary": "Mkdocs内置博客插件可快速搭建技术博客，只需在mkdocs.yml中添加简单配置即可启用。支持通过docs/blog/.authors.yml文件管理作者信息，无需额外创建文件。该插件集成度高，适合文档站点快速扩展博客功能，简化了技术内容发布流程。",
-  "service": "deepseek",
+  "summary": "Mkdocs博客插件易于配置，通过添加特定行至mkdocs.yml文件，并配置作者信息，即可快速搭建个人博客。",
+  "service": "glm",
   "page_title": "添加Mkdocs博客",
-  "timestamp": "2025-07-08T11:18:57.121256",
+  "timestamp": "2025-07-09T19:59:47.865754",
   "language": "zh"
 }

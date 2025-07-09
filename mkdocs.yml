@@ -116,7 +116,8 @@ nav:
       - 支持作者: about/zcw.md
       - 功能测试: about/test.md
   - 个人博客: https://wcowin.work
-  - 个人简介: https://wcowin.work/Personal-Profile/#
+  # - 个人简介: https://wcowin.work/Personal-Profile/#
+  # https://personal-story-web-display.lovable.app/
   - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
 
 copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明

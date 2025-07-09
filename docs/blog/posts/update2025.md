@@ -9,6 +9,10 @@ hide_reading_time: true
 ---
 ## </p><h1 id="01" name="01"><strong>2025-07-08</strong></h1><p>
 * 优化网站流畅度（玄学）
+* AI摘要全局更换为智谱清言GLM
+
+## </p><h1 id="01" name="01"><strong>2025-07-08</strong></h1><p>
+* 优化网站流畅度（玄学）
 * 修复[友链教程](../Mkdocs/linktech.md)的一些显示问题（感谢[Arron](https://github.com/jaywhj)）
 * 重新设计了页脚样式
 

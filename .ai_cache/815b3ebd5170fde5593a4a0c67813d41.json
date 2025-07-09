@@ -1,7 +1,7 @@
 {
-  "summary": "该项目为MkDocs文档系统开发了AI智能摘要插件，支持DeepSeek、OpenAI等主流AI服务，可自动生成80-120字的多语言摘要。具备智能内容清理、缓存优化和灵活配置功能，并提供阅读统计、代码识别等辅助特性。通过hooks机制实现无缝集成，支持本地和CI环境自适应，显著提升技术文档的可读性和管理效率。",
-  "service": "deepseek",
+  "summary": "MkDocs AI Hooks是一款集成AI摘要和智能阅读统计功能的插件，支持多AI服务，自动生成80-120字摘要，并提供多种配置选项，提升文档智能化和用户体验。",
+  "service": "glm",
   "page_title": "MkDocs文档AI摘要",
-  "timestamp": "2025-07-08T11:19:53.418533",
+  "timestamp": "2025-07-09T19:59:55.922690",
   "language": "zh"
 }
