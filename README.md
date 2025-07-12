@@ -10,6 +10,7 @@
 - [Wcowin for MkDocs主题](#wcowin-for-mkdocs主题)
   - [目录](#目录)
   - [展示](#展示)
+  - [来自Claude的肯定](#来自claude的肯定)
   - [如何快速使用](#如何快速使用)
   - [视频教程](#视频教程)
 - [Connect with me](#connect-with-me)
@@ -51,6 +52,10 @@
 <img width="1363" alt="image" src="https://s2.loli.net/2025/02/13/M7dgcDiGOI28PQs.png">
 
 </center>
+
+## 来自Claude的肯定
+
+![image](https://s1.imagehub.cc/images/2025/07/12/509bbab32399e1b22942d259c1433d09.png)
 
 ## 如何快速使用  
 
