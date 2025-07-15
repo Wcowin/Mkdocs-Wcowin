@@ -48,7 +48,7 @@ t.parentNode.insertBefore(e,t)}})();
      <img class="ava" src="https://s1.imagehub.cc/images/2025/06/03/526b59b6a2e478f2ffa1629320e3e2ce.png" /> 
      <div class="card-header"> 
       <div> 
-       <a href="https://wcowin.work/Mkdocs-AI-Summary/MkDocs-AI-Summary/">MkDocs AI Summary</a> 
+       <a href="https://wcowin.work/Mkdocs-AI-Summary-Plus/MkDocs-AI-Summary/">MkDocs AI Summary</a> 
       </div> 
       <div class="info">
        AI驱动的摘要生成
