@@ -832,6 +832,8 @@
       
         
       
+        
+      
     
     
     
@@ -884,6 +886,36 @@
   
   <span class="md-ellipsis">
     MkDocs文档AI摘要
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../websitebeauty/recommend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    添加相关推荐文章
     
   </span>
   
@@ -2945,6 +2977,56 @@
 </div>
 </div>
 </div>
+</div>
+<style>
+.related-posts {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  max-height: none !important; /* 防止Safari错误计算高度 */
+  overflow: visible !important; /* 防止内容被截断 */
+}
+.related-posts h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.related-posts ul {
+  margin: 0 0 0.5rem 0 !important; /* 强制覆盖可能的冲突样式 */
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+.related-posts li {
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .related-posts {
+  border-top-color: rgba(255,255,255,0.1);
+}
+/* Safari特定修复 */
+@supports (-webkit-hyphens:none) {
+  .related-posts {
+    display: block;
+    position: relative;
+    height: auto !important;
+  }
+  .related-posts ul {
+    position: static;
+  }
+}
+</style>
+<div class="related-posts">
+<h3>📚 相关文章推荐</h3>
+<ul>
+<li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkdocsfont/">自定义Mkdocs显示字体(霞鹜文楷)</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/websitebeauty/linktech/">如何给MKdocs添加友链</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs1/">利用Mkdocs部署静态网页至GitHubpages</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs2/">Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs3/">解决Github Pages部署mkdocs自定义域名失效的问题</a></li>
+</ul>
 </div>
 <!--
   Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
