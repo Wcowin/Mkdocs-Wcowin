@@ -76,6 +76,7 @@ nav:
           - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
       - Mkdocs美化/补充:
           - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
+          - 添加相关推荐文章: blog/websitebeauty/recommend.md
           - 添加阅读信息统计: blog/websitebeauty/reading_time.md
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
           - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
@@ -319,3 +320,4 @@ hooks:
   - docs/overrides/hooks/socialmedia.py
   - docs/overrides/hooks/reading_time.py
   - docs/overrides/hooks/ai_summary.py
+  - docs/overrides/hooks/related_posts.py

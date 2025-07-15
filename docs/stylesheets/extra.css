@@ -15,7 +15,7 @@ button.md-top {
   font-family: LXGW WenKai; /* 修改字体 */
   font-size: 16px; /* 修改字体大小 */
   font-weight: lighter;/* 修改字体粗细 */
-  color: #1D2636; /* 修改字体颜色 */
+  /* color: #1D2636; 修改字体颜色 */
 }
 
 :root {
@@ -604,3 +604,27 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
   height: 30rem;
 }
 
+/* 仅针对文本链接设置红色 */
+.md-typeset p a:not(.md-button):not([class*="md-"]):not([style*="background"]),
+.md-typeset li a:not(.md-button):not([class*="md-"]):not([style*="background"]),
+.md-typeset td a:not(.md-button):not([class*="md-"]):not([style*="background"]),
+.md-typeset blockquote a:not(.md-button):not([class*="md-"]):not([style*="background"]) {
+  color: #5688F7 !important; /* 红色文本链接 */
+  text-decoration: none;
+}
+
+.md-typeset p a:not(.md-button):not([class*="md-"]):not([style*="background"]):hover,
+.md-typeset li a:not(.md-button):not([class*="md-"]):not([style*="background"]):hover,
+.md-typeset td a:not(.md-button):not([class*="md-"]):not([style*="background"]):hover,
+.md-typeset blockquote a:not(.md-button):not([class*="md-"]):not([style*="background"]):hover {
+  color: #43d2e8 !important; /* 悬停时深红色 */
+  text-decoration: underline;
+}
+
+/* 访问过的文本链接 */
+/* .md-typeset p a:not(.md-button):not([class*="md-"]):not([style*="background"]):visited,
+.md-typeset li a:not(.md-button):not([class*="md-"]):not([style*="background"]):visited,
+.md-typeset td a:not(.md-button):not([class*="md-"]):not([style*="background"]):visited,
+.md-typeset blockquote a:not(.md-button):not([class*="md-"]):not([style*="background"]):visited {
+  color: #b83280 !important; 
+} */
