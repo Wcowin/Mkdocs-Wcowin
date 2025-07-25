@@ -76,6 +76,7 @@ nav:
           - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
       - Mkdocs美化/补充:
           - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
+          - MkDocs文档日期插件: blog/websitebeauty/mkdocs-document-dates.md
           - 添加相关推荐文章: blog/websitebeauty/recommend.md
           - 添加阅读信息统计: blog/websitebeauty/reading_time.md
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
@@ -294,7 +295,6 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css # 自定义CSS
-  - stylesheets/extra2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/extra.css
   # - stylesheets/link.css #友链配置
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链CDN
@@ -309,8 +309,8 @@ extra_css:
 
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
-  # - stylesheets/ziti.css  #字体
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css
+  - stylesheets/ziti.css  #字体
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体

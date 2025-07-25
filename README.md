@@ -10,8 +10,19 @@
 - [Wcowin for MkDocs主题](#wcowin-for-mkdocs主题)
   - [目录](#目录)
   - [展示](#展示)
-  - [来自Claude的肯定](#来自claude的肯定)
-  - [如何快速使用](#如何快速使用)
+  - [来自Claude-4-Sonnet的肯定](#来自claude-4-sonnet的肯定)
+  - [快速开始](#快速开始)
+    - [环境要求](#环境要求)
+    - [方法一：直接下载使用（推荐新手）](#方法一直接下载使用推荐新手)
+    - [方法二：Git克隆使用](#方法二git克隆使用)
+    - [方法三：GitHub模板创建](#方法三github模板创建)
+    - [常见问题解决](#常见问题解决)
+      - [🔧 依赖安装问题](#-依赖安装问题)
+      - [🔧 Python版本问题](#-python版本问题)
+      - [🔧 端口占用问题](#-端口占用问题)
+      - [🔧 权限问题](#-权限问题)
+    - [📝 自定义配置](#-自定义配置)
+    - [🚀 部署到线上](#-部署到线上)
   - [视频教程](#视频教程)
 - [Connect with me](#connect-with-me)
   - [案例成果](#案例成果)
@@ -36,7 +47,6 @@
 **关于**
 <img width="1355" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/bfc10737-260c-44c7-b036-8c7dba52be24">
 
-
 **标签页**
 ![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)  
 
@@ -53,30 +63,186 @@
 
 </center>
 
-## 来自Claude的肯定
+## 来自Claude-4-Sonnet的肯定
 
 ![image](https://s1.imagehub.cc/images/2025/07/12/509bbab32399e1b22942d259c1433d09.png)
 
-## 如何快速使用  
+## 快速开始
 
-首先，建议在虚拟环境下安装 mkdocs-material：
+### 环境要求
+
+在开始之前，请确保你的系统已安装：
+
+- **Python 3.8+** （推荐3.9或更高版本）
+- **pip** （Python包管理器）
+- **Git** （用于版本控制）
+
+### 方法一：直接下载使用（推荐新手）
+
+这是最简单的方式，适合初学者快速体验：
+
+1. **下载模板**
+   - 访问 [Releases页面](https://github.com/Wcowin/Mkdocs-Wcowin/releases)
+   - 下载最新版本的 `Wcowin-for-MkDocs.zip`
+   - 解压到你想要的目录（注意把`Wcowin-for-MkDocs`文件夹里的所有文件单独移动到你的项目目录下）
+   - 比如你在本地新建了一个`myblog`文件夹，那么就把`Wcowin-for-MkDocs`文件夹里的所有文件单独移动到`myblog`文件夹下
+
+
+2. **安装依赖**
+   ```bash
+   # 建议在虚拟环境中安装
+   pip install -r requirements.txt
+   ```
+
+3. **启动预览**
+   ```bash
+   # 进入解压后的目录
+   cd myblog
+   
+   # 启动本地服务器
+   mkdocs serve
+   ```
+
+4. **查看效果**
+   - 打开浏览器访问 `http://127.0.0.1:8000`
+   - 实时预览你的网站
+
+出现报错自行谷歌即可，也可以给我发邮件，我会及时回复。
+
+### 方法二：Git克隆使用
+
+适合有Git基础的用户：
+
+1. **克隆仓库**
+   ```bash
+   # 克隆到本地
+   git clone https://github.com/Wcowin/Mkdocs-Wcowin.git
+   
+   # 进入项目目录
+   cd Mkdocs-Wcowin
+   ```
+
+2. **安装依赖**
+   ```bash
+   # 安装所有必需的包
+   pip install -r requirements.txt
+   ```
+
+3. **启动服务**
+   ```bash
+   # 启动开发服务器
+   mkdocs serve
+  
+   ```
+
+### 方法三：GitHub模板创建
+
+最适合想要部署到GitHub Pages的用户：
+
+1. **使用模板创建仓库**
+   - 点击 [使用此模板](https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin)
+   - 创建你自己的仓库（建议命名为 `你的用户名.github.io`）
+
+2. **克隆到本地**
+   ```bash
+   git clone https://github.com/你的用户名/你的仓库名.git
+   cd 你的仓库名
+   ```
+
+3. **配置和部署**
+   ```bash
+   # 安装依赖
+   pip install -r requirements.txt
+   
+   # 本地预览
+   mkdocs serve
+   
+   # 部署到GitHub Pages
+   mkdocs gh-deploy
+   ```
+
+### 常见问题解决
+
+#### 🔧 依赖安装问题
+
+如果遇到插件缺失错误：
 
 ```bash
-pip install mkdocs-material
+# 单独安装缺失的插件
+pip install mkdocs-git-committers-plugin-2
+pip install mkdocs-glightbox
+pip install mkdocs-git-revision-date-localized-plugin
+
+# 或者一次性安装所有依赖
+pip install -r requirements.txt
 ```
 
-**方法一：**
-直接下载[releases](https://github.com/Wcowin/Mkdocs-Wcowin/releases)里的`Wcowin-for-MkDocs.zip`文件，解压到你本地的文件夹下，随后在文件目录终端里`mkdocs serve`即可
+#### 🔧 Python版本问题
 
-**方法二：**
-在你本地的文件夹下(我的就是Wcowin.github.io这个文件夹)的终端执行`git clone git@github.com:Wcowin/Mkdocs-Wcowin.git`克隆本模版到本地
+如果提示Python版本过低：
 
-把克隆下来文件里的东西全部复制出来到Wcowin.github.io文件里(如下图)，随后在Wcowin.github.io文件目录终端里`mkdocs serve`即可运行，另一种运行方法：根目录有一个`Mkdocs-serve.bat`批处理文件，直接双击即可(仅在Windows系统下有效)
-![image.png](https://s2.loli.net/2025/01/02/nsDEbN5OPk3atcp.png)
+```bash
+# 检查Python版本
+python --version
 
-!注意：如果提示未安装git-committers等插件，在终端执行`pip install git-committers`即可，缺少什么就安装什么，直接执行`pip install -r requirements.txt`也可以安装所有插件  
+# 如果版本低于3.8，请升级Python
+# 或使用虚拟环境
+python -m venv mkdocs-env
+source mkdocs-env/bin/activate  # Linux/Mac
+# 或
+mkdocs-env\Scripts\activate     # Windows
+```
 
-初步教程见：[利用Mkdocs部署静态网页至GitHubpages](快速开始.md)
+#### 🔧 端口占用问题
+
+如果8000端口被占用：
+
+```bash
+# 使用其他端口
+mkdocs serve -a 127.0.0.1:8080
+```
+
+#### 🔧 权限问题
+
+如果遇到权限错误：
+
+```bash
+# 使用用户级安装
+pip install --user -r requirements.txt
+```
+
+### 📝 自定义配置
+
+1. **修改网站信息**
+   - 编辑 `mkdocs.yml` 文件
+   - 修改 `site_name`、`site_author` 等基本信息
+
+2. **添加内容**
+   - 在 `docs/` 目录下添加你的Markdown文件
+   - 更新 `mkdocs.yml` 中的导航配置
+
+3. **个性化样式**
+   - 修改 `docs/stylesheets/extra.css`
+   - 自定义颜色、字体等样式
+
+### 🚀 部署到线上
+
+**GitHub Pages部署：**
+```bash
+mkdocs gh-deploy
+```
+
+**其他平台部署：**
+```bash
+# 构建静态文件
+mkdocs build
+
+# 将site/目录上传到你的服务器
+```
+
+---
+
+**💡 提示：** 如果你是第一次使用MkDocs，强烈建议观看我们的[视频教程](#视频教程)，手把手教你从零开始搭建。
 
 ## 视频教程
 
@@ -103,7 +269,6 @@ pip install mkdocs-material
 
 </center>
 
-
 ## 案例成果
 
 [Lenny's Web](https://lennychen.top)  
@@ -129,17 +294,15 @@ pip install mkdocs-material
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-<!-- ## 版权声明
-
-本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)进行许可。 -->
 ## 请作者喝杯咖啡
+
+https://www.gitfish.dev/repo/Wcowin/Mkdocs-Wcowin
 
   <a href="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" target="_blank">
    <center>
     <img src="https://pic2.zhimg.com/80/v2-4384c32173a239a1609309aa1b1ee9f9_1440w.webp" style="width: 450px; height: auto;">
     </center>  
   </a> 
-
 
 ## License
 

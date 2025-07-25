@@ -98,7 +98,7 @@ status: new
 ---
 
 <center>
-<a href="../个人简历.pdf" target="_blank" class="md-button">下载简历</a>
+<a href="https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf" target="_blank" class="md-button">下载简历</a>
 </center>  
 
 ## 个人简介
