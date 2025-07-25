@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了Mkdocs文档教程，涵盖官方教程、Material for MkDocs插件、中文教程和视频教程，指导用户快速部署静态网页至GitHub pages，并配置Mkdocs博客。",
+  "summary": "本教程提供MkDocs文档创建与部署指南，涵盖官方教程、插件列表、中文教程及视频教程，助您快速入门并部署静态网页至GitHub Pages。",
   "service": "glm",
   "page_title": "0.Mkdocs教程前言",
-  "timestamp": "2025-07-09T19:59:49.407883",
+  "timestamp": "2025-07-25T17:35:36.622426",
   "language": "zh"
 }

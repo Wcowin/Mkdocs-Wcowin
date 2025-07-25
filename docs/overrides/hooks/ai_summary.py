@@ -24,8 +24,8 @@ class AISummaryGenerator:
             'enabled_in_ci': os.getenv('AI_SUMMARY_CI_ENABLED', 'true').lower() == 'true',
             
             # 本地部署环境开关 (true=本地开发时启用AI摘要)
-            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'false').lower() == 'true',
-            
+            'enabled_in_local': os.getenv('AI_SUMMARY_LOCAL_ENABLED', 'true').lower() == 'true',
+
             # CI部署仅缓存模式(不用管，只在ci.yml中设置有效)
             'ci_only_cache': os.getenv('AI_SUMMARY_CI_ONLY_CACHE', 'false').lower() == 'true',
             

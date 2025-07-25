@@ -1,7 +1,7 @@
 {
-  "summary": "本文详细介绍了MkDocs配置文件mkdocs.yml的设置方法，包括主题颜色、模式切换、功能启用、导航设置、搜索功能、语言设置、图标、导航栏、标签配置、Markdown扩展、自定义CSS/JS等，旨在帮助用户更好地自定义和优化MkDocs网站。",
+  "summary": "本文详细介绍了MkDocs配置文件mkdocs.yml的设置方法，包括网站名称、颜色主题、导航功能、搜索功能等，并提供了代码示例和注意事项，帮助用户自定义和优化MkDocs网站。",
   "service": "glm",
   "page_title": "2.Mkdocs配置说明(mkdocs.yml)",
-  "timestamp": "2025-07-09T19:59:44.268400",
+  "timestamp": "2025-07-25T17:35:15.799321",
   "language": "zh"
 }

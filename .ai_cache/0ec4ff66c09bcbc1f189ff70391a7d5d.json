@@ -1,7 +1,7 @@
 {
-  "summary": "通过git插件实现MKdocs文章修订时间戳功能，支持本地化日期显示，优化渲染速度，提升文档更新追踪效率。",
+  "summary": "本文介绍了为MKdocs添加文章修订时间戳的方法，通过使用git -revision-date-localized插件，实现本地化修订日期显示，并优化了渲染速度。",
   "service": "glm",
   "page_title": "为MKdocs添加文章修订时间戳",
-  "timestamp": "2025-07-09T20:00:09.608392",
+  "timestamp": "2025-07-25T17:37:00.279263",
   "language": "zh"
 }

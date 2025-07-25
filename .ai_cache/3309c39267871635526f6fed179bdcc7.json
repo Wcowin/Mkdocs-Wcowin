@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了如何通过JavaScript和LocalStorage实现网页背景特效，包括雪花、樱花和粒子效果，通过设置标志控制是否显示，适用于个性化网页设计。",
+  "summary": "本文介绍了如何通过JavaScript在网页中实现背景特效，如雪花、樱花和粒子效果，并通过LocalStorage控制是否显示这些特效。",
   "service": "glm",
   "page_title": "背景特效",
-  "timestamp": "2025-07-09T20:00:00.962646",
+  "timestamp": "2025-07-25T17:36:19.241640",
   "language": "zh"
 }

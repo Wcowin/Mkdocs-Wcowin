@@ -1,0 +1,7 @@
+{
+  "summary": "为MKdocs页面添加相关文章推荐功能，需在overrides文件夹中创建hooks文件，自定义配置以实现推荐效果。",
+  "service": "glm",
+  "page_title": "添加相关推荐文章",
+  "timestamp": "2025-07-25T17:36:48.345236",
+  "language": "zh"
+}

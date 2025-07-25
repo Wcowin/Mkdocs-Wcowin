@@ -1,7 +1,7 @@
 {
-  "summary": "本文介绍了如何在网站中添加顶部公告栏，通过在`docs/overrides`目录下新建`main.html`文件并修改其内容实现，适用于自定义网站布局。",
+  "summary": "本文介绍了在网站中添加顶部公告栏的方法，通过在`docs/overrides/main.html`文件中修改代码实现，适用于自定义网站布局。",
   "service": "glm",
   "page_title": "添加顶部公告栏",
-  "timestamp": "2025-07-09T20:00:03.273178",
+  "timestamp": "2025-07-25T17:36:22.388928",
   "language": "zh"
 }
