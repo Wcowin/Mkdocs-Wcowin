@@ -12,13 +12,13 @@
         <meta name="author" content="王科文(Wcowin)">
       
       
-        <link rel="canonical" href="http://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/Mkdocs-AI-Summary/">
+        <link rel="canonical" href="http://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/mkdocs-translate/">
       
       
-        <link rel="prev" href="../mkdocs-translate/">
+        <link rel="prev" href="../../Mkdocs/mkdocs3/">
       
       
-        <link rel="next" href="../mkdocs-document-dates/">
+        <link rel="next" href="../Mkdocs-AI-Summary/">
       
       
       <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>MkDocs文档AI摘要 - Mkdocs中文教程</title>
+        <title>为MKdocs添加多语言翻译 - Mkdocs中文教程</title>
       
     
     
@@ -96,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs-ai-hooks" class="md-skip">
+        <a href="#mkdocs" class="md-skip">
           跳转至
         </a>
       
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MkDocs文档AI摘要
+              为MKdocs添加多语言翻译
             
           </span>
         </div>
@@ -919,36 +919,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../mkdocs-translate/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    为MKdocs添加多语言翻译
-    
-  </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -966,7 +936,7 @@
   
   
   <span class="md-ellipsis">
-    MkDocs文档AI摘要
+    为MKdocs添加多语言翻译
     
   </span>
   
@@ -986,7 +956,7 @@
   
   
   <span class="md-ellipsis">
-    MkDocs文档AI摘要
+    为MKdocs添加多语言翻译
     
   </span>
   
@@ -1018,35 +988,104 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ 功能特性
+      🌍 方案概述
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="✨ 功能特性">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 实现步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 实现步骤">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      🤖 AI智能摘要
+      1. 引入翻译库
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      📊 智能阅读统计（可选）
+      2. 配置翻译参数
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
+  <a href="#3-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 在 mkdocs.yml 中配置语言切换
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 添加自定义术语库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 处理动态内容翻译
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 智能化特性
+      🎨 多语言样式优化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 多语言样式优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基础响应式样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 特定语言样式优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 深色模式兼容
     </span>
   </a>
   
@@ -1060,35 +1099,68 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      📦 快速安装
+      🔧 高级功能
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📦 快速安装">
+    <nav class="md-nav" aria-label="🔧 高级功能">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1_2" class="md-nav__link">
     <span class="md-ellipsis">
-      方法1: 直接下载（推荐）
+      1. 语言检测与样式应用
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-git" class="md-nav__link">
+  <a href="#2_2" class="md-nav__link">
     <span class="md-ellipsis">
-      方法2: Git克隆
+      2. 数字和特殊内容保护
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      依赖安装
+      🚀 最佳实践
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户体验优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 可访问性考虑
     </span>
   </a>
   
@@ -1102,62 +1174,26 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 快速开始
+      📱 移动端适配
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 快速开始">
+    <nav class="md-nav" aria-label="📱 移动端适配">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#1_4" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 基础配置
+      1. 响应式布局
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-ai" class="md-nav__link">
+  <a href="#2_4" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 配置AI服务
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 设置参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 本地运行和测试
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 部署配置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-github-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. GitHub Secrets配置
+      2. 触摸友好设计
     </span>
   </a>
   
@@ -1171,43 +1207,19 @@
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      📖 使用指南
+      🔍 故障排除
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📖 使用指南">
+    <nav class="md-nav" aria-label="🔍 故障排除">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ai_1" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      AI摘要控制
+      常见问题及解决方案
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="AI摘要控制">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法1: 页面级控制（推荐）
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法2: 文件夹级控制
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1217,282 +1229,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎨 显示效果
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🎨 显示效果">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ai_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      AI摘要显示
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      💰 成本说明
+      📊 效果展示
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ 高级配置
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚙️ 高级配置">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ai_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      自定义AI服务
+      🎯 总结
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      自定义提示词
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      缓存配置
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌍 多语言支持
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🌍 多语言支持">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      语言配置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      支持的语言
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      📊 性能优化
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📊 性能优化">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
-    <span class="md-ellipsis">
-      已实现优化
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
-    <span class="md-ellipsis">
-      性能建议
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤝 贡献指南
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🤝 贡献指南">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
-    <span class="md-ellipsis">
-      如何贡献
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
-    <span class="md-ellipsis">
-      开发环境
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 更新日志
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📝 更新日志">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v130-2025-06-04-" class="md-nav__link">
-    <span class="md-ellipsis">
-      [v1.3.0] (2025-06-04) - 最新版本
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[v1.3.0] (2025-06-04) - 最新版本">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
-    <span class="md-ellipsis">
-      核心改进
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v120-2025-06-03" class="md-nav__link">
-    <span class="md-ellipsis">
-      [v1.2.0] (2025-06-03)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[v1.2.0] (2025-06-03)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_24" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ 主要新功能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_25" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 技术改进
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v100-2025-06-01-" class="md-nav__link">
-    <span class="md-ellipsis">
-      [v1.0.0] (2025-06-01) - 初始版本
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_26" class="md-nav__link">
-    <span class="md-ellipsis">
-      🐛 问题反馈
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_27" class="md-nav__link">
-    <span class="md-ellipsis">
-      📄 许可证
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_28" class="md-nav__link">
-    <span class="md-ellipsis">
-      🙏 致谢
+      🔗 相关资源
     </span>
   </a>
   
@@ -1502,6 +1259,36 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mkdocs-AI-Summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MkDocs文档AI摘要
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -3057,35 +2844,104 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ 功能特性
+      🌍 方案概述
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="✨ 功能特性">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 实现步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 实现步骤">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      🤖 AI智能摘要
+      1. 引入翻译库
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      📊 智能阅读统计（可选）
+      2. 配置翻译参数
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
+  <a href="#3-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 在 mkdocs.yml 中配置语言切换
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 添加自定义术语库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 处理动态内容翻译
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 智能化特性
+      🎨 多语言样式优化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 多语言样式优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基础响应式样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 特定语言样式优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 深色模式兼容
     </span>
   </a>
   
@@ -3099,35 +2955,68 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      📦 快速安装
+      🔧 高级功能
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📦 快速安装">
+    <nav class="md-nav" aria-label="🔧 高级功能">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1_2" class="md-nav__link">
     <span class="md-ellipsis">
-      方法1: 直接下载（推荐）
+      1. 语言检测与样式应用
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-git" class="md-nav__link">
+  <a href="#2_2" class="md-nav__link">
     <span class="md-ellipsis">
-      方法2: Git克隆
+      2. 数字和特殊内容保护
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      依赖安装
+      🚀 最佳实践
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 性能优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户体验优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 可访问性考虑
     </span>
   </a>
   
@@ -3141,62 +3030,26 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 快速开始
+      📱 移动端适配
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 快速开始">
+    <nav class="md-nav" aria-label="📱 移动端适配">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#1_4" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 基础配置
+      1. 响应式布局
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-ai" class="md-nav__link">
+  <a href="#2_4" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 配置AI服务
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 设置参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 本地运行和测试
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 部署配置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-github-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. GitHub Secrets配置
+      2. 触摸友好设计
     </span>
   </a>
   
@@ -3210,43 +3063,19 @@
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      📖 使用指南
+      🔍 故障排除
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📖 使用指南">
+    <nav class="md-nav" aria-label="🔍 故障排除">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ai_1" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      AI摘要控制
+      常见问题及解决方案
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="AI摘要控制">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法1: 页面级控制（推荐）
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法2: 文件夹级控制
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -3256,282 +3085,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎨 显示效果
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🎨 显示效果">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ai_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      AI摘要显示
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      💰 成本说明
+      📊 效果展示
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ 高级配置
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚙️ 高级配置">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ai_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      自定义AI服务
+      🎯 总结
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      自定义提示词
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      缓存配置
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌍 多语言支持
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🌍 多语言支持">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      语言配置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      支持的语言
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      📊 性能优化
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📊 性能优化">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
-    <span class="md-ellipsis">
-      已实现优化
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
-    <span class="md-ellipsis">
-      性能建议
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤝 贡献指南
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🤝 贡献指南">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
-    <span class="md-ellipsis">
-      如何贡献
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
-    <span class="md-ellipsis">
-      开发环境
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 更新日志
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📝 更新日志">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v130-2025-06-04-" class="md-nav__link">
-    <span class="md-ellipsis">
-      [v1.3.0] (2025-06-04) - 最新版本
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[v1.3.0] (2025-06-04) - 最新版本">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
-    <span class="md-ellipsis">
-      核心改进
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v120-2025-06-03" class="md-nav__link">
-    <span class="md-ellipsis">
-      [v1.2.0] (2025-06-03)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[v1.2.0] (2025-06-03)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_24" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ 主要新功能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_25" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 技术改进
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v100-2025-06-01-" class="md-nav__link">
-    <span class="md-ellipsis">
-      [v1.0.0] (2025-06-01) - 初始版本
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_26" class="md-nav__link">
-    <span class="md-ellipsis">
-      🐛 问题反馈
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_27" class="md-nav__link">
-    <span class="md-ellipsis">
-      📄 许可证
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_28" class="md-nav__link">
-    <span class="md-ellipsis">
-      🙏 致谢
+      🔗 相关资源
     </span>
   </a>
   
@@ -3559,11 +3133,17 @@
         <a href="../../../tag/#tag:mkdocs" class="md-tag">Mkdocs</a>
       
     
+      
+      
+      
+        <a href="../../../tag/#tag:多语言" class="md-tag">多语言</a>
+      
+    
   </nav>
 
 
   
-    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/edit/main/docs/blog/websitebeauty/Mkdocs-AI-Summary.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/edit/main/docs/blog/websitebeauty/mkdocs-translate.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3572,7 +3152,7 @@
     
       
     
-    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/raw/main/docs/blog/websitebeauty/Mkdocs-AI-Summary.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/Wcowin/Mkdocs-Wcowin/raw/main/docs/blog/websitebeauty/mkdocs-translate.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -3580,115 +3160,507 @@
 
 
 <div class="admonition info">
-<p class="admonition-title">💾 AI智能摘要 (智谱清言)</p>
-<p>MkDocs AI Hooks是一款集成AI摘要生成和智能阅读统计的插件，支持多AI服务，自动生成80-120字摘要，并提供智能缓存和灵活配置。</p>
-</div>
-<div class="admonition info">
 <p class="admonition-title">📖 阅读信息</p>
-<p>阅读时间：<strong>2</strong> 分钟 | 中文字符：<strong>904</strong> | 有效代码行数：<strong>205</strong></p>
+<p>阅读时间：<strong>3</strong> 分钟 | 中文字符：<strong>1148</strong> | 有效代码行数：<strong>328</strong></p>
 </div>
-<h1 id="mkdocs-ai-hooks">MkDocs AI Hooks<a class="headerlink" href="#mkdocs-ai-hooks" title="Permanent link">&para;</a></h1>
-<p><img alt="logo 2" class="img1" src="https://s1.imagehub.cc/images/2025/06/06/ee327dc2912fd2f31d38ee8a16a1e1ff.png" /></p>
-<p>仓库地址:<a href="https://github.com/Wcowin/Mkdocs-AI-Summary">https://github.com/Wcowin/Mkdocs-AI-Summary</a><br />
-🌐 <strong>在线演示</strong>:<a href="https://wcowin.work/Mkdocs-AI-Summary-Plus/">https://wcowin.work/Mkdocs-AI-Summary-Plus/</a></p>
-<p align="center">
-    <img src="https://img.shields.io/badge/MkDocs-Hooks-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white" alt="MkDocs Hooks">
-    <img src="https://img.shields.io/badge/AI_Powered-DeepSeek-FF6B35?style=for-the-badge&logo=openai&logoColor=white" alt="AI Powered">
-    <img src="https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.7+">
-</p>
-
-<p align="center">
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README.md">中文</a> | <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README-en.md">English</a>
-</p>
-
-<p>🚀 <strong>您的MkDocs文档首选智能摘要！</strong> <br />
-这个项目利用MkDocs hooks，为您的技术文档和博客添加AI驱动的摘要生成和智能阅读统计功能。</p>
-<p><img alt="预览图1" src="https://s1.imagehub.cc/images/2025/06/03/d1563500263b22cfd0ffc3679993aa83.jpg" />
-<img alt="预览图2" src="https://s1.imagehub.cc/images/2025/06/03/526b59b6a2e478f2ffa1629320e3e2ce.png" /></p>
+<h1 id="mkdocs">为 MkDocs 添加多语言翻译功能<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
+<p>在全球化的今天，为网站添加多语言支持已成为提升用户体验的重要手段。本文将详细介绍如何为 MkDocs 网站添加基于 JavaScript 的客户端翻译功能，支持多种语言的实时切换。   </p>
+<p><a href="#_9">快速查看效果</a></p>
 <hr />
-<h2 id="_1">✨ 功能特性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="ai">🤖 AI智能摘要<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
+<div class="intro-container">
+  <div class="intro-content">
+    <div class="intro-text">
+      <span class="greeting">特别感谢<a href="https://github.com/jaywhj" class="contributor-link">Aaron</a>对翻译方案的提议与实践<span class="wave">👋</span></span>
+    </div>
+  </div>
+</div>
+
+<style>
+.intro-container {
+  background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(240,240,240,0.6) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(200,200,200,0.2);
+  transition: all 0.3s ease;
+}
+
+.intro-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.greeting {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contributor-link {
+  color: #608DBD;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.contributor-link:hover {
+  background-color: rgba(96, 141, 189, 0.1);
+  color: #4a7ba7;
+  text-decoration: none;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .intro-container {
+  background: linear-gradient(145deg, rgba(31,33,40,0.9) 0%, rgba(31,33,40,0.8) 100%);
+  border: 1px solid rgba(80,80,80,0.2);
+}
+
+[data-md-color-scheme="slate"] .greeting {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .contributor-link {
+  color: #7BA7D7;
+}
+
+[data-md-color-scheme="slate"] .contributor-link:hover {
+  background-color: rgba(123, 167, 215, 0.1);
+  color: #A8C5E5;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .greeting {
+    font-size: 1.3rem;
+  }
+}
+</style>
+
+<h2 id="_1">🌍 方案概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>我们采用的翻译方案具有以下特点：</p>
 <ul>
-<li><strong>多AI服务集成</strong>: 支持DeepSeek、OpenAI、Claude、Gemini等主流AI服务  </li>
-<li><strong>自动摘要生成</strong>: 生成高质量的80-120字智能摘要  </li>
-<li><strong>多语言支持</strong>: 支持中文、英文、双语摘要生成  </li>
-<li><strong>智能内容清理</strong>: 自动过滤YAML、HTML、代码块等格式内容  </li>
-<li><strong>备用摘要机制</strong>: API失败时提供基于关键词的本地摘要  </li>
-<li><strong>智能缓存系统</strong>: 7天智能过期，避免重复API调用  </li>
-<li><strong>灵活配置</strong>: 支持文件夹级别和页面级别的精确控制  </li>
-</ul>
-<h3 id="_2">📊 智能阅读统计（可选）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>精准字符统计</strong>: 专门优化的中英文内容识别  </li>
-<li><strong>智能代码检测</strong>: 识别30+编程语言和命令行代码  </li>
-<li><strong>阅读时间估算</strong>: 基于语言特性的智能计算（中文400字/分钟，英文200词/分钟）  </li>
-<li><strong>美观信息展示</strong>: 使用MkDocs Material风格的信息框  </li>
-</ul>
-<h3 id="_3">🚀 智能化特性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>环境自适应</strong>: 自动识别CI/本地环境，本地或者部署都可选启用/禁用  </li>
-<li><strong>自动语言识别</strong>: 支持30+编程语言和标记语言  </li>
-<li><strong>内容类型检测</strong>: 区分代码、配置、命令行等不同内容  </li>
-<li><strong>LRU缓存优化</strong>: 提升处理性能（Todo）  </li>
-<li><strong>完善错误处理</strong>: 异常处理和日志记录（Todo）</li>
+<li><strong>🚀 客户端翻译</strong>：使用 <code>translate.js</code> 库实现前端翻译</li>
+<li><strong>🌐 多语言支持</strong>：支持中文、英文、日文、韩文、阿拉伯文等 9 种语言</li>
+<li><strong>⚡ 实时切换</strong>：无需刷新页面即可切换语言</li>
+<li><strong>🎨 样式优化</strong>：针对不同语言进行样式适配</li>
+<li><strong>📱 响应式支持</strong>：移动端和桌面端都有优化</li>
 </ul>
 <hr />
-<h2 id="_4">📦 快速安装<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="1">方法1: 直接下载（推荐）<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p><strong>步骤1</strong>: 下载文件
-- 从 <a href="https://github.com/Wcowin/mkdocs-ai-hooks/releases">Releases页面</a> 下载最新版本
-- 或直接下载 <code>ai_summary.py</code>文件</p>
-<p><strong>步骤2</strong>: 创建目录并放置文件
+<h2 id="_2">📋 实现步骤<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 引入翻译库<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>首先在页脚或头部模板(例如：<a href="https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/partials/footer.html">docs/overrides/partials/footer.html</a>)中引入 <code>translate.js</code> 库：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 在您的MkDocs项目根目录下执行</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>docs/overrides/hooks/
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>mv<span class="w"> </span>ai_summary.py<span class="w"> </span>docs/overrides/hooks/
-</code></pre></div></td></tr></table></div></p>
-<p><strong>步骤3</strong>: 配置MkDocs主题以及覆写路径
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span>
-<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 在 mkdocs.yml 中添加</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nt">theme</span><span class="p">:</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/overrides</span><span class="w">  </span><span class="c1"># 必需配置！！！</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.select</span>
-</code></pre></div></td></tr></table></div></p>
-<h3 id="2-git">方法2: Git克隆<a class="headerlink" href="#2-git" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Wcowin/mkdocs-ai-hooks.git
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nb">cd</span><span class="w"> </span>mkdocs-ai-hooks<span class="w"> </span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cm">&lt;!-- 引入翻译库 --&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.net/translate.js/3.12.0/translate.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="_5">依赖安装<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<h3 id="2">2. 配置翻译参数<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>创建翻译配置脚本，设置基本参数：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="c1">// 设置不翻译的元素类名</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">ignore</span><span class="p">.</span><span class="kd">class</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="s1">&#39;md-select&#39;</span><span class="p">,</span><span class="w">           </span><span class="c1">// Material 选择框</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="s1">&#39;footer-highlight&#39;</span><span class="p">,</span><span class="w">    </span><span class="c1">// 页脚高亮文本</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="s1">&#39;md-footer-copyright&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 版权信息</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="s1">&#39;no-translate&#39;</span><span class="w">         </span><span class="c1">// 通用不翻译类</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">  </span><span class="c1">// 设置本地语种（默认中文简体）</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">language</span><span class="p">.</span><span class="nx">setLocal</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="c1">// 自动识别用户首选语言</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">setAutoDiscriminateLocalLanguage</span><span class="p">();</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">  </span><span class="c1">// 隐藏默认语言选择框</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">selectLanguageTag</span><span class="p">.</span><span class="nx">show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">  </span><span class="c1">// 设置翻译服务通道</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">service</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;client.edge&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">  </span><span class="c1">// 执行翻译初始化</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a>
+<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;翻译功能已初始化&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="p">})();</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></div></td></tr></table></div>
-<hr />
-<h2 id="_6">🚀 快速开始<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<h3 id="1_1">1. 基础配置<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
-<p><strong>步骤1</strong>: 配置hooks
-ai_summary.py务必放到docs/overrides/hooks目录下，然后：
+<p>目录结构如下：
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>$ tree -a
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>.
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>├── .github
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>│   ├── .DS_Store
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>│   └── workflows
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>│       └── ci.yml
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>├── docs
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>│   └── index.md
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>│   └──overrides
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>│       └──assets
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>│       └──partials
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="hll">│          └──footer.html
+</span><a id="__codelineno-2-13" name="__codelineno-2-13"></a>│
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>└── mkdocs.yml
+</code></pre></div></td></tr></table></div></p>
+<div class="admonition tip">
+<p class="admonition-title">重点提示</p>
+<p>请参考下方的footer.html示例代码  </p>
+<p>页脚教程: <a href="../footer/">Mkdocs页脚设计</a></p>
+</div>
+<details class="note">
+<summary>footer.html示例代码(无需修改,直接复制粘贴即可使用)</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span>
+<span class="normal"><a href="#__codelineno-3-32">32</a></span>
+<span class="normal"><a href="#__codelineno-3-33">33</a></span>
+<span class="normal"><a href="#__codelineno-3-34">34</a></span>
+<span class="normal"><a href="#__codelineno-3-35">35</a></span>
+<span class="normal"><a href="#__codelineno-3-36">36</a></span>
+<span class="normal"><a href="#__codelineno-3-37">37</a></span>
+<span class="normal"><a href="#__codelineno-3-38">38</a></span>
+<span class="normal"><a href="#__codelineno-3-39">39</a></span>
+<span class="normal"><a href="#__codelineno-3-40">40</a></span>
+<span class="normal"><a href="#__codelineno-3-41">41</a></span>
+<span class="normal"><a href="#__codelineno-3-42">42</a></span>
+<span class="normal"><a href="#__codelineno-3-43">43</a></span>
+<span class="normal"><a href="#__codelineno-3-44">44</a></span>
+<span class="normal"><a href="#__codelineno-3-45">45</a></span>
+<span class="normal"><a href="#__codelineno-3-46">46</a></span>
+<span class="normal"><a href="#__codelineno-3-47">47</a></span>
+<span class="normal"><a href="#__codelineno-3-48">48</a></span>
+<span class="normal"><a href="#__codelineno-3-49">49</a></span>
+<span class="normal"><a href="#__codelineno-3-50">50</a></span>
+<span class="normal"><a href="#__codelineno-3-51">51</a></span>
+<span class="normal"><a href="#__codelineno-3-52">52</a></span>
+<span class="normal"><a href="#__codelineno-3-53">53</a></span>
+<span class="normal"><a href="#__codelineno-3-54">54</a></span>
+<span class="normal"><a href="#__codelineno-3-55">55</a></span>
+<span class="normal"><a href="#__codelineno-3-56">56</a></span>
+<span class="normal"><a href="#__codelineno-3-57">57</a></span>
+<span class="normal"><a href="#__codelineno-3-58">58</a></span>
+<span class="normal"><a href="#__codelineno-3-59">59</a></span>
+<span class="normal"><a href="#__codelineno-3-60">60</a></span>
+<span class="normal"><a href="#__codelineno-3-61">61</a></span>
+<span class="normal"><a href="#__codelineno-3-62">62</a></span>
+<span class="normal"><a href="#__codelineno-3-63">63</a></span>
+<span class="normal"><a href="#__codelineno-3-64">64</a></span>
+<span class="normal"><a href="#__codelineno-3-65">65</a></span>
+<span class="normal"><a href="#__codelineno-3-66">66</a></span>
+<span class="normal"><a href="#__codelineno-3-67">67</a></span>
+<span class="normal"><a href="#__codelineno-3-68">68</a></span>
+<span class="normal"><a href="#__codelineno-3-69">69</a></span>
+<span class="normal"><a href="#__codelineno-3-70">70</a></span>
+<span class="normal"><a href="#__codelineno-3-71">71</a></span>
+<span class="normal"><a href="#__codelineno-3-72">72</a></span>
+<span class="normal"><a href="#__codelineno-3-73">73</a></span>
+<span class="normal"><a href="#__codelineno-3-74">74</a></span>
+<span class="normal"><a href="#__codelineno-3-75">75</a></span>
+<span class="normal"><a href="#__codelineno-3-76">76</a></span>
+<span class="normal"><a href="#__codelineno-3-77">77</a></span>
+<span class="normal"><a href="#__codelineno-3-78">78</a></span>
+<span class="normal"><a href="#__codelineno-3-79">79</a></span>
+<span class="normal"><a href="#__codelineno-3-80">80</a></span>
+<span class="normal"><a href="#__codelineno-3-81">81</a></span>
+<span class="normal"><a href="#__codelineno-3-82">82</a></span>
+<span class="normal"><a href="#__codelineno-3-83">83</a></span>
+<span class="normal"><a href="#__codelineno-3-84">84</a></span>
+<span class="normal"><a href="#__codelineno-3-85">85</a></span>
+<span class="normal"><a href="#__codelineno-3-86">86</a></span>
+<span class="normal"><a href="#__codelineno-3-87">87</a></span>
+<span class="normal"><a href="#__codelineno-3-88">88</a></span>
+<span class="normal"><a href="#__codelineno-3-89">89</a></span>
+<span class="normal"><a href="#__codelineno-3-90">90</a></span>
+<span class="normal"><a href="#__codelineno-3-91">91</a></span>
+<span class="normal"><a href="#__codelineno-3-92">92</a></span>
+<span class="normal"><a href="#__codelineno-3-93">93</a></span>
+<span class="normal"><a href="#__codelineno-3-94">94</a></span>
+<span class="normal"><a href="#__codelineno-3-95">95</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>{#-
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>  This file was automatically generated - do not edit
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>-#}
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">&lt;</span><span class="nt">footer</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  {% if &quot;navigation.footer&quot; in features %}
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>    {% if page.previous_page or page.next_page %}
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>      {% if page.meta and page.meta.hide %}
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>        {% set hidden = &quot;hidden&quot; if &quot;footer&quot; in page.meta.hide %}
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>      {% endif %}
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>      <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__inner md-grid&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;{{ lang.t(&#39;footer&#39;) }}&quot;</span> <span class="err">{{</span> <span class="na">hidden</span> <span class="err">}}</span><span class="p">&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>        {% if page.previous_page %}
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>          {% set direction = lang.t(&quot;footer.previous&quot;) %}
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ page.previous_page.url | url }}&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__link md-footer__link--prev&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;{{ direction }}: {{ page.previous_page.title | e }}&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__button md-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a>              {% set icon = config.theme.icon.previous or &quot;material/arrow-left&quot; %}
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>              {% include &quot;.icons/&quot; ~ icon ~ &quot;.svg&quot; %}
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__title&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a>              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__direction&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a>                {{ direction }}
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a>              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a>              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-ellipsis&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a>                {{ page.previous_page.title }}
+<a id="__codelineno-3-24" name="__codelineno-3-24"></a>              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26"></a>          <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27"></a>        {% endif %}
+<a id="__codelineno-3-28" name="__codelineno-3-28"></a>        {% if page.next_page %}
+<a id="__codelineno-3-29" name="__codelineno-3-29"></a>          {% set direction = lang.t(&quot;footer.next&quot;) %}
+<a id="__codelineno-3-30" name="__codelineno-3-30"></a>          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ page.next_page.url | url }}&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__link md-footer__link--next&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;{{ direction }}: {{ page.next_page.title | e }}&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__title&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32"></a>              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__direction&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33"></a>                {{ direction }}
+<a id="__codelineno-3-34" name="__codelineno-3-34"></a>              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35"></a>              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-ellipsis&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36"></a>                {{ page.next_page.title }}
+<a id="__codelineno-3-37" name="__codelineno-3-37"></a>              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer__button md-icon&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40"></a>              {% set icon = config.theme.icon.next or &quot;material/arrow-right&quot; %}
+<a id="__codelineno-3-41" name="__codelineno-3-41"></a>              {% include &quot;.icons/&quot; ~ icon ~ &quot;.svg&quot; %}
+<a id="__codelineno-3-42" name="__codelineno-3-42"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43"></a>          <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44"></a>        {% endif %}
+<a id="__codelineno-3-45" name="__codelineno-3-45"></a>      <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46"></a>    {% endif %}
+<a id="__codelineno-3-47" name="__codelineno-3-47"></a>  {% endif %}
+<a id="__codelineno-3-48" name="__codelineno-3-48"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer-meta md-typeset&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-49" name="__codelineno-3-49"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer-meta__inner md-grid&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50"></a>      {% include &quot;partials/copyright.html&quot; %}
+<a id="__codelineno-3-51" name="__codelineno-3-51"></a>            <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.staticfile.net/translate.js/3.12.0/translate.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-52" name="__codelineno-3-52"></a>      <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="w">        </span><span class="c1">// 翻译配置 - 包装在立即执行函数中避免全局污染</span>
+<a id="__codelineno-3-54" name="__codelineno-3-54"></a><span class="w">        </span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-55" name="__codelineno-3-55"></a><span class="w">          </span><span class="c1">// 通过 class 设置不翻译的元素</span>
+<a id="__codelineno-3-56" name="__codelineno-3-56"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">ignore</span><span class="p">.</span><span class="kd">class</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;md-select&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;footer-highlight&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;md-footer-copyright&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-57" name="__codelineno-3-57"></a><span class="w">          </span><span class="c1">// 自定义术语库，纠正翻译结果</span>
+<a id="__codelineno-3-58" name="__codelineno-3-58"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">nomenclature</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">,</span><span class="s1">&#39;english&#39;</span><span class="p">,</span><span class="sb">`</span>
+<a id="__codelineno-3-59" name="__codelineno-3-59"></a><span class="sb">                快讯=Newsflash</span>
+<a id="__codelineno-3-60" name="__codelineno-3-60"></a><span class="sb">                访问量=Page Views</span>
+<a id="__codelineno-3-61" name="__codelineno-3-61"></a><span class="sb">                本站已经运行=Site has been running</span>
+<a id="__codelineno-3-62" name="__codelineno-3-62"></a><span class="sb">                天=days</span>
+<a id="__codelineno-3-63" name="__codelineno-3-63"></a><span class="sb">                时=hours</span>
+<a id="__codelineno-3-64" name="__codelineno-3-64"></a><span class="sb">                分=minutes</span>
+<a id="__codelineno-3-65" name="__codelineno-3-65"></a><span class="sb">                秒=seconds</span>
+<a id="__codelineno-3-66" name="__codelineno-3-66"></a><span class="sb">                萌ICP备=Moe ICP</span>
+<a id="__codelineno-3-67" name="__codelineno-3-67"></a><span class="sb">                版权所有=Copyright</span>
+<a id="__codelineno-3-68" name="__codelineno-3-68"></a><span class="sb">                制作工具=Made with</span>
+<a id="__codelineno-3-69" name="__codelineno-3-69"></a><span class="sb">        `</span><span class="p">);</span>
+<a id="__codelineno-3-70" name="__codelineno-3-70"></a><span class="w">          </span><span class="c1">// 设置本地语种</span>
+<a id="__codelineno-3-71" name="__codelineno-3-71"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">language</span><span class="p">.</span><span class="nx">setLocal</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">);</span><span class="w">     </span>
+<a id="__codelineno-3-72" name="__codelineno-3-72"></a><span class="w">          </span><span class="c1">// 设置首次使用时自动识别语种</span>
+<a id="__codelineno-3-73" name="__codelineno-3-73"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">setAutoDiscriminateLocalLanguage</span><span class="p">();</span>
+<a id="__codelineno-3-74" name="__codelineno-3-74"></a><span class="w">          </span><span class="c1">// 不显示 select 语言选择框</span>
+<a id="__codelineno-3-75" name="__codelineno-3-75"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">selectLanguageTag</span><span class="p">.</span><span class="nx">show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<a id="__codelineno-3-76" name="__codelineno-3-76"></a><span class="w">          </span><span class="c1">// 设置机器翻译服务通道</span>
+<a id="__codelineno-3-77" name="__codelineno-3-77"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">service</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;client.edge&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-78" name="__codelineno-3-78"></a><span class="w">          </span><span class="c1">// 执行翻译</span>
+<a id="__codelineno-3-79" name="__codelineno-3-79"></a><span class="w">          </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-3-80" name="__codelineno-3-80"></a><span class="w">          </span><span class="c1">// 监听语言切换事件，确保动态内容也能被翻译</span>
+<a id="__codelineno-3-81" name="__codelineno-3-81"></a><span class="w">          </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;translate.languagechange&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-82" name="__codelineno-3-82"></a><span class="w">            </span><span class="c1">// 延迟重新翻译动态更新的内容</span>
+<a id="__codelineno-3-83" name="__codelineno-3-83"></a><span class="w">            </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-84" name="__codelineno-3-84"></a><span class="w">              </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-3-85" name="__codelineno-3-85"></a><span class="w">            </span><span class="p">},</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
+<a id="__codelineno-3-86" name="__codelineno-3-86"></a><span class="w">          </span><span class="p">});</span>
+<a id="__codelineno-3-87" name="__codelineno-3-87"></a><span class="w">          </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;翻译功能已初始化&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-88" name="__codelineno-3-88"></a><span class="w">        </span><span class="p">})();</span>
+<a id="__codelineno-3-89" name="__codelineno-3-89"></a><span class="w">      </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-90" name="__codelineno-3-90"></a>      {% if config.extra.social %}
+<a id="__codelineno-3-91" name="__codelineno-3-91"></a>        {% include &quot;partials/social.html&quot; %}
+<a id="__codelineno-3-92" name="__codelineno-3-92"></a>      {% endif %}
+<a id="__codelineno-3-93" name="__codelineno-3-93"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-94" name="__codelineno-3-94"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-95" name="__codelineno-3-95"></a><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="3-mkdocsyml">3. 在 mkdocs.yml 中配置语言切换<a class="headerlink" href="#3-mkdocsyml" title="Permanent link">&para;</a></h3>
+<p>首先在mkdocs.yml文件中添加custom_dir:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># 在 mkdocs.yml 中添加</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">hooks</span><span class="p">:</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/overrides/hooks/ai_summary.py</span><span class="w">      </span><span class="c1"># AI摘要hook</span>
-</code></pre></div></td></tr></table></div>
-<strong>步骤2</strong>: 本地配置
-根目录下创建 <code>.env</code> 文件存放密钥（记得添加到 <code>.gitignore</code>）：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># .env 文件内容</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nv">DEEPSEEK_API_KEY</span><span class="o">=</span>your_deepseek_api_key_here
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>your_openai_api_key_here
-</code></pre></div></td></tr></table></div></p>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>theme:
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>  name: material
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="hll">  custom_dir: docs/overrides #覆写路径
+</span></code></pre></div></td></tr></table></div></p>
+<p>然后在配置文件中添加多语言切换选项：
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span>
+<span class="normal"><a href="#__codelineno-5-30">30</a></span>
+<span class="normal"><a href="#__codelineno-5-31">31</a></span>
+<span class="normal"><a href="#__codelineno-5-32">32</a></span>
+<span class="normal"><a href="#__codelineno-5-33">33</a></span>
+<span class="normal"><a href="#__codelineno-5-34">34</a></span>
+<span class="normal"><a href="#__codelineno-5-35">35</a></span>
+<span class="normal"><a href="#__codelineno-5-36">36</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="nt">extra</span><span class="p">:</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="hll"><span class="w">  </span><span class="nt">alternate</span><span class="p">:</span>
+</span><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">中文</span>
+</span><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;chinese_simplified&#39;);&quot;</span>
+</span><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+</span><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
+</span><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;english&#39;);&quot;</span>
+</span><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+</span><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">한국어</span>
+</span><a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;korean&#39;);&quot;</span>
+</span><a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ko</span>
+</span><a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">日本語</span>
+</span><a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;japanese&#39;);&quot;</span>
+</span><a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ja</span>
+</span><a id="__codelineno-5-22" name="__codelineno-5-22"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">بالعربية</span>
+</span><a id="__codelineno-5-23" name="__codelineno-5-23"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;arabic&#39;);&quot;</span>
+</span><a id="__codelineno-5-24" name="__codelineno-5-24"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ar</span>
+</span><a id="__codelineno-5-25" name="__codelineno-5-25"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deutsch</span>
+</span><a id="__codelineno-5-26" name="__codelineno-5-26"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;german&#39;);&quot;</span>
+</span><a id="__codelineno-5-27" name="__codelineno-5-27"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">de</span>
+</span><a id="__codelineno-5-28" name="__codelineno-5-28"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Français</span>
+</span><a id="__codelineno-5-29" name="__codelineno-5-29"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;french&#39;);&quot;</span>
+</span><a id="__codelineno-5-30" name="__codelineno-5-30"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fr</span>
+</span><a id="__codelineno-5-31" name="__codelineno-5-31"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Español</span>
+</span><a id="__codelineno-5-32" name="__codelineno-5-32"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;spanish&#39;);&quot;</span>
+</span><a id="__codelineno-5-33" name="__codelineno-5-33"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">es</span>
+</span><a id="__codelineno-5-34" name="__codelineno-5-34"></a><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">português</span>
+</span><a id="__codelineno-5-35" name="__codelineno-5-35"></a><span class="hll"><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;javascript:translate.changeLanguage(&#39;portuguese&#39;);&quot;</span>
+</span><a id="__codelineno-5-36" name="__codelineno-5-36"></a><span class="hll"><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pt</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>至此已经配置完成。简单！快速！</p>
+<hr />
+<hr />
+<p>后续步骤皆为可选，根据需求进行配置。可以不看。</p>
+<h3 id="4">4. 添加自定义术语库<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>为了提高翻译准确性，添加专业术语映射：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
@@ -3700,20 +3672,77 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
 <span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-6-10">10</a></span>
 <span class="normal"><a href="#__codelineno-6-11">11</a></span>
-<span class="normal"><a href="#__codelineno-6-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">#.gitignore 文件内容</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="c1"># 环境变量文件（敏感信息）</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a>.env
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a>.env.local
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a>.env.*.local
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a>*.key
-<a id="__codelineno-6-7" name="__codelineno-6-7"></a>
-<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="c1"># MkDocs 构建输出目录</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9"></a>site/
-<a id="__codelineno-6-10" name="__codelineno-6-10"></a>
-<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="c1"># AI 摘要缓存目录（项目根目录）- 需要被提交</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12"></a>!.ai_cache/
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span>
+<span class="normal"><a href="#__codelineno-6-16">16</a></span>
+<span class="normal"><a href="#__codelineno-6-17">17</a></span>
+<span class="normal"><a href="#__codelineno-6-18">18</a></span>
+<span class="normal"><a href="#__codelineno-6-19">19</a></span>
+<span class="normal"><a href="#__codelineno-6-20">20</a></span>
+<span class="normal"><a href="#__codelineno-6-21">21</a></span>
+<span class="normal"><a href="#__codelineno-6-22">22</a></span>
+<span class="normal"><a href="#__codelineno-6-23">23</a></span>
+<span class="normal"><a href="#__codelineno-6-24">24</a></span>
+<span class="normal"><a href="#__codelineno-6-25">25</a></span>
+<span class="normal"><a href="#__codelineno-6-26">26</a></span>
+<span class="normal"><a href="#__codelineno-6-27">27</a></span>
+<span class="normal"><a href="#__codelineno-6-28">28</a></span>
+<span class="normal"><a href="#__codelineno-6-29">29</a></span>
+<span class="normal"><a href="#__codelineno-6-30">30</a></span>
+<span class="normal"><a href="#__codelineno-6-31">31</a></span>
+<span class="normal"><a href="#__codelineno-6-32">32</a></span>
+<span class="normal"><a href="#__codelineno-6-33">33</a></span>
+<span class="normal"><a href="#__codelineno-6-34">34</a></span>
+<span class="normal"><a href="#__codelineno-6-35">35</a></span>
+<span class="normal"><a href="#__codelineno-6-36">36</a></span>
+<span class="normal"><a href="#__codelineno-6-37">37</a></span>
+<span class="normal"><a href="#__codelineno-6-38">38</a></span>
+<span class="normal"><a href="#__codelineno-6-39">39</a></span>
+<span class="normal"><a href="#__codelineno-6-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">// 自定义术语库配置</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nomenclatures</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">  </span><span class="nx">english</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="sb">访问量=Page Views</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="sb">本站已经运行=Site has been running for</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="sb">天=days</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="sb">时=hours</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="sb">分=minutes</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="sb">秒=seconds</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="sb">版权所有=Copyright</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="sb">制作工具=Made with</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="sb">统计中=Loading</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="sb">`</span><span class="p">,</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">  </span><span class="nx">japanese</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="sb">访问量=アクセス数</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="sb">本站已经运行=サイト運営期間</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="sb">天=日</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="sb">时=時間</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19"></a><span class="sb">分=分</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="sb">秒=秒</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21"></a><span class="sb">版权所有=著作権</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="sb">制作工具=制作ツール</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23"></a><span class="sb">`</span><span class="p">,</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24"></a><span class="w">  </span><span class="nx">korean</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25"></a><span class="sb">访问量=방문수</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26"></a><span class="sb">本站已经运行=사이트 운영 기간</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27"></a><span class="sb">天=일</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28"></a><span class="sb">时=시간</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29"></a><span class="sb">分=분</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30"></a><span class="sb">秒=초</span>
+<a id="__codelineno-6-31" name="__codelineno-6-31"></a><span class="sb">版权所有=저작권</span>
+<a id="__codelineno-6-32" name="__codelineno-6-32"></a><span class="sb">制作工具=제작 도구</span>
+<a id="__codelineno-6-33" name="__codelineno-6-33"></a><span class="sb">`</span>
+<a id="__codelineno-6-34" name="__codelineno-6-34"></a><span class="w">  </span><span class="c1">// ... 其他语言配置</span>
+<a id="__codelineno-6-35" name="__codelineno-6-35"></a><span class="p">};</span>
+<a id="__codelineno-6-36" name="__codelineno-6-36"></a>
+<a id="__codelineno-6-37" name="__codelineno-6-37"></a><span class="c1">// 批量添加术语库</span>
+<a id="__codelineno-6-38" name="__codelineno-6-38"></a><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">nomenclatures</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(([</span><span class="nx">lang</span><span class="p">,</span><span class="w"> </span><span class="nx">terms</span><span class="p">])</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-39" name="__codelineno-6-39"></a><span class="w">  </span><span class="nx">translate</span><span class="p">.</span><span class="nx">nomenclature</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">lang</span><span class="p">,</span><span class="w"> </span><span class="nx">terms</span><span class="p">);</span>
+<a id="__codelineno-6-40" name="__codelineno-6-40"></a><span class="p">});</span>
 </code></pre></div></td></tr></table></div>
-<p>到这里检查下目录树状图:
+<h3 id="5">5. 处理动态内容翻译<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>对于实时更新的内容（如计时器、访问量等），需要特殊处理：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
@@ -3728,48 +3757,116 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
 <span class="normal"><a href="#__codelineno-7-12">12</a></span>
 <span class="normal"><a href="#__codelineno-7-13">13</a></span>
 <span class="normal"><a href="#__codelineno-7-14">14</a></span>
-<span class="normal"><a href="#__codelineno-7-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>$ tree -a
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>文件名
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>├── .github
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>│   ├── .DS_Store
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>│   └── workflows
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>│       └── ci.yml
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>├── docs
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>│   └── index.md
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>|   └── overrides
-<a id="__codelineno-7-10" name="__codelineno-7-10"></a>│       └── hooks
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a>│           └── ai_summary.py
-<a id="__codelineno-7-12" name="__codelineno-7-12"></a>├── .env
-<a id="__codelineno-7-13" name="__codelineno-7-13"></a>├──.gitignore
-<a id="__codelineno-7-14" name="__codelineno-7-14"></a>├── README.md
-<a id="__codelineno-7-15" name="__codelineno-7-15"></a>└── mkdocs.yml
-</code></pre></div></td></tr></table></div></p>
-<h3 id="2-ai">2. 配置AI服务<a class="headerlink" href="#2-ai" title="Permanent link">&para;</a></h3>
-<p><strong>选择AI服务提供商</strong>：<br />
-- 🌟 <strong>DeepSeek</strong>（推荐）：性价比高，中文表现优秀<br />
-- 🔥 <strong>OpenAI</strong>：功能强大，广泛支持<br />
-- ⚡ <strong>Claude</strong>：逻辑清晰，文本理解佳<br />
-- 🧠 <strong>Gemini</strong>：Google出品，多语言支持  </p>
-<p><strong>获取API密钥</strong>：
-- <a href="https://platform.deepseek.com/usage">DeepSeek</a> - 注册获取API密钥<br />
-- <a href="https://github.com/chatanywhere/GPT_API_free">ChatAnywhere</a> - 免费OpenAI额度  </p>
-<p><strong>获取的密钥存放于上一步创建的<code>.env</code> 文件中！！！</strong></p>
-<h3 id="3">3. 设置参数<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<p>在 <code>ai_summary.py</code> 中配置需要AI摘要的目录：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># 📂 启用AI摘要的文件夹</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="bp">self</span><span class="o">.</span><span class="n">enabled_folders</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a>    <span class="s1">&#39;blog/&#39;</span><span class="p">,</span>      <span class="c1"># 博客文章</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a>    <span class="c1"># 添加更多文件夹...</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">]</span>
-</code></pre></div></td></tr></table></div></p>
-<h3 id="4">4. 本地运行和测试<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>mkdocs<span class="w"> </span>serve<span class="w">  </span><span class="c1"># 本地预览</span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span>
+<span class="normal"><a href="#__codelineno-7-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">// 监听语言切换事件</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;translate.languagechange&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="c1">// 延迟重新翻译动态内容</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">    </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="p">});</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="c1">// 在动态内容更新时触发翻译</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="kd">function</span><span class="w"> </span><span class="nx">updateDynamicContent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">  </span><span class="c1">// 更新内容...</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">  </span><span class="c1">// 如果当前不是中文，重新执行翻译</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">translate</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">translate</span><span class="p">.</span><span class="nx">currentLanguage</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">translate</span><span class="p">.</span><span class="nx">execute</span><span class="p">(),</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="5">5. 部署配置<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="_3">🎨 多语言样式优化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 基础响应式样式<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p>为不同语言文本长度进行适配：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span>
+<span class="normal"><a href="#__codelineno-8-15">15</a></span>
+<span class="normal"><a href="#__codelineno-8-16">16</a></span>
+<span class="normal"><a href="#__codelineno-8-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c">/* 为翻译后的元素添加基础样式 */</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">]</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;chinese_simplified&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">  </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">  </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.4</span><span class="p">;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="p">}</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="c">/* 移动端长文本优化 */</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">]</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;chinese_simplified&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-visit-count-mobile</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="w">    </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mf">0.4</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a><span class="w">    </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6</span><span class="p">;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="2_1">2. 特定语言样式优化<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>针对不同语言的特殊需求：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span>
+<span class="normal"><a href="#__codelineno-9-23">23</a></span>
+<span class="normal"><a href="#__codelineno-9-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="c">/* 英文样式优化 */</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;english&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">  </span><span class="k">word-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">0.15</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="p">}</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="c">/* 日文样式优化 */</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;japanese&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">  </span><span class="k">letter-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">0.05</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">  </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="p">}</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="c">/* 阿拉伯文 RTL 支持 */</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;arabic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-wrapper</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">  </span><span class="k">direction</span><span class="p">:</span><span class="w"> </span><span class="kc">rtl</span><span class="p">;</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="p">}</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19"></a>
+<a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;arabic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="w">  </span><span class="k">direction</span><span class="p">:</span><span class="w"> </span><span class="kc">rtl</span><span class="p">;</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="w">  </span><span class="k">word-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="3">3. 深色模式兼容<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>确保所有语言在深色模式下的显示效果：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
@@ -3782,150 +3879,23 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
 <span class="normal"><a href="#__codelineno-10-10">10</a></span>
 <span class="normal"><a href="#__codelineno-10-11">11</a></span>
 <span class="normal"><a href="#__codelineno-10-12">12</a></span>
-<span class="normal"><a href="#__codelineno-10-13">13</a></span>
-<span class="normal"><a href="#__codelineno-10-14">14</a></span>
-<span class="normal"><a href="#__codelineno-10-15">15</a></span>
-<span class="normal"><a href="#__codelineno-10-16">16</a></span>
-<span class="normal"><a href="#__codelineno-10-17">17</a></span>
-<span class="normal"><a href="#__codelineno-10-18">18</a></span>
-<span class="normal"><a href="#__codelineno-10-19">19</a></span>
-<span class="normal"><a href="#__codelineno-10-20">20</a></span>
-<span class="normal"><a href="#__codelineno-10-21">21</a></span>
-<span class="normal"><a href="#__codelineno-10-22">22</a></span>
-<span class="normal"><a href="#__codelineno-10-23">23</a></span>
-<span class="normal"><a href="#__codelineno-10-24">24</a></span>
-<span class="normal"><a href="#__codelineno-10-25">25</a></span>
-<span class="normal"><a href="#__codelineno-10-26">26</a></span>
-<span class="normal"><a href="#__codelineno-10-27">27</a></span>
-<span class="normal"><a href="#__codelineno-10-28">28</a></span>
-<span class="normal"><a href="#__codelineno-10-29">29</a></span>
-<span class="normal"><a href="#__codelineno-10-30">30</a></span>
-<span class="normal"><a href="#__codelineno-10-31">31</a></span>
-<span class="normal"><a href="#__codelineno-10-32">32</a></span>
-<span class="normal"><a href="#__codelineno-10-33">33</a></span>
-<span class="normal"><a href="#__codelineno-10-34">34</a></span>
-<span class="normal"><a href="#__codelineno-10-35">35</a></span>
-<span class="normal"><a href="#__codelineno-10-36">36</a></span>
-<span class="normal"><a href="#__codelineno-10-37">37</a></span>
-<span class="normal"><a href="#__codelineno-10-38">38</a></span>
-<span class="normal"><a href="#__codelineno-10-39">39</a></span>
-<span class="normal"><a href="#__codelineno-10-40">40</a></span>
-<span class="normal"><a href="#__codelineno-10-41">41</a></span>
-<span class="normal"><a href="#__codelineno-10-42">42</a></span>
-<span class="normal"><a href="#__codelineno-10-43">43</a></span>
-<span class="normal"><a href="#__codelineno-10-44">44</a></span>
-<span class="normal"><a href="#__codelineno-10-45">45</a></span>
-<span class="normal"><a href="#__codelineno-10-46">46</a></span>
-<span class="normal"><a href="#__codelineno-10-47">47</a></span>
-<span class="normal"><a href="#__codelineno-10-48">48</a></span>
-<span class="normal"><a href="#__codelineno-10-49">49</a></span>
-<span class="normal"><a href="#__codelineno-10-50">50</a></span>
-<span class="normal"><a href="#__codelineno-10-51">51</a></span>
-<span class="normal"><a href="#__codelineno-10-52">52</a></span>
-<span class="normal"><a href="#__codelineno-10-53">53</a></span>
-<span class="normal"><a href="#__codelineno-10-54">54</a></span>
-<span class="normal"><a href="#__codelineno-10-55">55</a></span>
-<span class="normal"><a href="#__codelineno-10-56">56</a></span>
-<span class="normal"><a href="#__codelineno-10-57">57</a></span>
-<span class="normal"><a href="#__codelineno-10-58">58</a></span>
-<span class="normal"><a href="#__codelineno-10-59">59</a></span>
-<span class="normal"><a href="#__codelineno-10-60">60</a></span>
-<span class="normal"><a href="#__codelineno-10-61">61</a></span>
-<span class="normal"><a href="#__codelineno-10-62">62</a></span>
-<span class="normal"><a href="#__codelineno-10-63">63</a></span>
-<span class="normal"><a href="#__codelineno-10-64">64</a></span>
-<span class="normal"><a href="#__codelineno-10-65">65</a></span>
-<span class="normal"><a href="#__codelineno-10-66">66</a></span>
-<span class="normal"><a href="#__codelineno-10-67">67</a></span>
-<span class="normal"><a href="#__codelineno-10-68">68</a></span>
-<span class="normal"><a href="#__codelineno-10-69">69</a></span>
-<span class="normal"><a href="#__codelineno-10-70">70</a></span>
-<span class="normal"><a href="#__codelineno-10-71">71</a></span>
-<span class="normal"><a href="#__codelineno-10-72">72</a></span>
-<span class="normal"><a href="#__codelineno-10-73">73</a></span>
-<span class="normal"><a href="#__codelineno-10-74">74</a></span>
-<span class="normal"><a href="#__codelineno-10-75">75</a></span>
-<span class="normal"><a href="#__codelineno-10-76">76</a></span>
-<span class="normal"><a href="#__codelineno-10-77">77</a></span>
-<span class="normal"><a href="#__codelineno-10-78">78</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1">#ci.yml</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"> </span>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="nt">on</span><span class="p">:</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"> </span>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">  </span><span class="c1"># 禁止从 fork 仓库访问 secrets</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">closed</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">master</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="nt">permissions</span><span class="p">:</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
-<a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="nt">jobs</span><span class="p">:</span>
-<a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
-<a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-<a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
-<a id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
-<a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="w">          </span><span class="nt">sparse-checkout</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-10-22" name="__codelineno-10-22"></a><span class="w">            </span><span class="no">docs</span>
-<a id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="w">            </span><span class="no">includes</span>
-<a id="__codelineno-10-24" name="__codelineno-10-24"></a><span class="w">            </span><span class="no">requirements.txt</span>
-<a id="__codelineno-10-25" name="__codelineno-10-25"></a><span class="w">            </span><span class="no">.ai_cache</span>
-<a id="__codelineno-10-26" name="__codelineno-10-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v4</span>
-<a id="__codelineno-10-27" name="__codelineno-10-27"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-10-28" name="__codelineno-10-28"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
-<a id="__codelineno-10-29" name="__codelineno-10-29"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Set cache ID</span>
-<a id="__codelineno-10-30" name="__codelineno-10-30"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;cache_id=$(date --utc &#39;+%V&#39;)&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"> </span>
-<a id="__codelineno-10-31" name="__codelineno-10-31"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v3</span>
-<a id="__codelineno-10-32" name="__codelineno-10-32"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-10-33" name="__codelineno-10-33"></a><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material-${{ github.run_number }}</span>
-<a id="__codelineno-10-34" name="__codelineno-10-34"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span>
-<a id="__codelineno-10-35" name="__codelineno-10-35"></a><span class="w">          </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-10-36" name="__codelineno-10-36"></a><span class="w">            </span><span class="no">mkdocs-material-</span>
-<a id="__codelineno-10-37" name="__codelineno-10-37"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-git-revision-date-localized-plugin</span>
-<a id="__codelineno-10-38" name="__codelineno-10-38"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-git-authors-plugin</span>
-<a id="__codelineno-10-39" name="__codelineno-10-39"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-git-committers-plugin-2</span>
-<a id="__codelineno-10-40" name="__codelineno-10-40"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install markdown-callouts</span>
-<a id="__codelineno-10-41" name="__codelineno-10-41"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-rss-plugin</span>
-<a id="__codelineno-10-42" name="__codelineno-10-42"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install requests&gt;=2.25.0</span>
-<a id="__codelineno-10-43" name="__codelineno-10-43"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install python-dateutil&gt;=2.8.0</span>
-<a id="__codelineno-10-44" name="__codelineno-10-44"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install cachetools&gt;=4.2.0</span>
-<a id="__codelineno-10-45" name="__codelineno-10-45"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install python-dotenv&gt;=0.19.0</span>
-<a id="__codelineno-10-46" name="__codelineno-10-46"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install pymdown-extensions</span>
-<a id="__codelineno-10-47" name="__codelineno-10-47"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span>
-<a id="__codelineno-10-48" name="__codelineno-10-48"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install --upgrade --force-reinstall mkdocs-material</span>
-<a id="__codelineno-10-49" name="__codelineno-10-49"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy with AI Summary</span>
-<a id="__codelineno-10-50" name="__codelineno-10-50"></a><span class="w">        </span><span class="nt">env</span><span class="p">:</span>
-<a id="__codelineno-10-51" name="__codelineno-10-51"></a><span class="w">          </span><span class="c1"># AI摘要开关控制</span>
-<a id="__codelineno-10-52" name="__codelineno-10-52"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">           </span><span class="c1"># CI部署环境启用AI摘要 (true=在CI中为文章生成AI摘要)</span>
-<a id="__codelineno-10-53" name="__codelineno-10-53"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CI_ONLY_CACHE</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">       </span><span class="c1"># CI部署不生成新摘要 (true=使用本地部署过的摘要缓存，不再重复调用API)</span>
-<a id="__codelineno-10-54" name="__codelineno-10-54"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CI_FALLBACK</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">          </span><span class="c1"># CI部署启用备用摘要 (true=API失败时生成离线基础摘要)</span>
-<a id="__codelineno-10-55" name="__codelineno-10-55"></a><span class="w">          </span><span class="c1"># AI_SUMMARY_LOCAL_ENABLED: &#39;false&#39;       # 本地部署环境禁用AI摘要 (true=本地开发时也生成摘要)（不需要管这条）</span>
-<a id="__codelineno-10-56" name="__codelineno-10-56"></a><span class="w">          </span><span class="c1"># AI_SUMMARY_CACHE_ENABLED: &#39;true&#39;        # 本地启用缓存功能 (true=缓存摘要避免重复生成)（不需要管这条）</span>
-<a id="__codelineno-10-57" name="__codelineno-10-57"></a><span class="w">          </span><span class="c1"># API密钥配置</span>
-<a id="__codelineno-10-58" name="__codelineno-10-58"></a><span class="w">          </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span>
-<a id="__codelineno-10-59" name="__codelineno-10-59"></a><span class="w">          </span><span class="nt">OPENAI_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.OPENAI_API_KEY }}</span>
-<a id="__codelineno-10-60" name="__codelineno-10-60"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
-<a id="__codelineno-10-61" name="__codelineno-10-61"></a>
-<a id="__codelineno-10-62" name="__codelineno-10-62"></a><span class="w">      </span><span class="c1"># 自动提交新生成的AI缓存文件</span>
-<a id="__codelineno-10-63" name="__codelineno-10-63"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto-commit AI cache (if any new files)</span>
-<a id="__codelineno-10-64" name="__codelineno-10-64"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-10-65" name="__codelineno-10-65"></a><span class="w">          </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
-<a id="__codelineno-10-66" name="__codelineno-10-66"></a><span class="w">            </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
-<a id="__codelineno-10-67" name="__codelineno-10-67"></a><span class="w">            </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
-<a id="__codelineno-10-68" name="__codelineno-10-68"></a><span class="w">            </span><span class="no">git add .ai_cache/</span>
-<a id="__codelineno-10-69" name="__codelineno-10-69"></a><span class="w">            </span><span class="no">if ! git diff --cached --quiet; then</span>
-<a id="__codelineno-10-70" name="__codelineno-10-70"></a><span class="w">              </span><span class="no">git commit -m &quot;🤖 Auto-update AI summary cache [skip ci]&quot;</span>
-<a id="__codelineno-10-71" name="__codelineno-10-71"></a><span class="w">              </span><span class="no">git push</span>
-<a id="__codelineno-10-72" name="__codelineno-10-72"></a><span class="w">              </span><span class="no">echo &quot;✅ 自动提交了新的 AI 缓存文件&quot;</span>
-<a id="__codelineno-10-73" name="__codelineno-10-73"></a><span class="w">            </span><span class="no">else</span>
-<a id="__codelineno-10-74" name="__codelineno-10-74"></a><span class="w">              </span><span class="no">echo &quot;ℹ️ 没有新的缓存文件需要提交&quot;</span>
-<a id="__codelineno-10-75" name="__codelineno-10-75"></a><span class="w">            </span><span class="no">fi</span>
-<a id="__codelineno-10-76" name="__codelineno-10-76"></a><span class="w">          </span><span class="no">else</span>
-<a id="__codelineno-10-77" name="__codelineno-10-77"></a><span class="w">            </span><span class="no">echo &quot;ℹ️ 没有找到缓存目录或缓存为空&quot;</span>
-<a id="__codelineno-10-78" name="__codelineno-10-78"></a><span class="w">          </span><span class="no">fi</span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c">/* 深色模式下的翻译优化 */</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="o">[</span><span class="nt">data-md-color-scheme</span><span class="o">=</span><span class="s2">&quot;slate&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-counter-value</span><span class="o">,</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="o">[</span><span class="nt">data-md-color-scheme</span><span class="o">=</span><span class="s2">&quot;slate&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">no-translate</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#e2e8f0</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="p">}</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="c">/* 高对比度模式支持 */</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-contrast</span><span class="o">:</span><span class="w"> </span><span class="nt">high</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">]</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;chinese_simplified&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">;</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="_4">🔧 高级功能<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 语言检测与样式应用<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
@@ -3938,339 +3908,187 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
 <span class="normal"><a href="#__codelineno-11-10">10</a></span>
 <span class="normal"><a href="#__codelineno-11-11">11</a></span>
 <span class="normal"><a href="#__codelineno-11-12">12</a></span>
-<span class="normal"><a href="#__codelineno-11-13">13</a></span>
-<span class="normal"><a href="#__codelineno-11-14">14</a></span>
-<span class="normal"><a href="#__codelineno-11-15">15</a></span>
-<span class="normal"><a href="#__codelineno-11-16">16</a></span>
-<span class="normal"><a href="#__codelineno-11-17">17</a></span>
-<span class="normal"><a href="#__codelineno-11-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1"># ai_summary.py 中配置</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="c1"># AI摘要本地环境配置</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="bp">self</span><span class="o">.</span><span class="n">ci_config</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4"></a>    <span class="c1"># CI部署环境开关 (不用管，只在ci.yml中设置有效)</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5"></a>    <span class="s1">&#39;enabled_in_ci&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;AI_SUMMARY_CI_ENABLED&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6"></a>
-<a id="__codelineno-11-7" name="__codelineno-11-7"></a>    <span class="c1"># 本地部署环境开关 (true=本地开发时启用AI摘要)</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8"></a>    <span class="s1">&#39;enabled_in_local&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;AI_SUMMARY_LOCAL_ENABLED&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9"></a>
-<a id="__codelineno-11-10" name="__codelineno-11-10"></a>    <span class="c1"># CI部署仅缓存模式(不用管，只在ci.yml中设置有效)</span>
-<a id="__codelineno-11-11" name="__codelineno-11-11"></a>    <span class="s1">&#39;ci_only_cache&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;AI_SUMMARY_CI_ONLY_CACHE&#39;</span><span class="p">,</span> <span class="s1">&#39;false&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span>
-<a id="__codelineno-11-12" name="__codelineno-11-12"></a>
-<a id="__codelineno-11-13" name="__codelineno-11-13"></a>    <span class="c1"># 本地部署缓存功能开关 (true=启用缓存避免重复生成, false=总是生成新摘要)</span>
-<a id="__codelineno-11-14" name="__codelineno-11-14"></a>    <span class="s1">&#39;cache_enabled&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;AI_SUMMARY_CACHE_ENABLED&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span>
-<a id="__codelineno-11-15" name="__codelineno-11-15"></a>
-<a id="__codelineno-11-16" name="__codelineno-11-16"></a>    <span class="c1"># CI部署备用摘要开关 (不用管，只在ci.yml中设置有效)</span>
-<a id="__codelineno-11-17" name="__codelineno-11-17"></a>    <span class="s1">&#39;ci_fallback_enabled&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;AI_SUMMARY_CI_FALLBACK&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span>
-<a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="p">}</span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">applyLanguageStyles</span><span class="p">(</span><span class="nx">lang</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">  </span><span class="c1">// 设置语言属性</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;data-translate-lang&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">lang</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;chinese_simplified&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">  </span><span class="c1">// RTL 语言处理</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">lang</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;arabic&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;dir&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;rtl&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;rtl-language&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;dir&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;ltr&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;rtl-language&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p><strong>几种运行模式</strong>：<br />
-1. <strong>完全禁用</strong>: 本地和CI部署都不运行摘要生成<br />
-2. <strong>仅CI部署启用</strong>: 本地禁用，CI部署生成新摘要<br />
-3. <strong>缓存模式</strong>：本地已经生成过摘要，CI部署使用缓存（<strong>推荐。上方配置项中已默认CI部署的缓存模式，可自行搭配选择</strong>）<br />
-4. <strong>完全启用</strong>: 本地和CI部署都运行(API消耗会更多)</p>
-<h3 id="6-github-secrets">6. GitHub Secrets配置<a class="headerlink" href="#6-github-secrets" title="Permanent link">&para;</a></h3>
-<p><strong>步骤1</strong>: 设置Repository Secrets
-1. 进入GitHub仓库 → <strong>Settings</strong> → <strong>Secrets and variables</strong> → <strong>Actions</strong>
-2. 点击 <strong>New repository secret</strong> 添加：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>DEEPSEEK_API_KEY=your_deepseek_api_key_here
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a>OPENAI_API_KEY=your_openai_api_key_here
+<h3 id="2_2">2. 数字和特殊内容保护<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<p>确保数字、链接等不被误翻译：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span>
+<span class="normal"><a href="#__codelineno-12-16">16</a></span>
+<span class="normal"><a href="#__codelineno-12-17">17</a></span>
+<span class="normal"><a href="#__codelineno-12-18">18</a></span>
+<span class="normal"><a href="#__codelineno-12-19">19</a></span>
+<span class="normal"><a href="#__codelineno-12-20">20</a></span>
+<span class="normal"><a href="#__codelineno-12-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">protectSpecialContent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">  </span><span class="c1">// 保护数字不被翻译</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">highlightElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.footer-highlight&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">  </span><span class="nx">highlightElements</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">el</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;no-translate&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">      </span><span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;no-translate&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="w">  </span><span class="p">});</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">  </span><span class="c1">// 保护 ICP 号码</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">icpLinks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.icp-link&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">  </span><span class="nx">icpLinks</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">el</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">icpNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">el</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\d+/</span><span class="p">);</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">icpNumber</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w">      </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="w">        </span><span class="sr">/(\d+)/g</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="w">        </span><span class="s1">&#39;&lt;span class=&quot;no-translate&quot;&gt;$1&lt;/span&gt;&#39;</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="w">      </span><span class="p">);</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="w">  </span><span class="p">});</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<img alt="image" src="https://s1.imagehub.cc/images/2025/06/04/b5fd63d839bb6443c8560a5f690d2c41.png" /></p>
 <hr />
-<p>然后部署到GitHub Pages或其他平台即可。</p>
-<p><strong>有报错可以去问ChatGPT或者在Issues中提问。</strong></p>
-<h2 id="_7">📖 使用指南<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="ai_1">AI摘要控制<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
-<h4 id="1_2">方法1: 页面级控制（推荐）<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
-<p>在Markdown文件最上面的yaml meta中：</p>
-<p><strong>启用AI摘要</strong>：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
-<span class="normal"><a href="#__codelineno-13-2">2</a></span>
-<span class="normal"><a href="#__codelineno-13-3">3</a></span>
-<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="nn">---</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">文章标题</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="nt">ai_summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">   </span><span class="c1"># 启用AI摘要</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="nn">---</span>
-</code></pre></div></td></tr></table></div></p>
-<p><strong>禁用AI摘要</strong>：
+<h2 id="_5">🚀 最佳实践<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1_3">1. 性能优化<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>延迟执行</strong>：翻译操作延迟执行，避免阻塞页面渲染</li>
+<li><strong>避免重复翻译</strong>：检查是否已翻译过相同内容</li>
+<li><strong>清理资源</strong>：页面切换时正确清理翻译相关资源</li>
+</ul>
+<h3 id="2_3">2. 用户体验优化<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>记住用户选择</strong>：使用 localStorage 保存用户的语言偏好</li>
+<li><strong>平滑过渡</strong>：添加过渡动画使语言切换更自然</li>
+<li><strong>加载状态</strong>：在翻译过程中显示加载提示</li>
+</ul>
+<h3 id="3_1">3. 可访问性考虑<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>屏幕阅读器支持</strong>：正确设置 <code>lang</code> 属性</li>
+<li><strong>键盘导航</strong>：确保语言切换按钮可通过键盘访问</li>
+<li><strong>对比度</strong>：保证翻译后文本的可读性</li>
+</ul>
+<hr />
+<h2 id="_6">📱 移动端适配<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1_4">1. 响应式布局<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">  </span><span class="c">/* 长语言文本换行优化 */</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;german&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-visit-count-mobile</span><span class="o">,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">  </span><span class="o">[</span><span class="nt">data-translate-lang</span><span class="o">=</span><span class="s2">&quot;french&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">footer-visit-count-mobile</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">    </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.7</span><span class="p">;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">  </span><span class="c">/* 移动端语言切换优化 */</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">  </span><span class="p">.</span><span class="nc">md-header__option</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="w">    </span><span class="k">min-width</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="2_4">2. 触摸友好设计<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h3>
+<p>确保语言切换按钮在移动设备上易于点击：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
 <span class="normal"><a href="#__codelineno-14-2">2</a></span>
 <span class="normal"><a href="#__codelineno-14-3">3</a></span>
 <span class="normal"><a href="#__codelineno-14-4">4</a></span>
-<span class="normal"><a href="#__codelineno-14-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="nn">---</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">文章标题</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="nt">ai_summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1"># 禁用AI摘要</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自定义摘要内容</span><span class="w">  </span><span class="c1"># 可选手动摘要</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="nn">---</span>
-</code></pre></div></td></tr></table></div></p>
-<h4 id="2">方法2: 文件夹级控制<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-15-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-15-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-15-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-15-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-15-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-15-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-15-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-15-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-15-10">10</a></span>
-<span class="normal"><a href="#__codelineno-15-11">11</a></span>
-<span class="normal"><a href="#__codelineno-15-12">12</a></span>
-<span class="normal"><a href="#__codelineno-15-13">13</a></span>
-<span class="normal"><a href="#__codelineno-15-14">14</a></span>
-<span class="normal"><a href="#__codelineno-15-15">15</a></span>
-<span class="normal"><a href="#__codelineno-15-16">16</a></span>
-<span class="normal"><a href="#__codelineno-15-17">17</a></span>
-<span class="normal"><a href="#__codelineno-15-18">18</a></span>
-<span class="normal"><a href="#__codelineno-15-19">19</a></span>
-<span class="normal"><a href="#__codelineno-15-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="c1"># 在 ai_summary.py 中配置</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="c1"># 📂 可自定义的文件夹配置</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="bp">self</span><span class="o">.</span><span class="n">enabled_folders</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4"></a>    <span class="s1">&#39;blog/&#39;</span><span class="p">,</span>      <span class="c1"># blog文件夹</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5"></a>    <span class="s1">&#39;index.md&#39;</span><span class="p">,</span>     
-<a id="__codelineno-15-6" name="__codelineno-15-6"></a>    <span class="c1"># &#39;develop/&#39;,   # develop文件夹</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7"></a>    <span class="c1"># &#39;posts/&#39;,     # posts文件夹</span>
-<a id="__codelineno-15-8" name="__codelineno-15-8"></a>    <span class="c1"># &#39;trip/&#39;,     # trip文件夹</span>
-<a id="__codelineno-15-9" name="__codelineno-15-9"></a>    <span class="c1"># &#39;about/&#39;,     # about文件夹</span>
-<a id="__codelineno-15-10" name="__codelineno-15-10"></a><span class="p">]</span>
-<a id="__codelineno-15-11" name="__codelineno-15-11"></a>
-<a id="__codelineno-15-12" name="__codelineno-15-12"></a><span class="c1"># 📋 Excluded files and folders</span>
-<a id="__codelineno-15-13" name="__codelineno-15-13"></a><span class="bp">self</span><span class="o">.</span><span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-15-14" name="__codelineno-15-14"></a>    <span class="s1">&#39;404.md&#39;</span><span class="p">,</span> <span class="s1">&#39;tag.md&#39;</span><span class="p">,</span> <span class="s1">&#39;tags.md&#39;</span><span class="p">,</span>
-<a id="__codelineno-15-15" name="__codelineno-15-15"></a><span class="p">]</span>
-<a id="__codelineno-15-16" name="__codelineno-15-16"></a>
-<a id="__codelineno-15-17" name="__codelineno-15-17"></a><span class="c1"># 📋 Excluded specific files</span>
-<a id="__codelineno-15-18" name="__codelineno-15-18"></a><span class="bp">self</span><span class="o">.</span><span class="n">exclude_files</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-15-19" name="__codelineno-15-19"></a>    <span class="s1">&#39;blog/index.md&#39;</span><span class="p">,</span>
-<a id="__codelineno-15-20" name="__codelineno-15-20"></a><span class="p">]</span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c">/* 移动端按钮优化 */</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">  </span><span class="p">.</span><span class="nc">md-header__option</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">    </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="c">/* iOS 推荐的最小触摸目标 */</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <hr />
-<h2 id="_8">🎨 显示效果<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="ai_2">AI摘要显示<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h3>
-<p><strong>实际效果预览</strong>：
-<img alt="image" src="https://s1.imagehub.cc/images/2025/06/04/152205c10ef1bfd7658b383a3e5e6e9f.png" /></p>
-<h3 id="_9">💰 成本说明<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>单次费用</strong>: 约0.03-0.05元（中大型文档）</li>
-<li><strong>月度预估</strong>: 普通博客约1-5元</li>
-<li><strong>免费额度</strong>: 多数AI服务商提供新用户免费额度</li>
-</ul>
-<hr />
-<h2 id="_10">⚙️ 高级配置<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<h3 id="ai_3">自定义AI服务<a class="headerlink" href="#ai_3" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-16-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-16-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-16-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-16-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-16-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-16-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-16-10">10</a></span>
-<span class="normal"><a href="#__codelineno-16-11">11</a></span>
-<span class="normal"><a href="#__codelineno-16-12">12</a></span>
-<span class="normal"><a href="#__codelineno-16-13">13</a></span>
-<span class="normal"><a href="#__codelineno-16-14">14</a></span>
-<span class="normal"><a href="#__codelineno-16-15">15</a></span>
-<span class="normal"><a href="#__codelineno-16-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="c1"># 添加新的AI服务</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="bp">self</span><span class="o">.</span><span class="n">ai_services</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3"></a>    <span class="s1">&#39;your_service&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4"></a>        <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://api.yourservice.com/v1/chat/completions&#39;</span><span class="p">,</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5"></a>        <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="s1">&#39;your-model&#39;</span><span class="p">,</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6"></a>        <span class="s1">&#39;api_key&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;YOUR_API_KEY&#39;</span><span class="p">),</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7"></a>        <span class="s1">&#39;max_tokens&#39;</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8"></a>        <span class="s1">&#39;temperature&#39;</span><span class="p">:</span> <span class="mf">0.3</span>
-<a id="__codelineno-16-9" name="__codelineno-16-9"></a>    <span class="p">}</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="p">}</span>
-<a id="__codelineno-16-11" name="__codelineno-16-11"></a>
-<a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="c1"># 默认使用的AI服务</span>
-<a id="__codelineno-16-13" name="__codelineno-16-13"></a><span class="bp">self</span><span class="o">.</span><span class="n">default_service</span> <span class="o">=</span> <span class="s1">&#39;your_service&#39;</span>
-<a id="__codelineno-16-14" name="__codelineno-16-14"></a>
-<a id="__codelineno-16-15" name="__codelineno-16-15"></a><span class="c1"># 服务优先级（按顺序尝试）</span>
-<a id="__codelineno-16-16" name="__codelineno-16-16"></a><span class="bp">self</span><span class="o">.</span><span class="n">service_fallback_order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;openai&#39;</span><span class="p">,</span> <span class="s1">&#39;deepseek&#39;</span><span class="p">,</span> <span class="s1">&#39;claude&#39;</span><span class="p">,</span> <span class="s1">&#39;gemini&#39;</span><span class="p">]</span> <span class="c1"># 按顺序尝试</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="_11">自定义提示词<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-17-10">10</a></span>
-<span class="normal"><a href="#__codelineno-17-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">generate_ai_summary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">,</span> <span class="n">page_title</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2"></a>    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;请为以下技术文档生成一个简洁的中文摘要（80-120字）：</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3"></a>
-<a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="s2">    文章标题：</span><span class="si">{</span><span class="n">page_title</span><span class="si">}</span>
-<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="s2">    文章内容：</span><span class="si">{</span><span class="n">content</span><span class="p">[:</span><span class="mi">2500</span><span class="p">]</span><span class="si">}</span>
-<a id="__codelineno-17-6" name="__codelineno-17-6"></a>
-<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="s2">    要求：</span>
-<a id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="s2">    1. 突出核心技术要点</span>
-<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="s2">    2. 使用简洁专业的语言</span>
-<a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="s2">    3. 长度控制在80-120字</span>
-<a id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="s2">    &quot;&quot;&quot;</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="_12">缓存配置<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
-<span class="normal"><a href="#__codelineno-18-2">2</a></span>
-<span class="normal"><a href="#__codelineno-18-3">3</a></span>
-<span class="normal"><a href="#__codelineno-18-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1"># 修改缓存过期时间</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="n">cache_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">fromisoformat</span><span class="p">(</span><span class="n">cache_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="s1">&#39;1970-01-01&#39;</span><span class="p">))</span>
-<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="k">if</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">cache_time</span><span class="p">)</span><span class="o">.</span><span class="n">days</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">:</span>  <span class="c1"># 改为30天</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4"></a>    <span class="k">return</span> <span class="n">cache_data</span>
-</code></pre></div></td></tr></table></div>
-<hr />
-<h2 id="_13">🌍 多语言支持<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<h3 id="_14">语言配置<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
-<span class="normal"><a href="#__codelineno-19-2">2</a></span>
-<span class="normal"><a href="#__codelineno-19-3">3</a></span>
-<span class="normal"><a href="#__codelineno-19-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="c1"># 在 ai_summary.py 中设置</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="bp">self</span><span class="o">.</span><span class="n">summary_language</span> <span class="o">=</span> <span class="s1">&#39;zh&#39;</span>    <span class="c1"># 中文摘要</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="c1"># self.summary_language = &#39;en&#39;  # 英文摘要</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="c1"># self.summary_language = &#39;both&#39; # 双语摘要</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="_15">支持的语言<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>完全支持</strong>: 中文、English</li>
-<li><strong>部分支持</strong>: 日本語です、한글、Français、Deutsch</li>
-</ul>
-<hr />
-<h2 id="_16">📊 性能优化<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
-<h3 id="_17">已实现优化<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>LRU缓存</strong>: 函数级别缓存提升性能</li>
-<li><strong>正则预编译</strong>: 提高文本处理速度</li>
-<li><strong>智能过滤</strong>: 减少不必要的API调用</li>
-<li><strong>内容哈希</strong>: 基于内容变化的智能缓存</li>
-</ul>
-<h3 id="_18">性能建议<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
-<ul>
-<li>使用 <code>ci_only_cache: true</code> 在CI环境中仅使用缓存</li>
-<li>合理设置 <code>enabled_folders</code> 避免处理不必要的文件</li>
-<li>定期清理过期缓存文件</li>
-</ul>
-<hr />
-<h2 id="_19">🤝 贡献指南<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
-<h3 id="_20">如何贡献<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<h2 id="_7">🔍 故障排除<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">常见问题及解决方案<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Fork</strong> 这个仓库</li>
-<li>创建特性分支</li>
-<li>提交更改</li>
-<li>推送分支</li>
-<li>创建 <strong>Pull Request</strong></li>
+<li><strong>翻译不生效</strong></li>
+<li>检查 <code>translate.js</code> 是否正确加载</li>
+<li>
+<p>确认没有 JavaScript 错误阻止执行</p>
+</li>
+<li>
+<p><strong>动态内容不翻译</strong></p>
+</li>
+<li>在内容更新后调用 <code>translate.execute()</code></li>
+<li>
+<p>检查动态元素是否被忽略类名覆盖</p>
+</li>
+<li>
+<p><strong>样式错乱</strong></p>
+</li>
+<li>为不同语言添加对应的 CSS 规则</li>
+<li>
+<p>检查文本长度差异导致的布局问题</p>
+</li>
+<li>
+<p><strong>RTL 语言显示异常</strong></p>
+</li>
+<li>正确设置 <code>dir="rtl"</code> 属性</li>
+<li>为 RTL 语言添加特殊样式</li>
 </ol>
-<h3 id="_21">开发环境<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
-<span class="normal"><a href="#__codelineno-20-2">2</a></span>
-<span class="normal"><a href="#__codelineno-20-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Wcowin/mkdocs-ai-hooks.git
-<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="nb">cd</span><span class="w"> </span>mkdocs-ai-hooks
-<a id="__codelineno-20-3" name="__codelineno-20-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</code></pre></div></td></tr></table></div>
 <hr />
-<h2 id="_22">📝 更新日志<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
-<h3 id="v130-2025-06-04-">[v1.3.0] (2025-06-04) - 最新版本<a class="headerlink" href="#v130-2025-06-04-" title="Permanent link">&para;</a></h3>
-<h4 id="_23">核心改进<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<h2 id="_9">📊 效果展示<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>实现后的效果：</p>
+<p><img alt="2.gif" src="https://s2.loli.net/2025/07/26/uwokNjU1ipzc4v5.gif" /></p>
 <ul>
-<li><strong>统一缓存架构</strong></li>
-<li><strong>缓存路径统一为项目根目录 .ai_cache</strong></li>
-<li><strong>本地和 CI 环境使用相同缓存策略</strong></li>
-<li><strong>增强 CI/CD 支持</strong>，<strong>支持 CI 仅缓存模式，大幅减少部署时间</strong></li>
-<li><strong>智能识别 15+ 部署平台（GitHub Actions、GitLab CI 等）</strong></li>
-<li><strong>可配置备用摘要机制</strong></li>
-</ul>
-<h3 id="v120-2025-06-03">[v1.2.0] (2025-06-03)<a class="headerlink" href="#v120-2025-06-03" title="Permanent link">&para;</a></h3>
-<h4 id="_24">✨ 主要新功能<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>多AI服务支持</strong>: 集成DeepSeek、OpenAI、Gemini、Claude</li>
-<li><strong>环境自适应</strong>: 自动识别CI/本地环境</li>
-<li><strong>智能缓存系统</strong>: 内容哈希缓存，7天自动过期</li>
-<li><strong>安全配置</strong>: GitHub Secrets集成，API密钥安全管理</li>
-</ul>
-<h4 id="_25">🔧 技术改进<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>统一API接口</strong>: 自适配不同AI服务格式</li>
-<li><strong>错误处理增强</strong>: 完善的异常处理机制</li>
-<li><strong>性能优化</strong>: LRU缓存和正则预编译</li>
-</ul>
-<h3 id="v100-2025-06-01-">[v1.0.0] (2025-06-01) - 初始版本<a class="headerlink" href="#v100-2025-06-01-" title="Permanent link">&para;</a></h3>
-<ul>
-<li>🤖 <strong>AI智能摘要功能</strong>  </li>
-<li>📖 <strong>阅读时间统计功能</strong>  </li>
-<li>💾 <strong>基础缓存系统</strong>  </li>
-<li>🎯 <strong>基本配置选项</strong>  </li>
+<li>✅ <strong>多语言切换</strong>：支持 9 种语言实时切换</li>
+<li>✅ <strong>样式适配</strong>：每种语言都有优化的显示效果</li>
+<li>✅ <strong>响应式设计</strong>：桌面端和移动端都完美适配</li>
+<li>✅ <strong>性能优良</strong>：客户端翻译，服务器无额外负担</li>
+<li>✅ <strong>用户友好</strong>：无需刷新页面，切换流畅</li>
 </ul>
 <hr />
-<h2 id="_26">🐛 问题反馈<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
-<p>遇到问题？请在 <a href="https://github.com/Wcowin/mkdocs-ai-hooks/issues">Issues</a> 中反馈。</p>
-<p><strong>反馈时请包含</strong>：<br />
-- MkDocs版本<br />
-- Python版本<br />
-- 完整错误信息<br />
-- 复现步骤<br />
-- 配置文件（去除敏感信息）  </p>
+<h2 id="_10">🎯 总结<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>通过以上步骤，我们成功为 MkDocs 网站添加了完整的多语言翻译功能。这个方案具有以下优势：</p>
+<ol>
+<li><strong>实现简单</strong>：仅需几个文件修改即可完成</li>
+<li><strong>功能完整</strong>：支持多种语言和样式适配</li>
+<li><strong>性能优秀</strong>：客户端翻译，不增加服务器负担</li>
+<li><strong>用户体验佳</strong>：切换流畅，样式美观</li>
+</ol>
+<p>虽然客户端翻译在 SEO 方面不如服务端多语言方案，但对于技术文档、个人博客等场景，这种方案提供了极佳的性价比和用户体验。</p>
 <hr />
-<h2 id="_27">📄 许可证<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h2>
-<p>本项目采用 <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/LICENSE">MIT License</a> 开源协议。</p>
-<hr />
-<h2 id="_28">🙏 致谢<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h2>
-<p>感谢以下项目和服务：    </p>
+<h2 id="_11">🔗 相关资源<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.mkdocs.org/">MkDocs</a> - 优秀的静态站点生成器  </li>
-<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> - 精美的主题  </li>
-<li><a href="https://deepseek.com/">DeepSeek</a> - 高性价比的AI API服务</li>
-<li>所有贡献者和使用者</li>
+<li><a href="https://github.com/jerryc127/translate.js">Translate.js 官方文档</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/">Material for MkDocs 多语言配置</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Numbers_and_dates#internationalization">MDN Web 国际化指南</a></li>
 </ul>
-<hr />
-<h1 id="connect-with-me">Connect with me<a class="headerlink" href="#connect-with-me" title="Permanent link">&para;</a></h1>
-<center>
-
-**Telegram**
-
-<p align="center">
-  <a href="https://t.me/wecowin" target="_blank">
-    <img src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" alt="个人名片" style="border-radius: 10px;" width="50%">
-  </a>
-</p>
-
-
-**Wechat**  
-<!-- ![](https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg) -->
-<p align="center">
-<img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="border-radius: 10px;" width="50%">
-</p>
-
-</center>
-
-<h2 id="star-history">Star History<a class="headerlink" href="#star-history" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.star-history.com/#Wcowin/mkdocs-ai-hooks&amp;Date"><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Wcowin/mkdocs-ai-hooks&amp;type=Date" /></a></p>
-<h2 id="_29">请作者喝杯咖啡<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
-<p align="center">
-  <a href="https://s1.imagehub.cc/images/2025/05/11/36eb33bf18f9041667267605b6b99bd0.jpeg" target="_blank">
-   <center>
-    <img src="https://s1.imagehub.cc/images/2025/05/11/36eb33bf18f9041667267605b6b99bd0.jpeg" style="width: 450px; height: auto; border-radius: 25px;" >
-    </center>  
-  </a>
-</center>
-
-<p align="center">
-    如果这个项目对您有帮助，请给它一个 ⭐ Star！
-</p>
-
-<p align="center">
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/stargazers">
-        <img src="https://img.shields.io/github/stars/Wcowin/mkdocs-ai-hooks?style=social" alt="Stars">
-    </a>
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/network/members">
-        <img src="https://img.shields.io/github/forks/Wcowin/mkdocs-ai-hooks?style=social" alt="Forks">
-    </a>
-</p>
-
-
-📝 本项目致力于让MkDocs文档更加智能化和用户友好。如有建议或想法，欢迎交流！
+<p>希望这个教程能帮助你为自己的 MkDocs 网站添加多语言支持！如果遇到问题，欢迎在评论区讨论。</p>
 <style>
 .related-posts {
   margin-top: 1.5rem;
@@ -4315,10 +4133,10 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
 <h3>📚 相关文章推荐</h3>
 <ul>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkdocs-document-dates/">MkDocs文档日期插件</a></li>
-<li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkcomments/">为网站添加评论系统</a></li>
-<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs1/">利用Mkdocs部署静态网页至GitHubpages</a></li>
-<li><a href="/Mkdocs-Wcowin/blog/websitebeauty/recommend/">为MKdocs页面添加相关文章推荐</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs2/">Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)</a></li>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/Relativeaddress/">相对地址的一些问题</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/websitebeauty/reading_time/">Mkdocs 阅读时间插件</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs1/">利用Mkdocs部署静态网页至GitHubpages</a></li>
 </ul>
 </div>
 
@@ -4490,7 +4308,7 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年6月26日 03:07:39 UTC">2025-06-26</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年7月26日 14:03:25 UTC">2025-07-26</span>
   </span>
 
     
@@ -4692,9 +4510,9 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
         
           
           <a
-            href="../mkdocs-translate/"
+            href="../../Mkdocs/mkdocs3/"
             class="md-footer__link md-footer__link--prev"
-            aria-label="上一页: 为MKdocs添加多语言翻译"
+            aria-label="上一页: 3.解决Github Pages部署mkdocs自定义域名失效的问题"
           >
             <div class="md-footer__button md-icon">
               
@@ -4702,7 +4520,7 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">上一页</span>
-              <div class="md-ellipsis">为MKdocs添加多语言翻译</div>
+              <div class="md-ellipsis">3.解决Github Pages部署mkdocs自定义域名失效的问题</div>
             </div>
           </a>
         
@@ -4711,13 +4529,13 @@ ai_summary.py务必放到docs/overrides/hooks目录下，然后：
         
           
           <a
-            href="../mkdocs-document-dates/"
+            href="../Mkdocs-AI-Summary/"
             class="md-footer__link md-footer__link--next"
-            aria-label="下一页: MkDocs文档日期插件"
+            aria-label="下一页: MkDocs文档AI摘要"
           >
             <div class="md-footer__title">
               <span class="md-footer__direction">下一页</span>
-              <div class="md-ellipsis">MkDocs文档日期插件</div>
+              <div class="md-ellipsis">MkDocs文档AI摘要</div>
             </div>
             <div class="md-footer__button md-icon">
               
