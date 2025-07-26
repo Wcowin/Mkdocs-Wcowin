@@ -1,0 +1,7 @@
+# AI缓存文件合并策略
+.ai_cache/*.json merge=ours
+.ai_cache/service_config.json merge=ours
+
+# 其他可能冲突的文件
+*.cache merge=ours
+site/ merge=ours
