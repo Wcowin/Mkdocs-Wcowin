@@ -1,51 +1,56 @@
 <!-- Footer -->
 <footer class="md-footer">
   <!-- Link to previous and/or next page - 移到最上面 -->
-  {% if "navigation.footer" in features %} {% if page.previous_page or
-  page.next_page %} {% if page.meta and page.meta.hide %} {% set hidden =
-  "hidden" if "footer" in page.meta.hide %} {% endif %}
-  <nav
-    class="md-footer__inner md-grid"
-    aria-label="{{ lang.t('footer') }}"
-    {{ hidden }}
-  >
-    <!-- Link to previous page -->
-    {% if page.previous_page %} {% set direction = lang.t("footer.previous") %}
-    <a
-      href="{{ page.previous_page.url | url }}"
-      class="md-footer__link md-footer__link--prev"
-      aria-label="{{ direction }}: {{ page.previous_page.title | e }}"
-    >
-      <div class="md-footer__button md-icon">
-        {% set icon = config.theme.icon.previous or "material/arrow-left" %} {%
-        include ".icons/" ~ icon ~ ".svg" %}
-      </div>
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> {{ direction }} </span>
-        <div class="md-ellipsis">{{ page.previous_page.title }}</div>
-      </div>
-    </a>
-    {% endif %}
+  {% if "navigation.footer" in features %}
+    {% if page.previous_page or page.next_page %}
+      {% if page.meta and page.meta.hide %}
+        {% set hidden = "hidden" if "footer" in page.meta.hide %}
+      {% endif %}
+      <nav
+        class="md-footer__inner md-grid"
+        aria-label="{{ lang.t('footer') }}"
+        {{ hidden }}
+      >
+        <!-- Link to previous page -->
+        {% if page.previous_page %}
+          {% set direction = lang.t("footer.previous") %}
+          <a
+            href="{{ page.previous_page.url | url }}"
+            class="md-footer__link md-footer__link--prev"
+            aria-label="{{ direction }}: {{ page.previous_page.title | e }}"
+          >
+            <div class="md-footer__button md-icon">
+              {% set icon = config.theme.icon.previous or "material/arrow-left" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">{{ direction }}</span>
+              <div class="md-ellipsis">{{ page.previous_page.title }}</div>
+            </div>
+          </a>
+        {% endif %}
 
-    <!-- Link to next page -->
-    {% if page.next_page %} {% set direction = lang.t("footer.next") %}
-    <a
-      href="{{ page.next_page.url | url }}"
-      class="md-footer__link md-footer__link--next"
-      aria-label="{{ direction }}: {{ page.next_page.title | e }}"
-    >
-      <div class="md-footer__title">
-        <span class="md-footer__direction"> {{ direction }} </span>
-        <div class="md-ellipsis">{{ page.next_page.title }}</div>
-      </div>
-      <div class="md-footer__button md-icon">
-        {% set icon = config.theme.icon.next or "material/arrow-right" %} {%
-        include ".icons/" ~ icon ~ ".svg" %}
-      </div>
-    </a>
+        <!-- Link to next page -->
+        {% if page.next_page %}
+          {% set direction = lang.t("footer.next") %}
+          <a
+            href="{{ page.next_page.url | url }}"
+            class="md-footer__link md-footer__link--next"
+            aria-label="{{ direction }}: {{ page.next_page.title | e }}"
+          >
+            <div class="md-footer__title">
+              <span class="md-footer__direction">{{ direction }}</span>
+              <div class="md-ellipsis">{{ page.next_page.title }}</div>
+            </div>
+            <div class="md-footer__button md-icon">
+              {% set icon = config.theme.icon.next or "material/arrow-right" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
+            </div>
+          </a>
+        {% endif %}
+      </nav>
     {% endif %}
-  </nav>
-  {% endif %} {% endif %}
+  {% endif %}
 
   <!-- Further information -->
   <div class="md-footer-meta md-typeset">
@@ -55,23 +60,20 @@
         <div class="footer-content">
           <div class="footer-visit-count">
             <div class="footer-item">
-              <!-- <span class="footer-icon">👀</span> -->
               <span>本站访问量：</span>
               <span id="finicount_views" class="footer-highlight"></span>
             </div>
 
             <div class="footer-item">
-              <!-- <span class="footer-icon">📝</span> -->
               <a
                 href="https://icp.gov.moe/?keyword=20230640"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="icp-link"
-                >萌ICP备20230640号</a>
+              >萌ICP备20230640号</a>
             </div>
 
             <div class="footer-item runtime-info">
-              <!-- <span class="footer-icon">⏱️</span> -->
               <span>本站已经运行</span>
               <span id="box1" class="footer-highlight"></span>
             </div>
@@ -80,7 +82,7 @@
 
         <!-- 移动端简洁布局 (仿 footercopy.html) -->
         <div class="footer-visit-count-mobile">
-          <span>本站访问量:</span>
+          <span>本站访问量：</span>
           <span id="finicount_views_mobile" class="footer-highlight"></span>
           |
           <a
@@ -95,7 +97,6 @@
             <span id="box1_mobile"></span>
           </span>
         </div>
-
         <!-- 版权信息和社交媒体水平布局 -->
         <div class="footer-bottom-section">
           <div class="md-footer-copyright">
@@ -111,12 +112,67 @@
         </div>
       </div>
 
+      <!-- 页脚脚本部分 -->
+      
+      <!-- 翻译功能脚本 - 放在其他脚本之前 -->
+      <script src="https://cdn.staticfile.net/translate.js/3.12.0/translate.js"></script>
+      <script>
+        // 翻译配置 - 包装在立即执行函数中避免全局污染
+        (function() {
+          // 通过 class 设置不翻译的元素
+          translate.ignore.class.push('md-select', 'footer-highlight', 'md-footer-copyright');
+          
+          // 自定义术语库，纠正翻译结果
+          translate.nomenclature.append('chinese_simplified','english',`
+                快讯=Newsflash
+                访问量=Page Views
+                本站已经运行=Site has been running
+                天=days
+                时=hours
+                分=minutes
+                秒=seconds
+                萌ICP备=Moe ICP
+                版权所有=Copyright
+                制作工具=Made with
+        `);
+
+          // 设置本地语种
+          translate.language.setLocal('chinese_simplified');
+          
+          // 设置首次使用时自动识别语种
+          translate.setAutoDiscriminateLocalLanguage();
+          
+          // 不显示 select 语言选择框
+          translate.selectLanguageTag.show = false;
+          
+          // 设置机器翻译服务通道
+          translate.service.use('client.edge');
+          
+          // 执行翻译
+          translate.execute();
+          
+          // 监听语言切换事件，确保动态内容也能被翻译
+          window.addEventListener('translate.languagechange', function() {
+            // 延迟重新翻译动态更新的内容
+            setTimeout(() => {
+              translate.execute();
+            }, 500);
+          });
+          
+          console.log('翻译功能已初始化');
+        })();
+      </script>
+
       <script>
         (function() {
+          // 现有的页脚功能代码...
           // 避免变量冲突，将所有代码包装在立即执行函数中
-
+          
+          // 存储计时器ID，用于清理
+          let timeUpdateInterval;
+          
           function timingTime() {
-            const start = "2023-10-14T00:00:00";
+            const start = "2022-10-20T00:00:00";
             const startTime = new Date(start).getTime();
             const now = Date.now();
             let diff = Math.floor((now - startTime) / 1000);
@@ -137,11 +193,22 @@
 
             if (el) el.textContent = time;
             if (elMobile) elMobile.textContent = time;
+            
+            // 触发翻译更新（如果翻译已激活）
+            if (window.translate && translate.currentLanguage !== 'chinese_simplified') {
+              setTimeout(() => translate.execute(), 100);
+            }
           }
 
           // 加载访问量计数器
           async function loadVisitCounter() {
             try {
+              // 检查是否已经加载过计数器脚本
+              if (document.querySelector('script[src*="finicounter.eu.org"]')) {
+                console.log('计数器脚本已加载，跳过重复加载');
+                return;
+              }
+              
               const script = document.createElement('script');
               script.src = '//finicounter.eu.org/finicounter.js';
               script.async = true;
@@ -170,21 +237,44 @@
           // 监听访问量更新
           function setupVisitCountObserver() {
             try {
-              const observer = new MutationObserver(syncVisitCount);
+              // 清理旧的观察器
+              if (window._visitCountObserver) {
+                window._visitCountObserver.disconnect();
+              }
+              
+              window._visitCountObserver = new MutationObserver(syncVisitCount);
               const visitCountTarget = document.getElementById("finicount_views");
               if (visitCountTarget) {
-                observer.observe(visitCountTarget, { childList: true, subtree: true });
+                window._visitCountObserver.observe(visitCountTarget, { childList: true, subtree: true });
               }
             } catch (e) {
               console.log('访问量监听器设置失败:', e);
             }
           }
 
+          // 清理函数 - 在页面切换前调用
+          function cleanup() {
+            // 清除计时器
+            if (timeUpdateInterval) {
+              clearInterval(timeUpdateInterval);
+              timeUpdateInterval = null;
+            }
+            
+            // 清除观察器
+            if (window._visitCountObserver) {
+              window._visitCountObserver.disconnect();
+              window._visitCountObserver = null;
+            }
+          }
+
           // 初始化所有功能
           function init() {
+            // 清理旧的计时器和观察器
+            cleanup();
+            
             // 启动计时器
             updateTime();
-            setInterval(updateTime, 1000);
+            timeUpdateInterval = setInterval(updateTime, 1000);
 
             // 加载访问量计数器
             loadVisitCounter();
@@ -194,16 +284,36 @@
 
             // 调试信息
             console.log('页脚功能已启动');
-            console.log('当前时间:', timingTime());
           }
 
-          // 确保DOM加载完成后再初始化
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
+          // 使用统一的即时导航处理器（如果可用）
+          if (window.InstantNavigation) {
+            window.InstantNavigation.register(init, 'footer-functions');
           } else {
-            init();
+            // 兼容 Material for MkDocs 的即时加载功能
+            // 关键条件: !window.document$.isStopped 确保在build模式下也能正常工作
+            if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
+              // 使用 Material 的 document$ 可观察对象处理页面切换
+              window.document$.subscribe(() => {
+                console.log('页面内容已更新，重新初始化页脚');
+                // 延迟执行以确保DOM已完全更新
+                setTimeout(init, 100);
+              });
+            } else {
+              // 标准方式 - 仅在初始加载时执行
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+              } else {
+                init();
+              }
+            }
           }
 
+          // 在页面卸载前清理资源
+          window.addEventListener('beforeunload', cleanup);
+
+          // 监听页脚重新初始化事件
+          document.addEventListener('footer.reinit', init);
         })();
       </script>
 
@@ -343,9 +453,16 @@
         }
         
         .footer-highlight {
-          color: #939ba2;
+          color: #C2C4C9;
           font-weight: 600;
-          margin-left: 0.3rem;
+          margin-left: 0rem;
+        }
+
+        /* 移动端进一步减少间距 */
+        @media (max-width: 76.1875em) {
+          .footer-visit-count-mobile .footer-highlight {
+            margin-left: 0rem;
+          }
         }
 
         .icp-link {
@@ -479,13 +596,9 @@
           }
 
           .footer-visit-count-mobile .icp-link:hover {
-            color: #596875;
+            color: #518FC1;
             text-decoration: underline;
           }
-
-          /* .runtime-info {
-            display: none; 移动端隐藏运行时间
-          } */
         }
 
         /* 桌面端隐藏移动端布局 */
@@ -508,7 +621,7 @@
           background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
 
-        [data-md-color-scheme="slate"] .md-footer-meta {
+        [data-md_color-scheme="slate"] .md-footer-meta {
           background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
         }
 
