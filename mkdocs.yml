@@ -1,4 +1,6 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
+
 site_name: Mkdocs中文教程 #your site name 显示在左上角
 site_url: http://wcowin.work/Mkdocs-Wcowin
 site_description: Content and ambitious, gentle yet firm.
@@ -8,9 +10,7 @@ theme:
   name: material
   custom_dir: docs/overrides #覆写路径
   # logo: assets/favicon.png #左上角logo，可插入图片链接
-
   favicon: https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png # 网页icon
-
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -284,7 +284,8 @@ extra_javascript:
   # - javascripts/extra.js #自定义javascript
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js #Latex支持
-  - javascripts/mathjax.js #Latex支持的CDN
+  # - javascripts/mathjax.js #Latex支持的CDN
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
   # - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
@@ -294,12 +295,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
 
 extra_css:
-  - stylesheets/extra.css # 自定义CSS
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/extra.css
+  # - stylesheets/extra.css # 自定义CSS
+  - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/extra.css
   # - stylesheets/link.css #友链配置
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链CDN
-  - stylesheets/customize.css # 搜索圆角优化
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化CDN
+  - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/link.css  #友链CDN
+  # - stylesheets/customize.css # 搜索圆角优化
+  - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/customize.css  #按钮圆角化CDN
   # - assets/stylesheets/portfolio.css
   # - stylesheets/video.css #播放器可选配置
   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
@@ -309,8 +310,8 @@ extra_css:
 
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
-  - stylesheets/ziti.css  #字体
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css
+  # - stylesheets/ziti.css  #字体
+  - https://cdn.jsdelivr.net/gh/Wcowin/Mkdocs-Wcowin@main/docs/stylesheets/ziti.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
