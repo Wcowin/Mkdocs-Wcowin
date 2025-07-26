@@ -57,22 +57,16 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: mkdocs gh-deploy --force
       
-      # 自动提交新生成的AI缓存文件 - 改进版本
+      # 自动提交新生成的AI缓存文件
       - name: Auto-commit AI cache (if any new files)
         run: |
           if [ -d ".ai_cache" ] && [ "$(ls -A .ai_cache 2>/dev/null)" ]; then
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            
-            # 先拉取最新更改避免冲突
-            git pull --rebase origin main || git pull --rebase origin master
-            
             git add .ai_cache/
             if ! git diff --cached --quiet; then
               git commit -m "🤖 Auto-update AI summary cache [skip ci]"
-              
-              # 使用force push避免冲突（谨慎使用）
-              git push --force-with-lease
+              git push
               echo "✅ 自动提交了新的 AI 缓存文件"
             else
               echo "ℹ️ 没有新的缓存文件需要提交"
