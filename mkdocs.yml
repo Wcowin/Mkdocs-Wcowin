@@ -128,35 +128,17 @@ copyright: Copyright &copy; 2022~2025 Wcowin # 左下角的版权声明
 extra:
   alternate:
     - name: 中文
-      link: "javascript:translate.changeLanguage('chinese_simplified');"
+      link: "javascript:translateTo('chinese_simplified');"
       lang: zh
-    - name: 繁体中文
-      link: "javascript:translate.changeLanguage('chinese_traditional');"
-      lang: zh-tw
     - name: English
-      link: "javascript:translate.changeLanguage('english');"
+      link: "javascript:translateTo('english');"
       lang: en
-    - name: 한국어
-      link: "javascript:translate.changeLanguage('korean');"
-      lang: ko
     - name: 日本語
-      link: "javascript:translate.changeLanguage('japanese');"
+      link: "javascript:translateTo('japanese');"
       lang: ja
-    - name: بالعربية
-      link: "javascript:translate.changeLanguage('arabic');"
-      lang: ar
     - name: Deutsch
-      link: "javascript:translate.changeLanguage('deutsch');"
+      link: "javascript:translateTo('deutsch');"
       lang: de
-    - name: Français
-      link: "javascript:translate.changeLanguage('french');"
-      lang: fr
-    - name: Español
-      link: "javascript:translate.changeLanguage('spanish');"
-      lang: es
-    - name: português
-      link: "javascript:translate.changeLanguage('portuguese');"
-      lang: pt
   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
@@ -300,6 +282,8 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
   #     permalink: "\ue157"
 
 extra_javascript:
+  - javascripts/glm-config.js
+  - javascripts/glm-translate.js
   # - javascripts/extra.js #自定义javascript
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js #Latex支持
