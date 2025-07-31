@@ -136,9 +136,9 @@ extra:
     - name: 日本語
       link: "javascript:translateTo('japanese');"
       lang: ja
-    - name: Deutsch
-      link: "javascript:translateTo('deutsch');"
-      lang: de
+    # - name: Deutsch
+    #   link: "javascript:translateTo('deutsch');"
+    #   lang: de
   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
@@ -183,7 +183,12 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - search #搜索配置
+  - search:
+      enabled: !ENV [CI, false]
+      separator: '[\s\u200b\-\u3000\u3001\u3002\uFF0C\uFF0E\uFF1F\uFF01\uFF1B]+'
+      lang:
+        - zh
+        - en
   # - glightbox:
   #     enabled: !ENV [glightbox, false]
   #     touchNavigation: true
@@ -282,8 +287,10 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
   #     permalink: "\ue157"
 
 extra_javascript:
-  - javascripts/glm-config.js
-  - javascripts/glm-translate.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js
+  # - javascripts/glm-config.js
+  # - javascripts/glm-translate.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js
   # - javascripts/extra.js #自定义javascript
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js #Latex支持
