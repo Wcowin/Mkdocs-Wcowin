@@ -435,7 +435,7 @@ $ tree -a
 ├── .github
 │   ├── .DS_Store
 │   └── workflows
-│       └── PublishMySite.yml
+│       └── ci.yml
 ├── docs
 │   └── index.md
 │   └──blog
@@ -506,6 +506,8 @@ extra:
 ### alternate
 可以设置网页翻译(但是不太建议使用，很麻烦，这里就不细讲了)  
 [官网教程网址](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
+可以看看本教程这个方案:
+[mkdocs多语言支持](../websitebeauty/mkdocs-translate.md)
 
 ```yaml
   alternate:
