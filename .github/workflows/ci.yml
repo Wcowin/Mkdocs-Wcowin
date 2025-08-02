@@ -1,3 +1,49 @@
+# name: ci 
+# on:
+#   push:
+#     branches:
+#       - master 
+#       - main
+# permissions:
+#   contents: write
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#           sparse-checkout: |
+#             docs
+#             includes
+#       - uses: actions/setup-python@v4
+#         with:
+#           python-version: 3.x
+#       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+#       - uses: actions/cache@v3
+#         with:
+#           key: mkdocs-material-${ env.cache_id }
+#           path: .cache
+#           restore-keys: |
+#             mkdocs-material-
+#       - run: pip install mkdocs-git-revision-date-localized-plugin
+#       - run: pip install mkdocs-git-authors-plugin
+#       - run: pip install mkdocs-git-committers-plugin-2
+#       - run: pip install markdown-callouts
+#       # - run: pip install mkdocs-minify-plugin
+#       - run: pip install mkdocs-rss-plugin
+#       - run: pip install requests>=2.25.0
+#       - run: pip install python-dateutil>=2.8.0
+#       - run: pip install cachetools>=4.2.0
+#       # - run: pip install mkdocs-open-in-new-tab
+#       - run: pip install pymdown-extensions
+#       # - run: pip install mkdocs-glightbox
+#       # - run: pip install "mkdocs-material[imaging]"
+#       # - run: pip install mkdocs-statistics-plugin        
+#       - run: pip install mkdocs-material 
+#       - run: pip install --upgrade --force-reinstall mkdocs-material
+#       - run: mkdocs gh-deploy --force
+
 name: ci 
 on:
   push:
@@ -41,19 +87,27 @@ jobs:
       - run: pip install python-dateutil>=2.8.0
       - run: pip install cachetools>=4.2.0
       - run: pip install python-dotenv>=0.19.0
+      - run: pip install Pillow
+      - run: pip install neoteroi-mkdocs
+
+      - run: pip install mkdocs-document-dates==3.3
       - run: pip install pymdown-extensions
       - run: pip install mkdocs-material 
       - run: pip install --upgrade --force-reinstall mkdocs-material
+
+      - run: pip install mkdocs-ai-summary-wcowin
       - name: Deploy with AI Summary
         env:
           # AI摘要开关控制
           AI_SUMMARY_CI_ENABLED: 'true'           # CI部署环境启用AI摘要 (true=在CI中为文章生成AI摘要)
-          AI_SUMMARY_CI_ONLY_CACHE: 'true'       # CI部署不生成新摘要 (true=使用本地部署过的摘要缓存，不再重复调用API)
+          AI_SUMMARY_CI_ONLY_CACHE: 'false'       # CI部署不生成新摘要 (true=使用本地部署过的摘要缓存，不再重复调用API)
           AI_SUMMARY_CI_FALLBACK: 'true'          # CI部署启用备用摘要 (true=API失败时生成离线基础摘要)
+          AI_SUMMARY_CACHE_ENABLED: 'true'        # 启用缓存功能
+          AI_SUMMARY_CACHE_EXPIRE_DAYS: '3000'       # 缓存7天过期
+          AI_SUMMARY_CACHE_AUTO_CLEAN: 'true'     # 自动清理过期缓存
           # AI_SUMMARY_LOCAL_ENABLED: 'false'       # 本地部署环境禁用AI摘要 (true=本地开发时也生成摘要)（不需要管这条）
-          # AI_SUMMARY_CACHE_ENABLED: 'true'        # 本地启用缓存功能 (true=缓存摘要避免重复生成)（不需要管这条）
           # API密钥配置
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: mkdocs gh-deploy --force
       
