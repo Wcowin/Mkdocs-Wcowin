@@ -1,8 +1,8 @@
 {
-  "summary": "Markdown是一种轻量级标记语言，易读易写，支持多种格式导出。本文介绍了Markdown的基本语法，包括分级标题、目录、列表、表格、超链接、图片、视频、代码块等，并提供了一些创作工具推荐。",
+  "summary": "本文是Markdown语法完全指南，介绍Markdown的基本概念、语法、实用技巧和推荐工具。Markdown是一种轻量级标记语言，简单易学，支持多种格式转换，适用于写作、文档编辑等场景。指南详细讲解了基础语法、高级语法和实用技巧，并提供在线工具和学习资源。",
   "service": "glm",
   "page_title": "Markdown指南",
-  "timestamp": "2025-08-02T22:08:40.571095",
+  "timestamp": "2025-08-02T23:22:08.668618",
   "cache_version": "1.1.6",
-  "content_hash": "40f253cddb07080c39a0fa08ecd47f58"
+  "content_hash": "e78b3028f900b1f8bf4cc9a937e84c31"
 }

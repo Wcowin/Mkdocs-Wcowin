@@ -1,9 +1,11 @@
 ---
-title: Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)
+title: Mkdocs配置说明（mkdocs.yml）
 comments: false
 tags:
   - Mkdocs
 ---
+
+# 2.Mkdocs配置说明(mkdocs.yml)
 
 官方文件：[Changing the colors - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 
@@ -506,8 +508,6 @@ extra:
 ### alternate
 可以设置网页翻译(但是不太建议使用，很麻烦，这里就不细讲了)  
 [官网教程网址](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
-可以看看本教程这个方案:
-[mkdocs多语言支持](../websitebeauty/mkdocs-translate.md)
 
 ```yaml
   alternate:
@@ -621,7 +621,7 @@ plugins:
 
 ### blog
 
-`-blog` 即博客，可以在docs/blog/posts里直接写md文件（不需要在nav里写路径）,然后在上述nav里写
+`-blog` 即博客，可以在docs/blog/posts里直接写md文件（不需要在nav里写路径）,只需要在nav里写
 ```
 nav:
   - Blog:
@@ -658,10 +658,6 @@ meta格式：
 title: #文章标题
 tags:
   - 你的标签名字
-hide:
-  #- navigation # 显示右侧导航
-  #- toc #显示左侧导航
-comments: false  #评论，默认不开启
 ---
 
 ```
@@ -753,7 +749,6 @@ extra_css:
   - stylesheets/extra.css # 自定义的CSS
 ```
 
-
 如果你想自定义网站的样式，可以参考这几篇文章：  
 
 [JS实现鼠标样式](../websitebeauty/shubiao.md)   
@@ -762,7 +757,7 @@ extra_css:
 
 [自定义网站字体](../websitebeauty/mkdocsfont.md)  
 
-[添加友链](../websitebeauty/linktech.md)
+[添加友链](linktech.md)
 
 [添加评论系统](../websitebeauty/mkcomments.md)  
 
