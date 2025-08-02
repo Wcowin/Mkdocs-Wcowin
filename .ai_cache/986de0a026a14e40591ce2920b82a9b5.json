@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了如何在Mkdocs中添加博客功能。只需在mkdocs.yml中添加特定行，并在/docs/blog/posts下创建md文件。需注意，blog文件夹下需有index.md文件，作者信息在/docs/blog/.authors.yml中配置。",
+  "service": "glm",
+  "page_title": "添加Mkdocs博客",
+  "timestamp": "2025-08-02T22:07:44.167556",
+  "cache_version": "1.1.6",
+  "content_hash": "8fdb8b0755c8f1ffa2e92353859ca2cb"
+}

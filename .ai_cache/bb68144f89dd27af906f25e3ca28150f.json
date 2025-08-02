@@ -1,0 +1,8 @@
+{
+  "summary": "本文档介绍了如何通过JavaScript代码在网页中添加背景特效。代码首先在LocalStorage中设置显示雪花效果的标志，然后根据标志判断是否加载特效脚本。特效包括雪花、樱花、线条和粒子。",
+  "service": "glm",
+  "page_title": "背景特效",
+  "timestamp": "2025-08-02T22:08:00.248507",
+  "cache_version": "1.1.6",
+  "content_hash": "47fbc8f4ccbf6314a7582f863a8c6a55"
+}

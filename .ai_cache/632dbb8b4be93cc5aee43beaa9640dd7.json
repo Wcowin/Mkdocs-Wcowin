@@ -1,7 +1,0 @@
-{
-  "summary": "本文介绍了如何为Markdown文档添加阅读时间统计功能。通过配置mkdocs.yml和编写Python脚本，实现自动计算并展示每页文档的阅读时间、中文字符数和代码行数。",
-  "service": "glm",
-  "page_title": "添加阅读信息统计",
-  "timestamp": "2025-07-25T17:36:43.071221",
-  "language": "zh"
-}

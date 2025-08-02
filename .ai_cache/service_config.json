@@ -1,10 +1,5 @@
 {
-  "default_service": "glm",
-  "available_services": [
-    "glm",
-    "openai",
-    "gemini"
-  ],
+  "ai_service": "glm",
   "summary_language": "zh",
-  "check_time": "2025-08-01T17:14:33.097839"
+  "version": "1.1.6"
 }

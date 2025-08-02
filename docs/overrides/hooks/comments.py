@@ -19,6 +19,7 @@ EXCLUDED_PAGES = {
 EXCLUDED_PATTERNS = [
     r'.*\/index\.md$',  # 排除所有 index.md 文件
     r'.*\/archive\.md$',  # 排除所有 archive.md 文件
+    r'blog/category/.*\.md$',  # 排除所有 blog/category/ 下的 Markdown 文件
 ]
 
 def is_page_excluded(file_path):

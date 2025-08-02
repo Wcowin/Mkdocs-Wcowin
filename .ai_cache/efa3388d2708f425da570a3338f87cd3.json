@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了如何使用MkDocs和Material for MkDocs搭建静态网页，并部署到GitHub Pages。步骤包括下载GitHub Desktop，创建GitHub仓库，配置mkdocs.yml文件，设置GitHub Actions，最后上传到GitHub Pages。文章还提供了相关教程和参考资料。",
+  "service": "glm",
+  "page_title": "1.利用Mkdocs部署静态网页",
+  "timestamp": "2025-08-02T22:07:38.191505",
+  "cache_version": "1.1.6",
+  "content_hash": "57ba84e18dfeac48c10e7cfa5a954e60"
+}

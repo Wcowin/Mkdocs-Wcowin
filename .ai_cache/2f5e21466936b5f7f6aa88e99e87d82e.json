@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了如何使用giscus添加评论系统至网站。giscus基于GitHub Discussions，开源、免费、无需数据库，支持自定义主题和多种语言。文章详细说明了配置步骤，包括在mkdocs.yml中添加custom_dir，替换comments.html代码，以及使用twikoo等其他评论系统。",
+  "service": "glm",
+  "page_title": "添加评论系统(giscus为例)",
+  "timestamp": "2025-08-02T22:08:07.884764",
+  "cache_version": "1.1.6",
+  "content_hash": "46865f643b5680edae9f50dca1edcb9b"
+}

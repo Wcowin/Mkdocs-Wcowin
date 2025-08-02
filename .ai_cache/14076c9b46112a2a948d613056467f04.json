@@ -1,0 +1,8 @@
+{
+  "summary": "MkDocs文档日期插件是一款用于显示文档元信息（如创建时间、更新时间、作者等）的插件。支持多种时间格式、灵活显示位置、优雅样式设计，并支持多语言和跨平台。插件具有极致的构建效率，可深度自定义，并支持Tooltip悬浮提示。",
+  "service": "glm",
+  "page_title": "MkDocs文档日期插件",
+  "timestamp": "2025-08-02T22:08:09.949637",
+  "cache_version": "1.1.6",
+  "content_hash": "acc38eb24661f7ce7f0f31f67d96d6e7"
+}

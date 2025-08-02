@@ -1,0 +1,8 @@
+{
+  "summary": "在docs/overrides下新建main.html文件，修改main.html文件以添加顶部公告栏。",
+  "service": "glm",
+  "page_title": "添加顶部公告栏",
+  "timestamp": "2025-08-02T22:08:03.346292",
+  "cache_version": "1.1.6",
+  "content_hash": "f094db5eb65010ef4cf5dab8aff97a10"
+}
