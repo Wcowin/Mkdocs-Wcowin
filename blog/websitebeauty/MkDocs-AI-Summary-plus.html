@@ -3505,10 +3505,6 @@
 
   <h1>为MKdocs添加AI摘要(Plus版本)</h1>
 
-<div class="admonition info">
-<p class="admonition-title">📖 阅读信息</p>
-<p>阅读时间：<strong>3</strong> 分钟 | 中文字符：<strong>1178</strong> | 有效代码行数：<strong>182</strong></p>
-</div>
 <p><head></p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2327435979273742"
      crossorigin="anonymous"></script>
@@ -3626,19 +3622,29 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="ai">多 AI 服务配置<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
 <p>在 <code>.env</code> 文件中配置多个服务作为备用：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span>
-<span class="normal"><a href="#__codelineno-5-6">6</a></span>
-<span class="normal"><a href="#__codelineno-5-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a># 主要服务
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>GLM_API_KEY=your_deepseek_key
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a># 备用服务
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>OPENAI_API_KEY=your_openai_key
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>GEMINI_API_KEY=your_gemini_key
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a>DEEPSEEK_API_KEY=your_glm_key
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a># 主要服务
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>!!! tip &quot;📖 阅读信息&quot;
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a>    :material-clock-time-two-outline:阅读时间：**3** 分钟 | :material-circle-edit-outline:中文字符：**1178** | :fontawesome-solid-code:有效代码行数：**182**
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a>GLM_API_KEY=your_deepseek_key
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a># 备用服务
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a>OPENAI_API_KEY=your_openai_key
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a>GEMINI_API_KEY=your_gemini_key
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a>DEEPSEEK_API_KEY=your_glm_key
 </code></pre></div></td></tr></table></div>
 <h2 id="_6">配置指南<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h3 id="_7">页面级语言控制<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
@@ -4161,9 +4167,9 @@
 <ul>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkdocs-document-dates.html">MkDocs文档日期插件</a></li>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkdocs-translate.html">为MKdocs添加多语言翻译</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs2.html">Mkdocs配置说明（mkdocs.yml）</a></li>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/backgroud.html">背景特效</a></li>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkcomments.html">为网站添加评论系统</a></li>
-<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs2.html">Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)</a></li>
 </ul>
 </div>
 

@@ -2878,10 +2878,6 @@
   
 
 
-<div class="admonition info">
-<p class="admonition-title">📖 阅读信息</p>
-<p>阅读时间：<strong>1</strong> 分钟 | 中文字符：<strong>142</strong> | 有效代码行数：<strong>270</strong></p>
-</div>
 <h2 id="1">1. 基础配置<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <h3 id="1_1"><strong>步骤1</strong><a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>创建reading_time.py</p>
@@ -3308,9 +3304,19 @@ if code_lines &gt; 0:
 <p>把reading_time.py放到docs/overrides/hooks目录下，然后在mkdocs.yml中添加：  </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 在 mkdocs.yml 中添加</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">hooks</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/overrides/hooks/reading_time.py</span><span class="w">    </span><span class="c1"># 阅读时间统计</span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 在 mkdocs.yml 中添加</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kt">!!!</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tip &quot;📖 阅读信息&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">:material-clock-time-two-outline:阅读时间：**1** 分钟 | :material-circle-edit-outline:中文字符：**142** | :fontawesome-solid-code:有效代码行数：**270**</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="l l-Scalar l-Scalar-Plain">hooks</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/overrides/hooks/reading_time.py</span><span class="w">    </span><span class="c1"># 阅读时间统计</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="3"><strong>步骤3</strong><a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <p>配置MkDocs主题以及覆写路径custom_dir
@@ -3471,7 +3477,7 @@ if code_lines &gt; 0:
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkdocs-document-dates.html">MkDocs文档日期插件</a></li>
 <li><a href="/Mkdocs-Wcowin/blog/websitebeauty/mkdocs-translate.html">为MKdocs添加多语言翻译</a></li>
 <li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs1.html">利用Mkdocs部署静态网页至GitHubpages</a></li>
-<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs2.html">Mkdocs部署静态网页至GitHub pages配置说明(mkdocs.yml)</a></li>
+<li><a href="/Mkdocs-Wcowin/blog/Mkdocs/mkdocs2.html">Mkdocs配置说明（mkdocs.yml）</a></li>
 </ul>
 </div>
 
