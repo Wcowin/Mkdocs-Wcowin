@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何使用Lighthouse测试网站性能。方法是在谷歌或Edge浏览器中打开开发者工具，找到Lighthouse进行分析。",
+  "summary": "本文介绍了如何使用Lighthouse测试网站性能。步骤包括在谷歌或Edge浏览器中打开开发者工具，找到Lighthouse并点击分析页面。",
   "service": "glm",
   "page_title": "利用Lighthouse测试网站性能",
-  "timestamp": "2025-08-02T23:22:32.412099",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-11-22T19:05:32.328468",
+  "cache_version": "1.2.2",
   "content_hash": "d10e979fac1d8261fb3779a9446d5694"
 }

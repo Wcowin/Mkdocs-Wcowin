@@ -1,8 +1,8 @@
 {
-  "summary": "本文是Markdown语法完全指南，介绍Markdown的基本概念、语法、实用技巧和推荐工具。Markdown是一种轻量级标记语言，简单易学，支持多种格式转换，适用于写作、文档编辑等场景。指南详细讲解了基础语法、高级语法和实用技巧，并提供在线工具和学习资源。",
+  "summary": "本文档是Markdown语法完全指南，介绍了Markdown的基本概念、语法、实用技巧以及推荐工具。内容涵盖基础语法、高级语法、实用技巧和在线工具，旨在帮助读者快速掌握Markdown的使用，提高写作效率。",
   "service": "glm",
   "page_title": "Markdown指南",
-  "timestamp": "2025-08-02T23:22:08.668618",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-11-22T19:05:40.265203",
+  "cache_version": "1.2.2",
   "content_hash": "e78b3028f900b1f8bf4cc9a937e84c31"
 }

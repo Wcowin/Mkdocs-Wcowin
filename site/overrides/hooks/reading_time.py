@@ -1,21 +1,26 @@
 import re
+import threading
+import time
 from functools import lru_cache
+from collections import OrderedDict
+import hashlib
 
-# 预编译正则表达式（保持原有格式）
+# 预编译正则表达式（性能优化版本）
 EXCLUDE_PATTERNS = [
     re.compile(r'^index\.md$'),
-    re.compile(r'^about/'),
     re.compile(r'^trip/index\.md$'),
     re.compile(r'^relax/index\.md$'),
     re.compile(r'^blog/indexblog\.md$'),
     re.compile(r'^blog/posts\.md$'),
     re.compile(r'^develop/index\.md$'),
+    re.compile(r'^relax/.*\.md$'),
+    re.compile(r'^about/.*\.md$'),
     re.compile(r'waline\.md$'),
     re.compile(r'link\.md$'),
     re.compile(r'404\.md$'),
 ]
 
-# 优化的字符统计正则表达式
+# 高度优化的正则表达式（一次性编译）
 CHINESE_CHARS_PATTERN = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]')
 CODE_BLOCK_PATTERN = re.compile(r'```.*?```', re.DOTALL)
 INLINE_CODE_PATTERN = re.compile(r'`[^`]+`')
@@ -233,6 +238,10 @@ def on_page_markdown(markdown, **kwargs):
     if len(markdown) < 300:
         return markdown
     
+    # 检查页面是否已经包含阅读信息
+    if "!!! tip \"📖 阅读信息\"" in markdown:
+        return markdown
+    
     # 计算统计信息
     reading_time, chinese_chars, code_lines = calculate_reading_stats(markdown)
     
@@ -242,14 +251,54 @@ def on_page_markdown(markdown, **kwargs):
     
     # 生成阅读信息
     if code_lines > 0:
-        reading_info = f"""!!! info "📖 阅读信息"
-    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}** | 有效代码行数：**{code_lines}**
+        reading_info = f"""!!! tip "📖 阅读信息"
+    :material-clock-time-two-outline:阅读时间：**{reading_time}** 分钟 | :material-circle-edit-outline:中文字符：**{chinese_chars}** | :fontawesome-solid-code:有效代码行数：**{code_lines}**
 
 """
     else:
-        reading_info = f"""!!! info "📖 阅读信息"
-    阅读时间：**{reading_time}** 分钟 | 中文字符：**{chinese_chars}**
+        reading_info = f"""!!! tip "📖 阅读信息"
+    :material-clock-time-two-outline:阅读时间：**{reading_time}** 分钟 | :material-circle-edit-outline:中文字符：**{chinese_chars}**
 
 """
     
-    return reading_info + markdown
+    # 处理YAML front matter
+    has_frontmatter = markdown.startswith('---')
+    if has_frontmatter:
+        # 找到front matter的结束位置
+        fm_end = markdown.find('---', 3)
+        if fm_end != -1:
+            fm_end += 3  # 包含结束的 ---
+            frontmatter = markdown[:fm_end]
+            content = markdown[fm_end:]
+        else:
+            frontmatter = ''
+            content = markdown
+    else:
+        frontmatter = ''
+        content = markdown
+    
+    # 只查找文档的主标题（第一个标题，通常是一级标题）
+    main_title_match = re.search(r'^# (.+)$', content, re.MULTILINE)
+    
+    # 如果没有找到一级标题，尝试查找第一个出现的任何级别的标题
+    if not main_title_match:
+        main_title_match = re.search(r'^(#+) (.+)$', content, re.MULTILINE)
+    
+    if main_title_match:
+        # 找到主标题的位置
+        title_start = main_title_match.start()
+        title_end = main_title_match.end()
+        title_line_end = content.find('\n', title_end)
+        if title_line_end == -1:  # 如果标题后没有换行符
+            title_line_end = len(content)
+        
+        # 在主标题后插入阅读信息
+        result = (frontmatter + 
+                 content[:title_line_end] + 
+                 '\n\n' + reading_info + 
+                 content[title_line_end:])
+        
+        return result
+    else:
+        # 如果没有找到标题，则在front matter后插入阅读信息
+        return frontmatter + reading_info + content

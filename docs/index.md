@@ -7,7 +7,12 @@ hide:
 comments: false
 ---
 
-
+<!-- 公告栏 -->
+<div class="oneclip-announcement">
+  <div class="oneclip-announcement-content">
+    🎉 <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新zensical中文教程   <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank" class="oneclip-cta">了解更多 →</a>
+  </div>
+</div>
 
 <!--
 ____    __    ____  ______   ______   ____    __    ____  __  .__   __. 

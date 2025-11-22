@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了将GitHub Pages迁移至Vercel托管的步骤，包括使用MkDocs与Vercel的简单配置，实现快速迁移，提升网站性能。",
+  "summary": "本文介绍了如何将GitHub Pages迁移至Vercel托管。通过使用MkDocs和Vercel，实现最小化配置，轻松完成迁移过程。",
   "service": "glm",
   "page_title": "如何将 github pages 迁移到 vercel 上托管",
-  "timestamp": "2025-08-02T23:22:33.745637",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-11-22T19:05:34.240763",
+  "cache_version": "1.2.2",
   "content_hash": "1a74699130526d0d1961aca819f9058e"
 }

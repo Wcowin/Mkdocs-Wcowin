@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了如何嵌入PDF文件，强调了使用相对地址的重要性，并提供了一段嵌入PDF的代码示例。",
+  "summary": "本文介绍了如何嵌入PDF文件，强调了使用相对地址的重要性，并提供了一段完整代码示例，旨在帮助读者实现PDF嵌入功能。",
   "service": "glm",
   "page_title": "嵌入PDF文件",
-  "timestamp": "2025-08-02T22:08:16.909890",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-11-22T19:05:14.465870",
+  "cache_version": "1.2.2",
   "content_hash": "3a17dc99a47427eb0f6164f77cb0a42e"
 }

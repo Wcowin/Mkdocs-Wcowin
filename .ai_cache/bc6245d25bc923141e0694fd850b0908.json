@@ -1,8 +1,8 @@
 {
-  "summary": "本文介绍了在mkdocs项目中添加自定义404页面的方法。首先在mkdocs.yml中设置custom_dir，然后在docs/overrides目录下创建404.html文件，并详细描述了页面布局和样式。",
+  "summary": "本文介绍了在mkdocs.yml文件中添加自定义404页面，包括创建404.html文件，设置页面样式和布局，实现一个简洁美观的404公益页面。",
   "service": "glm",
   "page_title": "添加404页面",
-  "timestamp": "2025-08-02T22:07:48.343794",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-11-22T19:04:33.778072",
+  "cache_version": "1.2.2",
   "content_hash": "27bf9f523865d97aa263f145c4b980d2"
 }

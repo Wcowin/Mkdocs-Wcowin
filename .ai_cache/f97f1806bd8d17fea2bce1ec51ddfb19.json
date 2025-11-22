@@ -1,8 +1,8 @@
 {
-  "summary": "本文档介绍如何添加友链，只需复制链接至.md文件页面即可。示例中展示Wcowin’s blog，一个分享技术的小站。",
+  "summary": "本文介绍了如何添加友链，包括复制代码粘贴到.md文件页面。示例展示了友链效果，如Wcowin’s blog，一个分享技术的小站。",
   "service": "glm",
   "page_title": "添加友链",
-  "timestamp": "2025-08-02T22:08:05.656869",
-  "cache_version": "1.1.6",
+  "timestamp": "2025-11-22T19:05:01.745921",
+  "cache_version": "1.2.2",
   "content_hash": "bf464212262915b004dced013d0f5bca"
 }
