@@ -1,0 +1,44 @@
+/* 保持搜索框输入区域字体为默认 */
+.md-search__input {
+  font-family: inherit !important;
+}
+
+/* OneClip 公告栏样式 - 简约设计 */
+.oneclip-announcement {
+  background: linear-gradient(135deg, rgba(81, 143, 193, 0.06) 0%, rgba(81, 143, 193, 0.03) 100%);
+  border: 1px solid rgba(81, 143, 193, 0.15);
+  color: var(--md-default-fg-color);
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .oneclip-announcement {
+  background: linear-gradient(135deg, rgba(81, 143, 193, 0.04) 0%, rgba(81, 143, 193, 0.02) 100%);
+  border-color: rgba(81, 143, 193, 0.12);
+}
+
+.oneclip-announcement-content {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.oneclip-announcement a {
+  color: var(--md-primary-fg-color, #518FC1) !important;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  font-weight: 500;
+}
+
+.oneclip-announcement a:hover {
+  opacity: 0.7;
+}
+
+.oneclip-cta {
+  margin-left: 8px;
+  text-decoration: none !important;
+  display: inline;
+}
+
