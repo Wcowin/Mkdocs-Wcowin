@@ -1,9 +1,0 @@
-{
-  "default_service": "deepseek",
-  "available_services": [
-    "deepseek",
-    "openai"
-  ],
-  "summary_language": "en",
-  "check_time": "2025-06-04T01:31:56.082195"
-}

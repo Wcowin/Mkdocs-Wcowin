@@ -7,6 +7,10 @@ categories:
 readtime: 2
 hide_reading_time: true
 ---
+## </p><h1 id="01" name="01"><strong>2025-12-16</strong></h1><p>
+* 优化网站流畅度（玄学）
+* mkdocs for material已经停更。[materialX](https://github.com/jaywhj/mkdocs-materialx)作为延续被广泛使用，本站迁移至materialX主题
+
 ## </p><h1 id="01" name="01"><strong>2025-07-08</strong></h1><p>
 * 优化网站流畅度（玄学）
 * AI摘要全局更换为智谱清言GLM

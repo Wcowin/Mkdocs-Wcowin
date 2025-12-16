@@ -1,8 +1,8 @@
-:root>* {
+/* :root>* {
   --md-primary-fg-color: #518FC1;
   --md-primary-fg-color--light: #518FC1;
   --md-primary-fg-color--dark: #518FC1;
-}
+} */
 
 /* 图片样式优化 - 合并相似规则 */
 img.img1, img.img2, img.img3 {

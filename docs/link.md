@@ -8,6 +8,7 @@ hide:
   - feedback
 ---
 
+
 <!-- <head>
 <script>
 function _howxm(){_howxmQueue.push(arguments)}
@@ -43,6 +44,17 @@ t.parentNode.insertBefore(e,t)}})();
        “循此苦旅，以达星辰”
       </div> 
      </div> 
+    </div>
+   <div class="card">
+     <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
+     <div class="card-header">
+      <div>
+       <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+      </div>
+      <div class="info">
+      撰写最新的Zensical中文教程
+      </div>
+     </div>
     </div>
     <div class="card"> 
      <img class="ava" src="https://s1.imagehub.cc/images/2025/06/03/526b59b6a2e478f2ffa1629320e3e2ce.png" /> 

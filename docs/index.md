@@ -10,10 +10,11 @@ comments: false
 <!-- 公告栏 -->
 <div class="oneclip-announcement">
   <div class="oneclip-announcement-content">
-    🎉 <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新zensical中文教程   <a href="https://wcowin.work/Zensical-Chinese-Tutorial/" target="_blank" class="oneclip-cta">了解更多 →</a>
+    🎉 <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新zensical中文教程   <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" class="oneclip-cta">了解更多 →</a>
+    <br>
+    ✨ 欢迎了解 <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank">mkdocs-materialx</a> —— 新版MkDocs主题   <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank" class="oneclip-cta">仓库地址｜</a> <a href="https://github.com/jaywhj/mkdocs-materialx/raw/master/docs/assets/images/wechat-group.jpg" target="_blank">Wechat Group</a>
   </div>
 </div>
-
 <!--
 ____    __    ____  ______   ______   ____    __    ____  __  .__   __. 
 \   \  /  \  /   / /      | /  __  \  \   \  /  \  /   / |  | |  \ |  | 
@@ -260,3 +261,4 @@ body::before {
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
 </head>
+

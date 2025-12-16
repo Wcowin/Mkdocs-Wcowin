@@ -112,22 +112,21 @@ comments: false
         <button id="cusdis-btn" class="buttonxuan">Cusdis</button>
     </div>
     <div id="giscus" class="comment-system active">
-        <script src="https://giscus.app/client.js"
-            data-repo="Wcowin/hexo-site-comments"
-            data-repo-id="R_kgDOIl9OJA"
-            data-category="Announcements"
-            data-category-id="DIC_kwDOIl9OJM4CTHDe"
+            <script src="https://giscus.app/client.js"
+            data-repo="Wcowin/Mkdocs-Wcowin"
+            data-repo-id="R_kgDOKf920A"
+            data-category="Show and tell"
+            data-category-id="DIC_kwDOKf920M4CaHEM"
             data-mapping="pathname"
             data-strict="0"
             data-reactions-enabled="1"
             data-emit-metadata="0"
-            data-input-position="top"
-            data-theme="preferred_color_scheme"
+            data-input-position="bottom"
+            data-theme="light"
             data-lang="zh-CN"
-            data-loading="lazy"  
             crossorigin="anonymous"
             async>
-        </script>
+            </script>
     </div>
     <div id="cusdis" class="comment-system">
         <center><p>评论审核后才会显示</p></center>

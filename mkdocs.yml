@@ -7,7 +7,7 @@ site_description: Content and ambitious, gentle yet firm.
 site_author: 王科文(Wcowin) # your name
 #[UI]
 theme:
-  name: material
+  name: materialx
   custom_dir: docs/overrides #覆写路径
   # logo: assets/favicon.png #左上角logo，可插入图片链接
   favicon: https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png # 网页icon
@@ -25,7 +25,7 @@ theme:
         name: 切换至夜间模式 # 鼠标悬浮提示
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
-      primary: black
+      # primary: black
       accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
@@ -63,6 +63,7 @@ theme:
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
 repo_name: Mkdocs-Wcowin # 右上角的名字
+
 
 # [Navigtion]
 nav:
@@ -184,24 +185,24 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - ai-summary:
-      ai_service: "glm"  # or "openai", "gemini", "glm"
-      summary_language: "zh"  # or "en"
-      cache_enabled: true
-      local_enabled: true
-      cache_expire_days: 30
-      # debug: true # 是否显示调试信息（默认：false）
-      enabled_folders:
-        - blog/    # 添加blog文件夹
-        - develop/ # 添加develop文件夹
-        # - docs/    # 保留docs文件夹
-      exclude_patterns:
-        - about/
-        - index.md
-        - tag.md
-        - blog/posts/update.md
-        - blog/category/
-        - blog/posts/
+  # - ai-summary:
+  #     ai_service: "glm"  # or "openai", "gemini", "glm"
+  #     summary_language: "zh"  # or "en"
+  #     cache_enabled: true
+  #     local_enabled: false
+  #     cache_expire_days: 30
+  #     # debug: true # 是否显示调试信息（默认：false）
+  #     enabled_folders:
+  #       - blog/    # 添加blog文件夹
+  #       - develop/ # 添加develop文件夹
+  #       # - docs/    # 保留docs文件夹
+  #     exclude_patterns:
+  #       - about/
+  #       - index.md
+  #       - tag.md
+  #       - blog/posts/update.md
+  #       - blog/category/
+  #       - blog/posts/
   - search:
       separator: '[\s\u200b\-]'
   # - glightbox:
@@ -221,29 +222,29 @@ plugins:
   #     background: white
   #     shadow: true
   #     manual: false
-  - git-committers:
-      enabled: !ENV [CI, false]
-      repository: Wcowin/Mkdocs-Wcowin
-      branch: main
-      exclude:
-        - index.md
-        - tag.md
-        - liuyanban.md
-        - blog/posts/update.md
-        - blog/posts/wkw.md
-        - about/link.md
-  - git-revision-date-localized:
-      enabled: !ENV [CI, false]
-      type: iso_date
-      enable_creation_date: false
-      exclude:
-        # - index.md
-        - tag.md
-        - liuyanban.md
-        - blog/posts/update.md
-        - blog/posts/wkw.md
-        - about/link.md
-        - websitebeauty/linktech.md
+  # - git-committers:
+  #     enabled: !ENV [CI, false]
+  #     repository: Wcowin/Mkdocs-Wcowin
+  #     branch: main
+  #     exclude:
+  #       - index.md
+  #       - tag.md
+  #       - liuyanban.md
+  #       - blog/posts/update.md
+  #       - blog/posts/wkw.md
+  #       - about/link.md
+  # - git-revision-date-localized:
+  #     enabled: !ENV [CI, false]
+  #     type: iso_date
+  #     enable_creation_date: false
+  #     exclude:
+  #       # - index.md
+  #       - tag.md
+  #       - liuyanban.md
+  #       - blog/posts/update.md
+  #       - blog/posts/wkw.md
+  #       - about/link.md
+  #       - websitebeauty/linktech.md
   - blog: #博客配置
       post_date_format: full #时间
       draft: true
@@ -311,7 +312,7 @@ extra_javascript:
   # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
   # - https://cdn.staticfile.net/translate.js/3.12.0/translate.js
-  - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
   # - javascripts/optimize.js
   # - javascripts/instant-handler.js
@@ -330,15 +331,15 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/extra2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
-  - stylesheets/link.css  #友链
+  # - stylesheets/link.css  #友链
   # - stylesheets/optimize.css
-  - stylesheets/poem.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
+  # - stylesheets/poem.css
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
-  - stylesheets/customize.css  #按钮圆角化
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
+  # - stylesheets/customize.css  #按钮圆角化
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
   # - stylesheets/flink.css
   # - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
@@ -358,8 +359,8 @@ extra_css:
   # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
   # - stylesheets/timeline.css
   # - stylesheets/LiquidGlass.css
-  - about/sty/portfolio.css
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css
+  # - about/sty/portfolio.css
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
 
 
@@ -369,3 +370,6 @@ hooks:
   # - docs/overrides/hooks/ai_summary.py
   - docs/overrides/hooks/related_posts.py
   - docs/overrides/hooks/comments.py       # 新添加的评论系统
+
+
+use_directory_urls: false
