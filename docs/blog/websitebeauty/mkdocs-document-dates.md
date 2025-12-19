@@ -5,13 +5,117 @@ tags:
 status: new
 ---
 
-
 # MkDocs文档日期插件——mkdocs-document-dates
 
 
-新一代用于显示文档确切**创建日期、最后更新日期、作者、头像、邮箱**等信息的 MkDocs 插件
+新一代用于显示文档精确元信息的 MkDocs 插件，如**创建时间、最后更新时间、作者、电子邮件**等    
 
 ![render.gif](https://s2.loli.net/2025/08/01/5Eire2mCTD7IBHo.gif)
+
+<div class="intro-container">
+  <div class="intro-content">
+    <div class="intro-text">
+      <span class="greeting">仓库地址：<a href="https://github.com/jaywhj/mkdocs-document-dates" class="contributor-link">Aaron</a><span class="wave">👋</span></span>
+    </div>
+  </div>
+</div>
+
+<style>
+.intro-container {
+  background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(240,240,240,0.6) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(200,200,200,0.2);
+  transition: all 0.3s ease;
+}
+
+.intro-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.greeting {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contributor-link {
+  color: #608DBD;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.contributor-link:hover {
+  background-color: rgba(96, 141, 189, 0.1);
+  color: #4a7ba7;
+  text-decoration: none;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 深色模式适配 */
+[data-md-color-scheme="slate"] .intro-container {
+  background: linear-gradient(145deg, rgba(31,33,40,0.9) 0%, rgba(31,33,40,0.8) 100%);
+  border: 1px solid rgba(80,80,80,0.2);
+}
+
+[data-md-color-scheme="slate"] .greeting {
+  color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .contributor-link {
+  color: #7BA7D7;
+}
+
+[data-md-color-scheme="slate"] .contributor-link:hover {
+  background-color: rgba(123, 167, 215, 0.1);
+  color: #A8C5E5;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .greeting {
+    font-size: 1.3rem;
+  }
+}
+</style>
 
 ## 特性
 
@@ -244,7 +348,7 @@ flowchart LR
 
 **自定义**：
 
-可通过 [增强作者配置](#_12) 中的 `avatar` 字段进行自定义（支持 URL 路径和本地文件路径）
+可通过 [增强作者配置]中的 `avatar` 字段进行自定义（支持 URL 路径和本地文件路径）
 
 **其它**：
 
@@ -267,7 +371,7 @@ flowchart LR
 |    类别：    | 位置：                                         |
 | :---------: | --------------------------------------------- |
 | **样式与主题** | docs/assets/document_dates/user.config.css |
-| **属性与功能** | docs/assets/document_dates/user.config.js  |  
+| **属性与功能** | docs/assets/document_dates/user.config.js  |
 
 ![customization.gif](https://s2.loli.net/2025/08/01/6axDBwOJ5Hpyoh9.gif)
 
@@ -396,5 +500,3 @@ volumes:
         - **兼容性**：兼容旧版操作系统和浏览器，如 WIN7、MacOS 10.11、iOS 12、Chrome 63.0.3239
 - **最后的秘密秘密 🤐**：
     - 编程是爱好，我是一名从业八年的市场营销人员（欢迎留言）
-
-## 评论区

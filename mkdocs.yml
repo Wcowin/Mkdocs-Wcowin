@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 #[Info]
 
-site_name: Mkdocs中文教程 #your site name 显示在左上角
-site_url: http://wcowin.work/Mkdocs-Wcowin
-site_description: Content and ambitious, gentle yet firm.
+site_name: Mkdocs教程 #your site name 显示在左上角
+site_url: https://wcowin.work/Mkdocs-Wcowin/
+site_description: Mkdocs中文教程,最好的Mkdocs中文教程,最全的Mkdocs中文教程,最详细的Mkdocs中文教程,最权威的Mkdocs中文教程,最专业的Mkdocs中文教程,最实用的Mkdocs中文教程,最易懂的Mkdocs中文教程
 site_author: 王科文(Wcowin) # your name
 #[UI]
 theme:
-  name: materialx
+  name: material
   custom_dir: docs/overrides #覆写路径
   # logo: assets/favicon.png #左上角logo，可插入图片链接
   favicon: https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png # 网页icon
@@ -38,6 +38,7 @@ theme:
     - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
+    - navigation.path
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share #搜索分享按钮
@@ -205,6 +206,24 @@ plugins:
   #       - blog/posts/
   - search:
       separator: '[\s\u200b\-]'
+  - document-dates:
+      position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
+      type: date               # Date type: date  datetime  timeago, default: date
+      locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+      date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+      exclude:                 # List of excluded files
+        - index.md
+        - tag.md
+        - liuyanban.md
+        - blog/posts/*
+        - blog/index.md
+        - link.md
+        - blog/Mkdocs/linktech.md
+        - about/*            # Exclude all files in private directory, including subdirectories
+      show_author: true       # Show author or not, default: true
+      # show_created: false
+      # show_updated: false
   # - glightbox:
   #     enabled: !ENV [glightbox, false]
   #     touchNavigation: true
@@ -304,10 +323,10 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
 
 extra_javascript:
   # 智谱清言翻译系统
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js
-  - javascripts/glm-config.js
-  - javascripts/glm-translate.js
-  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js
+  # - javascripts/glm-config.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-translate.js
+  # - javascripts/glm-translate.js
   # - javascripts/translate-config.js
   # - javascripts/highlight-search.js
   # - docs/javascripts/translate.js
