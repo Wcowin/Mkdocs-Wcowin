@@ -1,0 +1,11 @@
+# Netlify 配置文件
+
+[build]
+  publish = "."
+
+# 强制 URL 末尾添加斜杠（Pretty URLs）
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
