@@ -25,9 +25,6 @@ t.parentNode.insertBefore(e,t)}})();
 </script>
 </head> -->
 
-<!-- <div class="markdown-content">
-    <h2>欢迎加入友链(不分先后)</h2>
-</div> -->
 
 # 欢迎加入友链(不分先后)
 <div id="rcorners4" >
