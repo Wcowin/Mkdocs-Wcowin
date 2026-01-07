@@ -12,7 +12,7 @@ comments: false
   <div class="oneclip-announcement-content">
     🎉 <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">MkDocs-Zensical中文教程</a> —— 最新zensical中文教程   <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank" class="oneclip-cta">了解更多 →</a>
     <br>
-    ✨ 欢迎了解 <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank">mkdocs-materialx</a> —— 新版MkDocs主题   <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank" class="oneclip-cta">仓库地址｜</a> <a href="https://github.com/jaywhj/mkdocs-materialx/raw/master/docs/assets/images/wechat-group.jpg" target="_blank">Wechat 群组</a>
+    ✨ 欢迎了解 <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank">mkdocs-materialx</a> —— 新版MkDocs主题   <a href="https://github.com/jaywhj/mkdocs-materialx" target="_blank" class="oneclip-cta">仓库地址｜</a> <a href="https://s1.imagehub.cc/images/2026/01/05/61035cc991bd4526ec304a223a2f0dc6.png" target="_blank">Wechat 群组</a>
   </div>
 </div>
 <!--
