@@ -130,16 +130,16 @@ nav:
 copyright: Copyright &copy; 2022~2026 Wcowin # 左下角的版权声明
 
 extra:
-  alternate:
-    - name: 中文
-      link: "javascript:translateTo('chinese_simplified');"
-      lang: zh
-    - name: English
-      link: "javascript:translateTo('english');"
-      lang: en
-    - name: 日本語
-      link: "javascript:translateTo('japanese');"
-      lang: ja
+  # alternate:
+  #   - name: 中文
+  #     link: "javascript:translateTo('chinese_simplified');"
+  #     lang: zh
+  #   - name: English
+  #     link: "javascript:translateTo('english');"
+  #     lang: en
+  #   - name: 日本語
+  #     link: "javascript:translateTo('japanese');"
+  #     lang: ja
     # - name: Deutsch
     #   link: "javascript:translateTo('deutsch');"
     #   lang: de
