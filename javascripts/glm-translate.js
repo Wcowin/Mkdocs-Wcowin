@@ -587,7 +587,8 @@
                        };
       
       const requestBody = {
-        model: config.api?.model || 'glm-4-flash',
+        // 默认使用智谱官方当前免费模型 GLM-4-Flash-250414
+        model: config.api?.model || 'glm-4-flash-250414',
         messages: [
           {
             role: 'system',
