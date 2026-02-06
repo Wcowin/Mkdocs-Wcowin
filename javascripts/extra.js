@@ -1,21 +1,23 @@
-// Wrap every letter in a span
+// Wrap every letter in a span（加个判空，避免某些页面没有 .ml3 报错）
 var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+if (textWrapper) {
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (el, i) => 150 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml3 .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      duration: 2250,
+      delay: (el, i) => 150 * (i+1)
+    }).add({
+      targets: '.ml3',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+}
 
 
 //全屏视频
@@ -59,4 +61,41 @@ anime.timeline({loop: true})
 //   // Transition complete!
 // }
 // 优化end
+
+// ============================================
+// 没有目录时，只隐藏顶部 TOC 小按钮（保留右侧区域）
+// ============================================
+function updateTocToggleVisibility() {
+  // 顶部用于展开 TOC 的小按钮（你截图里的 label.md-top__button[for="__toc"]）
+  var tocToggleTopButton = document.querySelector('.md-top__button[for="__toc"]');
+  if (!tocToggleTopButton) return;
+
+  // 更稳的判断方式：看右侧 TOC 是否存在任何指向页面锚点（#...）的链接
+  // Material 的右侧 TOC 通常在 `.md-sidebar--secondary .md-nav--secondary`
+  var tocAnchorLinks = document.querySelectorAll(
+    '.md-sidebar--secondary .md-nav--secondary a[href^="#"]'
+  );
+
+  // 若没找到，再兜底：右侧 sidebar 内任何 # 锚点链接都算 TOC
+  if (!tocAnchorLinks || tocAnchorLinks.length === 0) {
+    tocAnchorLinks = document.querySelectorAll(
+      '.md-sidebar--secondary a[href^="#"]'
+    );
+  }
+
+  var hasToc = !!(tocAnchorLinks && tocAnchorLinks.length > 0);
+
+  // 显式切换，避免上一页隐藏状态“残留”
+  tocToggleTopButton.style.display = hasToc ? "" : "none";
+}
+
+// 初次加载
+document.addEventListener("DOMContentLoaded", updateTocToggleVisibility);
+
+// 若开启了 instant navigation（或主题内部做了局部刷新），页面切换后也更新一次
+if (window.document$ && typeof window.document$.subscribe === "function") {
+  window.document$.subscribe(function () {
+    updateTocToggleVisibility();
+  });
+}
 
