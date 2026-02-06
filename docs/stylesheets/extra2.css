@@ -42,3 +42,14 @@
   display: inline;
 }
 
+/* 回到页面顶部按钮圆角优化 */
+.md-top__button.md-top__button--main {
+  border-radius: 999px;
+}
+
+/* 顶部所有按钮圆角优化（左侧菜单按钮 + 右侧 TOC 按钮） */
+.md-top__button[for="__drawer"],
+.md-top__button[for="__toc"] {
+  border-radius: 999px;
+}
+
