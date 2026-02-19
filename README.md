@@ -1,13 +1,18 @@
-# Wcowin for MkDocs主题
+# 最好的MkDocs教程
 
-- **基于Material for MkDocs美化**  
-- **简洁美观，功能多元化**  
-- **可自定义样式，中文教程详细**  
-- **简单易上手，小白配置**  
-- **𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !**
+> 最详细、最便捷、最前沿的MkDocs中文教程，与官方版本同步更新。包含视频教程和文字教程，从入门到进阶一应俱全。
+
+## 教程资源
+
+- **[视频教程](https://space.bilibili.com/1407028951/lists/4566631?type=series)**（B站 | 手把手教学）
+- **[文字教程(语雀)](https://www.yuque.com/wcowin/mkdocs-wcowin)**（推荐）
+- **[文字教程(CSDN)](https://blog.csdn.net/m0_63203517/category_12472184.html?spm=1001.2014.3001.5482)**
+- **[文字教程(知乎)](https://www.zhihu.com/column/c_1754218140098387968)**
+
 
 ## 目录
-- [Wcowin for MkDocs主题](#wcowin-for-mkdocs主题)
+- [最好的MkDocs教程](#最好的mkdocs教程)
+  - [教程资源](#教程资源)
   - [目录](#目录)
   - [展示](#展示)
   - [来自Claude-4-Sonnet的肯定](#来自claude-4-sonnet的肯定)
@@ -17,12 +22,12 @@
     - [方法二：Git克隆使用](#方法二git克隆使用)
     - [方法三：GitHub模板创建](#方法三github模板创建)
     - [常见问题解决](#常见问题解决)
-      - [🔧 依赖安装问题](#-依赖安装问题)
-      - [🔧 Python版本问题](#-python版本问题)
-      - [🔧 端口占用问题](#-端口占用问题)
-      - [🔧 权限问题](#-权限问题)
-    - [📝 自定义配置](#-自定义配置)
-    - [🚀 部署到线上](#-部署到线上)
+      - [依赖安装问题](#依赖安装问题)
+      - [Python版本问题](#python版本问题)
+      - [端口占用问题](#端口占用问题)
+      - [权限问题](#权限问题)
+    - [自定义配置](#自定义配置)
+    - [部署到线上](#部署到线上)
   - [视频教程](#视频教程)
 - [Connect with me](#connect-with-me)
   - [案例成果](#案例成果)
@@ -163,7 +168,7 @@
 
 ### 常见问题解决
 
-#### 🔧 依赖安装问题
+#### 依赖安装问题
 
 如果遇到插件缺失错误：
 
@@ -177,7 +182,7 @@ pip install mkdocs-git-revision-date-localized-plugin
 pip install -r requirements.txt
 ```
 
-#### 🔧 Python版本问题
+#### Python版本问题
 
 如果提示Python版本过低：
 
@@ -193,7 +198,7 @@ source mkdocs-env/bin/activate  # Linux/Mac
 mkdocs-env\Scripts\activate     # Windows
 ```
 
-#### 🔧 端口占用问题
+#### 端口占用问题
 
 如果8000端口被占用：
 
@@ -202,7 +207,7 @@ mkdocs-env\Scripts\activate     # Windows
 mkdocs serve -a 127.0.0.1:8080
 ```
 
-#### 🔧 权限问题
+#### 权限问题
 
 如果遇到权限错误：
 
@@ -211,21 +216,15 @@ mkdocs serve -a 127.0.0.1:8080
 pip install --user -r requirements.txt
 ```
 
-### 📝 自定义配置
+### 自定义配置
 
-1. **修改网站信息**
-   - 编辑 `mkdocs.yml` 文件
-   - 修改 `site_name`、`site_author` 等基本信息
+1. **修改网站信息** - 编辑 `mkdocs.yml` 文件
+2. **添加内容** - 在 `docs/` 目录下添加Markdown文件，更新 `mkdocs.yml` 中的导航配置
+3. **个性化样式** - 修改 `docs/stylesheets/extra.css`
 
-2. **添加内容**
-   - 在 `docs/` 目录下添加你的Markdown文件
-   - 更新 `mkdocs.yml` 中的导航配置
+更多详细教程请访问：[完整文档](https://wcowin.work/Mkdocs-Wcowin/)
 
-3. **个性化样式**
-   - 修改 `docs/stylesheets/extra.css`
-   - 自定义颜色、字体等样式
-
-### 🚀 部署到线上
+### 部署到线上
 
 **GitHub Pages部署：**
 ```bash
@@ -242,11 +241,11 @@ mkdocs build
 
 ---
 
-**💡 提示：** 如果你是第一次使用MkDocs，强烈建议观看我们的[视频教程](#视频教程)，手把手教你从零开始搭建。
+**提示：** 首次使用MkDocs建议观看[视频教程](#视频教程)，手把手教学。
 
 ## 视频教程
 
-[Mkdocs中文教程视频](https://space.bilibili.com/1407028951/lists/4566631?type=series)（手把手教学，首次使用MKdocs建议观看）
+[Mkdocs中文教程视频](https://space.bilibili.com/1407028951/lists/4566631?type=series)（B站 | 手把手教学）
 
 # Connect with me
 

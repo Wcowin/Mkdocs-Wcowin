@@ -177,29 +177,21 @@ def on_page_markdown(markdown, **kwargs):
     return markdown.rstrip() + twikoo_html
 
 def on_page_content(html, **kwargs):
-    """在页面内容处理完成后添加必要的头部资源"""
-    page = kwargs['page']
-    
-    # 检查是否应该添加评论
-    if not should_add_comments(page.file.src_path):
-        return html
-    
-    # 添加 KaTeX 支持（如果需要的话）
-    katex_resources = """
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
-    """
-    
-    # Twikoo 预加载
-    twikoo_preload = """
-    <link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">
-    """
-    
-    # 将资源添加到页面头部（如果还没有的话）
-    if 'katex' not in html and 'twikoo' not in html:
-        # 在 </head> 前插入资源
-        if '</head>' in html:
-            html = html.replace('</head>', katex_resources + twikoo_preload + '</head>')
-    
+    """on_page_content 仅接收页面正文 HTML，不包含 <head>，此处仅做透传。"""
+    # 注意：MkDocs 的 on_page_content 只传入 Markdown 渲染后的正文 HTML，不包含整页，
+    # 因此无法在此处向 <head> 注入资源。若需向整页注入，请使用 on_post_page。
     return html
+
+
+def on_post_page(output, **kwargs):
+    """在整页渲染完成后向 <head> 注入 Twikoo 预加载等资源（仅评论页）。"""
+    page = kwargs.get('page')
+    if not page or not should_add_comments(page.file.src_path):
+        return output
+
+    twikoo_preload = (
+        '<link rel="preload" href="https://registry.npmmirror.com/twikoo/1.6.44/files/dist/twikoo.min.js" as="script">'
+    )
+    if '</head>' in output and 'twikoo' not in output:
+        output = output.replace('</head>', twikoo_preload + '\n</head>', 1)
+    return output

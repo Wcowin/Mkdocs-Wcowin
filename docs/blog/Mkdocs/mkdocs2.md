@@ -359,19 +359,23 @@ theme:
 ```yaml
   features:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    # - navigation.instant
-    #- header.autohide  #自动隐藏
+    # - navigation.instant # 即时加载（SPA模式），点击内部链接时无需完全重新加载页面
+    # - navigation.instant.prefetch # 9.7.0新增：悬停链接时预取页面，减少加载时间
+    # - navigation.instant.progress # 9.4.3新增：在慢速连接上显示加载进度指示器
+    # - header.autohide  #自动隐藏（已废弃）
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
+    # - navigation.path # 9.7.0新增：在页面标题上方显示面包屑导航
+    # - navigation.prune # 9.2.0新增：仅包含可见导航项，减少构建站点大小（与navigation.expand不兼容）
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share #搜索分享按钮
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - navigation.expand # 打开Tab时左侧目录全部展开（与navigation.prune不兼容）
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节（博客插件必需）
     - content.tabs.link
     - content.tooltips
     - content.code.copy #代码复制

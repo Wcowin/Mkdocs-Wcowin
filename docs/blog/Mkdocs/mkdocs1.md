@@ -5,7 +5,8 @@ tags:
 ---
 
 !!! info
-    Material for MkDocs官方网站: [Material for MkDocs](https://www.mkdocs.org/)  
+    Material for MkDocs官方网站: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)  
+    MkDocs官方文档: [MkDocs](https://www.mkdocs.org/)  
     MkDocs中文文档: [MkDocs中文文档](https://hellowac.github.io/mkdocs-docs-zh/)
 ---
 推荐看下这个视频：  
@@ -43,9 +44,27 @@ __[How to set up Material for MkDocs]__ by @Wcowin – :octicons-clock-24:
 
 
 打开Wcowin.github.io目录进入终端依次运行:
-```
+
+!!! tip "推荐使用虚拟环境（可选但推荐）"
+    官方建议使用虚拟环境来管理依赖，避免版本冲突：
+    ```bash
+    python -m venv mkdocs-env
+    source mkdocs-env/bin/activate  # Linux/Mac
+    # 或 Windows: mkdocs-env\Scripts\activate
+    ```
+
+安装Material for MkDocs：
+```bash
 pip install mkdocs-material
+# 或限制版本（推荐，避免意外升级到下一个主版本）：
+# pip install mkdocs-material=="9.*"
+```
+
+创建站点：
+```bash
 mkdocs new mkdocs-site
+# 或直接在当前目录创建（官方推荐）：
+# mkdocs new .
 ```
 出现下图的几个文件 
 ![img](https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png)
@@ -136,7 +155,9 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
+      # 或使用requirements.txt（推荐，确保构建可重现）：
+      # - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
 ```
 

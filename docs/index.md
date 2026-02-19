@@ -165,7 +165,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 -   :simple-aboutdotme:{ .lg .middle } __关于__
 
     ---
-    - [Mkdocs-Wcowin博客主题社区](https://support.qq.com/products/646913/){target=“_blank”}
+    - [微信交流群](https://s1.imagehub.cc/images/2026/01/05/61035cc991bd4526ec304a223a2f0dc6.png){target=“_blank”}
     - [留言板](liuyanban.md)[^Knowing-that-loving-you-has-no-ending] 
     - [Blogger](blog/index.md)   
     - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]  
