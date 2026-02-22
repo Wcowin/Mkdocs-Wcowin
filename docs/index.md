@@ -25,7 +25,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 -->
 
 
-<center><font class="custom-font ml3">最好的MkDocs教程</font></center>
+<center><font class="custom-font ml3">最好的MkDocs中文教程</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {

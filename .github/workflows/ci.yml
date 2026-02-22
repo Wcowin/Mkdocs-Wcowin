@@ -33,6 +33,7 @@ jobs:
       - run: pip install mkdocs-git-committers-plugin-2
       - run: pip install markdown-callouts
       - run: pip install mkdocs-material-extensions
-      - run: pip install mkdocs-materialx #如果使用materialX，工作流需要安装
+      - run: pip install -i https://test.pypi.org/simple/ mkdocs-materialx==10.0.9 #测试版materialX
+      # - run: pip install mkdocs-materialx #如果使用materialX，工作流需要安装
       - run: pip install mkdocs-document-dates  
       - run: mkdocs gh-deploy --force

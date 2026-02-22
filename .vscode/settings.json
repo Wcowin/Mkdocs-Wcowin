@@ -1,4 +1,5 @@
 {
     "bitoAI.codeCompletion.enableAutoCompletion": false,
-    "Codegeex.RepoIndex": true
+    "Codegeex.RepoIndex": true,
+    "kiroAgent.configureMCP": "Disabled"
 }
