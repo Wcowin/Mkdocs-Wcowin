@@ -547,3 +547,11 @@ nav.md-nav--secondary ul {
   border-left: 1px solid lightblue;
 }
 
+/* 移除链接下划线 */
+/* 完全取消正文里的链接下划线 */
+.md-typeset a,
+.md-typeset a:visited,
+.md-typeset a:hover,
+.md-typeset a:active {
+  text-decoration: none !important;
+}
