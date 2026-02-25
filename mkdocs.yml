@@ -4,7 +4,7 @@
 site_name: Mkdocs教程 #your site name 显示在左上角
 site_url: https://wcowin.work/Mkdocs-Wcowin/
 site_description: Mkdocs中文教程,最好的Mkdocs中文教程,最全的Mkdocs中文教程,最详细的Mkdocs中文教程,最权威的Mkdocs中文教程,最专业的Mkdocs中文教程,最实用的Mkdocs中文教程,最易懂的Mkdocs中文教程
-site_author: 王科文(Wcowin) # your name
+site_author: Wcowin # your name
 #[UI]
 theme:
   name: material

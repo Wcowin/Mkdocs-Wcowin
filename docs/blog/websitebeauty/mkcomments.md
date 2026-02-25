@@ -42,7 +42,6 @@ $ tree -a
 │   └── index.md
 │   └──overrides
 │       └──assets
-│       └──main.html
 │       └──partials
 │          └──comments.html
 │
