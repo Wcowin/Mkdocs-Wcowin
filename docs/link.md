@@ -31,27 +31,49 @@ t.parentNode.insertBefore(e,t)}})();
 
   <div class="links-content"> 
    <div class="link-navigation"> 
-    <div class="card"> 
-     <img class="ava" src="https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="https://wcowin.work/ ">Wcowin's Blog</a> 
-      </div> 
-      <div class="info">
-       “循此苦旅，以达星辰”
-      </div> 
-     </div> 
-    </div>
-   <div class="card">
-     <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
+    <div class="card">
+     <img class="ava" loading="lazy" src="https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png" />
      <div class="card-header">
       <div>
-       <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+       <a href="https://wcowin.work/ ">Wcowin's Blog</a>
       </div>
       <div class="info">
-      撰写最新的Zensical中文教程
+       “循此苦旅，以达星辰”
       </div>
      </div>
+    </div>
+    <div class="card">
+     <img class="ava" loading="lazy" src="https://picx.zhimg.com/80/v2-34b000e56d1af7ef61092dcd031dfd9a_1440w.webp?source=2c26e567" />
+     <div class="card-header">
+      <div>
+       <a href="https://oneclip.cloud/ ">OneClip</a>
+      </div>
+      <div class="info">
+       简单专业的Mac剪贴板管理工具
+      </div>
+     </div>
+    </div>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://zensical.org/assets/zensical.svg" />
+      <div class="card-header">
+        <div>
+          <a href="https://wcowin.github.io/Zensical-Chinese-Tutorial/" target="_blank">Wcowin for Zensical</a>
+        </div>
+        <div class="info">
+          撰写最新的Zensical中文教程
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img class="ava" loading="lazy" src="https://s2.loli.net/2024/02/03/awndem3rYPyNGOj.png" />
+      <div class="card-header">
+        <div>
+          <a href="https://wcowin.work/Mkdocs-Wcowin/" target="_blank">Wcowin for MkDocs</a>
+        </div>
+        <div class="info">
+          撰写最新的Mkdocs中文教程
+        </div>
+      </div>
     </div>
     <div class="card"> 
      <img class="ava" src="https://s1.imagehub.cc/images/2025/06/03/526b59b6a2e478f2ffa1629320e3e2ce.png" /> 
@@ -176,43 +198,36 @@ t.parentNode.insertBefore(e,t)}})();
 >头像: https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png  
 >简介: 循此苦旅，以达星辰 -->
 
-=== "Txt"
+=== "通用"
 
     >名称: Wcowin's Blog  
     >链接: https://wcowin.work/  
-    >头像: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp  
+    >头像: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png  
     >简介: 循此苦旅，以达星辰
 
 === "HTML(推荐)"
 
     推荐在评论区发送这种格式，*号的需要填写自己的信息
 
-    ```html
-    <div class="card"> 
-     <img class="ava" src="*你的头像链接*" /> 
-     <div class="card-header"> 
-      <div> 
-       <a href="*你的网站地址* " target="_blank">*你的站点名称*</a> 
-      </div> 
+    ```html hl_lines="2 5 8"
+    <div class="card">
+     <img class="ava" loading="lazy" src="*你的头像链接*" />
+     <div class="card-header">
+      <div>
+       <a href="*你的网站地址* " target="_blank">*你的站点名称*</a>
+      </div>
       <div class="info">
        *你的站点描述*
-      </div> 
-     </div> 
+      </div>
+     </div>
     </div>
     ```
-=== "Butterfly"
+=== "Hexo"
 
     ```yaml
     - name: Wcowin's Blog
       link: https://wcowin.work/
-      avatar: https://pic4.zhimg.com/80/v2-a0456a5f527c1923f096759f2926012f_1440w.webp
+      avatar: https://s1.imagehub.cc/images/2025/12/06/28380affd86b014a6dcaf082fcc97064.png
       descr: 循此苦旅，以达星辰
     ```
-=== "通用"
-
-    点击填写[**友链申请**问卷](https://wj.qq.com/s2/14878680/20ac/)  
-
-    [![](https://s2.loli.net/2024/06/27/9gw37T4vPASxiD8.png){width=50%}](https://wj.qq.com/s2/14878680/20ac/)
-
-    
 ***

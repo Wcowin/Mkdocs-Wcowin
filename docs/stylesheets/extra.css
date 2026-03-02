@@ -542,9 +542,9 @@ div.hide {
   cursor: pointer;
 }
 
-/* 目录导航的缩进参考线 */
-nav.md-nav--secondary ul {
-  border-left: 1px solid lightblue;
+/* 目录导航的缩进参考线：仅二级及以上目录显示 */
+nav.md-nav--secondary ul ul {
+  border-left: 1px solid #B0B4BA;
 }
 
 /* 移除链接下划线 */
