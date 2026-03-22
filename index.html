@@ -3102,6 +3102,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 <p class="admonition-title">重要提醒</p>
 <p>Mkdocs for material已经进入维护状态，<a href="https://github.com/jaywhj/mkdocs-materialx">materialX</a>作为mkdocs的延续被广泛使用，本站作为mkdocs教程站迁移至materialX主题。
 <a href="https://github.com/zensical/zensical">Zensical</a>是 mkdocs for material原作者的延续，提供了更丰富的功能和更现代的UI设计，可以考虑迁移至Zensical主题，我不再更新mkdocs for material教程。</p>
+<hr />
+<p>2026.3  目前 <a href="https://github.com/ProperDocs">https://github.com/ProperDocs</a> 作为新的mkdocs延续下去了，我只能说mkdocs圈真乱,本UP主已经全面拥抱Zensical了。吃瓜请去<a href="https://github.com/mkdocs/mkdocs/discussions/4077">这里</a>。所以如果使用mkdocs，我首先还是推荐<a href="https://github.com/jaywhj/mkdocs-materialx">materialX</a></p>
 </div>
 <!-- - 基于Material for MkDocs美化
 - 简洁美观，功能多元化
@@ -3343,84 +3345,12 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 <div class="article-grid">
     <div class="article-card">
-        <a class="card-header" href="blog/category/hello-world/" target="_blank">
-            <div class="card-title">Hello World</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        <a class="card-header" href="blog/click/" target="_blank">
+            <div class="card-title">4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 16:19:22">2026-03-22</time>
         </a>
         <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/category/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/" target="_blank">
-            <div class="card-title">网站更新记录</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/archive/2021/" target="_blank">
-            <div class="card-title">2021</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/archive/2022/" target="_blank">
-            <div class="card-title">2022</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/archive/2023/" target="_blank">
-            <div class="card-title">2023</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/archive/2024/" target="_blank">
-            <div class="card-title">2024</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/archive/2025/" target="_blank">
-            <div class="card-title">2025</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="blog/archive/2026/" target="_blank">
-            <div class="card-title">2026</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary"></div>
-        </div>
-    </div>
-    <div class="article-card">
-        <a class="card-header" href="./" target="_blank">
-            <div class="card-title">Home</div>
-            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:10">2026-03-22</time>
-        </a>
-        <div class="card-body">
-            <div class="card-summary">Mkdocs for material已经进入维护状态，materialX作为mkdocs的延续被广泛使用，本站作为mkdocs教程站迁移至materialX主题。  Zensical是 mkdocs for material原作者的延续，提供了更丰富的功能和更现代的UI设计，可以考虑迁移至Zensical主题，我不再更新mkdocs for material教程。</div>
+            <div class="card-summary">问题是 click 8.3.x 版本有 bug，导致 mkdocs 的 livereload 文件监控失效。  解决方法：降级 click 到 8.2.1  原贴：&lt;https://github.com/mkdocs/mkdocs/issues/4014issuecomment-3632469997  不过目前 https://github.com/ProperDocs 作为新的mkdocs延续下去了，mkdocs serve 后127.0.0.1:8000无法自动刷新的问题已经解决</div>
         </div>
     </div>
     <div class="article-card">
@@ -3430,6 +3360,78 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
         </a>
         <div class="card-body">
             <div class="card-summary">Material for MkDocs官方网站: Material for MkDocs  MkDocs官方文档: MkDocs  MkDocs中文文档: MkDocs中文文档  推荐看下这个视频：  :fontawesome-brands-bilibili:  [How to set up Material for MkDocs] by @Wcowin – :octicons-clock-24:  10m – 用MKdocs构建一个博客网站.   一、准备工作  1.下载Github Desktop  2.有一个GitHub账号​​​​​​​(有手就行)</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/Mkdocs/mkdocs2/" target="_blank">
+            <div class="card-title">2.Mkdocs配置说明(mkdocs.yml)</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:10">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">官方文件：Changing the colors - Material for MkDocs  建议详细学习一下上面的官方网站↑↑↑  我把我目前的配置文件mkdocs.yml代码写在下面👇🏻  从头开始分析  无须多言   theme部分   顶部颜色  primary后面是网站顶部栏目的颜色（也用于标题、边栏、文本链接和其他几个组件）  目前支持下面几个颜色：   明暗主题按钮</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/Mkdocs/mkdocs3/" target="_blank">
+            <div class="card-title">3.解决Github Pages部署mkdocs自定义域名失效的问题</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:10">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">解决方法  在/docs目录下创建一个名为CNAME的文件（无后缀），然后在里面填入你的域名（每行一个域名）：  或者子域名：  因为每次在 GitHub 仓库的 Settings  Pages  Custom domain 中添加域名后，GitHub 会在gh-pages分支自动生成一个 CNAME 文件。但是因为项目我们没有 pull 到本地，所以每次 push 之后 CNAME 信息被覆盖了。  1. CNAME文件必须放在docs/目录下，这样在构建时会自动复制到站点根目录  2. 确保在mkdocs.yml中设置了正确的siteurl：  3. 如果使用自定义域名，还需要在域名DNS设置中添加CNAME记录指向GitHub Pages</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="link/" target="_blank">
+            <div class="card-title">友链</div>
+            <time class="dd-timeago card-date" datetime="2026-03-02 08:12:29">2026-03-02</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">失联人员   独立博客(不要求独立域名)，https，访问流畅   原创内容为主，原创内容3篇以上   处于活跃状态，有一定的更新频率   建站一个月以上   未添加友链或申请未通过，评论留言会被隐藏。  本站已经加入十年之约：  友链格式示例/本站信息:  推荐在评论区发送这种格式，号的需要填写自己的信息</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/2026/03/02/2026%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/" target="_blank">
+            <div class="card-title">2026网站更新记录</div>
+            <time class="dd-timeago card-date" datetime="2026-03-02 08:12:29">2026-03-02</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">&lt;/p&lt;h1 id=&#34;01&#34; name=&#34;01&#34;&lt;strong2026-03-02&lt;/strong&lt;/h1&lt;p   优化网站流畅度（玄学）   改进mkdocs教程，增加更多示例</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/websitebeauty/mkcomments/" target="_blank">
+            <div class="card-title">添加评论系统(giscus为例)</div>
+            <time class="dd-timeago card-date" datetime="2026-02-25 10:14:03">2026-02-25</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">官方文档：Adding a comment system  这里我同样推荐giscus  利用 GitHub Discussions 实现的评论系统，让访客借助 GitHub 在你的网站上留下评论和反应吧！本项目深受 utterances 的启发。   开源。🌏   无跟踪，无广告，永久免费。📡 🚫   无需数据库。所有数据均储存在 GitHub Discussions 中。:octocat:   支持自定义主题！🌗   支持多种语言。🌐   高可配置性。🔧   自动从 GitHub 拉取新评论与编辑。🔃</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/websitebeauty/404/" target="_blank">
+            <div class="card-title">添加404页面</div>
+            <time class="dd-timeago card-date" datetime="2026-02-25 10:11:53">2026-02-25</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">首先在mkdocs.yml文件中添加customdir:  docs/overrides文件下新建404.html  树状结构如下:   404公益页面   404骰子页面  目前更换了新的404页面：</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/Mkdocs/mkdocsblog/" target="_blank">
+            <div class="card-title">添加Mkdocs博客</div>
+            <time class="dd-timeago card-date" datetime="2026-02-19 04:42:25">2026-02-19</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">博客效果展示：博客  官方文档：Built-in blog plugin  与所有内置插件一样，博客插件的入门非常简单。只需将以下行添加到mkdocs.yml  然后在/docs/blog/posts下写md文件即可（无需再mkdocs.yml配置，如没有posts文件夹，新建一个即可）  插件会自动创建所需的目录结构。如果不存在，插件会创建：  在mkdocs.yml的nav部分这样写：  如果您的mkdocs.yml中已经定义了nav结构，需要启用navigation.indexes功能才能正确显示博客：  然后在nav部分添加博客：  元标签参考（每个博客文章必须包含date字段）：  作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="develop/Markdown/markdown/" target="_blank">
+            <div class="card-title">Markdown指南</div>
+            <time class="dd-timeago card-date" datetime="2026-02-19 04:42:25">2026-02-19</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">📖 什么是 Markdown？  Markdown 是一种轻量级标记语言，由 John Gruber 于 2004 年创建。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档。  - ✅ 简单易学 - 语法简洁明了  - ✅ 跨平台 - 纯文本格式，任何编辑器都能打开  - ✅ 格式丰富 - 支持导出 HTML、PDF、Word 等格式  - ✅ 版本控制友好 - Git 等工具完美支持  - ✅ 广泛支持 - GitHub、博客平台、文档工具都支持   🛠️ 推荐工具  - Dillinger - 功能强大的在线编辑器  - StackEdit - 支持同步到云端</div>
         </div>
     </div>
 </div>
