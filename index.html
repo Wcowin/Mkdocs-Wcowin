@@ -65,6 +65,8 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css">
     
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
       <link rel="stylesheet" href="assets/document_dates/fonts/material-icons.css">
     
       <link rel="stylesheet" href="assets/document_dates/tippy/light.css">
@@ -3146,7 +3148,292 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 </ul>
 </li>
 </ul>
+</div><style>
+.article-layout-switcher {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-bottom: 20px; */
+}
+.article-layout-switcher button + button {
+    margin-left: 8px;
+}
+.article-layout-switcher button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: var(--md-typeset-color, #1c1c1c);
+    opacity: 0.4;
+    transition: all 0.2s;
+}
+.article-layout-switcher button:hover {
+    background: rgba(142, 142, 142, 0.1);
+    opacity: 0.8;
+}
+.article-layout-switcher button.is-active {
+    opacity: 1;
+    color: var(--md-accent-fg-color, blue);
+    background: rgba(142, 142, 142, 0.1);
+}
+.article-layout-switcher .material-icons {
+    font-size: 20px;
+}
+
+/* --- 网格模式 (默认) --- */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    /* transition: all 0.2s ease; */
+}
+
+/* --- 详情模式 (is-detail) --- */
+.article-grid.is-detail {
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- 列表模式 (is-list) --- */
+.article-grid.is-list {
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid rgba(142, 142, 142, 0.2);
+    border-radius: 8px;
+    row-gap: 0;
+    padding: 11px;
+}
+.article-grid.is-list .card-body {
+    display: none;
+}
+.article-grid.is-list .article-card {
+    border: none;
+    border-radius: 0;
+    padding: 8px;
+}
+.article-grid.is-list .card-title {
+    font-weight: 400;
+    color: var(--md-typeset-a-color, #0077cc);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+.article-grid.is-list .card-date {
+    margin-right: 0;
+}
+
+
+.article-card {
+    border: 1px solid rgba(142, 142, 142, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 第一行：标题与时间 --- */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.card-title {
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--md-typeset-color, #1c1c1c);
+    margin-right: 12px;
+}
+.card-date {
+    font-size: 0.84em;
+    color: rgba(100, 100, 100, 0.4);
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.card-header:hover {
+    text-decoration: none !important;
+}
+.card-header:focus {
+    text-decoration: none !important;
+}
+.card-header:hover .card-title {
+    color: var(--md-accent-fg-color, blue);
+    text-decoration: underline;
+}
+
+/* --- 第二行：摘要与封面图 --- */
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.card-summary {
+    flex: 1;
+    color: rgba(142, 142, 142, 1);
+    font-size: 0.7rem;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+    word-break: break-all;
+    
+    /* 3 行文字截断，超出显示省略号 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.card-cover {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: filter 0.3s ease;
+
+    /* Safari 圆角闪烁修复 */
+    transform: translateZ(0);              /* 建立独立合成层 */
+    will-change: transform;                /* 提前告诉浏览器 */
+    -webkit-mask-image: -webkit-radial-gradient(white, black); /* 强制圆角裁剪走 mask 管线 */
+    isolation: isolate;
+}
+.card-cover:hover {
+    filter: brightness(0.8);
+}
+.card-cover a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 !important;
+
+    /* 避免 layer 升降级 */
+    transform: scale(1.1) translateZ(0);
+    transition: transform 0.4s ease-out;
+    /* 防 Safari 重绘抖动 */
+    backface-visibility: hidden;
+    will-change: transform;
+}
+.card-cover:hover img {
+    transform: scale(1.1) translateX(4px) translateZ(0);
+}
+</style>
+
+<div class="article-layout-switcher">
+    <button class="layout-list-btn"><span class="material-icons">view_list</span></button>
+    <button class="layout-detail-btn"><span class="material-icons">view_day</span></button>
+    <button class="layout-grid-btn"><span class="material-icons">view_module</span></button>
 </div>
+
+<div class="article-grid">
+    <div class="article-card">
+        <a class="card-header" href="blog/category/hello-world/" target="_blank">
+            <div class="card-title">Hello World</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/category/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/" target="_blank">
+            <div class="card-title">网站更新记录</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/archive/2021/" target="_blank">
+            <div class="card-title">2021</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/archive/2022/" target="_blank">
+            <div class="card-title">2022</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/archive/2023/" target="_blank">
+            <div class="card-title">2023</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/archive/2024/" target="_blank">
+            <div class="card-title">2024</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/archive/2025/" target="_blank">
+            <div class="card-title">2025</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/archive/2026/" target="_blank">
+            <div class="card-title">2026</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:40">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary"></div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="./" target="_blank">
+            <div class="card-title">Home</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:10">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">Mkdocs for material已经进入维护状态，materialX作为mkdocs的延续被广泛使用，本站作为mkdocs教程站迁移至materialX主题。  Zensical是 mkdocs for material原作者的延续，提供了更丰富的功能和更现代的UI设计，可以考虑迁移至Zensical主题，我不再更新mkdocs for material教程。</div>
+        </div>
+    </div>
+    <div class="article-card">
+        <a class="card-header" href="blog/Mkdocs/mkdocs1/" target="_blank">
+            <div class="card-title">1.利用Mkdocs部署静态网页</div>
+            <time class="dd-timeago card-date" datetime="2026-03-22 15:46:10">2026-03-22</time>
+        </a>
+        <div class="card-body">
+            <div class="card-summary">Material for MkDocs官方网站: Material for MkDocs  MkDocs官方文档: MkDocs  MkDocs中文文档: MkDocs中文文档  推荐看下这个视频：  :fontawesome-brands-bilibili:  [How to set up Material for MkDocs] by @Wcowin – :octicons-clock-24:  10m – 用MKdocs构建一个博客网站.   一、准备工作  1.下载Github Desktop  2.有一个GitHub账号​​​​​​​(有手就行)</div>
+        </div>
+    </div>
+</div>
+
 <!-- <body>
         <font color="#B9B9B9">
         <p style="text-align: center; ">
