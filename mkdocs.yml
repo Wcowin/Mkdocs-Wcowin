@@ -187,7 +187,12 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - recently-updated
+  - recently-updated:
+      exclude: # List of excluded files (support unix shell-style wildcards)
+        - index.md # Exclude specific file
+        - "*/index.md" # Exclude all index.md files in any subfolders
+        - blog/archive* # Exclude all files in blog folder, including subfolders
+        - blog/category*
   # - ai-summary:
   #     ai_service: "glm"  # or "openai", "gemini", "glm"
   #     summary_language: "zh"  # or "en"
@@ -304,6 +309,7 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
           class: mermaid
           format:
             !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
 
   - pymdownx.arithmatex: # latex支持
       generic: true
