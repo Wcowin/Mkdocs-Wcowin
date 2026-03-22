@@ -65,7 +65,6 @@ edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
 repo_name: Mkdocs-Wcowin # 右上角的名字
 
-
 # [Navigtion]
 nav:
   # - 主页: index.md
@@ -141,9 +140,9 @@ extra:
   #   - name: 日本語
   #     link: "javascript:translateTo('japanese');"
   #     lang: ja
-    # - name: Deutsch
-    #   link: "javascript:translateTo('deutsch');"
-    #   lang: de
+  # - name: Deutsch
+  #   link: "javascript:translateTo('deutsch');"
+  #   lang: de
   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/weixin
@@ -188,6 +187,7 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
+  - recently-updated
   # - ai-summary:
   #     ai_service: "glm"  # or "openai", "gemini", "glm"
   #     summary_language: "zh"  # or "en"
@@ -209,12 +209,12 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'
   - document-dates:
-      position: bottom            # Display position: top (after title)  bottom (end of document), default: bottom
-      type: date               # Date type: date  datetime  timeago, default: date
-      locale: zh               # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
-      date_format: '%Y-%m-%d'  # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
-      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-      exclude:                 # List of excluded files
+      position: bottom # Display position: top (after title)  bottom (end of document), default: bottom
+      type: date # Date type: date  datetime  timeago, default: date
+      locale: zh # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+      date_format: "%Y-%m-%d" # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+      time_format: "%H:%M:%S" # Time format strings (valid only if type=datetime)
+      exclude: # List of excluded files
         - index.md
         - tag.md
         - liuyanban.md
@@ -222,8 +222,8 @@ plugins:
         - blog/index.md
         - link.md
         - blog/Mkdocs/linktech.md
-        - about/*            # Exclude all files in private directory, including subdirectories
-      show_author: true       # Show author or not, default: true
+        - about/* # Exclude all files in private directory, including subdirectories
+      show_author: true # Show author or not, default: true
       # show_created: false
       # show_updated: false
   # - glightbox:
@@ -304,6 +304,7 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
           class: mermaid
           format:
             !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
   - pymdownx.arithmatex: # latex支持
       generic: true
   - toc:
@@ -356,11 +357,11 @@ extra_css:
   # - stylesheets/optimize.css
   # - stylesheets/poem.css
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css  #友链
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/link.css #友链
   # - stylesheets/card2.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
   # - stylesheets/customize.css  #按钮圆角化
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css  #按钮圆角化
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/customize.css #按钮圆角化
   # - stylesheets/flink.css
   # - stylesheets/bannerSlider.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
@@ -384,13 +385,11 @@ extra_css:
   - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/about/sty/portfolio.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
 
-
 hooks:
   - docs/overrides/hooks/socialmedia.py
   - docs/overrides/hooks/reading_time.py
   # - docs/overrides/hooks/ai_summary.py
   - docs/overrides/hooks/related_posts.py
-  - docs/overrides/hooks/comments.py       # 新添加的评论系统
-
+  - docs/overrides/hooks/comments.py # 新添加的评论系统
 
 use_directory_urls: true

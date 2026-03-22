@@ -4,6 +4,7 @@ tags:
   - Mkdocs
 ---
 
+
 ## 解决方法
 
 在`/docs`目录下创建一个名为`CNAME`的文件（无后缀），然后在里面填入你的域名（每行一个域名）：
@@ -27,5 +28,3 @@ blog.yourdomain.com
        site_url: https://yourdomain.com/
        ```
     3. 如果使用自定义域名，还需要在域名DNS设置中添加CNAME记录指向GitHub Pages
-
-
