@@ -1,6 +1,8 @@
 ---
 title: MKDocs 的缓慢崩溃
 comments: true
+author: shenweiyan
+name: shenweiyan
 ---
 
 # MKDocs 的缓慢崩溃
