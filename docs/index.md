@@ -130,7 +130,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     Mkdocs for material已经进入维护状态，[materialX](https://github.com/jaywhj/mkdocs-materialx)作为mkdocs的延续被广泛使用，本站作为mkdocs教程站迁移至materialX主题。
     [Zensical](https://github.com/zensical/zensical)是 mkdocs for material原作者的延续，提供了更丰富的功能和更现代的UI设计，可以考虑迁移至Zensical主题，我不再更新mkdocs for material教程。
     ---
-    2026.3  目前 <https://github.com/ProperDocs> 作为新的mkdocs延续下去了，我只能说mkdocs圈真乱,本UP主已经全面拥抱Zensical了。吃瓜请去[这里](https://github.com/mkdocs/mkdocs/discussions/4077)。所以如果使用mkdocs，我首先还是推荐[materialX](https://github.com/jaywhj/mkdocs-materialx)
+    2026.3  目前 <https://github.com/ProperDocs> 作为新的mkdocs延续下去了，我只能说mkdocs圈真乱,本UP主已经全面拥抱Zensical了。吃瓜请去[这里](https://github.com/mkdocs/mkdocs/discussions/4077)和[MKDocs 的缓慢崩溃](collapse-of-mkdocs.md)。所以如果使用mkdocs，我首先还是推荐[materialX](https://github.com/jaywhj/mkdocs-materialx)
 
 <!-- - 基于Material for MkDocs美化
 - 简洁美观，功能多元化
