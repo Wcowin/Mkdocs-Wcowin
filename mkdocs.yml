@@ -193,30 +193,12 @@ plugins:
   #       - "*/index.md" # Exclude all index.md files in any subfolders
   #       - blog/archive* # Exclude all files in blog folder, including subfolders
   #       - blog/category*
-  # - ai-summary:
-  #     ai_service: "glm"  # or "openai", "gemini", "glm"
-  #     summary_language: "zh"  # or "en"
-  #     cache_enabled: true
-  #     local_enabled: false
-  #     cache_expire_days: 30
-  #     # debug: true # 是否显示调试信息（默认：false）
-  #     enabled_folders:
-  #       - blog/    # 添加blog文件夹
-  #       - develop/ # 添加develop文件夹
-  #       # - docs/    # 保留docs文件夹
-  #     exclude_patterns:
-  #       - about/
-  #       - index.md
-  #       - tag.md
-  #       - blog/posts/update.md
-  #       - blog/category/
-  #       - blog/posts/
   - search:
       separator: '[\s\u200b\-]'
   - document-dates:
       recently-updated: 
         enabled: true
-        exclude: ['index.md','tag.md','en/index.md','ZH-TW/index.md','about/*','liuyanban.md','blog/*']
+        exclude: ['index.md','tag.md','en/index.md','ZH-TW/index.md','about/*','liuyanban.md','*/archive/*','*/category/*']
       position: bottom # Display position: top (after title)  bottom (end of document), default: bottom
       type: date # Date type: date  datetime  timeago, default: date
       locale: zh # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
@@ -287,7 +269,25 @@ plugins:
       pagination_url_format: "page/{page}"
       authors_file: "{blog}/.authors.yml" #作者信息
   - tags
-
+  # - ai-summary:
+  #     ai_service: "glm"  # or "openai", "gemini", "glm"
+  #     summary_language: "zh"  # or "en"
+  #     cache_enabled: true
+  #     local_enabled: false
+  #     cache_expire_days: 30
+  #     # debug: true # 是否显示调试信息（默认：false）
+  #     enabled_folders:
+  #       - blog/    # 添加blog文件夹
+  #       - develop/ # 添加develop文件夹
+  #       # - docs/    # 保留docs文件夹
+  #     exclude_patterns:
+  #       - about/
+  #       - index.md
+  #       - tag.md
+  #       - blog/posts/update.md
+  #       - blog/category/
+  #       - blog/posts/
+  
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
   - attr_list
