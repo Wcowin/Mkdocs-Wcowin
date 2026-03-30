@@ -75,7 +75,7 @@ nav:
           - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
           - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
           - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
-          - 4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题: blog/click.md
+          - 4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题: blog/Mkdocs/click.md
       - Mkdocs美化/补充:
           - 为MKdocs添加多语言翻译: blog/websitebeauty/mkdocs-translate.md
           - 为MKdocs添加AI摘要(Plus版本): blog/websitebeauty/MkDocs-AI-Summary-plus.md
@@ -187,12 +187,12 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
-  - recently-updated:
-      exclude: # List of excluded files (support unix shell-style wildcards)
-        - index.md # Exclude specific file
-        - "*/index.md" # Exclude all index.md files in any subfolders
-        - blog/archive* # Exclude all files in blog folder, including subfolders
-        - blog/category*
+  # - recently-updated:
+  #     exclude: # List of excluded files (support unix shell-style wildcards)
+  #       - index.md # Exclude specific file
+  #       - "*/index.md" # Exclude all index.md files in any subfolders
+  #       - blog/archive* # Exclude all files in blog folder, including subfolders
+  #       - blog/category*
   # - ai-summary:
   #     ai_service: "glm"  # or "openai", "gemini", "glm"
   #     summary_language: "zh"  # or "en"
@@ -214,6 +214,9 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'
   - document-dates:
+      recently-updated: 
+        enabled: true
+        exclude: ['index.md','tag.md','en/index.md','ZH-TW/index.md','about/*','liuyanban.md','blog/*']
       position: bottom # Display position: top (after title)  bottom (end of document), default: bottom
       type: date # Date type: date  datetime  timeago, default: date
       locale: zh # Localization: en zh zh_TW es fr de ar ja ko ru, default: en

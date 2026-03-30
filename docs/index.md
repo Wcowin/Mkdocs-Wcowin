@@ -132,6 +132,9 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
     ---
     2026.3  目前 <https://github.com/ProperDocs> 作为新的mkdocs延续下去了，我只能说mkdocs圈真乱,本UP主已经全面拥抱Zensical了。吃瓜请去[这里](https://github.com/mkdocs/mkdocs/discussions/4077)和[MKDocs 的缓慢崩溃](collapse-of-mkdocs.md)。所以如果使用mkdocs，我首先还是推荐[materialX](https://github.com/jaywhj/mkdocs-materialx)
 
+
+
+
 <!-- - 基于Material for MkDocs美化
 - 简洁美观，功能多元化
 - 简单易上手，小白配置
@@ -143,7 +146,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 1. 点击右下角[:simple-bilibili:](https://space.bilibili.com/1407028951/lists/4566631?type=series)图标查看视频教程.
 2. TEL:18939533255(微信号) -->
 
-***  
 
 <!-- <strong>推荐文章:material-book:</strong>
 
@@ -173,17 +175,13 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
     ---
     - [微信交流群](https://s1.imagehub.cc/images/2026/01/05/61035cc991bd4526ec304a223a2f0dc6.png){target=“_blank”}
-    - [留言板](liuyanban.md)[^Knowing-that-loving-you-has-no-ending] 
+    - [留言板](liuyanban.md)
     - [Blogger](blog/index.md)   
-    - [:octicons-arrow-right-24: 了解我](about/geren.md)[^see-how-much-I-love-you]  
+    - [:octicons-arrow-right-24: 了解我](about/geren.md)
     - [请作者喝杯咖啡](about/zcw.md)
 
 </div>
 
-<!-- RECENTLY_UPDATED_DOCS -->
-
-[^Knowing-that-loving-you-has-no-ending]:太阳总是能温暖向日葵  
-[^see-how-much-I-love-you]:All-problems-in-computer-science-can-be-solved-by-another-level-of-indirection
 
    <!-- <body>
         <font color="#B9B9B9">
@@ -234,3 +232,5 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
 </head>
+
+<!-- RECENTLY_UPDATED_DOCS -->
