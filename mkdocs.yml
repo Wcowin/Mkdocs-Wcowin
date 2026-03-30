@@ -7,7 +7,7 @@ site_description: Mkdocs中文教程,最好的Mkdocs中文教程,最全的Mkdocs
 site_author: Wcowin # your name
 #[UI]
 theme:
-  name: material
+  name: materialx
   custom_dir: docs/overrides #覆写路径
   # logo: assets/favicon.png #左上角logo，可插入图片链接
   favicon: https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png # 网页icon
@@ -187,14 +187,13 @@ extra:
   #     如果你同意,你可以帮助我们让我们的网站更好
 
 plugins:
+  - search
   # - recently-updated:
   #     exclude: # List of excluded files (support unix shell-style wildcards)
   #       - index.md # Exclude specific file
   #       - "*/index.md" # Exclude all index.md files in any subfolders
   #       - blog/archive* # Exclude all files in blog folder, including subfolders
   #       - blog/category*
-  - search:
-      separator: '[\s\u200b\-]'
   - document-dates:
       recently-updated: 
         enabled: true
