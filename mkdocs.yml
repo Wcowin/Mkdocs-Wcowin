@@ -198,7 +198,7 @@ plugins:
   - document-dates:
       recently-updated: 
         enabled: true
-        exclude: ['index.md','tag.md','en/index.md','ZH-TW/index.md','about/*','liuyanban.md','*/archive/*','*/category/*']
+        exclude: ['index.md','*/index.md','tag.md','en/index.md','ZH-TW/index.md','about/*','liuyanban.md','*/archive/*','*/category/*']
       position: bottom # Display position: top (after title)  bottom (end of document), default: bottom
       type: date # Date type: date  datetime  timeago, default: date
       locale: zh # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
