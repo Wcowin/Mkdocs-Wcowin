@@ -277,12 +277,8 @@ def on_page_markdown(markdown, **kwargs):
         frontmatter = ''
         content = markdown
     
-    # 只查找文档的主标题（第一个标题，通常是一级标题）
+    # 只查找文档的一级标题（主标题）
     main_title_match = re.search(r'^# (.+)$', content, re.MULTILINE)
-    
-    # 如果没有找到一级标题，尝试查找第一个出现的任何级别的标题
-    if not main_title_match:
-        main_title_match = re.search(r'^(#+) (.+)$', content, re.MULTILINE)
     
     if main_title_match:
         # 找到主标题的位置
@@ -292,7 +288,7 @@ def on_page_markdown(markdown, **kwargs):
         if title_line_end == -1:  # 如果标题后没有换行符
             title_line_end = len(content)
         
-        # 在主标题后插入阅读信息
+        # 在一级标题后插入阅读信息
         result = (frontmatter + 
                  content[:title_line_end] + 
                  '\n\n' + reading_info + 
@@ -300,5 +296,7 @@ def on_page_markdown(markdown, **kwargs):
         
         return result
     else:
-        # 如果没有找到标题，则在front matter后插入阅读信息
-        return frontmatter + reading_info + content
+        # 如果没有找到一级标题，则在front matter后（即文档开头）插入阅读信息
+        # 去掉内容开头的空白字符
+        content_stripped = content.lstrip('\n')
+        return frontmatter + '\n' + reading_info + content_stripped

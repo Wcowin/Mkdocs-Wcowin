@@ -13,6 +13,11 @@ COMMENT_DIRECTORIES = ['blog/', 'develop/']
 EXCLUDED_PAGES = {
     'blog/index.md',
     'develop/index.md',
+    'docs/blog/posts/update2026.md',
+    'docs/blog/posts/update2025.md',
+    'docs/blog/posts/update2024.md',
+    'docs/blog/posts/update2023.md',
+
 }
 
 # 配置：排除评论的页面模式
@@ -20,6 +25,7 @@ EXCLUDED_PATTERNS = [
     r'.*\/index\.md$',  # 排除所有 index.md 文件
     r'.*\/archive\.md$',  # 排除所有 archive.md 文件
     r'blog/category/.*\.md$',  # 排除所有 blog/category/ 下的 Markdown 文件
+    r'blog/archive/.*',  # 排除所有 blog/archive/ 下的页面（包括动态生成的存档页面）
 ]
 
 def is_page_excluded(file_path):
@@ -67,6 +73,10 @@ def on_page_markdown(markdown, **kwargs):
             return markdown
     except Exception:
         pass
+    
+    # 检查是否已经包含评论代码（防止重复添加）
+    if 'twikoo-container' in markdown or 'tcomment' in markdown:
+        return markdown
     
     # Twikoo 评论系统的 HTML 和 JavaScript
     twikoo_html = dedent("""
