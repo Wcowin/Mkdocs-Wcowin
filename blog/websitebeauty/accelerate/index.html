@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3230,16 +3228,12 @@
 比如我配置里有 git-revision-date-localized 和 git-committers 插件，这些插件会在每次渲染时读取所有文件的 git 历史，导致本地预览变慢。<br />
 推荐做法是在本地开发时禁用它们，仅在 CI/CD 或线上构建时启用。<br />
 具体写法如下：  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 只有在CI环境变量为true时才启用</span>
-</span><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-committers</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
-</span></code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 只有在CI环境变量为true时才启用</span>
+</span><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-committers</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="hll"><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
+</span></code></pre></div>
 <hr />
 <p>检验加速效果是否生效可以使用lighthouse进行测试，具体可以参考：  </p>
 <p><a href="../../../develop/lighthouse/">使用lighthouse进行网站性能测试</a></p>
@@ -3815,10 +3809,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -3839,8 +3833,6 @@
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       

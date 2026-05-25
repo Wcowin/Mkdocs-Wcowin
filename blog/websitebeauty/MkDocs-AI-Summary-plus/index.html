@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -4281,149 +4279,95 @@
 </ul>
 <h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="pypi">从 PyPI 安装（推荐）<a class="headerlink" href="#pypi" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-ai-summary-wcowin
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-ai-summary-wcowin
+</code></pre></div>
 <h2 id="_3">快速开始<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="1">1. 基本配置<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <p>在 <code>mkdocs.yml</code> 中添加插件：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span>
-<span class="normal"><a href="#__codelineno-1-7">7</a></span>
-<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;glm&quot;</span><span class="w">          </span><span class="c1"># 推荐使用GLM</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">      </span><span class="c1"># local_enabled: true             # 本地环境启用</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">      </span><span class="nt">enabled_folders</span><span class="p">:</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span><span class="w">                       </span><span class="c1"># 处理 docs 文件夹</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">      </span><span class="nt">exclude_patterns</span><span class="p">:</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w">                    </span><span class="c1"># 排除 index.md 文件</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;glm&quot;</span><span class="w">          </span><span class="c1"># 推荐使用GLM</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="c1"># local_enabled: true             # 本地环境启用</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">enabled_folders</span><span class="p">:</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span><span class="w">                       </span><span class="c1"># 处理 docs 文件夹</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">exclude_patterns</span><span class="p">:</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w">                    </span><span class="c1"># 排除 index.md 文件</span>
+</code></pre></div>
 <h3 id="2-api">2. 获取 API 密钥<a class="headerlink" href="#2-api" title="Permanent link">&para;</a></h3>
 <p>推荐使用 <strong>GLM</strong>（性价比最高）：
 1. 访问 <a href="https://open.bigmodel.cn/">GLM 开放平台</a>
 2. 注册并创建 API 密钥
 3. 在项目根目录创建 <code>.env</code> 文件：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>GLM_API_KEY=your_api_key_here
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GLM_API_KEY=your_api_key_here
+</code></pre></div>
 <h3 id="3">3. 构建文档<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>mkdocs<span class="w"> </span>build<span class="w">  </span><span class="c1"># 构建文档</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>mkdocs<span class="w"> </span>serve<span class="w">  </span><span class="c1"># 本地预览</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdocs<span class="w"> </span>build<span class="w">  </span><span class="c1"># 构建文档</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mkdocs<span class="w"> </span>serve<span class="w">  </span><span class="c1"># 本地预览</span>
+</code></pre></div>
 <p>现在开始，您的文档页面顶部会自动显示 AI 生成的摘要！</p>
 <hr />
 <h2 id="_4">高级配置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="_5">完整配置示例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-4-10">10</a></span>
-<span class="normal"><a href="#__codelineno-4-11">11</a></span>
-<span class="normal"><a href="#__codelineno-4-12">12</a></span>
-<span class="normal"><a href="#__codelineno-4-13">13</a></span>
-<span class="normal"><a href="#__codelineno-4-14">14</a></span>
-<span class="normal"><a href="#__codelineno-4-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;glm&quot;</span><span class="w">          </span><span class="c1"># 主要 AI 服务</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">      </span><span class="nt">fallback_services</span><span class="p">:</span><span class="w">               </span><span class="c1"># 备用服务</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;openai&quot;</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;gemini&quot;</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">      </span><span class="nt">summary_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zh&quot;</span><span class="w">           </span><span class="c1"># 摘要语言 (zh/en/both)</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">      </span><span class="nt">local_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 本地环境启用</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">      </span><span class="nt">enabled_folders</span><span class="p">:</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">      </span><span class="nt">exclude_patterns</span><span class="p">:</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span><span class="w">                </span><span class="c1"># 排除 tags.md 文件</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/posts/**</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/archive/**</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;glm&quot;</span><span class="w">          </span><span class="c1"># 主要 AI 服务</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">      </span><span class="nt">fallback_services</span><span class="p">:</span><span class="w">               </span><span class="c1"># 备用服务</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;openai&quot;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;gemini&quot;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">      </span><span class="nt">summary_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zh&quot;</span><span class="w">           </span><span class="c1"># 摘要语言 (zh/en/both)</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="nt">local_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 本地环境启用</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">      </span><span class="nt">enabled_folders</span><span class="p">:</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">      </span><span class="nt">exclude_patterns</span><span class="p">:</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span><span class="w">                </span><span class="c1"># 排除 tags.md 文件</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/posts/**</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/archive/**</span>
+</code></pre></div>
 <h3 id="ai">多 AI 服务配置<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
 <p>在 <code>.env</code> 文件中配置多个服务作为备用：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-5-10">10</a></span>
-<span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a># 主要服务
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>!!! tip &quot;📖 阅读信息&quot;
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>    :material-clock-time-two-outline:阅读时间：**3** 分钟 | :material-circle-edit-outline:中文字符：**1178** | :fontawesome-solid-code:有效代码行数：**180**
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a>GLM_API_KEY=your_deepseek_key
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a># 备用服务
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a>OPENAI_API_KEY=your_openai_key
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a>GEMINI_API_KEY=your_gemini_key
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a>DEEPSEEK_API_KEY=your_glm_key
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># 主要服务
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>!!! tip &quot;📖 阅读信息&quot;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    :material-clock-time-two-outline:阅读时间：**3** 分钟 | :material-circle-edit-outline:中文字符：**1178** | :fontawesome-solid-code:有效代码行数：**180**
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>GLM_API_KEY=your_deepseek_key
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a># 备用服务
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>OPENAI_API_KEY=your_openai_key
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>GEMINI_API_KEY=your_gemini_key
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>DEEPSEEK_API_KEY=your_glm_key
+</code></pre></div>
 <h2 id="_6">配置指南<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h3 id="_7">页面级语言控制<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <p>在页面的 front matter 中指定摘要语言：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span>
-<span class="normal"><a href="#__codelineno-6-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>---
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>title: 我的文档
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="gu">ai_summary_lang: en  # 为这个页面生成英文摘要</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="gu">---</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a>
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="gh"># 页面内容</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>---
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>title: 我的文档
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="gu">ai_summary_lang: en  # 为这个页面生成英文摘要</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="gu">---</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="gh"># 页面内容</span>
+</code></pre></div>
 <h3 id="_8">核心配置选项<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-7-10">10</a></span>
-<span class="normal"><a href="#__codelineno-7-11">11</a></span>
-<span class="normal"><a href="#__codelineno-7-12">12</a></span>
-<span class="normal"><a href="#__codelineno-7-13">13</a></span>
-<span class="normal"><a href="#__codelineno-7-14">14</a></span>
-<span class="normal"><a href="#__codelineno-7-15">15</a></span>
-<span class="normal"><a href="#__codelineno-7-16">16</a></span>
-<span class="normal"><a href="#__codelineno-7-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">      </span><span class="c1"># AI 服务设置</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;deepseek&quot;</span><span class="w">          </span><span class="c1"># 主要服务</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">      </span><span class="nt">fallback_services</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;openai&quot;</span><span class="p p-Indicator">]</span><span class="w">   </span><span class="c1"># 备用服务</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">      </span><span class="c1"># 语言与内容</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">      </span><span class="nt">summary_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zh&quot;</span><span class="w">          </span><span class="c1"># zh/en/both</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">      </span><span class="nt">max_content_length</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8000</span><span class="w">         </span><span class="c1"># 内容长度限制</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10"></a>
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">      </span><span class="c1"># 文件选择</span>
-<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="w">      </span><span class="nt">enabled_folders</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;docs&quot;</span><span class="p p-Indicator">]</span><span class="w">       </span><span class="c1"># 处理的文件夹</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">      </span><span class="nt">exclude_patterns</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;**/api/**&quot;</span><span class="p p-Indicator">]</span><span class="w"> </span><span class="c1"># 排除模式</span>
-<a id="__codelineno-7-14" name="__codelineno-7-14"></a>
-<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">      </span><span class="c1"># 性能相关</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">      </span><span class="nt">cache_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 启用缓存</span>
-<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="w">      </span><span class="nt">local_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 本地环境启用</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">      </span><span class="c1"># AI 服务设置</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;deepseek&quot;</span><span class="w">          </span><span class="c1"># 主要服务</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">      </span><span class="nt">fallback_services</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;openai&quot;</span><span class="p p-Indicator">]</span><span class="w">   </span><span class="c1"># 备用服务</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">      </span><span class="c1"># 语言与内容</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">      </span><span class="nt">summary_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zh&quot;</span><span class="w">          </span><span class="c1"># zh/en/both</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">      </span><span class="nt">max_content_length</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8000</span><span class="w">         </span><span class="c1"># 内容长度限制</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">      </span><span class="c1"># 文件选择</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">      </span><span class="nt">enabled_folders</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;docs&quot;</span><span class="p p-Indicator">]</span><span class="w">       </span><span class="c1"># 处理的文件夹</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">      </span><span class="nt">exclude_patterns</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;**/api/**&quot;</span><span class="p p-Indicator">]</span><span class="w"> </span><span class="c1"># 排除模式</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">      </span><span class="c1"># 性能相关</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">      </span><span class="nt">cache_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 启用缓存</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">      </span><span class="nt">local_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 本地环境启用</span>
+</code></pre></div>
 <h3 id="_9">本地开发配置<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <h4 id="1api">步骤1：获取API密钥<a class="headerlink" href="#1api" title="Permanent link">&para;</a></h4>
 <p>根据您选择的AI服务，获取相应的API密钥：</p>
@@ -4452,68 +4396,44 @@
 5. 复制密钥备用</p>
 <h4 id="2env">步骤2：创建.env文件<a class="headerlink" href="#2env" title="Permanent link">&para;</a></h4>
 <p>在您的项目根目录（与<code>mkdocs.yml</code>同级）创建<code>.env</code>文件：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># 在项目根目录执行</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a>touch<span class="w"> </span>.env
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 在项目根目录执行</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>touch<span class="w"> </span>.env
+</code></pre></div>
 <h4 id="3api">步骤3：配置API密钥<a class="headerlink" href="#3api" title="Permanent link">&para;</a></h4>
 <p>编辑<code>.env</code>文件，添加您的API密钥：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-9-10">10</a></span>
-<span class="normal"><a href="#__codelineno-9-11">11</a></span>
-<span class="normal"><a href="#__codelineno-9-12">12</a></span>
-<span class="normal"><a href="#__codelineno-9-13">13</a></span>
-<span class="normal"><a href="#__codelineno-9-14">14</a></span>
-<span class="normal"><a href="#__codelineno-9-15">15</a></span>
-<span class="normal"><a href="#__codelineno-9-16">16</a></span>
-<span class="normal"><a href="#__codelineno-9-17">17</a></span>
-<span class="normal"><a href="#__codelineno-9-18">18</a></span>
-<span class="normal"><a href="#__codelineno-9-19">19</a></span>
-<span class="normal"><a href="#__codelineno-9-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a># DeepSeek API密钥 (推荐)
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a>DEEPSEEK_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a># OpenAI API密钥
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a>OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a># Google Gemini API密钥
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a>GEMINI_API_KEY=AIzaSyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-<a id="__codelineno-9-9" name="__codelineno-9-9"></a>
-<a id="__codelineno-9-10" name="__codelineno-9-10"></a># GLM API密钥
-<a id="__codelineno-9-11" name="__codelineno-9-11"></a>GLM_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxx
-<a id="__codelineno-9-12" name="__codelineno-9-12"></a>
-<a id="__codelineno-9-13" name="__codelineno-9-13"></a># 可选：调试模式
-<a id="__codelineno-9-14" name="__codelineno-9-14"></a>AI_SUMMARY_DEBUG=false
-<a id="__codelineno-9-15" name="__codelineno-9-15"></a>
-<a id="__codelineno-9-16" name="__codelineno-9-16"></a># 可选：API超时设置（秒）
-<a id="__codelineno-9-17" name="__codelineno-9-17"></a>AI_SUMMARY_TIMEOUT=30
-<a id="__codelineno-9-18" name="__codelineno-9-18"></a>
-<a id="__codelineno-9-19" name="__codelineno-9-19"></a># 可选：最大重试次数
-<a id="__codelineno-9-20" name="__codelineno-9-20"></a>AI_SUMMARY_MAX_RETRIES=3
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a># DeepSeek API密钥 (推荐)
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>DEEPSEEK_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a># OpenAI API密钥
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a># Google Gemini API密钥
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>GEMINI_API_KEY=AIzaSyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a># GLM API密钥
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>GLM_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxx
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a># 可选：调试模式
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>AI_SUMMARY_DEBUG=false
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a># 可选：API超时设置（秒）
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>AI_SUMMARY_TIMEOUT=30
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a># 可选：最大重试次数
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>AI_SUMMARY_MAX_RETRIES=3
+</code></pre></div>
 <p><strong>重要提示：</strong>
 - 只需要配置您计划使用的AI服务的API密钥
 - 确保<code>.env</code>文件已添加到<code>.gitignore</code>中，避免泄露API密钥
 - API密钥格式因服务而异，请确保复制完整的密钥</p>
 <h4 id="4">步骤4：验证配置<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
 <p>运行以下命令验证配置是否正确：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span>
-<span class="normal"><a href="#__codelineno-10-3">3</a></span>
-<span class="normal"><a href="#__codelineno-10-4">4</a></span>
-<span class="normal"><a href="#__codelineno-10-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># 本地构建测试</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a>mkdocs<span class="w"> </span>build
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="c1"># 本地预览</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a>mkdocs<span class="w"> </span>serve
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 本地构建测试</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>mkdocs<span class="w"> </span>build
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># 本地预览</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>mkdocs<span class="w"> </span>serve
+</code></pre></div>
 <p>如果配置正确，您应该能看到插件成功加载并生成AI摘要。</p>
 <h3 id="github">GitHub部署配置<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
 <h4 id="1-api-github-secrets">1. 添加 API 密钥到 GitHub Secrets<a class="headerlink" href="#1-api-github-secrets" title="Permanent link">&para;</a></h4>
@@ -4524,261 +4444,151 @@
 <h4 id="2-github-actions">2. 配置 GitHub Actions 工作流<a class="headerlink" href="#2-github-actions" title="Permanent link">&para;</a></h4>
 <h5 id="a">方案 A：创建新的工作流<a class="headerlink" href="#a" title="Permanent link">&para;</a></h5>
 <p>创建 <code>.github/workflows/ci.yml</code> 文件：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-11-10">10</a></span>
-<span class="normal"><a href="#__codelineno-11-11">11</a></span>
-<span class="normal"><a href="#__codelineno-11-12">12</a></span>
-<span class="normal"><a href="#__codelineno-11-13">13</a></span>
-<span class="normal"><a href="#__codelineno-11-14">14</a></span>
-<span class="normal"><a href="#__codelineno-11-15">15</a></span>
-<span class="normal"><a href="#__codelineno-11-16">16</a></span>
-<span class="normal"><a href="#__codelineno-11-17">17</a></span>
-<span class="normal"><a href="#__codelineno-11-18">18</a></span>
-<span class="normal"><a href="#__codelineno-11-19">19</a></span>
-<span class="normal"><a href="#__codelineno-11-20">20</a></span>
-<span class="normal"><a href="#__codelineno-11-21">21</a></span>
-<span class="normal"><a href="#__codelineno-11-22">22</a></span>
-<span class="normal"><a href="#__codelineno-11-23">23</a></span>
-<span class="normal"><a href="#__codelineno-11-24">24</a></span>
-<span class="normal"><a href="#__codelineno-11-25">25</a></span>
-<span class="normal"><a href="#__codelineno-11-26">26</a></span>
-<span class="normal"><a href="#__codelineno-11-27">27</a></span>
-<span class="normal"><a href="#__codelineno-11-28">28</a></span>
-<span class="normal"><a href="#__codelineno-11-29">29</a></span>
-<span class="normal"><a href="#__codelineno-11-30">30</a></span>
-<span class="normal"><a href="#__codelineno-11-31">31</a></span>
-<span class="normal"><a href="#__codelineno-11-32">32</a></span>
-<span class="normal"><a href="#__codelineno-11-33">33</a></span>
-<span class="normal"><a href="#__codelineno-11-34">34</a></span>
-<span class="normal"><a href="#__codelineno-11-35">35</a></span>
-<span class="normal"><a href="#__codelineno-11-36">36</a></span>
-<span class="normal"><a href="#__codelineno-11-37">37</a></span>
-<span class="normal"><a href="#__codelineno-11-38">38</a></span>
-<span class="normal"><a href="#__codelineno-11-39">39</a></span>
-<span class="normal"><a href="#__codelineno-11-40">40</a></span>
-<span class="normal"><a href="#__codelineno-11-41">41</a></span>
-<span class="normal"><a href="#__codelineno-11-42">42</a></span>
-<span class="normal"><a href="#__codelineno-11-43">43</a></span>
-<span class="normal"><a href="#__codelineno-11-44">44</a></span>
-<span class="normal"><a href="#__codelineno-11-45">45</a></span>
-<span class="normal"><a href="#__codelineno-11-46">46</a></span>
-<span class="normal"><a href="#__codelineno-11-47">47</a></span>
-<span class="normal"><a href="#__codelineno-11-48">48</a></span>
-<span class="normal"><a href="#__codelineno-11-49">49</a></span>
-<span class="normal"><a href="#__codelineno-11-50">50</a></span>
-<span class="normal"><a href="#__codelineno-11-51">51</a></span>
-<span class="normal"><a href="#__codelineno-11-52">52</a></span>
-<span class="normal"><a href="#__codelineno-11-53">53</a></span>
-<span class="normal"><a href="#__codelineno-11-54">54</a></span>
-<span class="normal"><a href="#__codelineno-11-55">55</a></span>
-<span class="normal"><a href="#__codelineno-11-56">56</a></span>
-<span class="normal"><a href="#__codelineno-11-57">57</a></span>
-<span class="normal"><a href="#__codelineno-11-58">58</a></span>
-<span class="normal"><a href="#__codelineno-11-59">59</a></span>
-<span class="normal"><a href="#__codelineno-11-60">60</a></span>
-<span class="normal"><a href="#__codelineno-11-61">61</a></span>
-<span class="normal"><a href="#__codelineno-11-62">62</a></span>
-<span class="normal"><a href="#__codelineno-11-63">63</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="nt">on</span><span class="p">:</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">master</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">closed</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">master</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8"></a>
-<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="nt">permissions</span><span class="p">:</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
-<a id="__codelineno-11-11" name="__codelineno-11-11"></a>
-<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="nt">jobs</span><span class="p">:</span>
-<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
-<a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
-<a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
-<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="w">          </span><span class="nt">sparse-checkout</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="w">            </span><span class="no">docs</span>
-<a id="__codelineno-11-21" name="__codelineno-11-21"></a><span class="w">            </span><span class="no">includes</span>
-<a id="__codelineno-11-22" name="__codelineno-11-22"></a><span class="w">            </span><span class="no">requirements.txt</span>
-<a id="__codelineno-11-23" name="__codelineno-11-23"></a><span class="w">            </span><span class="no">.ai_cache</span>
-<a id="__codelineno-11-24" name="__codelineno-11-24"></a>
-<a id="__codelineno-11-25" name="__codelineno-11-25"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v4</span>
-<a id="__codelineno-11-26" name="__codelineno-11-26"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-11-27" name="__codelineno-11-27"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
-<a id="__codelineno-11-28" name="__codelineno-11-28"></a>
-<a id="__codelineno-11-29" name="__codelineno-11-29"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">设置缓存 ID</span>
-<a id="__codelineno-11-30" name="__codelineno-11-30"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;cache_id=$(date --utc &#39;+%V&#39;)&quot; &gt;&gt; $GITHUB_ENV</span>
-<a id="__codelineno-11-31" name="__codelineno-11-31"></a>
-<a id="__codelineno-11-32" name="__codelineno-11-32"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v3</span>
-<a id="__codelineno-11-33" name="__codelineno-11-33"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-11-34" name="__codelineno-11-34"></a><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material-${{ github.run_number }}</span>
-<a id="__codelineno-11-35" name="__codelineno-11-35"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span>
-<a id="__codelineno-11-36" name="__codelineno-11-36"></a><span class="w">          </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-11-37" name="__codelineno-11-37"></a><span class="w">            </span><span class="no">mkdocs-material-</span>
-<a id="__codelineno-11-38" name="__codelineno-11-38"></a>
-<a id="__codelineno-11-39" name="__codelineno-11-39"></a><span class="w">      </span><span class="c1"># 安装您现有的依赖</span>
-<a id="__codelineno-11-40" name="__codelineno-11-40"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span>
-<a id="__codelineno-11-41" name="__codelineno-11-41"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-ai-summary-wcowin</span>
-<a id="__codelineno-11-42" name="__codelineno-11-42"></a>
-<a id="__codelineno-11-43" name="__codelineno-11-43"></a><span class="w">      </span><span class="c1"># 使用 AI 摘要部署</span>
-<a id="__codelineno-11-44" name="__codelineno-11-44"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">使用 AI 摘要部署</span>
-<a id="__codelineno-11-45" name="__codelineno-11-45"></a><span class="w">        </span><span class="nt">env</span><span class="p">:</span>
-<a id="__codelineno-11-46" name="__codelineno-11-46"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
-<a id="__codelineno-11-47" name="__codelineno-11-47"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CACHE_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
-<a id="__codelineno-11-48" name="__codelineno-11-48"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CACHE_EXPIRE_DAYS</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;300&#39;</span>
-<a id="__codelineno-11-49" name="__codelineno-11-49"></a><span class="w">          </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span>
-<a id="__codelineno-11-50" name="__codelineno-11-50"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
-<a id="__codelineno-11-51" name="__codelineno-11-51"></a>
-<a id="__codelineno-11-52" name="__codelineno-11-52"></a><span class="w">      </span><span class="c1"># 自动提交 AI 缓存文件</span>
-<a id="__codelineno-11-53" name="__codelineno-11-53"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自动提交 AI 缓存</span>
-<a id="__codelineno-11-54" name="__codelineno-11-54"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-11-55" name="__codelineno-11-55"></a><span class="w">          </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
-<a id="__codelineno-11-56" name="__codelineno-11-56"></a><span class="w">            </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
-<a id="__codelineno-11-57" name="__codelineno-11-57"></a><span class="w">            </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
-<a id="__codelineno-11-58" name="__codelineno-11-58"></a><span class="w">            </span><span class="no">git add .ai_cache/</span>
-<a id="__codelineno-11-59" name="__codelineno-11-59"></a><span class="w">            </span><span class="no">if ! git diff --cached --quiet; then</span>
-<a id="__codelineno-11-60" name="__codelineno-11-60"></a><span class="w">              </span><span class="no">git commit -m &quot;🤖 自动更新 AI 摘要缓存 [skip ci]&quot;</span>
-<a id="__codelineno-11-61" name="__codelineno-11-61"></a><span class="w">              </span><span class="no">git push</span>
-<a id="__codelineno-11-62" name="__codelineno-11-62"></a><span class="w">            </span><span class="no">fi</span>
-<a id="__codelineno-11-63" name="__codelineno-11-63"></a><span class="w">          </span><span class="no">fi</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">master</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">closed</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">master</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="nt">permissions</span><span class="p">:</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">          </span><span class="nt">sparse-checkout</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">            </span><span class="no">docs</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">            </span><span class="no">includes</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">            </span><span class="no">requirements.txt</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">            </span><span class="no">.ai_cache</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v4</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">设置缓存 ID</span>
+<a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;cache_id=$(date --utc &#39;+%V&#39;)&quot; &gt;&gt; $GITHUB_ENV</span>
+<a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a>
+<a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v3</span>
+<a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material-${{ github.run_number }}</span>
+<a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span>
+<a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a><span class="w">          </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a><span class="w">            </span><span class="no">mkdocs-material-</span>
+<a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a>
+<a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a><span class="w">      </span><span class="c1"># 安装您现有的依赖</span>
+<a id="__codelineno-11-40" name="__codelineno-11-40" href="#__codelineno-11-40"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span>
+<a id="__codelineno-11-41" name="__codelineno-11-41" href="#__codelineno-11-41"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-ai-summary-wcowin</span>
+<a id="__codelineno-11-42" name="__codelineno-11-42" href="#__codelineno-11-42"></a>
+<a id="__codelineno-11-43" name="__codelineno-11-43" href="#__codelineno-11-43"></a><span class="w">      </span><span class="c1"># 使用 AI 摘要部署</span>
+<a id="__codelineno-11-44" name="__codelineno-11-44" href="#__codelineno-11-44"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">使用 AI 摘要部署</span>
+<a id="__codelineno-11-45" name="__codelineno-11-45" href="#__codelineno-11-45"></a><span class="w">        </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-11-46" name="__codelineno-11-46" href="#__codelineno-11-46"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
+<a id="__codelineno-11-47" name="__codelineno-11-47" href="#__codelineno-11-47"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CACHE_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
+<a id="__codelineno-11-48" name="__codelineno-11-48" href="#__codelineno-11-48"></a><span class="w">          </span><span class="nt">AI_SUMMARY_CACHE_EXPIRE_DAYS</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;300&#39;</span>
+<a id="__codelineno-11-49" name="__codelineno-11-49" href="#__codelineno-11-49"></a><span class="w">          </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span>
+<a id="__codelineno-11-50" name="__codelineno-11-50" href="#__codelineno-11-50"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+<a id="__codelineno-11-51" name="__codelineno-11-51" href="#__codelineno-11-51"></a>
+<a id="__codelineno-11-52" name="__codelineno-11-52" href="#__codelineno-11-52"></a><span class="w">      </span><span class="c1"># 自动提交 AI 缓存文件</span>
+<a id="__codelineno-11-53" name="__codelineno-11-53" href="#__codelineno-11-53"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自动提交 AI 缓存</span>
+<a id="__codelineno-11-54" name="__codelineno-11-54" href="#__codelineno-11-54"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-11-55" name="__codelineno-11-55" href="#__codelineno-11-55"></a><span class="w">          </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
+<a id="__codelineno-11-56" name="__codelineno-11-56" href="#__codelineno-11-56"></a><span class="w">            </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
+<a id="__codelineno-11-57" name="__codelineno-11-57" href="#__codelineno-11-57"></a><span class="w">            </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
+<a id="__codelineno-11-58" name="__codelineno-11-58" href="#__codelineno-11-58"></a><span class="w">            </span><span class="no">git add .ai_cache/</span>
+<a id="__codelineno-11-59" name="__codelineno-11-59" href="#__codelineno-11-59"></a><span class="w">            </span><span class="no">if ! git diff --cached --quiet; then</span>
+<a id="__codelineno-11-60" name="__codelineno-11-60" href="#__codelineno-11-60"></a><span class="w">              </span><span class="no">git commit -m &quot;🤖 自动更新 AI 摘要缓存 [skip ci]&quot;</span>
+<a id="__codelineno-11-61" name="__codelineno-11-61" href="#__codelineno-11-61"></a><span class="w">              </span><span class="no">git push</span>
+<a id="__codelineno-11-62" name="__codelineno-11-62" href="#__codelineno-11-62"></a><span class="w">            </span><span class="no">fi</span>
+<a id="__codelineno-11-63" name="__codelineno-11-63" href="#__codelineno-11-63"></a><span class="w">          </span><span class="no">fi</span>
+</code></pre></div>
 <h5 id="b">方案 B：在现有工作流中添加<a class="headerlink" href="#b" title="Permanent link">&para;</a></h5>
 <p>如果您已经有 <code>ci.yml</code> 文件，请在现有工作流中添加以下步骤：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-12-10">10</a></span>
-<span class="normal"><a href="#__codelineno-12-11">11</a></span>
-<span class="normal"><a href="#__codelineno-12-12">12</a></span>
-<span class="normal"><a href="#__codelineno-12-13">13</a></span>
-<span class="normal"><a href="#__codelineno-12-14">14</a></span>
-<span class="normal"><a href="#__codelineno-12-15">15</a></span>
-<span class="normal"><a href="#__codelineno-12-16">16</a></span>
-<span class="normal"><a href="#__codelineno-12-17">17</a></span>
-<span class="normal"><a href="#__codelineno-12-18">18</a></span>
-<span class="normal"><a href="#__codelineno-12-19">19</a></span>
-<span class="normal"><a href="#__codelineno-12-20">20</a></span>
-<span class="normal"><a href="#__codelineno-12-21">21</a></span>
-<span class="normal"><a href="#__codelineno-12-22">22</a></span>
-<span class="normal"><a href="#__codelineno-12-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1"># 在现有的依赖安装部分添加</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-ai-summary-wcowin</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a>
-<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1"># 替换您的 mkdocs 构建/部署步骤为：</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">使用 AI 摘要部署</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">  </span><span class="nt">env</span><span class="p">:</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="w">    </span><span class="nt">AI_SUMMARY_CACHE_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="w">    </span><span class="nt">GLM_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GLM_API_KEY }}</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11"></a>
-<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="c1"># 在部署后添加（可选 - 用于缓存管理）</span>
-<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自动提交 AI 缓存</span>
-<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w">    </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="w">      </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
-<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="w">      </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
-<a id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="w">      </span><span class="no">git add .ai_cache/</span>
-<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="w">      </span><span class="no">if ! git diff --cached --quiet; then</span>
-<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="w">        </span><span class="no">git commit -m &quot;🤖 自动更新 AI 摘要缓存 [skip ci]&quot;</span>
-<a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="w">        </span><span class="no">git push</span>
-<a id="__codelineno-12-22" name="__codelineno-12-22"></a><span class="w">      </span><span class="no">fi</span>
-<a id="__codelineno-12-23" name="__codelineno-12-23"></a><span class="w">    </span><span class="no">fi</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 在现有的依赖安装部分添加</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-ai-summary-wcowin</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># 替换您的 mkdocs 构建/部署步骤为：</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">使用 AI 摘要部署</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="nt">AI_SUMMARY_CACHE_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="nt">GLM_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GLM_API_KEY }}</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="c1"># 在部署后添加（可选 - 用于缓存管理）</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自动提交 AI 缓存</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">    </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">      </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">      </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">      </span><span class="no">git add .ai_cache/</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">      </span><span class="no">if ! git diff --cached --quiet; then</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">        </span><span class="no">git commit -m &quot;🤖 自动更新 AI 摘要缓存 [skip ci]&quot;</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">        </span><span class="no">git push</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">      </span><span class="no">fi</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">    </span><span class="no">fi</span>
+</code></pre></div>
 <h4 id="_10">现有工作流集成详细步骤<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <p>如果您已经有一个正常工作的 <code>ci.yml</code> 文件，请按照以下步骤添加 AI 摘要功能：</p>
 <h5 id="1_1">步骤 1：添加插件安装<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h5>
 <p>在您现有的依赖安装部分添加这一行：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-ai-summary-wcowin</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-ai-summary-wcowin</span>
+</code></pre></div></p>
 <h5 id="2-api_1">步骤 2：添加 API 密钥到环境变量<a class="headerlink" href="#2-api_1" title="Permanent link">&para;</a></h5>
 <p>更新您的 mkdocs 构建/部署步骤，包含 API 密钥：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
-<span class="normal"><a href="#__codelineno-14-2">2</a></span>
-<span class="normal"><a href="#__codelineno-14-3">3</a></span>
-<span class="normal"><a href="#__codelineno-14-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">部署文档</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">  </span><span class="nt">env</span><span class="p">:</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">    </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span><span class="w">  </span><span class="c1"># 添加这一行</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">部署文档</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span><span class="w">  </span><span class="c1"># 添加这一行</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+</code></pre></div></p>
 <h5 id="3-ai">步骤 3：配置 AI 摘要设置（可选）<a class="headerlink" href="#3-ai" title="Permanent link">&para;</a></h5>
 <p>为了更好的 CI 性能，添加这些环境变量：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
-<span class="normal"><a href="#__codelineno-15-2">2</a></span>
-<span class="normal"><a href="#__codelineno-15-3">3</a></span>
-<span class="normal"><a href="#__codelineno-15-4">4</a></span>
-<span class="normal"><a href="#__codelineno-15-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nt">env</span><span class="p">:</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">  </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">        </span><span class="c1"># 在 CI 中启用</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">  </span><span class="nt">AI_SUMMARY_CACHE_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">     </span><span class="c1"># 使用缓存</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">  </span><span class="nt">AI_SUMMARY_CACHE_EXPIRE_DAYS</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;300&#39;</span><span class="w">  </span><span class="c1"># 缓存 300 天</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">  </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">AI_SUMMARY_CI_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">        </span><span class="c1"># 在 CI 中启用</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">AI_SUMMARY_CACHE_ENABLED</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;true&#39;</span><span class="w">     </span><span class="c1"># 使用缓存</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">AI_SUMMARY_CACHE_EXPIRE_DAYS</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;300&#39;</span><span class="w">  </span><span class="c1"># 缓存 300 天</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="nt">DEEPSEEK_API_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.DEEPSEEK_API_KEY }}</span>
+</code></pre></div></p>
 <h5 id="4_1">步骤 4：添加缓存管理（推荐/可选）<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h5>
 <p>要自动提交生成的缓存文件，在部署后添加此步骤：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-16-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-16-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-16-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-16-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-16-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-16-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-16-10">10</a></span>
-<span class="normal"><a href="#__codelineno-16-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自动提交 AI 缓存</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="w">    </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="w">      </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="w">      </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="w">      </span><span class="no">git add .ai_cache/</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">      </span><span class="no">if ! git diff --cached --quiet; then</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="w">        </span><span class="no">git commit -m &quot;🤖 自动更新 AI 摘要缓存 [skip ci]&quot;</span>
-<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="w">        </span><span class="no">git push</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="w">      </span><span class="no">fi</span>
-<a id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="w">    </span><span class="no">fi</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">自动提交 AI 缓存</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="no">if [ -d &quot;.ai_cache&quot; ] &amp;&amp; [ &quot;$(ls -A .ai_cache 2&gt;/dev/null)&quot; ]; then</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">      </span><span class="no">git config --local user.email &quot;action@github.com&quot;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">      </span><span class="no">git config --local user.name &quot;GitHub Action&quot;</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">      </span><span class="no">git add .ai_cache/</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">      </span><span class="no">if ! git diff --cached --quiet; then</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">        </span><span class="no">git commit -m &quot;🤖 自动更新 AI 摘要缓存 [skip ci]&quot;</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">        </span><span class="no">git push</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">      </span><span class="no">fi</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="no">fi</span>
+</code></pre></div></p>
 <h4 id="4-github-pages">4. 启用 GitHub Pages<a class="headerlink" href="#4-github-pages" title="Permanent link">&para;</a></h4>
 <p>在仓库设置中启用 GitHub Pages，选择 <code>gh-pages</code> 分支作为源。</p>
 <h2 id="_11">提示与故障排除<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <h3 id="_12">缓存管理<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <p>插件会自动缓存生成的摘要，避免重复 API 调用：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
-<span class="normal"><a href="#__codelineno-17-2">2</a></span>
-<span class="normal"><a href="#__codelineno-17-3">3</a></span>
-<span class="normal"><a href="#__codelineno-17-4">4</a></span>
-<span class="normal"><a href="#__codelineno-17-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">      </span><span class="nt">cache_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 启用缓存</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="w">      </span><span class="nt">cache_expire_days</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w">            </span><span class="c1"># 缓存30天</span>
-<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="w">      </span><span class="nt">clear_cache</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">               </span><span class="c1"># 保留现有缓存</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">      </span><span class="nt">cache_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">              </span><span class="c1"># 启用缓存</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">      </span><span class="nt">cache_expire_days</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w">            </span><span class="c1"># 缓存30天</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">      </span><span class="nt">clear_cache</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">               </span><span class="c1"># 保留现有缓存</span>
+</code></pre></div>
 <h3 id="ai_1">多 AI 服务配置<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
 <p>配置主服务和备用服务，确保稳定性：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
-<span class="normal"><a href="#__codelineno-18-2">2</a></span>
-<span class="normal"><a href="#__codelineno-18-3">3</a></span>
-<span class="normal"><a href="#__codelineno-18-4">4</a></span>
-<span class="normal"><a href="#__codelineno-18-5">5</a></span>
-<span class="normal"><a href="#__codelineno-18-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
-<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;deepseek&quot;</span><span class="w">          </span><span class="c1"># 主服务</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="w">      </span><span class="nt">fallback_services</span><span class="p">:</span><span class="w">               </span><span class="c1"># 备用服务</span>
-<a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;openai&quot;</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;gemini&quot;</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ai-summary</span><span class="p">:</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">      </span><span class="nt">ai_service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;deepseek&quot;</span><span class="w">          </span><span class="c1"># 主服务</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">      </span><span class="nt">fallback_services</span><span class="p">:</span><span class="w">               </span><span class="c1"># 备用服务</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;openai&quot;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;gemini&quot;</span>
+</code></pre></div>
 <h3 id="_13">常见问题<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <p><strong>Q: 插件不生成摘要？</strong>
 - 检查 API 密钥配置
@@ -5357,10 +5167,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -5381,8 +5191,6 @@
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       

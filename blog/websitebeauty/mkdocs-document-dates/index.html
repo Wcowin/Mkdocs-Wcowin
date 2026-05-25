@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3844,39 +3842,27 @@
 </li>
 </ul>
 <h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-document-dates
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-document-dates
+</code></pre></div>
 <h2 id="_3">配置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>在你的 mkdocs.yml 中添加插件即可：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">document-dates</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">document-dates</span>
+</code></pre></div>
 <p>或者，完整配置：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">document-dates</span><span class="p">:</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">      </span><span class="nt">position</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">top</span><span class="w">            </span><span class="c1"># 显示位置: top(标题后) bottom(文档末尾), 默认: top</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">date</span><span class="w">               </span><span class="c1"># 日期类型: date datetime timeago, 默认: date</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">      </span><span class="nt">exclude</span><span class="p">:</span><span class="w">                 </span><span class="c1"># 排除文件列表</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">temp.md</span><span class="w">                  </span><span class="c1"># 示例：排除指定文件</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/*</span><span class="w">                   </span><span class="c1"># 示例：排除 blog 目录下所有文件，包括子目录</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">      </span><span class="nt">date_format</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;%Y-%m-%d&#39;</span><span class="w">  </span><span class="c1"># 日期格式化字符串（例如: %Y年%m月%d日、%b %d, %Y）</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">      </span><span class="nt">time_format</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;%H:%M:%S&#39;</span><span class="w">  </span><span class="c1"># 时间格式化字符串（仅在 type=datetime 时有效）</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">      </span><span class="nt">show_created</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">       </span><span class="c1"># 显示创建日期: true false, 默认: true</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">      </span><span class="nt">show_updated</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">       </span><span class="c1"># 显示最后更新日期: true false, 默认: true</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">      </span><span class="nt">show_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">        </span><span class="c1"># 显示作者: true(头像) text(文本) false(隐藏), 默认: true</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">document-dates</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">      </span><span class="nt">position</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">top</span><span class="w">            </span><span class="c1"># 显示位置: top(标题后) bottom(文档末尾), 默认: top</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">date</span><span class="w">               </span><span class="c1"># 日期类型: date datetime timeago, 默认: date</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="nt">exclude</span><span class="p">:</span><span class="w">                 </span><span class="c1"># 排除文件列表</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">temp.md</span><span class="w">                  </span><span class="c1"># 示例：排除指定文件</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/*</span><span class="w">                   </span><span class="c1"># 示例：排除 blog 目录下所有文件，包括子目录</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span><span class="nt">date_format</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;%Y-%m-%d&#39;</span><span class="w">  </span><span class="c1"># 日期格式化字符串（例如: %Y年%m月%d日、%b %d, %Y）</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nt">time_format</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;%H:%M:%S&#39;</span><span class="w">  </span><span class="c1"># 时间格式化字符串（仅在 type=datetime 时有效）</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">      </span><span class="nt">show_created</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">       </span><span class="c1"># 显示创建日期: true false, 默认: true</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">      </span><span class="nt">show_updated</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">       </span><span class="c1"># 显示最后更新日期: true false, 默认: true</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">show_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">        </span><span class="c1"># 显示作者: true(头像) text(文本) false(隐藏), 默认: true</span>
+</code></pre></div>
 <h2 id="_4">指定日期时间<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="_5">优先级<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>插件会按以下顺序<strong>自动加载</strong>文档的创建日期和最后更新日期</p>
@@ -3920,14 +3906,11 @@ flowchart LR
 <li>创建日期：<code>created</code>, <code>date</code></li>
 <li>最后更新：<code>updated</code>, <code>modified</code></li>
 </ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nn">---</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nt">created</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-01-01</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nt">updated</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2025-02-23</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="nn">---</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nn">---</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">created</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-01-01</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">updated</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2025-02-23</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nn">---</span>
+</code></pre></div>
 <h3 id="_7">自动缓存创建日期<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <p>插件会自动缓存创建日期（最后更新日期不必缓存），以下是它的原理：</p>
 <p>1) 为了始终能获取文档的原始创建日期（早于第一次 git 提交），采用了缓存文件来存储原始创建日期，位于 docs 目录下（默认是隐藏的），请不要删除：</p>
@@ -3979,61 +3962,41 @@ flowchart LR
 <h3 id="_11">自定义作者<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p>可在 Front Matter 中通过以下方式配置：</p>
 <p>1) 配置一个简单作者：通过字段 <code>name</code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nn">---</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">any-name</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e-name@gmail.com</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nn">---</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nn">---</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">any-name</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e-name@gmail.com</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nn">---</span>
+</code></pre></div>
 <p>2) 配置一个或多个作者：通过字段 <code>authors</code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span>
-<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nn">---</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nt">authors</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jaywhj</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dawang</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sunny</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="nn">---</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nn">---</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">authors</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jaywhj</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dawang</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sunny</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nn">---</span>
+</code></pre></div>
 <h3 id="_12">增强作者配置<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <p>可为所有作者补充完整信息配置，以丰富用户体验。在 <code>docs/</code> 目录下创建一个 <code>authors.yml</code> 文件，格式参考：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">docs/authors.yml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-6-10">10</a></span>
-<span class="normal"><a href="#__codelineno-6-11">11</a></span>
-<span class="normal"><a href="#__codelineno-6-12">12</a></span>
-<span class="normal"><a href="#__codelineno-6-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">authors</span><span class="p">:</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">jaywhj</span><span class="p">:</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Aaron Wang</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="nt">avatar</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://xxx.com/avatar.jpg</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://jaywhj.netlify.app/</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">junewhj@qq.com</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Minimalism</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">  </span><span class="nt">user2</span><span class="p">:</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">    </span><span class="nt">avatar</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/avatar.png</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://xxx.com</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx@gmail.com</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">docs/authors.yml</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">authors</span><span class="p">:</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">jaywhj</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Aaron Wang</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">avatar</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://xxx.com/avatar.jpg</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://jaywhj.netlify.app/</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">junewhj@qq.com</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Minimalism</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="nt">user2</span><span class="p">:</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="nt">avatar</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/avatar.png</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://xxx.com</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx@gmail.com</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xxx</span>
+</code></pre></div>
 <p>当 <code>Front Matter</code>、<code>Git作者</code>、<code>site_author(mkdocs.yml)</code> 中的作者名跟 authors 中的 key 匹配时，会自动加载 key 对应的完整作者信息</p>
 <h3 id="git">Git作者聚合<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
 <p>Git作者支持账户聚合，即同一人的多个不同邮箱账户可聚合显示为同一作者，可通过在仓库根目录提供一个 <code>.mailmap</code> 文件来配置，详情见 <a href="https://git-scm.com/docs/gitmailmap">gitmailmap</a></p>
 <p>以下示例将 gmail 账户聚合到 qq 账户，统一显示为 Aaron：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">.mailmap</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="l l-Scalar l-Scalar-Plain">Aaron &lt;junewhj@qq.com&gt; &lt;aaron@gmail.com&gt;</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">.mailmap</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="l l-Scalar l-Scalar-Plain">Aaron &lt;junewhj@qq.com&gt; &lt;aaron@gmail.com&gt;</span>
+</code></pre></div>
 <h2 id="_13">指定头像<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <p><strong>优先级</strong>：插件会按以下顺序<strong>自动加载</strong>作者头像</p>
 <pre class="mermaid"><code>%%{init: {'theme': 'default', 'themeVariables': {'fontSize': '12px'}}}%%
@@ -4098,10 +4061,9 @@ flowchart LR
 <ul>
 <li>在 <code>user.config.js</code> 中，参考 <a href="https://github.com/jaywhj/mkdocs-document-dates/blob/main/mkdocs_document_dates/static/config/user.config.js">Part 2</a>，自行注册添加</li>
 <li>在 <code>mkdocs.yml</code> 中，配置 full 版本的 <code>timeago.full.min.js</code>，一次性重载 <a href="https://github.com/hustcc/timeago.js/tree/master/src/lang">所有区域语言</a>
-    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nt">extra_javascript</span><span class="p">:</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/document_dates/core/timeago.full.min.js</span>
-</code></pre></div></td></tr></table></div></li>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">extra_javascript</span><span class="p">:</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/document_dates/core/timeago.full.min.js</span>
+</code></pre></div></li>
 </ul>
 <h2 id="_16">使用模板变量<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <p>你可以在模板中使用如下变量访问文档的元信息：</p>
@@ -4121,55 +4083,39 @@ flowchart LR
 <p>或者参考以下示例，直接使用预设模板（列表标题和链接将自动渲染）：</p>
 <h3 id="_18">添加到侧边栏导航中<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
 <p>1) 在 <code>mkdocs.yml</code> 中配置开关 recently-updated：
-    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span>
-<span class="normal"><a href="#__codelineno-9-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">document-dates</span><span class="p">:</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">recently-updated</span><span class="p p-Indicator">:</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">        </span><span class="nt">limit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w">        </span><span class="c1"># 限制显示的文档数量</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">        </span><span class="nt">exclude</span><span class="p">:</span><span class="w">         </span><span class="c1"># 排除不想显示的文档</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/*</span>
-</code></pre></div></td></tr></table></div></p>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">document-dates</span><span class="p">:</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">recently-updated</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="nt">limit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w">        </span><span class="c1"># 限制显示的文档数量</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="nt">exclude</span><span class="p">:</span><span class="w">         </span><span class="c1"># 排除不想显示的文档</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/*</span>
+</code></pre></div></p>
 <p>2) 下载 <a href="https://github.com/jaywhj/mkdocs-document-dates/blob/main/templates/overrides/partials/nav.html">nav.html</a> 后覆盖 <code>docs/overrides/partials/nav.html</code></p>
 <h3 id="_19">添加到文档的任意位置<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
 <p>1) 在 <code>mkdocs.yml</code> 中配置开关 recently-updated：
-    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span>
-<span class="normal"><a href="#__codelineno-10-3">3</a></span>
-<span class="normal"><a href="#__codelineno-10-4">4</a></span>
-<span class="normal"><a href="#__codelineno-10-5">5</a></span>
-<span class="normal"><a href="#__codelineno-10-6">6</a></span>
-<span class="normal"><a href="#__codelineno-10-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">document-dates</span><span class="p">:</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">recently-updated</span><span class="p p-Indicator">:</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">        </span><span class="nt">limit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w">        </span><span class="c1"># 限制显示的文档数量</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">        </span><span class="nt">exclude</span><span class="p">:</span><span class="w">         </span><span class="c1"># 排除不想显示的文档</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/*</span>
-</code></pre></div></td></tr></table></div></p>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">document-dates</span><span class="p">:</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">recently-updated</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">        </span><span class="nt">limit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w">        </span><span class="c1"># 限制显示的文档数量</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">        </span><span class="nt">exclude</span><span class="p">:</span><span class="w">         </span><span class="c1"># 排除不想显示的文档</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/*</span>
+</code></pre></div></p>
 <p>2) 在文档中任意位置插入这一行：
-    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="l l-Scalar l-Scalar-Plain">&lt;!-- RECENTLY_UPDATED_DOCS --&gt;</span>
-</code></pre></div></td></tr></table></div></p>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="l l-Scalar l-Scalar-Plain">&lt;!-- RECENTLY_UPDATED_DOCS --&gt;</span>
+</code></pre></div></p>
 <h3 id="_20">效果预览<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <p><img alt="recently updated" src="https://s1.imagehub.cc/images/2025/12/04/b6403890695c481cb5f060fbe5b832ff.png" /></p>
 <p>如果你只想使用「最近更新模块」，也可以安装单独的插件 <a href="https://github.com/jaywhj/mkdocs-recently-updated-docs">mkdocs-recently-updated-docs</a></p>
 <h2 id="_21">其它提示<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
 <p>在 Docker 中运行时，需要先设置 HOME 环境变量，因为安装 Git Hooks 需要一个可写的用户配置目录。例如，在你的 <code>docker-compose.yml</code> 中添加以下配置：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span>
-<span class="normal"><a href="#__codelineno-12-3">3</a></span>
-<span class="normal"><a href="#__codelineno-12-4">4</a></span>
-<span class="normal"><a href="#__codelineno-12-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nt">environment</span><span class="p">:</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HOME=/docs</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="nt">working_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/docs</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="nt">volumes</span><span class="p">:</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./mkdocs:/docs</span><span class="w">    </span><span class="c1"># 将宿主机的 ./mkdocs 挂载到容器中的 /docs</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">environment</span><span class="p">:</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HOME=/docs</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nt">working_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/docs</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nt">volumes</span><span class="p">:</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./mkdocs:/docs</span><span class="w">    </span><span class="c1"># 将宿主机的 ./mkdocs 挂载到容器中的 /docs</span>
+</code></pre></div>
 <h2 id="_22">开发小故事<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
 <p>一个可有可无、微不足道的小插件，没事的朋友可以看看 ^_^ </p>
 <ul>
@@ -4796,10 +4742,10 @@ flowchart LR
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -4820,8 +4766,6 @@ flowchart LR
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       

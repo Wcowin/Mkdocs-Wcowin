@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3719,10 +3717,9 @@
 <p>官方的语法规定结尾加 2 个以上空格加换行才会转成换行，也就是 <code>&lt;br /&gt;</code> 标签。MWeb 中有个选项可以直接把换行转成 <code>&lt;br /&gt;</code>，不用加上 2 个以上空格，这个选项默认是开启的。如果要关闭，请在设置页面关闭。</p>
 <h3 id="task-lists">任务列表（Task lists）<a class="headerlink" href="#task-lists" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>- [x] 任务二 已做任务 `- + 空格 + [x]`
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre></div>
 <p>效果如下：</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
@@ -3733,14 +3730,7 @@
 <p><img alt="图片描述-w140" src="https://zh.mweb.im/asset/img/set-up-git.gif" /></p>
 <h3 id="_4">多行或者一段代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>```js
+<div class="highlight"><pre><span></span><code>```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:&#39;#foo&#39;})
@@ -3748,31 +3738,23 @@ function fancyAlert(arg) {
 
 }
 ```
-</code></pre></div></td></tr></table></div>
+</code></pre></div>
 <p>效果如下：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">        </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+</code></pre></div>
 <p>这个语法目前在 MWeb 中使用，必须前后空一行，才会正确解析。我觉得，在写 Markdown 文档过程中，运用空行很有必要，基本上，块级元素（标题、列表、引用、代码块、表格、段落等），都建议前后空一行。</p>
 <h3 id="_5">表格<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>第一格表头 | 第二格表头
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>--------- | -------------
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>内容单元格 第一列第一格 | 内容单元格第二列第一格
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>第一格表头 | 第二格表头
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--------- | -------------
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>内容单元格 第一列第一格 | 内容单元格第二列第一格
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre></div>
 <p>效果如下：</p>
 <table>
 <thead>
@@ -3794,28 +3776,23 @@ function fancyAlert(arg) {
 </table>
 <h3 id="_6">删除线<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>加删除线像这样用： ~~删除这些~~
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code>加删除线像这样用： ~~删除这些~~
+</code></pre></div>
 <p>效果如下：</p>
 <p>加删除线像这样用： <del>删除这些</del></p>
 <h3 id="latex">LaTeX<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>块级公式：
+<div class="highlight"><pre><span></span><code>块级公式：
 ```math
 x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 ```
 
 行内公式： ``\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N``
-</code></pre></div></td></tr></table></div>
+</code></pre></div>
 <p>效果如下（在设置页面中启用 LaTeX 才会看到效果）：</p>
 <p>块级公式：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+</code></pre></div>
 <p>行内公式： <code>\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N</code></p>
 <!-- 注意：为了兼容 MWeb 3，也支持 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ 
 和块级语法
@@ -3825,19 +3802,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <h2 id="mweb_3">MWeb 画图<a class="headerlink" href="#mweb_3" title="Permanent link">&para;</a></h2>
 <h3 id="mermaid">mermaid<a class="headerlink" href="#mermaid" title="Permanent link">&para;</a></h3>
 <p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>```mermaid
+<div class="highlight"><pre><span></span><code>```mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -3850,7 +3815,7 @@ sequenceDiagram
     John-&gt;Bob: How about you?
     Bob--&gt;John: Jolly good!
 ```
-</code></pre></div></td></tr></table></div>
+</code></pre></div>
 <p><strong>效果如下：</strong></p>
 <pre class="mermaid"><code>sequenceDiagram
     participant Alice
@@ -3865,21 +3830,7 @@ sequenceDiagram
     Bob--&gt;John: Jolly good!</code></pre>
 <h3 id="echarts">echarts<a class="headerlink" href="#echarts" title="Permanent link">&para;</a></h3>
 <p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code>```echarts
+<div class="highlight"><pre><span></span><code>```echarts
 option = {
     xAxis: {
         type: &#39;category&#39;,
@@ -3894,38 +3845,26 @@ option = {
     }]
 };
 ```
-</code></pre></div></td></tr></table></div>
+</code></pre></div>
 <p><strong>效果如下：</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-7-10">10</a></span>
-<span class="normal"><a href="#__codelineno-7-11">11</a></span>
-<span class="normal"><a href="#__codelineno-7-12">12</a></span>
-<span class="normal"><a href="#__codelineno-7-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>option = {
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>    xAxis: {
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>        type: &#39;category&#39;,
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    },
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>    yAxis: {
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>        type: &#39;value&#39;
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    },
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>    series: [{
-<a id="__codelineno-7-10" name="__codelineno-7-10"></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a>        type: &#39;line&#39;
-<a id="__codelineno-7-12" name="__codelineno-7-12"></a>    }]
-<a id="__codelineno-7-13" name="__codelineno-7-13"></a>};
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>option = {
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    xAxis: {
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        type: &#39;category&#39;,
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    },
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    yAxis: {
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        type: &#39;value&#39;
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    },
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    series: [{
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        type: &#39;line&#39;
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    }]
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>};
+</code></pre></div>
 <h3 id="footnote">脚注（Footnote）<a class="headerlink" href="#footnote" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>这是一个脚注：[^1]
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>这是一个脚注：[^1]
+</code></pre></div>
 <p>效果如下：</p>
 <p>这是一个脚注：<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <h3 id="_7">注释和阅读更多<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
@@ -4512,10 +4451,10 @@ option = {
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -4536,8 +4475,6 @@ option = {
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       

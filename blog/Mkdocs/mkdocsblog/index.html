@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3166,86 +3164,60 @@
 <p>博客效果展示：<a href="../../">博客</a>  </p>
 <p>官方文档：<a href="https://squidfunk.github.io/mkdocs-material/plugins/blog/">Built-in blog plugin</a></p>
 <p>与所有内置插件一样，博客插件的入门非常简单。只需将以下行添加到mkdocs.yml</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>plugins:
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="hll">  - blog
-</span></code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>plugins:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="hll">  - blog
+</span></code></pre></div>
 <p><strong>然后在/docs/blog/posts下写md文件即可</strong>（无需再mkdocs.yml配置，如没有posts文件夹，新建一个即可）</p>
 <div class="admonition note">
 <p class="admonition-title">目录结构</p>
 <p>插件会自动创建所需的目录结构。如果不存在，插件会创建：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>docs/
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>└── blog/
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>    ├── posts/      # 博客文章存放目录
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>    └── index.md    # 博客首页（必需）
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docs/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>└── blog/
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    ├── posts/      # 博客文章存放目录
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    └── index.md    # 博客首页（必需）
+</code></pre></div></p>
 </div>
 <p>在mkdocs.yml的nav部分这样写：</p>
 <div class="admonition tip">
 <p class="admonition-title">重要提示</p>
 <p>如果您的<code>mkdocs.yml</code>中已经定义了<code>nav</code>结构，需要启用<code>navigation.indexes</code>功能才能正确显示博客：</p>
 </div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">theme</span><span class="p">:</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.indexes</span><span class="w">  </span><span class="c1"># 必需，用于显示博客索引页</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.indexes</span><span class="w">  </span><span class="c1"># 必需，用于显示博客索引页</span>
+</code></pre></div>
 <p>然后在nav部分添加博客：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">nav</span><span class="p">:</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">博客</span><span class="p">:</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">index</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/index.md</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">nav</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">博客</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">index</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/index.md</span>
+</code></pre></div>
 <p>元标签参考（每个博客文章必须包含<code>date</code>字段）：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span>
-<span class="normal"><a href="#__codelineno-4-7">7</a></span>
-<span class="normal"><a href="#__codelineno-4-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nn">---</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">文章标题</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nt">authors</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Wcowin</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 作者（对应.authors.yml中的标识符）</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-10-04</span><span class="w">   </span><span class="c1"># 发布日期（必需）</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">        </span><span class="c1"># 是否为草稿（可选）</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="nt">categories</span><span class="p">:</span><span class="w">        </span><span class="c1"># 分类（可选）</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hello</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="nn">---</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nn">---</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">文章标题</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">authors</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Wcowin</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 作者（对应.authors.yml中的标识符）</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-10-04</span><span class="w">   </span><span class="c1"># 发布日期（必需）</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">        </span><span class="c1"># 是否为草稿（可选）</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nt">categories</span><span class="p">:</span><span class="w">        </span><span class="c1"># 分类（可选）</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hello</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nn">---</span>
+</code></pre></div>
 <p>作者信息在docs/blog/.authors.yml里配置（没有.authors.yml新建即可）  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>authors:
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>  Wcowin:
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>    name: Wang Kewen    # Author name
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>    description: Free and casual # Author description
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>    avatar: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png          # Author avatar
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>authors:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  Wcowin:
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    name: Wang Kewen    # Author name
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    description: Free and casual # Author description
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    avatar: https://s1.imagehub.cc/images/2024/02/02/91a767e93d1a344e44c69936464c583e.png          # Author avatar
+</code></pre></div>
 <h2 id="_1">完整配置示例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span>
-<span class="normal"><a href="#__codelineno-6-6">6</a></span>
-<span class="normal"><a href="#__codelineno-6-7">7</a></span>
-<span class="normal"><a href="#__codelineno-6-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">blog</span><span class="p">:</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">      </span><span class="nt">post_date_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">full</span><span class="w">        </span><span class="c1"># 日期格式：full/long/medium/short</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">      </span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">                  </span><span class="c1"># 构建时是否包含草稿</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">      </span><span class="nt">draft_if_future_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">   </span><span class="c1"># 自动将未来日期的文章标记为草稿</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">      </span><span class="nt">post_readtime</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">          </span><span class="c1"># 显示阅读时间</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">      </span><span class="nt">post_readtime_words_per_minute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">265</span><span class="w">  </span><span class="c1"># 每分钟阅读字数</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">      </span><span class="nt">post_url_format</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{date}/{slug}&quot;</span><span class="w">      </span><span class="c1"># URL格式</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">blog</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">      </span><span class="nt">post_date_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">full</span><span class="w">        </span><span class="c1"># 日期格式：full/long/medium/short</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">      </span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">                  </span><span class="c1"># 构建时是否包含草稿</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="nt">draft_if_future_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">   </span><span class="c1"># 自动将未来日期的文章标记为草稿</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="nt">post_readtime</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">          </span><span class="c1"># 显示阅读时间</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">      </span><span class="nt">post_readtime_words_per_minute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">265</span><span class="w">  </span><span class="c1"># 每分钟阅读字数</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">      </span><span class="nt">post_url_format</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{date}/{slug}&quot;</span><span class="w">      </span><span class="c1"># URL格式</span>
+</code></pre></div>
 <p>更多配置选项请参考<a href="https://squidfunk.github.io/mkdocs-material/plugins/blog/">官方文档</a>。</p>
 <div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale='zh'><div class='dd-left'><span class='dd-item' data-tippy-content data-tippy-raw='2023-10-13'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-10-13T17:22:50+00:00'>2023-10-13</time></span><span class='dd-item' data-tippy-content data-tippy-raw='2026-02-19'><span class='material-icons' data-icon='doc_updated'></span><time datetime='2026-02-19T04:42:25+00:00'>2026-02-19</time></span></div><div class='dd-right'><span class='material-icons' data-icon='doc_author'></span><div class='author-group'><div class='avatar-wrapper' data-name='Wang Kewen' data-tippy-content data-tippy-raw='Wang Kewen'><span class='avatar-text'></span><img class='avatar' data-src='https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg' data-email='' /></div></div></div></div></div>
 <style>
@@ -3819,10 +3791,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -3843,8 +3815,6 @@
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       

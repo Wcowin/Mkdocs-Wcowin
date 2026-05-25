@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3278,193 +3276,104 @@
 <img alt="image.png" src="https://s2.loli.net/2024/04/26/Czi9uAQhmbBlkfG.png" /></p>
 <h2 id="_2">如何设计<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>新建css文件，在mkdocs.yml引入css  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span>
-<span class="normal"><a href="#__codelineno-0-48">48</a></span>
-<span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
-<span class="normal"><a href="#__codelineno-0-52">52</a></span>
-<span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span>
-<span class="normal"><a href="#__codelineno-0-58">58</a></span>
-<span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span>
-<span class="normal"><a href="#__codelineno-0-63">63</a></span>
-<span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span>
-<span class="normal"><a href="#__codelineno-0-67">67</a></span>
-<span class="normal"><a href="#__codelineno-0-68">68</a></span>
-<span class="normal"><a href="#__codelineno-0-69">69</a></span>
-<span class="normal"><a href="#__codelineno-0-70">70</a></span>
-<span class="normal"><a href="#__codelineno-0-71">71</a></span>
-<span class="normal"><a href="#__codelineno-0-72">72</a></span>
-<span class="normal"><a href="#__codelineno-0-73">73</a></span>
-<span class="normal"><a href="#__codelineno-0-74">74</a></span>
-<span class="normal"><a href="#__codelineno-0-75">75</a></span>
-<span class="normal"><a href="#__codelineno-0-76">76</a></span>
-<span class="normal"><a href="#__codelineno-0-77">77</a></span>
-<span class="normal"><a href="#__codelineno-0-78">78</a></span>
-<span class="normal"><a href="#__codelineno-0-79">79</a></span>
-<span class="normal"><a href="#__codelineno-0-80">80</a></span>
-<span class="normal"><a href="#__codelineno-0-81">81</a></span>
-<span class="normal"><a href="#__codelineno-0-82">82</a></span>
-<span class="normal"><a href="#__codelineno-0-83">83</a></span>
-<span class="normal"><a href="#__codelineno-0-84">84</a></span>
-<span class="normal"><a href="#__codelineno-0-85">85</a></span>
-<span class="normal"><a href="#__codelineno-0-86">86</a></span>
-<span class="normal"><a href="#__codelineno-0-87">87</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="nv">--admonition-border-left-width</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">rem</span><span class="p">;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="nv">--base-border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="c">/* --card-hover-shadow: 0 0 0.2rem #ffffff40; */</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">}</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c">/* 卡片圆角与悬浮阴影 */</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">grid</span><span class="p">.</span><span class="nc">cards</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">li</span><span class="o">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">md-button</span><span class="o">,</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">table</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">class</span><span class="o">])</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">}</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">grid</span><span class="p">.</span><span class="nc">cards</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">li</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--card-hover-shadow</span><span class="p">);</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">}</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="c">/* 页脚社交图标高度 */</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">.</span><span class="nc">md-social__link</span><span class="w"> </span><span class="nt">svg</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">  </span><span class="k">max-height</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="p">}</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="c">/* 搜索框及下拉结果圆角 */</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="p">.</span><span class="nc">md-search__form</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="p">}</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="o">[</span><span class="nt">data-md-toggle</span><span class="o">=</span><span class="s2">&quot;search&quot;</span><span class="o">]</span><span class="p">:</span><span class="nd">checked</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="p">.</span><span class="nc">md-header</span><span class="w"> </span><span class="p">.</span><span class="nc">md-search__form</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">  </span><span class="k">border-top-right-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">  </span><span class="k">border-top-left-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="p">}</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="o">[</span><span class="nt">dir</span><span class="o">=</span><span class="s2">&quot;ltr&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">md-search__output</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">  </span><span class="k">border-bottom-right-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">  </span><span class="k">border-bottom-left-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="p">}</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="c">/* 可选：如需恢复代码块、警告框等样式，取消注释即可 */</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="c">/*</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="c">.highlight span.filename {</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="c">  border-bottom: none;</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="c">  border-radius: var(--base-border-radius);</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="c">  display: inline;</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="c">  font-family: var(--md-code-font-family);</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="c">  border-bottom-left-radius: 0;</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="c">  border-bottom-right-radius: 0;</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="c">  margin-bottom: 5px;</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="c">  text-align: center;</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="c">}</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="c">.highlight span.filename + pre &gt; code,</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="c">.md-typeset pre &gt; code {</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="c">  border-radius: var(--base-border-radius);</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="c">  border-top-left-radius: 0;</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="c">}</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="c">.md-typeset .admonition {</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="c">  border-width: 0px;</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="c">  border-left-width: var(--admonition-border-left-width);</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="c">}</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="c">[dir=&quot;ltr&quot;] .md-typeset blockquote {</span>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="c">  border-radius: 0.2rem;</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="c">  border-left-width: var(--admonition-border-left-width);</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="c">}</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="c">*/</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a>
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="c">/* 可选：博客相关样式，按需启用 */</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="c">/* .md-post--excerpt {</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="c">  background-color: rgba(68,138,255,.1);</span>
-<a id="__codelineno-0-68" name="__codelineno-0-68"></a><span class="c">  box-shadow: 0 0 0 1rem rgba(68,138,255,.1);</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="c">  border-radius: var(--base-border-radius);</span>
-<a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="c">}</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="c">.md-post--excerpt .md-post__header {</span>
-<a id="__codelineno-0-72" name="__codelineno-0-72"></a><span class="c">  justify-content: left;</span>
-<a id="__codelineno-0-73" name="__codelineno-0-73"></a><span class="c">}</span>
-<a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="c">.md-post--excerpt .md-post__content &gt; h2,</span>
-<a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="c">.md-post__action {</span>
-<a id="__codelineno-0-76" name="__codelineno-0-76"></a><span class="c">  text-align: left;</span>
-<a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="c">} */</span>
-<a id="__codelineno-0-78" name="__codelineno-0-78"></a>
-<a id="__codelineno-0-79" name="__codelineno-0-79"></a>
-<a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="c">/* 让所有admonition（包括!!! tip）圆角化且更自然 */</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition</span><span class="o">,</span>
-<a id="__codelineno-0-82" name="__codelineno-0-82"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">details</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
-<a id="__codelineno-0-84" name="__codelineno-0-84"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mf">0.07</span><span class="p">);</span>
-<a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">border-radius</span><span class="w"> </span><span class="mf">0.4</span><span class="kt">s</span><span class="w"> </span><span class="nb">cubic-bezier</span><span class="p">(</span><span class="mf">.4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">.6</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="k">box-shadow</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
-<a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="w">  </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
-<a id="__codelineno-0-87" name="__codelineno-0-87"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nv">--admonition-border-left-width</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nv">--base-border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="c">/* --card-hover-shadow: 0 0 0.2rem #ffffff40; */</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c">/* 卡片圆角与悬浮阴影 */</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">grid</span><span class="p">.</span><span class="nc">cards</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">li</span><span class="o">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">md-button</span><span class="o">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">table</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">class</span><span class="o">])</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">grid</span><span class="p">.</span><span class="nc">cards</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">li</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--card-hover-shadow</span><span class="p">);</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c">/* 页脚社交图标高度 */</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">.</span><span class="nc">md-social__link</span><span class="w"> </span><span class="nt">svg</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="k">max-height</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">}</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c">/* 搜索框及下拉结果圆角 */</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">.</span><span class="nc">md-search__form</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="p">}</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="o">[</span><span class="nt">data-md-toggle</span><span class="o">=</span><span class="s2">&quot;search&quot;</span><span class="o">]</span><span class="p">:</span><span class="nd">checked</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="p">.</span><span class="nc">md-header</span><span class="w"> </span><span class="p">.</span><span class="nc">md-search__form</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">  </span><span class="k">border-top-right-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">  </span><span class="k">border-top-left-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="p">}</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="o">[</span><span class="nt">dir</span><span class="o">=</span><span class="s2">&quot;ltr&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">md-search__output</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">  </span><span class="k">border-bottom-right-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">  </span><span class="k">border-bottom-left-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--base-border-radius</span><span class="p">);</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="p">}</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="c">/* 可选：如需恢复代码块、警告框等样式，取消注释即可 */</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="c">/*</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="c">.highlight span.filename {</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="c">  border-bottom: none;</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="c">  border-radius: var(--base-border-radius);</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="c">  display: inline;</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="c">  font-family: var(--md-code-font-family);</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="c">  border-bottom-left-radius: 0;</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="c">  border-bottom-right-radius: 0;</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="c">  margin-bottom: 5px;</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="c">  text-align: center;</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="c">}</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="c">.highlight span.filename + pre &gt; code,</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="c">.md-typeset pre &gt; code {</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="c">  border-radius: var(--base-border-radius);</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="c">  border-top-left-radius: 0;</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="c">}</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="c">.md-typeset .admonition {</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="c">  border-width: 0px;</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="c">  border-left-width: var(--admonition-border-left-width);</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="c">}</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="c">[dir=&quot;ltr&quot;] .md-typeset blockquote {</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="c">  border-radius: 0.2rem;</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="c">  border-left-width: var(--admonition-border-left-width);</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="c">}</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="c">*/</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="c">/* 可选：博客相关样式，按需启用 */</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="c">/* .md-post--excerpt {</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="c">  background-color: rgba(68,138,255,.1);</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="c">  box-shadow: 0 0 0 1rem rgba(68,138,255,.1);</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="c">  border-radius: var(--base-border-radius);</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="c">}</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="c">.md-post--excerpt .md-post__header {</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="c">  justify-content: left;</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="c">}</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="c">.md-post--excerpt .md-post__content &gt; h2,</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="c">.md-post__action {</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="c">  text-align: left;</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="c">} */</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="c">/* 让所有admonition（包括!!! tip）圆角化且更自然 */</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition</span><span class="o">,</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="p">.</span><span class="nc">md-typeset</span><span class="w"> </span><span class="nt">details</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mf">0.07</span><span class="p">);</span>
+<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">border-radius</span><span class="w"> </span><span class="mf">0.4</span><span class="kt">s</span><span class="w"> </span><span class="nb">cubic-bezier</span><span class="p">(</span><span class="mf">.4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">.6</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="k">box-shadow</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="w">  </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="p">}</span>
+</code></pre></div>
 <h2 id="_3">图片圆角化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>extra.css里引入：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">img</span><span class="p">.</span><span class="nc">img1</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">img</span><span class="p">.</span><span class="nc">img1</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</code></pre></div>
 <p>在md文件里使用：</p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>![<span class="nt">image.png</span>](<span class="na">https://s2.loli.net/2024/04/26/Czi9uAQhmbBlkfG.png</span>){.img1}
-</code></pre></div></td></tr></table></div>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>![<span class="nt">image.png</span>](<span class="na">https://s2.loli.net/2024/04/26/Czi9uAQhmbBlkfG.png</span>){.img1}
+</code></pre></div>
 效果：
 <img alt="image.png" class="img1" src="https://s2.loli.net/2024/04/26/Czi9uAQhmbBlkfG.png" /></p>
 <h2 id="_4">圆角边框<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
@@ -3537,30 +3446,19 @@
 </div>
 
 <h2 id="grid-cards">利用内置的grid cards<a class="headerlink" href="#grid-cards" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-3-10">10</a></span>
-<span class="normal"><a href="#__codelineno-3-11">11</a></span>
-<span class="normal"><a href="#__codelineno-3-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>&lt;div class=&quot;grid cards&quot; markdown&gt;
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">-</span><span class="w"> </span>  :simple-materialformkdocs:{ .lg .middle } <span class="gs">__Mkdocs教程__</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>    ---
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">利用Mkdocs部署静态网页至GitHub pages</span>](<span class="na">blog/Mkdocs/mkdocs1.md</span>)
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">Mkdocs部署配置说明(mkdocs.yml)</span>](<span class="na">blog/Mkdocs/mkdocs2.md</span>)
-<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">如何给MKdocs添加友链</span>](<span class="na">blog/websitebeauty/linktech.md</span>)
-<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">网站添加Mkdocs博客</span>](<span class="na">blog/Mkdocs/mkdocsblog.md</span>)
-<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">Blogger</span>](<span class="na">blog/index.md</span>)
-<a id="__codelineno-3-12" name="__codelineno-3-12"></a>&lt;/div&gt;
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;div class=&quot;grid cards&quot; markdown&gt;
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">-</span><span class="w"> </span>  :simple-materialformkdocs:{ .lg .middle } <span class="gs">__Mkdocs教程__</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    ---
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">利用Mkdocs部署静态网页至GitHub pages</span>](<span class="na">blog/Mkdocs/mkdocs1.md</span>)
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">Mkdocs部署配置说明(mkdocs.yml)</span>](<span class="na">blog/Mkdocs/mkdocs2.md</span>)
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">如何给MKdocs添加友链</span>](<span class="na">blog/websitebeauty/linktech.md</span>)
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">网站添加Mkdocs博客</span>](<span class="na">blog/Mkdocs/mkdocsblog.md</span>)
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">Blogger</span>](<span class="na">blog/index.md</span>)
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>&lt;/div&gt;
+</code></pre></div>
 <p>效果：  </p>
 <div class="grid cards">
 <ul>
@@ -3572,8 +3470,8 @@
 </ul>
 </div>
 <h2 id="_5">按钮<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>[Send Email :fontawesome-solid-paper-plane:](mailto:&lt;wangkewen821@gmail.com&gt;){.md-button}
-</code></pre></div></td></tr></table></div>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[Send Email :fontawesome-solid-paper-plane:](mailto:&lt;wangkewen821@gmail.com&gt;){.md-button}
+</code></pre></div>
 效果：<br />
 <a class="md-button" href="mailto:&lt;wangkewen821@gmail.com&gt;">Send Email <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg></span></a></p>
 <div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale='zh'><div class='dd-left'><span class='dd-item' data-tippy-content data-tippy-raw='2024-04-26'><span class='material-icons' data-icon='doc_created'></span><time datetime='2024-04-26T04:16:42+00:00'>2024-04-26</time></span><span class='dd-item' data-tippy-content data-tippy-raw='2025-07-10'><span class='material-icons' data-icon='doc_updated'></span><time datetime='2025-07-10T15:28:10+00:00'>2025-07-10</time></span></div><div class='dd-right'><span class='material-icons' data-icon='doc_author'></span><div class='author-group'><div class='avatar-wrapper' data-name='Wang Kewen' data-tippy-content data-tippy-raw='Wang Kewen'><span class='avatar-text'></span><img class='avatar' data-src='https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg' data-email='' /></div></div></div></div></div>
@@ -4148,10 +4046,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -4172,8 +4070,6 @@
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       

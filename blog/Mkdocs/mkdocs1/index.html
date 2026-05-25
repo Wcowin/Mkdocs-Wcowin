@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.6">
     
     
       
@@ -40,10 +40,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cda52a2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d7f4a96.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.d7242098.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
       
     
     
@@ -92,8 +92,6 @@
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/user.config.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -3255,37 +3253,26 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <div class="admonition tip">
 <p class="admonition-title">推荐使用虚拟环境（可选但推荐）</p>
 <p>官方建议使用虚拟环境来管理依赖，避免版本冲突：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>mkdocs-env
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">source</span><span class="w"> </span>mkdocs-env/bin/activate<span class="w">  </span><span class="c1"># Linux/Mac</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># 或 Windows: mkdocs-env\Scripts\activate</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>mkdocs-env
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">source</span><span class="w"> </span>mkdocs-env/bin/activate<span class="w">  </span><span class="c1"># Linux/Mac</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 或 Windows: mkdocs-env\Scripts\activate</span>
+</code></pre></div></p>
 </div>
 <p>安装Material for MkDocs：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span>
-<span class="normal"><a href="#__codelineno-1-7">7</a></span>
-<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># 或限制版本（推荐，避免意外升级到下一个主版本）：</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>!!!<span class="w"> </span>tip<span class="w"> </span><span class="s2">&quot;📖 阅读信息&quot;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span>:material-clock-time-two-outline:阅读时间：**1**<span class="w"> </span>分钟<span class="w"> </span><span class="p">|</span><span class="w"> </span>:material-circle-edit-outline:中文字符：**529**<span class="w"> </span><span class="p">|</span><span class="w"> </span>:fontawesome-solid-code:有效代码行数：**84**
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1"># pip install mkdocs-material==&quot;9.*&quot;</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># 或限制版本（推荐，避免意外升级到下一个主版本）：</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>!!!<span class="w"> </span>tip<span class="w"> </span><span class="s2">&quot;📖 阅读信息&quot;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span>:material-clock-time-two-outline:阅读时间：**1**<span class="w"> </span>分钟<span class="w"> </span><span class="p">|</span><span class="w"> </span>:material-circle-edit-outline:中文字符：**529**<span class="w"> </span><span class="p">|</span><span class="w"> </span>:fontawesome-solid-code:有效代码行数：**84**
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># pip install mkdocs-material==&quot;9.*&quot;</span>
+</code></pre></div></p>
 <p>创建站点：
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>mkdocs-site
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c1"># 或直接在当前目录创建（官方推荐）：</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1"># mkdocs new .</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>mkdocs-site
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># 或直接在当前目录创建（官方推荐）：</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># mkdocs new .</span>
+</code></pre></div>
 出现下图的几个文件 
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/140869d445e8c6dfd026e71e3ff0fc09.png" /></p>
 <div class="admonition tip">
@@ -3300,149 +3287,86 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <details class="note">
 <summary>过时的PublishMySite.yml</summary>
 <p>(执行下面的代码添加一个GitHub Workflow(<strong>已经过时但是仍然能用，最新方法见下方ci.yml</strong>)</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>mkdir .github
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>cd .github
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>mkdir workflows
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>cd workflows
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>vim PublishMySite.yml
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdir .github
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>cd .github
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>mkdir workflows
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>cd workflows
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>vim PublishMySite.yml
+</code></pre></div>
 <p>在PublishMySite.yml里面输入以下内容</p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-4-10">10</a></span>
-<span class="normal"><a href="#__codelineno-4-11">11</a></span>
-<span class="normal"><a href="#__codelineno-4-12">12</a></span>
-<span class="normal"><a href="#__codelineno-4-13">13</a></span>
-<span class="normal"><a href="#__codelineno-4-14">14</a></span>
-<span class="normal"><a href="#__codelineno-4-15">15</a></span>
-<span class="normal"><a href="#__codelineno-4-16">16</a></span>
-<span class="normal"><a href="#__codelineno-4-17">17</a></span>
-<span class="normal"><a href="#__codelineno-4-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publish site</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="c1"># 在什么时候触发工作流</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"> </span><span class="c1"># 在从本地main分支被push到GitHub仓库时</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"> </span><span class="c1"># 在main分支合并别人提的pr时</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="nt">jobs</span><span class="p">:</span><span class="w"> </span><span class="c1"># 工作流的具体内容</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"> </span><span class="c1"># 创建一个新的云端虚拟机 使用最新Ubuntu系统</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"> </span><span class="c1"># 先checkout到main分支</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span><span class="w"> </span><span class="c1"># 再安装Python3和相关环境</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span><span class="c1"># 使用pip包管理工具安装mkdocs-material</span>
-<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span><span class="w"> </span><span class="c1"># 使用mkdocs-material部署gh-pages分支</span>
-</code></pre></div></td></tr></table></div>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publish site</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="c1"># 在什么时候触发工作流</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"> </span><span class="c1"># 在从本地main分支被push到GitHub仓库时</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"> </span><span class="c1"># 在main分支合并别人提的pr时</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nt">jobs</span><span class="p">:</span><span class="w"> </span><span class="c1"># 工作流的具体内容</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"> </span><span class="c1"># 创建一个新的云端虚拟机 使用最新Ubuntu系统</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"> </span><span class="c1"># 先checkout到main分支</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span><span class="w"> </span><span class="c1"># 再安装Python3和相关环境</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span><span class="c1"># 使用pip包管理工具安装mkdocs-material</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span><span class="w"> </span><span class="c1"># 使用mkdocs-material部署gh-pages分支</span>
+</code></pre></div>
 )</p>
 </details>
 <hr />
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>mkdir .github
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>cd .github
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>mkdir workflows
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>cd workflows
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>vim ci.yml
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdir .github
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>cd .github
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>mkdir workflows
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>cd workflows
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>vim ci.yml
+</code></pre></div>
 <p>进入.github/workflows/ci.yml，然后复制并粘贴以下内容：  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-6-10">10</a></span>
-<span class="normal"><a href="#__codelineno-6-11">11</a></span>
-<span class="normal"><a href="#__codelineno-6-12">12</a></span>
-<span class="normal"><a href="#__codelineno-6-13">13</a></span>
-<span class="normal"><a href="#__codelineno-6-14">14</a></span>
-<span class="normal"><a href="#__codelineno-6-15">15</a></span>
-<span class="normal"><a href="#__codelineno-6-16">16</a></span>
-<span class="normal"><a href="#__codelineno-6-17">17</a></span>
-<span class="normal"><a href="#__codelineno-6-18">18</a></span>
-<span class="normal"><a href="#__codelineno-6-19">19</a></span>
-<span class="normal"><a href="#__codelineno-6-20">20</a></span>
-<span class="normal"><a href="#__codelineno-6-21">21</a></span>
-<span class="normal"><a href="#__codelineno-6-22">22</a></span>
-<span class="normal"><a href="#__codelineno-6-23">23</a></span>
-<span class="normal"><a href="#__codelineno-6-24">24</a></span>
-<span class="normal"><a href="#__codelineno-6-25">25</a></span>
-<span class="normal"><a href="#__codelineno-6-26">26</a></span>
-<span class="normal"><a href="#__codelineno-6-27">27</a></span>
-<span class="normal"><a href="#__codelineno-6-28">28</a></span>
-<span class="normal"><a href="#__codelineno-6-29">29</a></span>
-<span class="normal"><a href="#__codelineno-6-30">30</a></span>
-<span class="normal"><a href="#__codelineno-6-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"> </span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nt">on</span><span class="p">:</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"> </span>
-<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="nt">permissions</span><span class="p">:</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="nt">jobs</span><span class="p">:</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Configure Git Credentials</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="w">          </span><span class="no">git config user.name github-actions[bot]</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="w">          </span><span class="no">git config user.email 41898282+github-actions[bot]@users.noreply.github.com</span>
-<a id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v4</span>
-<a id="__codelineno-6-19" name="__codelineno-6-19"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
-<a id="__codelineno-6-21" name="__codelineno-6-21"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;cache_id=$(date --utc &#39;+%V&#39;)&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"> </span>
-<a id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v3</span>
-<a id="__codelineno-6-23" name="__codelineno-6-23"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-<a id="__codelineno-6-24" name="__codelineno-6-24"></a><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material-${{ env.cache_id }}</span>
-<a id="__codelineno-6-25" name="__codelineno-6-25"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span>
-<a id="__codelineno-6-26" name="__codelineno-6-26"></a><span class="w">          </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<a id="__codelineno-6-27" name="__codelineno-6-27"></a><span class="w">            </span><span class="no">mkdocs-material-</span>
-<a id="__codelineno-6-28" name="__codelineno-6-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span>
-<a id="__codelineno-6-29" name="__codelineno-6-29"></a><span class="w">      </span><span class="c1"># 或使用requirements.txt（推荐，确保构建可重现）：</span>
-<a id="__codelineno-6-30" name="__codelineno-6-30"></a><span class="w">      </span><span class="c1"># - run: pip install -r requirements.txt</span>
-<a id="__codelineno-6-31" name="__codelineno-6-31"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"> </span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"> </span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nt">permissions</span><span class="p">:</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Configure Git Credentials</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">          </span><span class="no">git config user.name github-actions[bot]</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">          </span><span class="no">git config user.email 41898282+github-actions[bot]@users.noreply.github.com</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v4</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;cache_id=$(date --utc &#39;+%V&#39;)&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"> </span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v3</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material-${{ env.cache_id }}</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">          </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">            </span><span class="no">mkdocs-material-</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">      </span><span class="c1"># 或使用requirements.txt（推荐，确保构建可重现）：</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">      </span><span class="c1"># - run: pip install -r requirements.txt</span>
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+</code></pre></div>
 <p>到这里先检查一下你的目录结构<br />
 目录树状图:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span>
-<span class="normal"><a href="#__codelineno-7-4">4</a></span>
-<span class="normal"><a href="#__codelineno-7-5">5</a></span>
-<span class="normal"><a href="#__codelineno-7-6">6</a></span>
-<span class="normal"><a href="#__codelineno-7-7">7</a></span>
-<span class="normal"><a href="#__codelineno-7-8">8</a></span>
-<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>$ tree -a
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>Wcowin.github.io
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>├── .github
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>│   ├── .DS_Store
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>│   └── workflows
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>│       └── ci.yml
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>├── docs
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>│   └── index.md
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>└── mkdocs.yml
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$ tree -a
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Wcowin.github.io
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>├── .github
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>│   ├── .DS_Store
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>│   └── workflows
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>│       └── ci.yml
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>├── docs
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>│   └── index.md
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>└── mkdocs.yml
+</code></pre></div></p>
 <div class="admonition 重点来了">
 <p class="admonition-title">重点来了</p>
 </div>
@@ -3451,22 +3375,18 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <h2 id="_2">三、配置完善<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>打开<strong>mkdocs.yml</strong> </p>
 <p>把以下的内容输入进去（最简单最基础的配置）  </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">网站名字</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">网站链接</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">你的名字</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="nt">theme</span><span class="p">:</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"> </span><span class="c1">#主题</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">网站名字</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">网站链接</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">你的名字</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"> </span><span class="c1">#主题</span>
+</code></pre></div>
 <p>详细mkdocs.yml配置见<a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/">Changing the colors - Material for MkDocs</a></p>
 <p><a href="https://blog.csdn.net/m0_63203517/article/details/127444446?spm=1001.2014.3001.5502">下次</a>我会具体谈谈这个问题</p>
 <hr />
 <p>在下方终端运行可以在浏览器看到实时网站
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>mkdocs serve
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mkdocs serve
+</code></pre></div>
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/b4a5ac989f1f390573a85bad8c80f49b.png" />
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/38bbc1fad9016ebfa0d894f093b82e3d.png" /></p>
 <p>这个网站就算是初步建好了</p>
@@ -3478,10 +3398,9 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <img alt="" src="https://s1.imagehub.cc/images/2024/02/02/64a25964ef4e99e4b580084daec10662.png" />  </p>
 <p>等待一会网址就出来了<sup id="fnref:注"><a class="footnote-ref" href="#fn:注">1</a></sup>  </p>
 <p>你的网站网址就是：​</p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>https://你github的名字.github.io/
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a>因为我绑定了域名所以网址是：https://wcowin.work/
-</code></pre></div></td></tr></table></div>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>https://你github的名字.github.io/
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>因为我绑定了域名所以网址是：https://wcowin.work/
+</code></pre></div>
 <img alt="img" src="https://s1.imagehub.cc/images/2024/02/02/7f149d6da7ecc6364d86c9517b2c4624.png" /></p>
 <p>下次谈谈网站的<a href="../mkdocs2/">mkdocs.yml具体配置</a></p>
 <h2 id="_3">四、参考资料<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
@@ -3492,7 +3411,7 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
 <li><a href="https://zhuanlan.zhihu.com/p/383582472">Mkdocs 配置和使用</a></li>
 <li><a href="https://github.com/marketplace/actions/deploy-mkdocs">Deploy MkDocs</a></li>
 </ol>
-<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale='zh'><div class='dd-left'><span class='dd-item' data-tippy-content data-tippy-raw='2023-10-13'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-10-13T17:22:50+00:00'>2023-10-13</time></span><span class='dd-item' data-tippy-content data-tippy-raw='2026-03-22'><span class='material-icons' data-icon='doc_updated'></span><time datetime='2026-03-22T15:46:10+00:00'>2026-03-22</time></span></div><div class='dd-right'><span class='material-icons' data-icon='doc_authors'></span><div class='author-group'><div class='avatar-wrapper' data-name='Wang Kewen' data-tippy-content data-tippy-raw='Wang Kewen'><span class='avatar-text'></span><img class='avatar' data-src='https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg' data-email='' /></div><div class='avatar-wrapper' data-name='W1ndys' data-tippy-content data-tippy-raw='<a href="mailto:w1ndys@outlook.com">W1ndys</a>'><span class='avatar-text'></span><img class='avatar' data-src='' data-email='w1ndys@outlook.com' /></div></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-bottom'><div class='document-dates-plugin' locale='zh'><div class='dd-left'><span class='dd-item' data-tippy-content data-tippy-raw='2023-10-13'><span class='material-icons' data-icon='doc_created'></span><time datetime='2023-10-13T17:22:50+00:00'>2023-10-13</time></span><span class='dd-item' data-tippy-content data-tippy-raw='2026-03-22'><span class='material-icons' data-icon='doc_updated'></span><time datetime='2026-03-22T15:46:10+00:00'>2026-03-22</time></span></div><div class='dd-right'><span class='material-icons' data-icon='doc_authors'></span><div class='author-group'><div class='avatar-wrapper' data-name='Wang Kewen' data-tippy-content data-tippy-raw='Wang Kewen'><span class='avatar-text'></span><img class='avatar' data-src='https://pic4.zhimg.com/100/v2-2c2935c381364513e278726841d93afb_r.jpg' data-email='' /></div><div class='avatar-wrapper' data-name='LennyChen' data-tippy-content data-tippy-raw='<a href="mailto:153903885+LennyChenLaw@users.noreply.github.com">LennyChen</a>'><span class='avatar-text'></span><img class='avatar' data-src='' data-email='153903885+LennyChenLaw@users.noreply.github.com' /></div><div class='avatar-wrapper' data-name='W1ndys' data-tippy-content data-tippy-raw='<a href="mailto:w1ndys@outlook.com">W1ndys</a>'><span class='avatar-text'></span><img class='avatar' data-src='' data-email='w1ndys@outlook.com' /></div><div class='avatar-wrapper' data-name='W1ndys' data-tippy-content data-tippy-raw='<a href="mailto:109416673+W1ndys@users.noreply.github.com">W1ndys</a>'><span class='avatar-text'></span><img class='avatar' data-src='' data-email='109416673+W1ndys@users.noreply.github.com' /></div></div></div></div></div>
 <style>
 .related-posts {
   margin-top: 1.5rem;
@@ -4073,10 +3992,10 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.download": "\u4e0b\u8f7d", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": {"fold": {"enabled": true}}, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1a8646e9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4e7371e1.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/glm-config.js"></script>
       
@@ -4097,8 +4016,6 @@ MkDocs中文文档: <a href="https://hellowac.github.io/mkdocs-docs-zh/">MkDocs�
         <script src="../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../assets/document_dates/core/default.config.js"></script>
-      
-        <script src="../../../assets/document_dates/user.config.js"></script>
       
         <script src="../../../assets/document_dates/core/utils.js"></script>
       
