@@ -3163,10 +3163,10 @@
 </div>
 <h2 id="_1">解决方法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>在<code>/docs</code>目录下创建一个名为<code>CNAME</code>的文件（无后缀），然后在里面填入你的域名（每行一个域名）：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>yourdomain.com
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>yourdomain.com
 </code></pre></div>
 <p>或者子域名：
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>blog.yourdomain.com
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a>blog.yourdomain.com
 </code></pre></div></p>
 <div class="admonition tip">
 <p class="admonition-title">原因</p>
@@ -3177,7 +3177,7 @@
 <ol>
 <li>CNAME文件必须放在<code>docs/</code>目录下，这样在构建时会自动复制到站点根目录</li>
 <li>确保在<code>mkdocs.yml</code>中设置了正确的<code>site_url</code>：
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://yourdomain.com/</span>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://yourdomain.com/</span>
 </code></pre></div></li>
 <li>如果使用自定义域名，还需要在域名DNS设置中添加CNAME记录指向GitHub Pages</li>
 </ol>

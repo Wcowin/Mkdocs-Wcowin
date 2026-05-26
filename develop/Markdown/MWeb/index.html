@@ -3717,8 +3717,8 @@
 <p>官方的语法规定结尾加 2 个以上空格加换行才会转成换行，也就是 <code>&lt;br /&gt;</code> 标签。MWeb 中有个选项可以直接把换行转成 <code>&lt;br /&gt;</code>，不用加上 2 个以上空格，这个选项默认是开启的。如果要关闭，请在设置页面关闭。</p>
 <h3 id="task-lists">任务列表（Task lists）<a class="headerlink" href="#task-lists" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>- [x] 任务二 已做任务 `- + 空格 + [x]`
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a>- [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre></div>
 <p>效果如下：</p>
 <ul class="task-list">
@@ -3730,30 +3730,30 @@
 <p><img alt="图片描述-w140" src="https://zh.mweb.im/asset/img/set-up-git.gif" /></p>
 <h3 id="_4">多行或者一段代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><pre><span></span><code>```js
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:&#39;#foo&#39;})
-  }
-
-}
-```
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>```js
+<span class="linenos" data-linenos="2 "></span>function fancyAlert(arg) {
+<span class="linenos" data-linenos="3 "></span>  if(arg) {
+<span class="linenos" data-linenos="4 "></span>    $.facebox({div:&#39;#foo&#39;})
+<span class="linenos" data-linenos="5 "></span>  }
+<span class="linenos" data-linenos="6 "></span>
+<span class="linenos" data-linenos="7 "></span>}
+<span class="linenos" data-linenos="8 "></span>```
 </code></pre></div>
 <p>效果如下：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos="2 "></span></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos="3 "></span></a><span class="w">        </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos="4 "></span></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><a href="#__codelineno-2-5"><span class="linenos" data-linenos="5 "></span></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><a href="#__codelineno-2-6"><span class="linenos" data-linenos="6 "></span></a><span class="p">}</span>
 </code></pre></div>
 <p>这个语法目前在 MWeb 中使用，必须前后空一行，才会正确解析。我觉得，在写 Markdown 文档过程中，运用空行很有必要，基本上，块级元素（标题、列表、引用、代码块、表格、段落等），都建议前后空一行。</p>
 <h3 id="_5">表格<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>第一格表头 | 第二格表头
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--------- | -------------
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>内容单元格 第一列第一格 | 内容单元格第二列第一格
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><a href="#__codelineno-3-1"><span class="linenos" data-linenos="1 "></span></a>第一格表头 | 第二格表头
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><a href="#__codelineno-3-2"><span class="linenos" data-linenos="2 "></span></a>--------- | -------------
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><a href="#__codelineno-3-3"><span class="linenos" data-linenos="3 "></span></a>内容单元格 第一列第一格 | 内容单元格第二列第一格
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><a href="#__codelineno-3-4"><span class="linenos" data-linenos="4 "></span></a>内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
 </code></pre></div>
 <p>效果如下：</p>
 <table>
@@ -3776,22 +3776,22 @@ function fancyAlert(arg) {
 </table>
 <h3 id="_6">删除线<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><pre><span></span><code>加删除线像这样用： ~~删除这些~~
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>加删除线像这样用： ~~删除这些~~
 </code></pre></div>
 <p>效果如下：</p>
 <p>加删除线像这样用： <del>删除这些</del></p>
 <h3 id="latex">LaTeX<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><pre><span></span><code>块级公式：
-```math
-x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-```
-
-行内公式： ``\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N``
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>块级公式：
+<span class="linenos" data-linenos="2 "></span>```math
+<span class="linenos" data-linenos="3 "></span>x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+<span class="linenos" data-linenos="4 "></span>```
+<span class="linenos" data-linenos="5 "></span>
+<span class="linenos" data-linenos="6 "></span>行内公式： ``\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N``
 </code></pre></div>
 <p>效果如下（在设置页面中启用 LaTeX 才会看到效果）：</p>
 <p>块级公式：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><a href="#__codelineno-5-1"><span class="linenos" data-linenos="1 "></span></a>x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 </code></pre></div>
 <p>行内公式： <code>\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N</code></p>
 <!-- 注意：为了兼容 MWeb 3，也支持 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ 
@@ -3802,19 +3802,19 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <h2 id="mweb_3">MWeb 画图<a class="headerlink" href="#mweb_3" title="Permanent link">&para;</a></h2>
 <h3 id="mermaid">mermaid<a class="headerlink" href="#mermaid" title="Permanent link">&para;</a></h3>
 <p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
-<div class="highlight"><pre><span></span><code>```mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice-&gt;John: Hello John, how are you?
-    loop Healthcheck
-        John-&gt;John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts &lt;br/&gt;prevail...
-    John--&gt;Alice: Great!
-    John-&gt;Bob: How about you?
-    Bob--&gt;John: Jolly good!
-```
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```mermaid
+<span class="linenos" data-linenos=" 2 "></span>sequenceDiagram
+<span class="linenos" data-linenos=" 3 "></span>    participant Alice
+<span class="linenos" data-linenos=" 4 "></span>    participant Bob
+<span class="linenos" data-linenos=" 5 "></span>    Alice-&gt;John: Hello John, how are you?
+<span class="linenos" data-linenos=" 6 "></span>    loop Healthcheck
+<span class="linenos" data-linenos=" 7 "></span>        John-&gt;John: Fight against hypochondria
+<span class="linenos" data-linenos=" 8 "></span>    end
+<span class="linenos" data-linenos=" 9 "></span>    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+<span class="linenos" data-linenos="10 "></span>    John--&gt;Alice: Great!
+<span class="linenos" data-linenos="11 "></span>    John-&gt;Bob: How about you?
+<span class="linenos" data-linenos="12 "></span>    Bob--&gt;John: Jolly good!
+<span class="linenos" data-linenos="13 "></span>```
 </code></pre></div>
 <p><strong>效果如下：</strong></p>
 <pre class="mermaid"><code>sequenceDiagram
@@ -3830,40 +3830,40 @@ sequenceDiagram
     Bob--&gt;John: Jolly good!</code></pre>
 <h3 id="echarts">echarts<a class="headerlink" href="#echarts" title="Permanent link">&para;</a></h3>
 <p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
-<div class="highlight"><pre><span></span><code>```echarts
-option = {
-    xAxis: {
-        type: &#39;category&#39;,
-        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
-    },
-    yAxis: {
-        type: &#39;value&#39;
-    },
-    series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
-        type: &#39;line&#39;
-    }]
-};
-```
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```echarts
+<span class="linenos" data-linenos=" 2 "></span>option = {
+<span class="linenos" data-linenos=" 3 "></span>    xAxis: {
+<span class="linenos" data-linenos=" 4 "></span>        type: &#39;category&#39;,
+<span class="linenos" data-linenos=" 5 "></span>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+<span class="linenos" data-linenos=" 6 "></span>    },
+<span class="linenos" data-linenos=" 7 "></span>    yAxis: {
+<span class="linenos" data-linenos=" 8 "></span>        type: &#39;value&#39;
+<span class="linenos" data-linenos=" 9 "></span>    },
+<span class="linenos" data-linenos="10 "></span>    series: [{
+<span class="linenos" data-linenos="11 "></span>        data: [820, 932, 901, 934, 1290, 1330, 1320],
+<span class="linenos" data-linenos="12 "></span>        type: &#39;line&#39;
+<span class="linenos" data-linenos="13 "></span>    }]
+<span class="linenos" data-linenos="14 "></span>};
+<span class="linenos" data-linenos="15 "></span>```
 </code></pre></div>
 <p><strong>效果如下：</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>option = {
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    xAxis: {
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        type: &#39;category&#39;,
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    },
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    yAxis: {
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        type: &#39;value&#39;
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    },
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    series: [{
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        type: &#39;line&#39;
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    }]
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>};
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><a href="#__codelineno-7-1"><span class="linenos" data-linenos=" 1 "></span></a>option = {
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><a href="#__codelineno-7-2"><span class="linenos" data-linenos=" 2 "></span></a>    xAxis: {
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><a href="#__codelineno-7-3"><span class="linenos" data-linenos=" 3 "></span></a>        type: &#39;category&#39;,
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><a href="#__codelineno-7-4"><span class="linenos" data-linenos=" 4 "></span></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><a href="#__codelineno-7-5"><span class="linenos" data-linenos=" 5 "></span></a>    },
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><a href="#__codelineno-7-6"><span class="linenos" data-linenos=" 6 "></span></a>    yAxis: {
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><a href="#__codelineno-7-7"><span class="linenos" data-linenos=" 7 "></span></a>        type: &#39;value&#39;
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><a href="#__codelineno-7-8"><span class="linenos" data-linenos=" 8 "></span></a>    },
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><a href="#__codelineno-7-9"><span class="linenos" data-linenos=" 9 "></span></a>    series: [{
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><a href="#__codelineno-7-10"><span class="linenos" data-linenos="10 "></span></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><a href="#__codelineno-7-11"><span class="linenos" data-linenos="11 "></span></a>        type: &#39;line&#39;
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><a href="#__codelineno-7-12"><span class="linenos" data-linenos="12 "></span></a>    }]
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><a href="#__codelineno-7-13"><span class="linenos" data-linenos="13 "></span></a>};
 </code></pre></div>
 <h3 id="footnote">脚注（Footnote）<a class="headerlink" href="#footnote" title="Permanent link">&para;</a></h3>
 <p>Markdown 语法：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>这是一个脚注：[^1]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><a href="#__codelineno-8-1"><span class="linenos" data-linenos="1 "></span></a>这是一个脚注：[^1]
 </code></pre></div>
 <p>效果如下：</p>
 <p>这是一个脚注：<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
