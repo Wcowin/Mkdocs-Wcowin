@@ -1,0 +1,28 @@
+/* 修复代码块高亮行横向滚动时背景不全的问题
+ * 原理：
+ * 1. 原始主题中，.hll 的 display:block 使其宽度等于 code 容器宽度
+ * 2. 但当 code 容器有滚动时，最宽行超出视口，.hll 背景无法延伸
+ * 3. 解决方案：让 code 宽度等于内容实际宽度，hll 自然随之扩展
+ */
+
+/* 确保 pre 处理横向滚动 */
+.md-typeset .highlight pre,
+.md-typeset pre {
+  overflow-x: auto;
+}
+
+/* code 宽度等于内容实际宽度 */
+.md-typeset pre > code {
+  display: inline-block !important;
+  min-width: 110%;
+}
+
+/* hll 作为块级元素填满 code 宽度 */
+.md-typeset .highlight .hll,
+.md-typeset pre code .hll {
+  display: block !important;
+}
+
+.md-code__content > span {
+  min-width: max-content;
+}
