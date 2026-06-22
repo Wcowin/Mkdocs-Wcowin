@@ -65,7 +65,7 @@ theme:
     # top: fontawesome/solid/angles-up
     alternate: fontawesome/solid/language
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
-repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
+repo_url: https://github.com/Wkwcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
 repo_name: Mkdocs-Wcowin # 右上角的名字
 
 # [Navigtion]
@@ -156,9 +156,9 @@ extra:
       link: https://t.me/wecowin
       name: telegram
     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
-      link: https://twitter.com/wcowin_
+      link: https://x.com/kewen9694
     - icon: fontawesome/brands/github
-      link: https://github.com/Wcowin
+      link: https://github.com/Wkwcowin
 
     - icon: fontawesome/regular/envelope #联系方式图标
       link: mailto:<wangkewen821@gmail.com> #邮件联系方式
@@ -367,9 +367,9 @@ extra_javascript:
   # - javascripts/extra.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
+  - docs/javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
+  - docs/javascripts/view.js
   # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
   # - javascripts/font-loader.js
 
