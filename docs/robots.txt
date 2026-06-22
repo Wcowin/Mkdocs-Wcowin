@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://wcowin.work/Mkdocs-Wcowin/sitemap.xml

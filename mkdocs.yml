@@ -1,0 +1,421 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+#[Info]
+
+site_name: Mkdocs教程 #your site name 显示在左上角
+site_url: https://wcowin.work/Mkdocs-Wcowin/
+site_description: Mkdocs中文教程,最好的Mkdocs中文教程,最全的Mkdocs中文教程,最详细的Mkdocs中文教程,最权威的Mkdocs中文教程,最专业的Mkdocs中文教程,最实用的Mkdocs中文教程,最易懂的Mkdocs中文教程
+site_author: Wcowin # your name
+#[UI]
+theme:
+  name: materialx
+  custom_dir: docs/overrides #覆写路径
+  # code:
+  #   fold:
+  #     enabled: true
+  # logo: assets/favicon.png #左上角logo，可插入图片链接
+  favicon: https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png # 网页icon
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: 关闭自动模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: blue # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/toggle-switch # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
+      # primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换至日间模式
+
+  features:
+    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
+    - navigation.path
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share #搜索分享按钮
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - content.tabs.link
+    - content.tooltips
+    - content.code.copy #代码复制
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    # - navigation.instant
+    #- header.autohide  #自动隐藏
+    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+  language: zh # 一些提示性的文字会变成中文
+
+  icon:
+    repo: fontawesome/brands/github #右上角图标
+    logo: logo
+    previous: fontawesome/solid/angle-left
+    # top: fontawesome/solid/angles-up
+    alternate: fontawesome/solid/language
+edit_uri: edit/main/docs # 编辑按钮跳转的链接
+repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
+repo_name: Mkdocs-Wcowin # 右上角的名字
+
+# [Navigtion]
+nav:
+  # - 主页: index.md
+  - MKdocs中文教程:
+      - 许可声明: blog/MIT.md
+      - MKdocs教程(三部曲):
+          - 0.Mkdocs教程前言: blog/Mkdocs/mkfirst.md
+          - 1.利用Mkdocs部署静态网页: blog/Mkdocs/mkdocs1.md
+          - 2.Mkdocs配置说明(mkdocs.yml): blog/Mkdocs/mkdocs2.md
+          - 3.解决Github Pages部署mkdocs自定义域名失效的问题: blog/Mkdocs/mkdocs3.md
+          - 4.解决mkdocs serve 后127.0.0.1:8000无法自动刷新的问题: blog/Mkdocs/click.md
+      - Mkdocs美化/补充:
+          - 为MKdocs添加多语言翻译: blog/websitebeauty/mkdocs-translate.md
+          - 为MKdocs添加AI摘要(Plus版本): blog/websitebeauty/MkDocs-AI-Summary-plus.md
+          - MkDocs文档AI摘要: blog/websitebeauty/Mkdocs-AI-Summary.md
+          - MkDocs文档日期插件: blog/websitebeauty/mkdocs-document-dates.md
+          - 添加相关推荐文章: blog/websitebeauty/recommend.md
+          - 添加阅读信息统计: blog/websitebeauty/reading_time.md
+          - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
+          - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
+          - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
+          - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
+          - 添加在线聊天: blog/websitebeauty/webtalknow.md
+          - 添加友链: blog/websitebeauty/linktech.md
+          - 添加顶部公告栏: blog/websitebeauty/header.md
+          - 修改网站字体: blog/websitebeauty/mkdocsfont.md
+          - JS实现鼠标样式: blog/websitebeauty/shubiao.md
+          - 背景特效: blog/websitebeauty/backgroud.md
+          - 嵌入PDF文件: blog/websitebeauty/mkpdf.md
+          - 相对地址的一些问题: blog/websitebeauty/Relativeaddress.md
+          - 添加404页面: blog/websitebeauty/404.md
+          - 为MKdocs添加文章修订时间戳: blog/websitebeauty/time.md
+          - 页脚设置: blog/websitebeauty/footer.md
+          - 加速网站访问的一些心得: blog/websitebeauty/accelerate.md
+  - 建设MKdocs技能指北:
+      - Markdown:
+          - Markdown指南: develop/Markdown/markdown.md
+          - MWeb Pro: develop/Markdown/MWeb.md
+      - Git 实用技巧: develop/git.md
+      - 利用Lighthouse测试网站性能: develop/lighthouse.md
+      - 如何将 github pages 迁移到 vercel 上托管: develop/vercel.md
+      - 设计美学:
+          - 唐·诺曼—情感设计的三个层次: develop/designbeauty/db1.md
+          - 我对设计的一些观点: develop/designbeauty/my-to-desihn.md
+
+  - 标签: tag.md
+  - 留言板: liuyanban.md
+  - 博客:
+      - index: blog/index.md
+  - 友链:
+      - 友链: link.md
+  - 关于:
+      - 作者个人简介: about/geren.md
+      # - 个人简历: about/resume.md
+      - 支持作者: about/zcw.md
+      - 功能测试: about/test.md
+  - 个人博客: https://wcowin.work
+  - Zensical中文教程: https://wcowin.work/Zensical-Chinese-Tutorial/
+  # - 个人简介: https://wcowin.work/Personal-Profile/#
+  # https://personal-story-web-display.lovable.app/
+  # - 使用本主题: https://github.com/new?template_name=Mkdocs-Wcowin&template_owner=Wcowin
+  - 加入社群: https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp
+
+copyright: Copyright &copy; 2022~2026 Wcowin # 左下角的版权声明
+
+extra:
+  # alternate:
+  #   - name: 中文
+  #     link: "javascript:translateTo('chinese_simplified');"
+  #     lang: zh
+  #   - name: English
+  #     link: "javascript:translateTo('english');"
+  #     lang: en
+  #   - name: 日本語
+  #     link: "javascript:translateTo('japanese');"
+  #     lang: ja
+  # - name: Deutsch
+  #   link: "javascript:translateTo('deutsch');"
+  #   lang: de
+  generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
+  social:
+    - icon: fontawesome/brands/weixin
+      link: https://s1.imagehub.cc/images/2024/02/02/bb9ee71b03ee7a3b87caad5cc4bcebff.jpeg
+      name: Wechat
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/wecowin
+      name: telegram
+    - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
+      link: https://twitter.com/wcowin_
+    - icon: fontawesome/brands/github
+      link: https://github.com/Wcowin
+
+    - icon: fontawesome/regular/envelope #联系方式图标
+      link: mailto:<wangkewen821@gmail.com> #邮件联系方式
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/1407028951/lists/4566631?type=series
+  analytics:
+    provider: google #谷歌分析
+    property: G-29HZMNR0KG ##如果你 clone 了my模板，请将这个修改为你的
+
+    # 网页底部反馈
+    feedback:
+      title: 此页面有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline #图标可自定义
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢你的反馈！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
+  # cookies设置（可选）
+  # consent:
+  #   title: Cookie consent
+  #   description: >-
+  #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
+  #     如果你同意,你可以帮助我们让我们的网站更好
+
+plugins:
+  - search
+  # - recently-updated:
+  #     exclude: # List of excluded files (support unix shell-style wildcards)
+  #       - index.md # Exclude specific file
+  #       - "*/index.md" # Exclude all index.md files in any subfolders
+  #       - blog/archive* # Exclude all files in blog folder, including subfolders
+  #       - blog/category*
+  - document-dates:
+      # enabled: !ENV [CI, false]
+      recently-updated:
+        enabled: true
+        exclude:
+          [
+            "index.md",
+            "*/index.md",
+            "tag.md",
+            "en/index.md",
+            "ZH-TW/index.md",
+            "about/*",
+            "liuyanban.md",
+            "*/archive/*",
+            "*/category/*",
+          ]
+      position: bottom # Display position: top (after title)  bottom (end of document), default: bottom
+      type: date # Date type: date  datetime  timeago, default: date
+      locale: zh # Localization: en zh zh_TW es fr de ar ja ko ru, default: en
+      date_format: "%Y-%m-%d" # Date format strings, e.g., %Y-%m-%d, %b %d, %Y, etc
+      time_format: "%H:%M:%S" # Time format strings (valid only if type=datetime)
+      exclude: # List of excluded files
+        - index.md
+        - tag.md
+        - liuyanban.md
+        - blog/posts/*
+        - blog/index.md
+        - link.md
+        - blog/Mkdocs/linktech.md
+        - about/* # Exclude all files in private directory, including subdirectories
+      show_author: true # Show author or not, default: true
+      # show_created: false
+      # show_updated: false
+  # - glightbox:
+  #     enabled: !ENV [glightbox, false]
+  #     touchNavigation: true
+  #     loop: false
+  #     effect: fade
+  #     slide_effect: slide
+  #     width: 100%
+  #     height: auto
+  #     zoomable: true
+  #     draggable: true
+  #     skip_classes:
+  #       - custom-skip-class-name
+  #     auto_caption: false
+  #     caption_position: bottom
+  #     background: white
+  #     shadow: true
+  #     manual: false
+  # - git-committers:
+  #     enabled: !ENV [CI, false]
+  #     repository: Wcowin/Mkdocs-Wcowin
+  #     branch: main
+  #     exclude:
+  #       - index.md
+  #       - tag.md
+  #       - liuyanban.md
+  #       - blog/posts/update.md
+  #       - blog/posts/wkw.md
+  #       - about/link.md
+  # - git-revision-date-localized:
+  #     enabled: !ENV [CI, false]
+  #     type: iso_date
+  #     enable_creation_date: false
+  #     exclude:
+  #       # - index.md
+  #       - tag.md
+  #       - liuyanban.md
+  #       - blog/posts/update.md
+  #       - blog/posts/wkw.md
+  #       - about/link.md
+  #       - websitebeauty/linktech.md
+  - blog: #博客配置
+      post_date_format: full #时间
+      draft: true
+      draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
+      post_readtime: true
+      post_readtime_words_per_minute: 265 #计算帖子的阅读时间时读者每分钟预计阅读的字数
+      post_url_format: "{date}/{slug}"
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
+      pagination_url_format: "page/{page}"
+      authors_file: "{blog}/.authors.yml" #作者信息
+  - tags
+  # - ai-summary:
+  #     ai_service: "glm"  # or "openai", "gemini", "glm"
+  #     summary_language: "zh"  # or "en"
+  #     cache_enabled: true
+  #     local_enabled: false
+  #     cache_expire_days: 30
+  #     # debug: true # 是否显示调试信息（默认：false）
+  #     enabled_folders:
+  #       - blog/    # 添加blog文件夹
+  #       - develop/ # 添加develop文件夹
+  #       # - docs/    # 保留docs文件夹
+  #     exclude_patterns:
+  #       - about/
+  #       - index.md
+  #       - tag.md
+  #       - blog/posts/update.md
+  #       - blog/category/
+  #       - blog/posts/
+
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
+
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums_style: pymdownx-inline
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # - markdown.extensions.toc:
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  #     permalink: "\ue157"
+
+extra_javascript:
+  # 智谱清言翻译系统
+  - javascripts/glm-config.js
+  # - javascripts/glm-config.js
+  - javascripts/glm-translate.js
+  # - javascripts/glm-translate.js
+  # - javascripts/translate-config.js
+  # - javascripts/highlight-search.js
+  # - docs/javascripts/translate.js
+  # - https://cdn.staticfile.net/translate.js/3.12.0/translate.js
+  # - javascripts/unified-instant-handler.js  # 统一的即时导航处理器
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/unified-instant-handler.js
+  # - javascripts/optimize.js
+  # - javascripts/instant-handler.js
+  # 延迟加载非关键脚本
+  # - javascripts/extra.js
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  # - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/view.js
+  # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
+  # - javascripts/font-loader.js
+
+extra_css:
+  # - stylesheets/highlight-search.css
+  - stylesheets/extra.css
+  - stylesheets/extra2.css
+  - stylesheets/extra3.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css
+  # - stylesheets/link.css  #友链
+  # - stylesheets/optimize.css
+  # - stylesheets/poem.css
+  - https://oneclip.cloud/Wcowin/stylesheets/poem.css
+  - https://oneclip.cloud/Wcowin/stylesheets/link.css #友链
+  # - stylesheets/card2.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/card2.css
+  # - stylesheets/customize.css  #按钮圆角化
+  - stylesheets/customize.css #按钮圆角化
+  # - stylesheets/flink.css
+  # - stylesheets/bannerSlider.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/extra.css # extra.css的CDN
+  # - stylesheets/extra1.css
+  # - stylesheets/video.css
+  # - https://unpkg.com/@waline/client@v2/dist/waline.css
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #评论
+  # - ckplayer/css/ckplayer.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
+  # - https://static.zeoseven.com/zsft/292/main/result.css #字体
+  # - stylesheets/ziti.css  #字体
+  - https://oneclip.cloud/Wcowin/stylesheets/ziti.css #字体
+  # - https://fontsapi.zeoseven.com/292/main/result.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
+  # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css
+  # - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
+  # - stylesheets/timeline.css
+  # - stylesheets/LiquidGlass.css
+  # - about/sty/portfolio.css
+  - about/sty/portfolio.css
+  # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css
+
+hooks:
+  - docs/overrides/hooks/socialmedia.py
+  - docs/overrides/hooks/reading_time.py
+  # - docs/overrides/hooks/ai_summary.py
+  - docs/overrides/hooks/related_posts.py
+  - docs/overrides/hooks/comments.py # 新添加的评论系统
+
+use_directory_urls: true

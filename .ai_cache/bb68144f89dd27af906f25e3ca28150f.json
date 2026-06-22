@@ -1,0 +1,8 @@
+{
+  "summary": "本文介绍了如何在网页中添加背景特效，包括雪花、樱花、线条和粒子。通过设置LocalStorage标志，可控制是否加载特效脚本。",
+  "service": "glm",
+  "page_title": "背景特效",
+  "timestamp": "2025-11-22T19:04:51.800329",
+  "cache_version": "1.2.2",
+  "content_hash": "47fbc8f4ccbf6314a7582f863a8c6a55"
+}

@@ -1,0 +1,95 @@
+/* 用于大屏幕和小屏幕的通用样式 */
+.card {
+   width: 345px;
+   height: 90px;
+   font-size: 1rem;
+   padding: 10px 20px;
+   border-radius: 25px;
+   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), 
+               box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* 使用更高效的过渡 */
+   margin-bottom: 1rem;
+   display: flex;
+   align-items: center;
+   color: #333;
+   contain: layout style; /* 性能优化：限制重绘范围 */
+   will-change: transform; /* 提前告知浏览器变换意图 */
+   backface-visibility: hidden; /* 减少复合层 */
+   transform: translateZ(0); /* 强制GPU加速 */
+}
+
+.card:nth-child(odd) {
+   float: left;
+}
+
+.card:nth-child(even) {
+   float: right;
+}
+
+/* 在大屏幕上保留悬停效果 */
+.card:hover {
+   transform: translateZ(0) scale(1.05);
+   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+   background-color: rgba(68, 138, 255, 0.1);
+}
+
+.card a {
+   border: none;
+}
+
+.card .ava {
+   width: 3rem !important;
+   height: 3rem !important;
+   margin: 0 1em 0 0 !important;
+   border-radius: 50%;
+   object-fit: cover; /* 确保图像正确填充 */
+}
+
+.card .card-header {
+   font-style: italic;
+   overflow: hidden;
+   width: auto;
+}
+
+.card .card-header a {
+   font-style: normal;
+   color: #608DBD;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+/* 使用更高效的选择器 */
+.card-header a:hover {
+   color: #d480aa;
+}
+
+.card .card-header .info {
+   font-style: normal;
+   color: #706f6f;
+   font-size: 14px;
+   overflow: hidden;
+   text-overflow: ellipsis; /* 文本溢出时显示省略号 */
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* 限制最多显示两行 */
+   line-clamp: 2; /* 标准属性以实现兼容性 */
+   -webkit-box-orient: vertical;
+}
+
+/* 媒体查询：小屏幕 */
+@media (max-width: 768px) {
+   .card {
+      width: 100%;
+      height: auto;
+      float: none;
+      contain: content; /* 小屏幕上使用更宽松的包含策略 */
+   }
+}
+
+/* 使用更高效的清除浮动方法 */
+.markdown-content {
+   display: flow-root; /* 现代清除浮动方法 */
+}
+
+.markdown-content h2 {
+   font-size: 1.5rem;
+   color: #333;
+}

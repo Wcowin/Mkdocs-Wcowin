@@ -1,0 +1,6 @@
+{
+    "bitoAI.codeCompletion.enableAutoCompletion": false,
+    "Codegeex.RepoIndex": true,
+    "kiroAgent.configureMCP": "Disabled",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}
