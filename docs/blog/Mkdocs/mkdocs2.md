@@ -78,7 +78,7 @@ tags:
         repo: fontawesome/brands/github #右上角图标
         logo: logo
     edit_uri: edit/main/docs # 编辑按钮跳转的链接
-    repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
+    repo_url: https://github.com/Wkwcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
     repo_name: Mkdocs-Wcowin # 右上角的名字
     # [Navigtion]
     nav:
@@ -203,7 +203,7 @@ tags:
           manual: false
       - git-committers:
           enabled: !ENV [git-committers, false]
-          repository: Wcowin/Mkdocs-Wcowin
+          repository: Wkwcowin/Mkdocs-Wcowin
           branch: main
           exclude:
             - index.md
@@ -283,7 +283,7 @@ tags:
 
     extra_javascript:
       # - javascripts/extra.js #自定义javascript
-      - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+      - https://cdn.jsdelivr.net/gh/Wkwcowin/Wkwcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
       - javascripts/mathjax.js #Latex支持
       - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
       - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
@@ -582,7 +582,7 @@ plugins:
   - search #搜索配置
   - git-committers:
       enabled: !ENV [git-committers, false]
-      repository: Wcowin/Mkdocs-Wcowin
+      repository: Wkwcowin/Mkdocs-Wcowin
       branch: main
       exclude:
         - index.md
@@ -718,7 +718,7 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
 ```yaml
 extra_javascript:
   # - javascripts/extra.js #自定义javascript
-  - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
+  - https://cdn.jsdelivr.net/gh/Wkwcowin/Wkwcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   - javascripts/mathjax.js #Latex支持
   - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持

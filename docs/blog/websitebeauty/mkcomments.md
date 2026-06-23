@@ -56,7 +56,7 @@ $ tree -a
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <!-- Insert generated snippet here -->
   <script src="https://giscus.app/client.js"
-  data-repo="你的仓库名称（如Wcowin/hexo-site-comments）"
+  data-repo="你的仓库名称（如Wcowin/comments）"
   data-repo-id=" "
   data-category=" "
   data-category-id=" "
@@ -210,4 +210,4 @@ twikoo.init({
 })
 </script>  -->
 
-我感觉twikoo也好看！  
+我感觉twikoo也好看！

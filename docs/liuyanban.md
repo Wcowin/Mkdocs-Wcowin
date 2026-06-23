@@ -7,7 +7,7 @@ hide:
   - feedback
 comments: false
 ---
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wkwcowin/Wkwcowin.github.io@main/docs/stylesheets/poem.css">
 
 
 # 畅所欲言  
@@ -131,7 +131,7 @@ comments: false
     </div>
     <!--<div id="giscus" class="comment-system active">
             <script src="https://giscus.app/client.js"
-            data-repo="Wcowin/Mkdocs-Wcowin"
+            data-repo="Wkwcowin/Mkdocs-Wcowin"
             data-repo-id="R_kgDOKf920A"
             data-category="Show and tell"
             data-category-id="DIC_kwDOKf920M4CaHEM"

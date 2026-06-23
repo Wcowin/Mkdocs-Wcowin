@@ -112,7 +112,7 @@ if (typeof document$ !== "undefined") {
 </details>
 
 ## </p><h1 id="01" name="01"><strong>2024-05-05</strong></h1><p>
-* 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
+* 发布[Mkdocs-Wcowin主题|3.0版本](https://github.com/Wkwcowin/Mkdocs-Wcowin/releases/tag/3.0){target=“_blank”}！！！
 * 优化网站流畅度（玄学）
 * 和小王一起吃了好吃的
 * 感谢王鹏老哥的打赏
@@ -133,13 +133,13 @@ if (typeof document$ !== "undefined") {
 
 ## </p><h1 id="01" name="01"><strong>2024-04-12</strong></h1><p>
 * 优化网站流畅度（玄学）
-* 感谢W1ndys提出的[使用软编码配置友链界面](https://github.com/Wcowin/Mkdocs-Wcowin/pull/9)，使得友链添加更加规范化
+* 感谢W1ndys提出的[使用软编码配置友链界面](https://github.com/Wkwcowin/Mkdocs-Wcowin/pull/9)，使得友链添加更加规范化
 
 ## </p><h1 id="01" name="01"><strong>2024-04-06</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 主页引入天气组件，搜索框/按钮圆角化
 * 删除冗余JS/CSS文件
-* 感谢[Anshul Raj Verma](https://arv-anshul.github.io/)在[Discussions#7](https://github.com/Wcowin/Wcowin.github.io/discussions/7)上提出的网站优化建议
+* 感谢[Anshul Raj Verma](https://arv-anshul.github.io/)在[Discussions#7](https://github.com/Wkwcowin/Wkwcowin.github.io/discussions/7)上提出的网站优化建议
 
 
 ## </p><h1 id="01" name="01"><strong>2024-04-02</strong></h1><p>
