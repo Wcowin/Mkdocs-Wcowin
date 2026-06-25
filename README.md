@@ -252,9 +252,9 @@ mkdocs build
 <center>
 
 **Wechat**  
-  <a href="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" target="_blank">
+  <a href="https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp" target="_blank">
    <center>
-    <img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="width: 450px; height: auto;">
+    <img src="https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp" style="width: 450px; height: auto;">
     </center>  
   </a>  
 
@@ -262,7 +262,7 @@ mkdocs build
 
   <a href="https://t.me/wecowin" target="_blank" >
    <center>
-    <img src="https://pica.zhimg.com/80/v2-d5876bc0c8c756ecbba8ff410ed29c14_1440w.webp" style="width: 450px; height: auto;">
+    <img src="https://camo.githubusercontent.com/7c6adb7804ba38c66272501297f105050e05cb86f6deac521217a7889e291ce0/68747470733a2f2f692e696d67616e742e636f6d2f76322f763044774c5a482e706e67" style="width: 450px; height: auto;">
     </center>  
   </a>
 

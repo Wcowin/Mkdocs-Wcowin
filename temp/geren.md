@@ -115,7 +115,7 @@ status: new
                                 <span class="about__info-name">工作经验</span>
                             </div>
                             <div>
-                                <a href="https://github.com/Wcowin" target="_blank">
+                                <a href="https://github.com/Wkwcowin" target="_blank">
                                     <span class="about__info-title">3项+</span>
                                     <span class="about__info-name">完成的项目</span>
                                 </a>
@@ -421,7 +421,7 @@ status: new
             onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.05)'">
         <div style="font-size: 26px; margin-bottom: 12px;">🌟</div>
         <h4 style="margin: 0 0 10px 0; color: var(--md-primary-fg-color); font-size: 17px;">GitHub</h4>
-        <a href="https://github.com/Wcowin" class="md-button" style="font-size: 14px;" target="_blank">
+        <a href="https://github.com/Wkwcowin" class="md-button" style="font-size: 14px;" target="_blank">
             :fontawesome-brands-github: 查看 GitHub
         </a>
         </div>
@@ -471,4 +471,3 @@ status: new
 <!-- <chat-bot platform_id="d19a99ed-b684-4d64-8c70-7663d974af17" user_id="325b3ae2-0317-4c5f-9f9b-c4ce0e51e36b" chatbot_id="8eedef48-41ef-4f78-97d9-71e8197a452d"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 
 <!-- <script src="//code.tidio.co/6jmawe9m5wy4ahvlhub2riyrnujz7xxi.js" async></script> -->
-

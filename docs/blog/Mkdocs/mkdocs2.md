@@ -150,7 +150,7 @@ tags:
         - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
           link: https://twitter.com/wcowin_
         - icon: fontawesome/brands/github
-          link: https://github.com/Wcowin
+          link: https://github.com/Wkwcowin
 
         - icon: fontawesome/regular/envelope #联系方式图标
           link: mailto:<wangkewen821@gmail.com> #邮件联系方式
@@ -478,7 +478,7 @@ extra:
     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
       link: https://twitter.com/wcowin_
     - icon: fontawesome/brands/github
-      link: https://github.com/Wcowin
+      link: https://github.com/Wkwcowin
 
     - icon: fontawesome/regular/envelope #联系方式图标
       link: mailto:<wangkewen821@gmail.com> #邮件联系方式

@@ -240,8 +240,6 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 <!-- RECENTLY_UPDATED_DOCS -->
 
-## 贡献与联系
-
 欢迎加我微信入交流群！
 
 <!--- **GitHub**：[Wcowin/Zensical-Chinese-Tutorial](https://github.com/Wkwcowin/Zensical-Chinese-Tutorial)-->
@@ -252,8 +250,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 <center>
 
 <p>微信</p>  
-<a href="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" target="_blank">
-<img src="https://pic3.zhimg.com/80/v2-5ef3dde831c9d0a41fe35fabb0cb8784_1440w.webp" style="width: 450px; height: auto;">
+<a href="https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp" target="_blank">
+<img src="https://picx.zhimg.com/80/v2-ff732fe4d4b59cd111ca0e4a6eb5e1a9_1440w.webp" style="width: 450px; height: auto;">
 </a>
 
 <p>Telegram</p>  

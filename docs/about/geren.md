@@ -97,9 +97,9 @@ status: new
 
 ---
 
-<center>
+<!--<center>
 <a href="https://wcowin.work/assets/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf" target="_blank" class="md-button">下载简历</a>
-</center>  
+</center>  -->
 
 ## 个人简介
 
@@ -110,7 +110,7 @@ status: new
 !!! pied-piper1 "About me"
     - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
     - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/数学，目前的研究领域是[密码学](https://wcowin.work/blog/Cryptography/)
+    - [x] 热爱(xiā)折腾技术/数学，目前的研究领域是低空技术
     - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
     - [x] 清醒知趣，明得失，知进退 
 
@@ -282,7 +282,7 @@ status: new
     ---
 
     <center><font  color= #757575 size=6>Twitter</font>
-    [@Wcowin :material-twitter:](https://twitter.com/wcowin_){.md-button}</center>
+    [@Wcowin :material-twitter:](https://x.com/intent/follow?screen_name=kewen9694){.md-button}</center>
 
 </div>
 </div>
