@@ -9,7 +9,7 @@ status: new
 
 - :material-email-mark-as-unread: 给我发送[邮箱](mailto:wcowin@qq.com)
 
-- :material-github: [点击此处](https://github.com/Wkwcowin/Wkwcowin.github.io){target="\_blank" rel="noopener"}访问Github仓库
+- :material-github: [点击此处](https://github.com/Wcowin/Wcowin.github.io){target="\_blank" rel="noopener"}访问Github仓库
 
 </div>
 

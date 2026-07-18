@@ -242,7 +242,7 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 
 欢迎加我微信入交流群！
 
-<!--- **GitHub**：[Wcowin/Zensical-Chinese-Tutorial](https://github.com/Wkwcowin/Zensical-Chinese-Tutorial)-->
+<!--- **GitHub**：[Wcowin/Zensical-Chinese-Tutorial](https://github.com/Wcowin/Zensical-Chinese-Tutorial)-->
 - **Email**：[wcowin@qq.com](mailto:wcowin@qq.com)
 - 微信与 Telegram 见下方
 

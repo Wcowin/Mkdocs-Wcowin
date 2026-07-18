@@ -7,7 +7,7 @@ hide:
   - feedback
 comments: false
 ---
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wkwcowin/Wkwcowin.github.io@main/docs/stylesheets/poem.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/poem.css">
 
 
 # 畅所欲言  

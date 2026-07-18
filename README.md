@@ -280,9 +280,15 @@ mkdocs build
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
+<a href="https://www.star-history.com/?type=date&repos=Wcowin%2FMkdocs-Wcowin">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Wcowin/Mkdocs-Wcowin&type=date&theme=dark&legend=top-left&sealed_token=ym7icTbY2H2p1YbKez4X55ZUe_cb9Xj3DJOi6hkURVdBIQJbR_PIH4IjOwrWSDX6HQim-8qqVXqUiAUeDXY21aPvk7UxaqGMATEndMEKnSHk3QOlZaSq9w" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Wcowin/Mkdocs-Wcowin&type=date&legend=top-left&sealed_token=ym7icTbY2H2p1YbKez4X55ZUe_cb9Xj3DJOi6hkURVdBIQJbR_PIH4IjOwrWSDX6HQim-8qqVXqUiAUeDXY21aPvk7UxaqGMATEndMEKnSHk3QOlZaSq9w" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Wcowin/Mkdocs-Wcowin&type=date&legend=top-left&sealed_token=ym7icTbY2H2p1YbKez4X55ZUe_cb9Xj3DJOi6hkURVdBIQJbR_PIH4IjOwrWSDX6HQim-8qqVXqUiAUeDXY21aPvk7UxaqGMATEndMEKnSHk3QOlZaSq9w" />
+ </picture>
+</a>
 
-![Alt](https://repobeats.axiom.co/api/embed/b824e1bf28f31c9fa190eb5079cc1d035e562e0b.svg "Repobeats analytics image")
+<!--![Alt](https://repobeats.axiom.co/api/embed/b824e1bf28f31c9fa190eb5079cc1d035e562e0b.svg "Repobeats analytics image")-->
 
 ## 贡献者
 <a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">

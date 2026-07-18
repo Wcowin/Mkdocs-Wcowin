@@ -33,7 +33,7 @@ title: 测试小组件
 
     ---
 
-    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wkwcowin/Wkwcowin.github.io) - 技术博客
+    :material-eye-check:{ .lg .middle } [Wcowin](https://github.com/Wcowin/Wcowin.github.io) - 技术博客
 
 <div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
 
@@ -44,7 +44,7 @@ title: 测试小组件
 
     更新中...
 
-    [→ 所有版本](https://github.com/Wkwcowin/Wkwcowin.github.io)
+    [→ 所有版本](https://github.com/Wcowin/Wcowin.github.io)
 
 
 -   :material-flag-variant-minus:{ .lg .middle } __Wcowin__
@@ -53,7 +53,7 @@ title: 测试小组件
 
     更新中...
 
-    [→ 了解更多](https://github.com/Wkwcowin/Wkwcowin.github.io)
+    [→ 了解更多](https://github.com/Wcowin/Wcowin.github.io)
 
 </div>
 
