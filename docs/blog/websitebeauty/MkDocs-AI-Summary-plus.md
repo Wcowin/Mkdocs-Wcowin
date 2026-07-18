@@ -34,7 +34,7 @@ ai_summary_lang: zh  # 摘要语言，支持 "zh" 和 "en"
 </p>
 
 <p align="center">
-    <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README.md">中文</a> | <a href="https://github.com/Wcowin/mkdocs-ai-hooks/blob/main/README-en.md">English</a>
+    <a href="https://github.com/Wcowin/Mkdocs-AI-Summary-Plus/blob/main/README.md">中文</a> | <a href="https://github.com/Wcowin/Mkdocs-AI-Summary-Plus/blob/main/README-en.md">English</a>
 </p>
 
 🚀 **您的MkDocs文档首选智能摘要！**   
@@ -531,13 +531,13 @@ plugins:
 ## ⭐ 项目统计
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/mkdocs-ai-hooks&type=Date)](https://www.star-history.com/#Wcowin/mkdocs-ai-hooks&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-AI-Summary-Plus&type=Date)](https://www.star-history.com/#Wcowin/Mkdocs-AI-Summary-Plus&Date)
 
-<a href="https://github.com/Wcowin/mkdocs-ai-hooks/stargazers">
-<img src="https://img.shields.io/github/stars/Wcowin/mkdocs-ai-hooks?style=social" alt="Stars">
+<a href="https://github.com/Wcowin/Mkdocs-AI-Summary-Plus/stargazers">
+<img src="https://img.shields.io/github/stars/Wcowin/Mkdocs-AI-Summary-Plus?style=social" alt="Stars">
 </a>
-<a href="https://github.com/Wcowin/mkdocs-ai-hooks/network/members">
-<img src="https://img.shields.io/github/forks/Wcowin/mkdocs-ai-hooks?style=social" alt="Forks">
+<a href="https://github.com/Wcowin/Mkdocs-AI-Summary-Plus/network/members">
+<img src="https://img.shields.io/github/forks/Wcowin/Mkdocs-AI-Summary-Plus?style=social" alt="Forks">
 </a>
 
 
