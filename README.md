@@ -50,7 +50,7 @@
 ![](https://pic1.zhimg.com/80/v2-652abf2464779ebc6e5790ecaccaadde_1440w.webp) 
 
 **关于**
-<img width="1355" alt="image" src="https://github.com/Wkwcowin/Mkdocs-Wcowin/assets/99159173/bfc10737-260c-44c7-b036-8c7dba52be24">
+<img width="1355" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/bfc10737-260c-44c7-b036-8c7dba52be24">
 
 **标签页**
 ![img](https://s1.imagehub.cc/images/2024/02/02/d20f0562838a8396724f18bfd09e19e8.png)  
@@ -59,7 +59,7 @@
 ![](https://pic2.zhimg.com/80/v2-551c0a6e858705f842e2984fd44ce7f7_1440w.webp)
 
 **页面底部**
-<img width="1363" alt="image" src="https://github.com/Wkwcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
+<img width="1363" alt="image" src="https://github.com/Wcowin/Mkdocs-Wcowin/assets/99159173/ac4db87b-396a-4d0e-99b5-51a1b316db33">
 
 **Lighthouse测试结果**
 <img width="1363" alt="image" src="https://pic3.zhimg.com/80/v2-afef47cac915ad51071fdc2f6d990b30_1440w.webp">
@@ -87,7 +87,7 @@
 这是最简单的方式，适合初学者快速体验：
 
 1. **下载模板**
-   - 访问 [Releases页面](https://github.com/Wkwcowin/Mkdocs-Wcowin/releases)
+   - 访问 [Releases页面](https://github.com/Wcowin/Mkdocs-Wcowin/releases)
    - 下载最新版本的 `Wcowin-for-MkDocs.zip`
    - 解压到你想要的目录（注意把`Wcowin-for-MkDocs`文件夹里的所有文件单独移动到你的项目目录下）
    - 比如你在本地新建了一个`myblog`文件夹，那么就把`Wcowin-for-MkDocs`文件夹里的所有文件单独移动到`myblog`文件夹下
@@ -121,7 +121,7 @@
 1. **克隆仓库**
    ```bash
    # 克隆到本地
-   git clone https://github.com/Wkwcowin/Mkdocs-Wcowin.git
+   git clone https://github.com/Wcowin/Mkdocs-Wcowin.git
    
    # 进入项目目录
    cd Mkdocs-Wcowin
@@ -280,13 +280,13 @@ mkdocs build
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wkwcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wkwcowin/Mkdocs-Wcowin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-Wcowin&type=Date)](https://star-history.com/#Wcowin/Mkdocs-Wcowin&Date)
 
 ![Alt](https://repobeats.axiom.co/api/embed/b824e1bf28f31c9fa190eb5079cc1d035e562e0b.svg "Repobeats analytics image")
 
 ## 贡献者
-<a href="https://github.com/Wkwcowin/Mkdocs-Wcowin/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Wkwcowin/Mkdocs-Wcowin" />
+<a href="https://github.com/Wcowin/Mkdocs-Wcowin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Wcowin/Mkdocs-Wcowin" />
 </a>
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
