@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -42,7 +42,7 @@
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/about/test/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -57,7 +57,7 @@
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/MIT/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -92,7 +92,7 @@
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/Mkdocs/mkfirst/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -122,7 +122,7 @@
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/2026/03/02/2026%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -132,7 +132,7 @@
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/MkDocs-AI-Summary-plus/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -211,6 +211,11 @@
         <changefreq>daily</changefreq>
     </url>
     <url>
+        <loc>https://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/steps/</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/websitebeauty/time/</loc>
         <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
@@ -267,42 +272,42 @@
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/archive/2026/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/archive/2025/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/archive/2024/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/archive/2023/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/archive/2022/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/archive/2021/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/category/%E7%BD%91%E7%AB%99%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://wcowin.work/Mkdocs-Wcowin/blog/category/hello-world/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-07-24</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
