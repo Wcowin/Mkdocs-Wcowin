@@ -66,7 +66,7 @@ theme:
     alternate: fontawesome/solid/language
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/Wcowin/Mkdocs-Wcowin # 右上角点击跳转的链接
-repo_name: Mkdocs-Wcowin # 右上角的名字
+repo_name: MkdocsX-Wcowin # 右上角的名字
 
 # [Navigtion]
 nav:
@@ -88,6 +88,7 @@ nav:
           - 添加阅读信息统计: blog/websitebeauty/reading_time.md
           - 添加Mkdocs博客: blog/Mkdocs/mkdocsblog.md
           - 如何给MKdocs添加友链: blog/Mkdocs/linktech.md
+          - 用Steps容器展示步骤流程: blog/websitebeauty/steps.md
           - 网页圆角化设计: blog/websitebeauty/yuanjiaohua.md
           - 添加评论系统(giscus为例): blog/websitebeauty/mkcomments.md
           - 添加在线聊天: blog/websitebeauty/webtalknow.md
@@ -134,6 +135,9 @@ nav:
 copyright: Copyright &copy; 2022~2026 Wcowin # 左下角的版权声明
 
 extra:
+  status:
+    new: 最近添加
+    deprecated: 已弃用
   # alternate:
   #   - name: 中文
   #     link: "javascript:translateTo('chinese_simplified');"
@@ -156,7 +160,7 @@ extra:
       link: https://t.me/wecowin
       name: telegram
     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
-      link: https://x.com/kewen9694
+      link: https://x.com/Wcowin_
     - icon: fontawesome/brands/github
       link: https://github.com/Wcowin
 
@@ -367,9 +371,9 @@ extra_javascript:
   # - javascripts/extra.js
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/javascripts/extra.js  # extra的cdn
   # - javascripts/mathjax.js
-  - docs/javascripts/mathjax.js
+  - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - docs/javascripts/view.js
+  - javascripts/view.js
   # - javascripts/liquid-glass-toc.js  # Liquid Glass TOC 增强效果
   # - javascripts/font-loader.js
 
@@ -400,7 +404,7 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css  #字体
   # - https://static.zeoseven.com/zsft/292/main/result.css #字体
   # - stylesheets/ziti.css  #字体
-  - https://oneclip.cloud/Wcowin/stylesheets/ziti.css #字体
+  - stylesheets/ziti.css #字体
   # - https://fontsapi.zeoseven.com/292/main/result.css
   # - https://cdn.jsdelivr.net/gh/Wcowin/Wcowin.github.io@main/docs/stylesheets/ziti.css?display=swap
   # - https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css

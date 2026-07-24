@@ -28,13 +28,30 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 -->
 
 
-<center><font class="custom-font ml3">最好的MkDocs中文教程</font></center>
+<center><font class="custom-font ml3 shine-text">最好的MkDocs中文教程</font></center>
 <script src="https://cdn.statically.io/libs/animejs/2.0.2/anime.min.js"></script>
 <style>
     .custom-font {
     font-size: 31px; /* 默认字体大小为8px */
     color: #757575;
 }
+    /* 字体擦亮：底层为字形的抛光渐变，上层为一道细高光从左到右扫过 */
+    .shine-text {
+        background-image:
+            linear-gradient(110deg, transparent 48%, #ffffff 50%, transparent 52%),
+            linear-gradient(180deg, #cfcfcf 0%, #6f6f6f 100%);
+        background-size: 200% 100%, 100% 100%;
+        background-position: 200% center, 0 0;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        animation: shine-sweep 3s linear infinite;
+    }
+    @keyframes shine-sweep {
+        from { background-position: 200% center, 0 0; }
+        to   { background-position: 0% center, 0 0; }
+    }
 @media (max-width: 768px) { /* 假设768px及以下为移动端 */
     .custom-font {
         font-size: 25px; /* 移动端字体大小为6px */
@@ -158,7 +175,8 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
   - [网站添加Mkdocs博客](blog/Mkdocs/mkdocsblog.md)
   - [Blogger](blog/index.md) -->
 
-
+<!-- 
+RECENTLY_UPDATED_DOCS -->
 
 <div class="grid cards" markdown>
 
@@ -234,11 +252,10 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script> -->
 <head> 
-  <!-- Umami Analytics -->
+   <!--Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="061b4dea-9b7b-4ffa-9071-74cde70f3dfb"></script>
 </head>
 
-<!-- RECENTLY_UPDATED_DOCS -->
 
 欢迎加我微信入交流群！
 
@@ -263,3 +280,5 @@ ____    __    ____  ______   ______   ____    __    ____  __  .__   __.
 </center>
 
 ---
+
+

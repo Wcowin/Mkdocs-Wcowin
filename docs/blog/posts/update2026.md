@@ -7,6 +7,10 @@ categories:
 readtime: 2
 hide_reading_time: true
 ---
+## </p><h1 id="01" name="01"><strong>2026-7-24</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 新增 mkdocs-materialx 主题相关文章
+
 ## </p><h1 id="01" name="01"><strong>2026-05-22</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 改进mkdocs教程，增加更多示例

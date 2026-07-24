@@ -79,17 +79,13 @@ title: 测试小组件
 
 <font face="宋体"  size=80>:flag_cn:<b></font>  
 
-$\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$
+<!-- $\overset{wáng}{王}\overset{kē}{科}\overset{wén}{文}$ -->
 
 - H~2~O
 - A^T^A
 - ==This was marked==
 - ^^This was inserted^^
 - ~~This was deleted~~
-
-
-[![Readme Card](https://github-readme-stats-beta-amber-44.vercel.app/api?username=Wcowin&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&locale=zh-my)](#)
-
 
 
 <!DOCTYPE html>

@@ -37,7 +37,7 @@ Mkdocs Materials 教程:
 
 ## 快速开始
 
-<div class="grid cards" markdown>
+<!-- <div class="grid cards" markdown>
 
 -   :material-notebook-edit-outline:{ .lg .middle } __三部曲__
 
@@ -45,6 +45,14 @@ Mkdocs Materials 教程:
     - [部署静态网页至GitHub pages](mkdocs1.md)
     - [Mkdocs部署配置说明(mkdocs.yml)](mkdocs2.md)
     - [网站添加Mkdocs博客](mkdocsblog.md)
+
+</div> -->
+
+<div class="steps" markdown>
+
+- [部署静态网页至GitHub pages](mkdocs1.md)
+- [Mkdocs部署配置说明(mkdocs.yml)](mkdocs2.md)
+- [网站添加Mkdocs博客](mkdocsblog.md)
 
 </div>
 

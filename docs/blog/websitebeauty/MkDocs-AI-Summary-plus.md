@@ -531,7 +531,6 @@ plugins:
 ## ⭐ 项目统计
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Wcowin/Mkdocs-AI-Summary-Plus&type=Date)](https://www.star-history.com/#Wcowin/Mkdocs-AI-Summary-Plus&Date)
 
 <a href="https://github.com/Wcowin/Mkdocs-AI-Summary-Plus/stargazers">
 <img src="https://img.shields.io/github/stars/Wcowin/Mkdocs-AI-Summary-Plus?style=social" alt="Stars">
