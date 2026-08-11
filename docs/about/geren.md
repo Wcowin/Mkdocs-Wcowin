@@ -107,12 +107,17 @@ status: new
 <!-- https://s1.imagehub.cc/images/2024/02/02/79cb7379982d1c7bb0ae7163985609c4.jpeg -->
 
 
-!!! pied-piper1 "About me"
-    - [x] Hey, I'm [Wcowin](https://wcowin.work/VitePress/){target=“_blank”}~
-    - [x] 咖啡重度爱好者 
-    - [x] 热爱(xiā)折腾技术/数学，目前的研究领域是低空技术
-    - [x] 读书明志;诗词爱好者;喜欢村上春树;擅长羽毛球
-    - [x] 清醒知趣，明得失，知进退 
+!!! quote "Who am I?"
+    <div style="font-size: 1.3em;">
+    
+    - Hi, I'm [Wcowin](https://github.com/Wcowin){target="_blank"}~
+    - 咖啡和Codex重度爱好者
+    - 热爱(xiā)研究/Math业余，致力于Mkdocs/[Zensical](https://zensical.org/)以及[Mac应用](https://wcowin.work/develop/Mac-development/)的开发
+    - 目前的研究领域是[低空技术](https://wcowin.work/research/aerotech/)、[AI/大模型/具身智能](https://wcowin.work/develop/AI)、[密码学/区块链](https://wcowin.work/blog/Cryptography/)
+    - 读书明志|诗词爱好者|历史研究|喜欢村上春树|擅长羽毛球
+    - 清醒知趣，明得失，知进退
+
+    </div>
 
 
 ## 人生态度
@@ -324,9 +329,6 @@ status: new
     </figure>
 
 ---  
-
-> 💬我电话号码的`MD5`码：7037F514864088F907CC921687B670EE  
->（破解有奖|必须附带破解过程｜从简历上看到的不算｜目前已有2人成功破解）
 
 
 ## 须知

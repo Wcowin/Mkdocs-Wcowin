@@ -6,7 +6,8 @@ tags:
 
 # 如何将 github pages 迁移到 vercel 上托管
 
-> [如何将 github pages 迁移到 vercel 上托管](https://cloud.tencent.com/developer/article/1771693?shareByChannel=link)
+类比参考一下：
 
+> [将 Zensical 博客部署到 Vercel](https://wcowin.work/blog/Zensical/vercel-deployment/)
 
->[📃 MkDocs with ▲ Vercel (minimal configuration)](https://github.com/fu-sen/Vercel-MkDocs)
+把命令里的zensical改为mkdocs就行了

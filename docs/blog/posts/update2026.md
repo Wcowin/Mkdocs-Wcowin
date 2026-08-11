@@ -4,9 +4,15 @@ authors: [Wcowin]
 date: 2026-03-02
 categories:
   - 网站更新记录
-readtime: 2
+readtime: 5
 hide_reading_time: true
 ---
+## </p><h1 id="01" name="01"><strong>2026-8-11</strong></h1><p>
+* 优化网站流畅度（玄学）
+* 更新部分失效链接
+* 修正过时的文字
+
+
 ## </p><h1 id="01" name="01"><strong>2026-7-24</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 新增 mkdocs-materialx 主题相关文章

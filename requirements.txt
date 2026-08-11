@@ -1,6 +1,7 @@
 # 核心框架
 mkdocs>=1.5.0
 mkdocs-material>=9.0.0
+mkdocs-materialx==10.2.0  # 锁定 MaterialX 版本（与 mkdocs.yml 中 name: materialx 对应），防止被上游或新版本带偏
 
 # 扩展功能
 pymdown-extensions>=10.0

@@ -1,15 +1,18 @@
 import os
 import re
+import math
 from collections import Counter, defaultdict
 from textwrap import dedent
-import hashlib
 import yaml
-from urllib.parse import urlparse
+from urllib.parse import urljoin
 
 # 存储所有文章的信息和索引
 article_index = {}
 category_index = defaultdict(list)
 keyword_index = defaultdict(set)
+# 全局词频（用于 IDF 计算，纯标准库实现 TF-IDF）
+global_doc_freq = defaultdict(int)   # 词 -> 出现该词的文章数
+total_docs = 0
 
 # 配置：需要索引的目录
 INDEXED_DIRECTORIES = ['blog/', 'develop/']  
@@ -32,17 +35,18 @@ EXCLUDED_PATTERNS = [
     # r'blog\/draft\/.*',  # 排除草稿目录
 ]
 
-# 配置：相似度阈值和权重
+# 配置：相似度阈值和权重（各维度已归一化到 [0,1]，权重之和=1 时即真实占比）
 SIMILARITY_CONFIG = {
-    'min_threshold': 0.15,  # 提高最低相似度阈值
+    'min_threshold': 0.05,  # 最低相似度阈值（归一化后尺度更小）
     'weights': {
-        'keywords': 0.35,    # 关键词权重
-        'tags': 0.30,        # 标签权重
-        'categories': 0.20,  # 分类权重
-        'path': 0.10,        # 路径分类权重
-        'source_dir': 0.05   # 源目录权重
+        'keywords': 0.35,    # 关键词(TF-IDF)相似度
+        'tags': 0.30,        # 标签相似度
+        'categories': 0.20,  # 分类相似度
+        'path': 0.10,        # 路径分类相似度
+        'source_dir': 0.05   # 源目录相似度
     },
-    'title_similarity': 0.25  # 标题相似度权重
+    'title_similarity': 0.20,  # 标题相似度权重（叠加项，独立于上面归一化维度）
+    'mmr_lambda': 0.7         # MMR 多样性参数：越高越偏相关性，越低越偏多样性
 }
 
 def is_page_excluded(file_path):
@@ -74,49 +78,87 @@ def should_index_file(file_path):
     
     return False
 
-def extract_keywords(content, title):
-    """提取文章中的关键词，改进算法"""
-    # 移除YAML front matter
-    content = re.sub(r'^---\s*\n.*?\n---\s*\n', '', content, flags=re.DOTALL | re.MULTILINE)
-    
-    # 移除代码块
-    content = re.sub(r'```.*?```', '', content, flags=re.DOTALL)
-    # 移除HTML标签
-    content = re.sub(r'<.*?>', '', content)
-    # 移除链接
-    content = re.sub(r'\[.*?\]\(.*?\)', '', content)
-    # 移除标题标记
-    content = re.sub(r'^#+\s+', '', content, flags=re.MULTILINE)
-    
-    # 合并标题和内容，标题权重更高
-    title_words = re.findall(r'\b\w+\b', title.lower()) * 4  # 增加标题权重
-    content_words = re.findall(r'\b\w+\b', content.lower())
-    all_words = title_words + content_words
-    
-    # 扩展停用词列表（包含中英文）
-    stopwords = {
-        # 英文停用词
-        'the', 'a', 'an', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was', 'were',
-        'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should',
-        'this', 'that', 'these', 'those', 'with', 'from', 'by', 'as', 'can', 'but', 'not', 'if', 'it',
-        'they', 'them', 'their', 'you', 'your', 'we', 'our', 'my', 'me', 'i', 'he', 'she', 'him', 'her',
-        # 常见无意义词
-        'about', 'above', 'after', 'again', 'all', 'also', 'any', 'because', 'before', 'between',
-        'both', 'each', 'few', 'first', 'get', 'how', 'into', 'just', 'last', 'made', 'make', 'may',
-        'most', 'new', 'now', 'old', 'only', 'other', 'over', 'said', 'same', 'see', 'some', 'such',
-        'take', 'than', 'then', 'time', 'two', 'use', 'very', 'way', 'well', 'where', 'when', 'which',
-        'while', 'who', 'why', 'work', 'world', 'year', 'years',
-        # 中文停用词
-        '的', '了', '和', '是', '就', '都', '而', '及', '与', '这', '那', '有', '在', '中', '为', '对', '等',
-        '能', '会', '可以', '没有', '什么', '一个', '自己', '这个', '那个', '这些', '那些', '如果', '因为', '所以'
-    }
-    
-    # 过滤单词：长度>=2，不在停用词中，不是纯数字
-    words = [w for w in all_words 
-             if len(w) >= 2 and w not in stopwords and not w.isdigit()]
-    
-    # 返回词频最高的15个词
-    return Counter(words).most_common(15)
+# 扩展停用词列表（包含中英文）
+STOPWORDS = {
+    # 英文停用词
+    'the', 'a', 'an', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was', 'were',
+    'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should',
+    'this', 'that', 'these', 'those', 'with', 'from', 'by', 'as', 'can', 'but', 'not', 'if', 'it',
+    'they', 'them', 'their', 'you', 'your', 'we', 'our', 'my', 'me', 'i', 'he', 'she', 'him', 'her',
+    # 常见无意义词
+    'about', 'above', 'after', 'again', 'all', 'also', 'any', 'because', 'before', 'between',
+    'both', 'each', 'few', 'first', 'get', 'how', 'into', 'just', 'last', 'made', 'make', 'may',
+    'most', 'new', 'now', 'old', 'only', 'other', 'over', 'said', 'same', 'see', 'some', 'such',
+    'take', 'than', 'then', 'time', 'two', 'use', 'very', 'way', 'well', 'where', 'when', 'which',
+    'while', 'who', 'why', 'work', 'world', 'year', 'years',
+    # 中文停用词（单字 + 常见词）
+    '的', '了', '和', '是', '就', '都', '而', '及', '与', '这', '那', '有', '在', '中', '为', '对', '等',
+    '能', '会', '可以', '没有', '什么', '一个', '自己', '这个', '那个', '这些', '那些', '如果', '因为', '所以',
+    '我', '你', '他', '她', '它', '我们', '你们', '他们', '它们', '也', '还', '又', '要', '把', '被', '让',
+    '啊', '吧', '呢', '吗', '呀', '嘛', '其', '之', '于', '将', '已', '并', '或', '即', '便', '则', '但',
+}
+
+def clean_markdown(text):
+    """移除 markdown 中的噪声（front matter / 代码块 / HTML / 链接 / 标题符）"""
+    text = re.sub(r'^---\s*\n.*?\n---\s*\n', '', text, flags=re.DOTALL | re.MULTILINE)
+    text = re.sub(r'```.*?```', '', text, flags=re.DOTALL)        # 代码块
+    text = re.sub(r'`[^`]*`', '', text)                            # 行内代码
+    text = re.sub(r'<.*?>', '', text)                             # HTML 标签
+    text = re.sub(r'!\[.*?\]\(.*?\)', '', text)                   # 图片
+    text = re.sub(r'\[.*?\]\(.*?\)', '', text)                    # 链接
+    text = re.sub(r'^#+\s+', '', text, flags=re.MULTILINE)         # 标题标记
+    return text
+
+def tokenize(text):
+    """纯标准库分词：英文/数字按词，中文用 2~4 字 n-gram 滑窗"""
+    tokens = []
+    # 英文/数字词（保留技术词如 docker, k8s, api2）
+    tokens += re.findall(r'[a-zA-Z][a-zA-Z0-9+#.\-]*', text.lower())
+    # 中文连续片段，做 2~4 字 n-gram
+    for seg in re.findall(r'[\u4e00-\u9fff]+', text):
+        n = len(seg)
+        for k in (2, 3, 4):
+            if k > n:
+                continue
+            for i in range(n - k + 1):
+                tokens.append(seg[i:i + k])
+    return tokens
+
+def extract_keywords(content, title, top_k=15):
+    """提取关键词：中文 n-gram 分词 + TF-IDF 加权（纯标准库，无需 jieba）"""
+    body = clean_markdown(content)
+    title_text = clean_markdown(title)
+
+    # 标题词权重 ×4
+    raw = tokenize(body) + tokenize(title_text) * 4
+
+    # 过滤停用词 / 单字中文 / 纯数字 / 过短
+    def keep(w):
+        if w in STOPWORDS:
+            return False
+        if w.isdigit():
+            return False
+        # 中文必须是多字（n-gram 已满足），英文至少 2 字符
+        if re.fullmatch(r'[a-zA-Z0-9+#.\-]+', w) and len(w) < 2:
+            return False
+        return True
+
+    words = [w for w in raw if keep(w)]
+
+    # TF：词频
+    tf = Counter(words)
+
+    # IDF：基于全局文档频率（在 on_files 阶段统计）
+    def idf(term):
+        df = global_doc_freq.get(term, 0)
+        if df == 0:
+            return 0.0
+        return math.log((total_docs + 1) / (df + 1)) + 1.0  # 平滑 IDF
+
+    # TF-IDF 排序
+    scored = [(term, tf[term] * idf(term)) for term in tf]
+    scored.sort(key=lambda x: x[1], reverse=True)
+    return scored[:top_k]
 
 def extract_metadata(content):
     """提取文章元数据，支持YAML front matter"""
@@ -172,22 +214,21 @@ def get_category_from_path(file_path):
         return parts[0]  # blog 或 develop
     return "未分类"
 
-def calculate_content_hash(content):
-    """计算内容哈希，用于检测内容变化"""
-    return hashlib.md5(content.encode('utf-8')).hexdigest()
-
 def on_files(files, config):
     """预处理所有文章，建立索引"""
-    global article_index, category_index, keyword_index
+    global article_index, category_index, keyword_index, global_doc_freq, total_docs
     
     # 清空索引
     article_index.clear()
     category_index.clear()
     keyword_index.clear()
+    global_doc_freq.clear()
+    total_docs = 0
     
     processed_count = 0
     excluded_count = 0
     
+    # 第一遍：建索引
     for file in files:
         if should_index_file(file.src_path):
             try:
@@ -223,7 +264,6 @@ def on_files(files, config):
                         'keywords': keywords,
                         'url': file.url,
                         'path': file.src_path,
-                        'content_hash': calculate_content_hash(content),
                         'source_dir': file.src_path.split('/')[0]  # blog 或 develop
                     }
                     
@@ -247,6 +287,16 @@ def on_files(files, config):
                     
             except Exception as e:
                 print(f"❌ 处理文件 {file.src_path} 时出错: {e}")
+    
+    # 第二遍：统计全局文档频率（IDF 用），每篇文章的关键词视为该文档的词集合
+    total_docs = processed_count
+    for info in article_index.values():
+        # 一篇文档对一个词只计数一次（文档频率）
+        for term, _ in info['keywords']:
+            global_doc_freq[term] += 1
+        for tag in info['tags']:
+            if tag:
+                global_doc_freq[tag.lower()] += 1
     
     print(f"✅ 已索引 {processed_count} 篇文章 (blog + develop)")
     if excluded_count > 0:
@@ -284,11 +334,8 @@ def on_page_markdown(markdown, **kwargs):
     if not related_articles:
         return markdown
     
-    # 从 config 中获取 site_url 并解析出基本路径
-    site_url = config.get('site_url', '')
-    base_path = urlparse(site_url).path if site_url else '/'
-    if not base_path.endswith('/'):
-        base_path += '/'
+    # 从 config 中获取 site_url 作为拼接基准
+    site_url = config.get('site_url', '') or '/'
 
     # 构建推荐HTML - 针对Safari浏览器优化
     recommendation_html = "\n"
@@ -342,10 +389,10 @@ def on_page_markdown(markdown, **kwargs):
     recommendation_html += '<ul>\n'
     
     for score, article_info in related_articles:
-        title = article_info['title']
+        import html
+        title = html.escape(article_info['title'])
         relative_url = article_info['url']
-        # 拼接基本路径和文章相对URL，并确保路径分隔符正确
-        full_url = (base_path + relative_url).replace('//', '/')
+        full_url = urljoin(site_url, relative_url)
         recommendation_html += f'<li><a href="{full_url}">{title}</a></li>\n'
     
     recommendation_html += '</ul>\n'
@@ -355,149 +402,123 @@ def on_page_markdown(markdown, **kwargs):
     return markdown.rstrip() + recommendation_html
 
 def get_related_articles(current_path, max_count=5):
-    """获取相关文章，使用改进的算法"""
+    """获取相关文章：归一化相似度排序 + MMR 多样性"""
     if current_path not in article_index:
         return []
     
     current_article = article_index[current_path]
-    similarities = []
-    
-    # 获取当前文章的关键信息
-    current_title = current_article['title'].lower()
-    current_tags = set(tag.lower() for tag in current_article['tags'] if tag)
-    current_categories = set(cat.lower() for cat in current_article['categories'] if cat)
+    candidates = []
     
     for path, article_info in article_index.items():
         if path == current_path:
             continue
-        
-        # 过滤掉标题为"未命名"的文章
-        if article_info['title'] == "未命名" or not article_info['title'].strip():
+        if not article_info['title'].strip() or article_info['title'] == "未命名":
             continue
-            
-        # 再次检查是否在排除列表中（双重检查）
         if is_page_excluded(path):
             continue
         
-        # 计算相似度
-        score = calculate_similarity(current_article, article_info)
+        # 归一化后的综合相似度 [0,1]
+        base = calculate_similarity(current_article, article_info)
+        # 标题相似度作为加分项（同样已归一化）
+        title_sim = calculate_title_similarity(current_article['title'], article_info['title'])
+        score = base + title_sim * SIMILARITY_CONFIG['title_similarity']
         
-        # 标题相似度加权
-        title_similarity = calculate_title_similarity(current_title, article_info['title'].lower())
-        if title_similarity > 0.3:  # 标题有一定相似度
-            score += title_similarity * SIMILARITY_CONFIG['title_similarity']
-        
-        # 应用最低阈值
         if score > SIMILARITY_CONFIG['min_threshold']:
-            similarities.append((score, article_info))
+            candidates.append((score, path, article_info))
     
-    # 按相似度排序
-    similarities.sort(key=lambda x: x[0], reverse=True)
+    if not candidates:
+        return []
     
-    # 多样性优化：确保不同分类的文章都有机会被推荐
-    if len(similarities) > max_count * 2:
-        # 按分类分组
-        category_groups = defaultdict(list)
-        for score, article in similarities:
-            for category in article['categories']:
-                if category:
-                    category_groups[category.lower()].append((score, article))
-        
-        # 从每个分类中选取最相关的文章
-        diverse_results = []
-        used_paths = set()
-        
-        # 首先添加最相关的文章
-        if similarities:
-            top_score, top_article = similarities[0]
-            diverse_results.append((top_score, top_article))
-            used_paths.add(top_article['path'])
-        
-        # 然后从每个分类中添加最相关的文章
-        for category in sorted(category_groups.keys()):
-            if len(diverse_results) >= max_count:
-                break
-                
-            for score, article in category_groups[category]:
-                if article['path'] not in used_paths:
-                    diverse_results.append((score, article))
-                    used_paths.add(article['path'])
-                    break
-        
-        # 如果还有空位，从剩余的高分文章中填充
-        if len(diverse_results) < max_count:
-            for score, article in similarities:
-                if article['path'] not in used_paths and len(diverse_results) < max_count:
-                    diverse_results.append((score, article))
-                    used_paths.add(article['path'])
-        
-        # 重新按相似度排序
-        diverse_results.sort(key=lambda x: x[0], reverse=True)
-        return diverse_results[:max_count]
+    # 按综合相似度降序
+    candidates.sort(key=lambda x: x[0], reverse=True)
     
-    return similarities[:max_count]
+    # MMR：在「相关性」与「与已选集合的冗余度」之间权衡，逐条选取
+    lam = SIMILARITY_CONFIG['mmr_lambda']
+    selected = []
+    selected_paths = set()
+    remaining = candidates[:]  # 候选池（已按相关性排序）
+    
+    while len(selected) < max_count and remaining:
+        best = None
+        best_mmr = -1.0
+        for idx, (score, path, info) in enumerate(remaining):
+            if selected:
+                # 与已选集合的最大相似度（冗余度）
+                max_sim = max(calculate_similarity(s, info)
+                              for _, s in selected)
+            else:
+                max_sim = 0.0
+            mmr = lam * score - (1 - lam) * max_sim
+            if mmr > best_mmr:
+                best_mmr = mmr
+                best = idx
+        score, path, info = remaining.pop(best)
+        selected.append((score, info))
+        selected_paths.add(path)
+    
+    # 最终按相关性排序输出
+    selected.sort(key=lambda x: x[0], reverse=True)
+    return selected[:max_count]
 
 def calculate_title_similarity(title1, title2):
-    """计算两个标题的相似度"""
-    # 分词
-    words1 = set(re.findall(r'\b\w+\b', title1))
-    words2 = set(re.findall(r'\b\w+\b', title2))
+    """计算两个标题的相似度（中英文混合，Jaccard）"""
+    words1 = set(tokenize(title1))
+    words2 = set(tokenize(title2))
     
     if not words1 or not words2:
         return 0
     
-    # 计算Jaccard相似度
-    intersection = len(words1.intersection(words2))
-    union = len(words1.union(words2))
-    
-    if union == 0:
-        return 0
-    
-    return intersection / union
+    intersection = len(words1 & words2)
+    union = len(words1 | words2)
+    return intersection / union if union else 0
+
+def _cosine(dict1, dict2):
+    """两个带权向量（关键词 TF-IDF）的余弦相似度，归一到 [0,1]"""
+    common = set(dict1) & set(dict2)
+    if not common:
+        return 0.0
+    dot = sum(dict1[k] * dict2[k] for k in common)
+    norm1 = math.sqrt(sum(v * v for v in dict1.values()))
+    norm2 = math.sqrt(sum(v * v for v in dict2.values()))
+    if norm1 == 0 or norm2 == 0:
+        return 0.0
+    return dot / (norm1 * norm2)
+
+def _jaccard(set1, set2):
+    """集合 Jaccard 相似度，归一到 [0,1]"""
+    if not set1 or not set2:
+        return 0.0
+    inter = len(set1 & set2)
+    union = len(set1 | set2)
+    return inter / union if union else 0.0
 
 def calculate_similarity(article1, article2):
-    """计算两篇文章的相似度"""
-    score = 0
+    """计算两篇文章的综合相似度，各维度先归一化到 [0,1] 再加权"""
     weights = SIMILARITY_CONFIG['weights']
+    score = 0.0
     
-    # 1. 关键词相似度
-    keywords1 = dict(article1['keywords'])
-    keywords2 = dict(article2['keywords'])
-    common_keywords = set(keywords1.keys()) & set(keywords2.keys())
+    # 1. 关键词相似度（TF-IDF 余弦，已归一化）
+    kw1 = dict(article1['keywords'])
+    kw2 = dict(article2['keywords'])
+    if kw1 and kw2:
+        score += _cosine(kw1, kw2) * weights['keywords']
     
-    if common_keywords:
-        # 考虑关键词的频率和重要性
-        keyword_score = sum(min(keywords1[kw], keywords2[kw]) for kw in common_keywords)
-        # 关键词匹配数量的奖励
-        keyword_count_bonus = len(common_keywords) / max(len(keywords1), 1) * 0.5
-        score += (keyword_score + keyword_count_bonus) * weights['keywords']
+    # 2. 标签相似度（Jaccard，已归一化）
+    tags1 = {t.lower() for t in article1['tags'] if t}
+    tags2 = {t.lower() for t in article2['tags'] if t}
+    score += _jaccard(tags1, tags2) * weights['tags']
     
-    # 2. 标签相似度
-    tags1 = set(tag.lower() for tag in article1['tags'] if tag)
-    tags2 = set(tag.lower() for tag in article2['tags'] if tag)
+    # 3. 分类相似度（Jaccard，已归一化）
+    cats1 = {c.lower() for c in article1['categories'] if c}
+    cats2 = {c.lower() for c in article2['categories'] if c}
+    score += _jaccard(cats1, cats2) * weights['categories']
     
-    if tags1 and tags2:  # 确保两篇文章都有标签
-        tag_overlap = len(tags1 & tags2)
-        tag_ratio = tag_overlap / max(len(tags1), 1)  # 相对重叠比例
-        tag_score = tag_overlap * 8 * (1 + tag_ratio)  # 增加重叠比例奖励
-        score += tag_score * weights['tags']
+    # 4. 路径分类相似度（0 或 1）
+    if article1['path_category'] and article1['path_category'] == article2['path_category']:
+        score += 1.0 * weights['path']
     
-    # 3. 分类相似度
-    categories1 = set(cat.lower() for cat in article1['categories'] if cat)
-    categories2 = set(cat.lower() for cat in article2['categories'] if cat)
-    
-    if categories1 and categories2:  # 确保两篇文章都有分类
-        category_overlap = len(categories1 & categories2)
-        category_ratio = category_overlap / max(len(categories1), 1)
-        category_score = category_overlap * 12 * (1 + category_ratio)
-        score += category_score * weights['categories']
-    
-    # 4. 路径分类相似度
-    if article1['path_category'] == article2['path_category']:
-        score += 3 * weights['path']
-    
-    # 5. 同源目录加分
-    if article1.get('source_dir') == article2.get('source_dir'):
-        score += 2 * weights['source_dir']
+    # 5. 同源目录相似度（0 或 1）
+    if article1.get('source_dir') and article1.get('source_dir') == article2.get('source_dir'):
+        score += 1.0 * weights['source_dir']
     
     return score
