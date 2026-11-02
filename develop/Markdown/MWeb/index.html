@@ -32,7 +32,7 @@
           <link rel="icon" href="https://s2.loli.net/2025/02/12/aE5ovtzAlNTd9Uh.png">
         
       
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.2.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.2.2">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7aee198.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d60cbd7.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a45159b5.min.css">
@@ -81,17 +81,17 @@
     
       <link rel="stylesheet" href="../../../assets/document_dates/fonts/material-icons.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
+    
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/material.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/backdrop.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/tippy/scale.css">
     
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/shift-away.css">
-    
-      <link rel="stylesheet" href="../../../assets/document_dates/tippy/tippy.css">
+      <link rel="stylesheet" href="../../../assets/document_dates/tippy/light.css">
     
       <link rel="stylesheet" href="../../../assets/document_dates/core/core.css">
     
@@ -3730,7 +3730,7 @@
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>```js
 <span class="linenos" data-linenos="2 "></span>function fancyAlert(arg) {
 <span class="linenos" data-linenos="3 "></span>  if(arg) {
-<span class="linenos" data-linenos="4 "></span>    $.facebox({div:&#39;#foo&#39;})
+<span class="linenos" data-linenos="4 "></span>    $.facebox({div:'#foo'})
 <span class="linenos" data-linenos="5 "></span>  }
 <span class="linenos" data-linenos="6 "></span>
 <span class="linenos" data-linenos="7 "></span>}
@@ -3739,7 +3739,7 @@
 <p>效果如下：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos="2 "></span></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos="3 "></span></a><span class="w">        </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos="3 "></span></a><span class="w">        </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">'#foo'</span><span class="p">})</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos="4 "></span></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5"></a><a href="#__codelineno-2-5"><span class="linenos" data-linenos="5 "></span></a>
 <a id="__codelineno-2-6" name="__codelineno-2-6"></a><a href="#__codelineno-2-6"><span class="linenos" data-linenos="6 "></span></a><span class="p">}</span>
@@ -3830,15 +3830,15 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```echarts
 <span class="linenos" data-linenos=" 2 "></span>option = {
 <span class="linenos" data-linenos=" 3 "></span>    xAxis: {
-<span class="linenos" data-linenos=" 4 "></span>        type: &#39;category&#39;,
-<span class="linenos" data-linenos=" 5 "></span>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+<span class="linenos" data-linenos=" 4 "></span>        type: 'category',
+<span class="linenos" data-linenos=" 5 "></span>        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 <span class="linenos" data-linenos=" 6 "></span>    },
 <span class="linenos" data-linenos=" 7 "></span>    yAxis: {
-<span class="linenos" data-linenos=" 8 "></span>        type: &#39;value&#39;
+<span class="linenos" data-linenos=" 8 "></span>        type: 'value'
 <span class="linenos" data-linenos=" 9 "></span>    },
 <span class="linenos" data-linenos="10 "></span>    series: [{
 <span class="linenos" data-linenos="11 "></span>        data: [820, 932, 901, 934, 1290, 1330, 1320],
-<span class="linenos" data-linenos="12 "></span>        type: &#39;line&#39;
+<span class="linenos" data-linenos="12 "></span>        type: 'line'
 <span class="linenos" data-linenos="13 "></span>    }]
 <span class="linenos" data-linenos="14 "></span>};
 <span class="linenos" data-linenos="15 "></span>```
@@ -3846,15 +3846,15 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <p><strong>效果如下：</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><a href="#__codelineno-7-1"><span class="linenos" data-linenos=" 1 "></span></a>option = {
 <a id="__codelineno-7-2" name="__codelineno-7-2"></a><a href="#__codelineno-7-2"><span class="linenos" data-linenos=" 2 "></span></a>    xAxis: {
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a><a href="#__codelineno-7-3"><span class="linenos" data-linenos=" 3 "></span></a>        type: &#39;category&#39;,
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a><a href="#__codelineno-7-4"><span class="linenos" data-linenos=" 4 "></span></a>        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><a href="#__codelineno-7-3"><span class="linenos" data-linenos=" 3 "></span></a>        type: 'category',
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><a href="#__codelineno-7-4"><span class="linenos" data-linenos=" 4 "></span></a>        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 <a id="__codelineno-7-5" name="__codelineno-7-5"></a><a href="#__codelineno-7-5"><span class="linenos" data-linenos=" 5 "></span></a>    },
 <a id="__codelineno-7-6" name="__codelineno-7-6"></a><a href="#__codelineno-7-6"><span class="linenos" data-linenos=" 6 "></span></a>    yAxis: {
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a><a href="#__codelineno-7-7"><span class="linenos" data-linenos=" 7 "></span></a>        type: &#39;value&#39;
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><a href="#__codelineno-7-7"><span class="linenos" data-linenos=" 7 "></span></a>        type: 'value'
 <a id="__codelineno-7-8" name="__codelineno-7-8"></a><a href="#__codelineno-7-8"><span class="linenos" data-linenos=" 8 "></span></a>    },
 <a id="__codelineno-7-9" name="__codelineno-7-9"></a><a href="#__codelineno-7-9"><span class="linenos" data-linenos=" 9 "></span></a>    series: [{
 <a id="__codelineno-7-10" name="__codelineno-7-10"></a><a href="#__codelineno-7-10"><span class="linenos" data-linenos="10 "></span></a>        data: [820, 932, 901, 934, 1290, 1330, 1320],
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a><a href="#__codelineno-7-11"><span class="linenos" data-linenos="11 "></span></a>        type: &#39;line&#39;
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><a href="#__codelineno-7-11"><span class="linenos" data-linenos="11 "></span></a>        type: 'line'
 <a id="__codelineno-7-12" name="__codelineno-7-12"></a><a href="#__codelineno-7-12"><span class="linenos" data-linenos="12 "></span></a>    }]
 <a id="__codelineno-7-13" name="__codelineno-7-13"></a><a href="#__codelineno-7-13"><span class="linenos" data-linenos="13 "></span></a>};
 </code></pre></div>
@@ -4456,7 +4456,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "code": null, "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.path", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": {"options": {"baseUrl": "../../..", "bundleUrl": "../../../search/", "highlight": true, "searchOptions": {}}, "provider": "pagefind"}, "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "code.collapse": "\u6536\u8d77", "code.download": "\u4e0b\u8f7d", "code.expand": "\u5c55\u5f00\u5269\u4f59 # \u884c", "code.select": "\u5207\u6362\u884c\u9009\u62e9", "search.offline": "\u79bb\u7ebf\u641c\u7d22\u8bf7\u5207\u6362\u5230 Lunr", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.44453a05.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.19ace10b.min.js"></script>
       
         <script src="../../../javascripts/glm-config.js"></script>
       
