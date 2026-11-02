@@ -7,6 +7,10 @@ categories:
 readtime: 5
 hide_reading_time: true
 ---
+## </p><h1 id="01" name="01"><strong>2026-11-02  </strong></h1><p>
+* 优化网站流畅度（玄学）
+* 更新教程
+
 ## </p><h1 id="01" name="01"><strong>2026-8-11</strong></h1><p>
 * 优化网站流畅度（玄学）
 * 更新部分失效链接
